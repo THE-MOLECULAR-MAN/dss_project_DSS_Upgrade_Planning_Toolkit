@@ -31,10 +31,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "compute_users_joined",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "commits_by_user",
       "objectType": "DATASET"
     },
@@ -48,7 +44,6 @@
     }
   ],
   "shared": [],
-  "position": {},
   "tags": [],
   "customFields": {},
   "checklists": {
