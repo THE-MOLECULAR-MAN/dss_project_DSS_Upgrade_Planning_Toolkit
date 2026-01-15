@@ -61,10 +61,6 @@
     {
       "objectId": "potentially_problem_datasets_by_connection",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "datasets_without_quality_checks",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
