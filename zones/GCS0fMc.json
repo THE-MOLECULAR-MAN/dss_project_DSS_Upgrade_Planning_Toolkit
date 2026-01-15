@@ -17,10 +17,6 @@
     {
       "objectId": "compute_dss_users_cached2",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "user_activity_summary",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
