@@ -14,8 +14,7 @@
   "flowOptions": {
     "virtualizable": false,
     "rebuildBehavior": "NORMAL",
-    "crossProjectBuildBehavior": "DEFAULT",
-    "ignoreErrorStatusOnBuild": false
+    "crossProjectBuildBehavior": "DEFAULT"
   },
   "readWriteOptions": {
     "preserveOrder": false,
@@ -31,12 +30,21 @@
     "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1768517321370,
+    "extendedProperties": {}
+  },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1763992026815
+    "lastModifiedOn": 1763992026815,
+    "extendedProperties": {}
   },
   "tags": [
     "ai_generated_description"
@@ -44,7 +52,7 @@
   "params": {
     "customConfig": {
       "compute_disk_util": true,
-      "compute_plugin_usages": false
+      "compute_plugin_usages": true
     },
     "notReadyIfEmpty": false,
     "previewAllPartitions": false
@@ -66,7 +74,6 @@
     ],
     "userModified": true
   },
-  "typeSystemVersion": "V2",
   "dkuProperties": [],
   "metrics": {
     "probes": [
@@ -141,7 +148,7 @@
     }
   },
   "metricsChecks": {
-    "monitor": false,
+    "runOnBuild": false,
     "checks": [],
     "displayedState": {
       "checks": []
