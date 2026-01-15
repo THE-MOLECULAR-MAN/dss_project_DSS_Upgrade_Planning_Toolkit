@@ -19,10 +19,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "code_envs_to_investigate",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_plugins_live",
       "objectType": "DATASET"
     },
