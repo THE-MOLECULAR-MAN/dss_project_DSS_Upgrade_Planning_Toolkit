@@ -3,10 +3,6 @@
   "color": "#31439C",
   "items": [
     {
-      "objectId": "compute_dss_codeenvs_cached_joined",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "plugins_and_their_code_env",
       "objectType": "DATASET"
     },
@@ -68,7 +64,6 @@
     }
   ],
   "shared": [],
-  "position": {},
   "tags": [],
   "customFields": {},
   "checklists": {
