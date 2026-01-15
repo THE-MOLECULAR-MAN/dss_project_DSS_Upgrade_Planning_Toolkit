@@ -35,10 +35,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "potentially_problem_datasets",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_datasets_live",
       "objectType": "DATASET"
     },
