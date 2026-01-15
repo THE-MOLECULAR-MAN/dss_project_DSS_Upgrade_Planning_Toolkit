@@ -35,10 +35,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_problem_datasets",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "potentially_problem_datasets",
       "objectType": "DATASET"
     },
