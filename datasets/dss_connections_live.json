@@ -31,11 +31,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768517365708,
+    "lastModifiedOn": 1768517865842,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -51,7 +51,7 @@
   ],
   "params": {
     "customConfig": {
-      "test_connection": true
+      "test_connection": false
     },
     "notReadyIfEmpty": false,
     "previewAllPartitions": false
