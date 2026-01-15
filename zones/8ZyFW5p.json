@@ -63,16 +63,11 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_datasets_without_quality_checks",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "datasets_without_quality_checks",
       "objectType": "DATASET"
     }
   ],
   "shared": [],
-  "position": {},
   "tags": [],
   "customFields": {},
   "checklists": {
