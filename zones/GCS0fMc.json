@@ -23,10 +23,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "commits_by_user",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "user_activity_summary",
       "objectType": "DATASET"
     }
