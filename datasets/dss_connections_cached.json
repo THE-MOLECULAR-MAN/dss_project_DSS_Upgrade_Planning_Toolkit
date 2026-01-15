@@ -1,0 +1,172 @@
+{
+  "type": "PostgreSQL",
+  "managed": true,
+  "featureGroup": false,
+  "description": "",
+  "shortDesc": "Dataset of cached DSS connections with status and credentials.",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1768507645397,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "tim.honker"
+    },
+    "lastModifiedOn": 1763949279125,
+    "extendedProperties": {}
+  },
+  "tags": [
+    "ai_generated_description"
+  ],
+  "params": {
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "postgres_local",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_dss_connections_cached",
+    "schema": "",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true,
+    "sparkJdbcAccess": "NONE",
+    "numPartitions": -1
+  },
+  "schema": {
+    "columns": [
+      {"name":"name","type":"string","meaning":"Text"},
+      {"name":"type","type":"string","meaning":"Text"},
+      {"name":"credentialsMode","type":"string","meaning":"Text"},
+      {"name":"connection_test_status","type":"string","meaning":"Text"},
+      {"name":"connection_test_error_msg","type":"string","meaning":"Text"},
+      {"name":"usableBy","type":"string","meaning":"Text"},
+      {"name":"params.credentialsMode","type":"string","meaning":"Text"},
+      {"name":"params.authType","type":"string","meaning":"Text"},
+      {"name":"params.scopes","type":"string","meaning":"Text"},
+      {"name":"params.scope","type":"string","meaning":"Text"},
+      {"name":"params.warehouse","type":"string","meaning":"Text"},
+      {"name":"params.defaultSchema","type":"string","meaning":"Text"},
+      {"name":"params.role","type":"string","meaning":"Text"},
+      {"name":"params.db","type":"string","meaning":"Text"},
+      {"name":"creationTag.lastModifiedBy.login","type":"string","meaning":"Text"},
+      {"name":"allowWrite","type":"boolean","meaning":"Boolean"},
+      {"name":"url","type":"string","meaning":"URL"}
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

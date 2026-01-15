@@ -1,0 +1,185 @@
+{
+  "mode": "REMAP",
+  "originColumnName": "event_type",
+  "selectedColumns": [
+    "project_key",
+    "start_time",
+    "end_time",
+    "state",
+    "warnings_count",
+    "scenario_id",
+    "user"
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "spark-k8s",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "job_run",
+      "index": 0,
+      "columnsMatch": [
+        "job_project_key",
+        "time_start",
+        "time_end",
+        "state",
+        "warnings_count",
+        "scenario_id",
+        "job_def_initiator"
+      ]
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "scenario_run",
+      "index": 1,
+      "columnsMatch": [
+        "scenario_project_key",
+        "time_start",
+        "time_end",
+        "outcome",
+        "warnings_count",
+        "scenario_id",
+        "scenario_run_as_user"
+      ]
+    },
+    {
+      "preFilter": {},
+      "originLabel": "commit",
+      "index": 2,
+      "columnsMatch": [
+        "project_key",
+        "timestamp",
+        "",
+        "",
+        "",
+        "",
+        "author"
+      ]
+    },
+    {
+      "preFilter": {},
+      "originLabel": "cluster_task",
+      "index": 3,
+      "columnsMatch": [
+        "project_key",
+        "start_time",
+        "end_time",
+        "",
+        "",
+        "",
+        "user"
+      ]
+    }
+  ],
+  "copySchemaFromDatasetWithName": "cluster_tasks",
+  "postFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "$latestOperator": "\u0026\u0026",
+      "$filterOptions": "rules",
+      "conditions": [
+        {
+          "date": "1970-01-01",
+          "input": "end_time",
+          "col": "project_key",
+          "time2": "00:00",
+          "unit": "days",
+          "$showList": false,
+          "time": "00:00",
+          "date2": "2026-01-04",
+          "items": [
+            {
+              "date": "1970-01-01",
+              "unit": "days",
+              "num": 0,
+              "time": "00:00"
+            }
+          ],
+          "operator": "not empty string"
+        }
+      ]
+    },
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "project_key",
+            "type": "string"
+          },
+          {
+            "name": "start_time",
+            "type": "date"
+          },
+          {
+            "name": "end_time",
+            "type": "date"
+          },
+          {
+            "name": "state",
+            "type": "string"
+          },
+          {
+            "name": "warnings_count",
+            "type": "int"
+          },
+          {
+            "name": "scenario_id",
+            "type": "string"
+          },
+          {
+            "name": "user",
+            "type": "string"
+          },
+          {
+            "name": "event_type",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "enabled": false
+  },
+  "addOriginColumn": true
+}

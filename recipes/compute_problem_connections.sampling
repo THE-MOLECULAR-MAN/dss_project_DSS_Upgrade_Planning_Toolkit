@@ -1,0 +1,27 @@
+{
+  "uiData": {
+    "mode": "\u0026\u0026",
+    "$latestOperator": "\u0026\u0026",
+    "$filterOptions": "rules",
+    "conditions": [
+      {
+        "input": "credentialsMode",
+        "col": "type",
+        "string": "GLOBAL",
+        "$showList": false,
+        "operator": "\u003d\u003d [string]"
+      },
+      {
+        "input": "connection_test_status",
+        "col": "name",
+        "string": "FAILED",
+        "$showList": false,
+        "num": 0,
+        "operator": "contains"
+      }
+    ]
+  },
+  "$status": {},
+  "distinct": false,
+  "enabled": true
+}

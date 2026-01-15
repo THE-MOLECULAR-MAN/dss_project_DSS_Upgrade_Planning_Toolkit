@@ -1,0 +1,152 @@
+{
+  "type": "StatsDB",
+  "managed": false,
+  "featureGroup": false,
+  "description": "The \u0027scenario_runs\u0027 dataset provides comprehensive information about various scenario executions within a project context. It is designed to track and analyze the performance and outcomes of different scenarios, which are essentially predefined tasks or workflows. Each entry in the dataset represents a unique run of a scenario, identified by a combination of project key, scenario ID, and run ID. This dataset is particularly useful for project managers and developers who need to monitor the execution of automated tasks, assess their outcomes, and identify any potential issues through warning counts. The dataset includes timestamps for when each scenario run started and ended, allowing for precise tracking of execution durations. Additionally, it records the user responsible for executing the scenario, along with the method of execution, providing insights into user activity and access methods. The outcome of each run is also documented, indicating whether the scenario was successful or encountered failures. This dataset is valuable for optimizing workflows, troubleshooting execution problems, and ensuring efficient project management.",
+  "shortDesc": "Dataset of scenario runs with execution details and outcomes.",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT",
+    "ignoreErrorStatusOnBuild": false
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1763991987588
+  },
+  "tags": [
+    "ai_generated_description"
+  ],
+  "params": {
+    "view": "SCENARIO_RUNS",
+    "orderByDate": false,
+    "clusterTasks": {},
+    "commits": {},
+    "jobs": {},
+    "scenarioRuns": {},
+    "flowActions": {}
+  },
+  "schema": {
+    "columns": [
+      {"name":"scenario_project_key","type":"string","comment":"Project key for scenario, identifies project context.","meaning":"Text","isColumnEdited":true},
+      {"name":"scenario_id","type":"string","comment":"Unique identifier for each scenario, tracks specific tasks.","meaning":"Text","isColumnEdited":true},
+      {"name":"scenario_run_id","type":"string","comment":"Unique ID for each scenario run, tracks execution instance.","meaning":"Text","isColumnEdited":true},
+      {"name":"time_start","type":"string","comment":"Timestamp when scenario run started, marks execution begin.","meaning":"Text","isColumnEdited":true},
+      {"name":"time_end","type":"string","comment":"Timestamp when scenario run ended, marks execution finish.","meaning":"Text","isColumnEdited":true},
+      {"name":"outcome","type":"string","comment":"Result of scenario run, indicates success or failure.","meaning":"Text","isColumnEdited":true},
+      {"name":"warnings_count","type":"int","comment":"Number of warnings during run, indicates potential issues.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"scenario_name","type":"string","comment":"Descriptive name of scenario, provides context.","meaning":"Text","isColumnEdited":true},
+      {"name":"trigger_name","type":"string","comment":"Name of trigger initiating run, indicates start condition.","meaning":"Text","isColumnEdited":true},
+      {"name":"scenario_run_as_user","type":"string","comment":"User executing scenario, identifies responsible party.","meaning":"Text","isColumnEdited":true},
+      {"name":"run_as_user_identifier","type":"string","comment":"Identifier for user executing run, tracks user.","meaning":"Text","isColumnEdited":true},
+      {"name":"run_as_user_via","type":"string","comment":"Method or context of user execution, indicates access method.","meaning":"JSONArrayMeaning","isColumnEdited":true}
+    ],
+    "userModified": true
+  },
+  "typeSystemVersion": "V2",
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "monitor": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

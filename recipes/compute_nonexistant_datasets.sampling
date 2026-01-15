@@ -1,0 +1,17 @@
+{
+  "uiData": {
+    "mode": "\u0026\u0026",
+    "$latestOperator": "\u0026\u0026",
+    "$filterOptions": "rules",
+    "conditions": [
+      {
+        "input": "exists",
+        "$showList": false,
+        "operator": "false"
+      }
+    ]
+  },
+  "$status": {},
+  "distinct": false,
+  "enabled": true
+}

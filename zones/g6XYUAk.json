@@ -1,0 +1,77 @@
+{
+  "name": "Plugins and Code Env (very slow)",
+  "color": "#31439C",
+  "items": [
+    {
+      "objectId": "compute_dss_codeenvs_cached_joined",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "plugins_and_their_code_env",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_unused_plugins",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "unused_plugins",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_unused_code_envs",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "unused_code_envs",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "deprecated_code_envs",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_deprecated_code_envs",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_code_envs_to_investigate",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "code_envs_to_investigate",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_plugins_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_plugins_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_plugins_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_codeenvs_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_codeenvs_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_codeenvs_cached",
+      "objectType": "DATASET"
+    }
+  ],
+  "shared": [],
+  "position": {},
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

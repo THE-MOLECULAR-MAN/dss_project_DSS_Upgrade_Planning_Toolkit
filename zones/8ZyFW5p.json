@@ -1,0 +1,81 @@
+{
+  "name": "Finding datasets with problems",
+  "color": "#087ABF",
+  "items": [
+    {
+      "objectId": "compute_nonexistant_datasets",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "nonexistant_datasets",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_nonexistant_datasets_joined",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "nonexistant_datasets_joined",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_problem_connections",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "problem_connections",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_datasets_from_errored_connections",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "datasets_from_errored_connections",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_problem_datasets",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "potentially_problem_datasets",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_datasets_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_datasets_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_datasets_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_potentially_problem_datasets_by_connection",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "potentially_problem_datasets_by_connection",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_datasets_without_quality_checks",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "datasets_without_quality_checks",
+      "objectType": "DATASET"
+    }
+  ],
+  "shared": [],
+  "position": {},
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

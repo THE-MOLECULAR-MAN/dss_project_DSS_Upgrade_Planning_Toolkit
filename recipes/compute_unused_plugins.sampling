@@ -1,0 +1,28 @@
+{
+  "uiData": {
+    "mode": "\u0026\u0026",
+    "$latestOperator": "\u0026\u0026",
+    "$filterOptions": "rules",
+    "conditions": [
+      {
+        "input": "total_usages",
+        "col": "id",
+        "string": "0",
+        "$showList": false,
+        "num": 0,
+        "operator": "\u003d\u003d [string]"
+      },
+      {
+        "input": "is_built_in_plugin",
+        "col": "id",
+        "string": "False",
+        "$showList": false,
+        "num": 0,
+        "operator": "\u003d\u003d [string]"
+      }
+    ]
+  },
+  "$status": {},
+  "distinct": false,
+  "enabled": true
+}

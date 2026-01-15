@@ -1,0 +1,157 @@
+{
+  "type": "PostgreSQL",
+  "managed": true,
+  "featureGroup": false,
+  "description": "The \u0027unused_code_envs\u0027 dataset provides detailed information about code environments that are not actively used. This dataset is particularly useful for IT administrators and data scientists who need to manage and optimize resources within a development or production environment. Each entry in the dataset represents a code environment, detailing its name, the programming language it uses, and the mode of deployment. Additionally, it includes information about the owner of the environment, the version of the Python interpreter, and the set of core packages installed. The dataset also provides the file path to the environment, its size in megabytes, and the projects where it is used. This information can help identify environments that are consuming resources but are not actively contributing to any projects, allowing for better resource allocation and cost management. The dataset also includes a URL for direct access to the environment, facilitating quick management actions. Overall, this dataset is a valuable tool for maintaining efficient and organized code environments.",
+  "shortDesc": "Dataset of unused code environments with details on language, owner, and usage.",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "demo"
+    },
+    "lastModifiedOn": 1767144054320,
+    "extendedProperties": {}
+  },
+  "tags": [
+    "ai_generated_description"
+  ],
+  "params": {
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "postgres_local",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_unused_code_envs",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true,
+    "sparkJdbcAccess": "NONE",
+    "numPartitions": -1
+  },
+  "schema": {
+    "columns": [
+      {"name":"code_env_name","type":"string","comment":"Name of the code environment, identifies environment.","meaning":"Text"},
+      {"name":"code_env_lang","type":"string","comment":"Programming language used, typically Python.","meaning":"Text"},
+      {"name":"deployment_mode","type":"string","comment":"Mode of deployment, e.g., DESIGN_MANAGED.","meaning":"Text"},
+      {"name":"owner","type":"string","comment":"Owner\u0027s email or identifier, manages environment.","meaning":"Text"},
+      {"name":"python_interpreter","type":"string","comment":"Python version used, e.g., PYTHON36.","meaning":"Text"},
+      {"name":"core_packages_set","type":"string","comment":"Core packages configuration, e.g., PANDAS23.","meaning":"Text"},
+      {"name":"path","type":"string","comment":"File path to code environment, storage location.","meaning":"Text"},
+      {"name":"size_in_MB","type":"double","comment":"Size of environment in megabytes, storage size.","meaning":"DoubleMeaning"},
+      {"name":"projectKeys_where_code_env_used","type":"string","comment":"Projects using this environment, project identifiers.","meaning":"JSONArrayMeaning"},
+      {"name":"total_instances_of_code_env","type":"bigint","comment":"Number of instances of the environment, usage count.","meaning":"LongMeaning"},
+      {"name":"url","type":"string","comment":"URL to access the code environment, direct link.","meaning":"URL"}
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

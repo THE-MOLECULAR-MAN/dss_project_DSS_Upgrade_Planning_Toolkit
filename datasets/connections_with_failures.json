@@ -1,0 +1,163 @@
+{
+  "type": "PostgreSQL",
+  "managed": true,
+  "featureGroup": false,
+  "description": "The \u0027connections_with_failures\u0027 dataset provides detailed information about various connection attempts that have failed, including metadata and error messages. This dataset is particularly useful for diagnosing and troubleshooting connection issues in systems that rely on external services or APIs. Each entry in the dataset includes the name and type of the connection, the credentials mode, and the status of the connection test, which indicates whether the connection attempt was successful or failed. In cases of failure, the dataset provides a detailed error message that can help identify the cause of the issue, such as insufficient quota or incorrect credentials. Additional metadata includes information about who can use the connection, authentication parameters, and the last user to modify the connection settings. This dataset is valuable for system administrators and developers who need to ensure reliable connectivity and quickly resolve any issues that arise. By analyzing the patterns and common causes of failures, organizations can improve their connection configurations and reduce downtime.",
+  "shortDesc": "Dataset of connection failures with error messages and metadata.",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "demo"
+    },
+    "lastModifiedOn": 1767324390492,
+    "extendedProperties": {}
+  },
+  "tags": [
+    "ai_generated_description"
+  ],
+  "params": {
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "postgres_local",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_connections_with_failures",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true,
+    "sparkJdbcAccess": "NONE",
+    "numPartitions": -1
+  },
+  "schema": {
+    "columns": [
+      {"name":"name","type":"string","comment":"Connection name, identifies the connection.","meaning":"Text"},
+      {"name":"type","type":"string","comment":"Connection type, specifies the technology used.","meaning":"Text"},
+      {"name":"credentialsMode","type":"string","comment":"Mode of credentials, defines access level.","meaning":"Text"},
+      {"name":"connection_test_status","type":"string","comment":"Status of connection test, indicates success or failure.","meaning":"Text"},
+      {"name":"connection_test_error_msg","type":"string","comment":"Error message from connection test, details issues.","meaning":"Text"},
+      {"name":"usableBy","type":"string","comment":"Who can use the connection, defines access.","meaning":"Text"},
+      {"name":"params.credentialsMode","type":"string","comment":"Credentials mode in parameters, specifies access method.","meaning":"Text"},
+      {"name":"params.authType","type":"string","comment":"Authentication type in parameters, defines auth method.","meaning":"Text"},
+      {"name":"params.scopes","type":"string","comment":"Scopes in parameters, specifies access URLs.","meaning":"Text"},
+      {"name":"params.scope","type":"string","comment":"Scope in parameters, defines access level.","meaning":"Text"},
+      {"name":"params.warehouse","type":"string","comment":"Warehouse in parameters, specifies data warehouse.","meaning":"Text"},
+      {"name":"params.defaultSchema","type":"string","comment":"Default schema in parameters, defines data structure.","meaning":"Text"},
+      {"name":"params.role","type":"string","comment":"Role in parameters, specifies user role.","meaning":"Text"},
+      {"name":"params.db","type":"string","comment":"Database in parameters, specifies database name.","meaning":"Text"},
+      {"name":"creationTag.lastModifiedBy.login","type":"string","comment":"Last modified by, email of the user.","meaning":"Text"},
+      {"name":"allowWrite","type":"boolean","comment":"Permission to write, indicates if writing is allowed.","meaning":"Boolean"},
+      {"name":"url","type":"string","comment":"URL of the connection, provides access link.","meaning":"URL"}
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

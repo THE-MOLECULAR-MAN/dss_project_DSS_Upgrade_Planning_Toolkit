@@ -1,0 +1,158 @@
+{
+  "type": "PostgreSQL",
+  "managed": true,
+  "featureGroup": false,
+  "description": "The \u0027unused_plugins\u0027 dataset provides comprehensive information about plugins that are not currently in use within a system. This dataset is particularly useful for developers and project managers who need to track plugin usage, development status, and other metadata. Each entry in the dataset represents a unique plugin, identified by a unique ID and a human-readable label. The dataset includes details such as the version of the plugin, the author or contributors, and tags that categorize the plugin for easier searching and filtering. Additionally, it provides a description of the plugin\u0027s functionality and potential use cases. The dataset also indicates whether a plugin is still in development, its total usage count, and whether it is a built-in plugin. A URL is provided for each plugin, linking to a summary page for more detailed information. This dataset can be used to identify plugins that are underutilized or in development, helping to optimize resource allocation and improve project efficiency.",
+  "shortDesc": "Dataset of unused plugins with details on usage and development status.",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "demo"
+    },
+    "lastModifiedOn": 1767202187845,
+    "extendedProperties": {}
+  },
+  "tags": [
+    "ai_generated_description"
+  ],
+  "params": {
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "postgres_local",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_unused_plugins",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true,
+    "sparkJdbcAccess": "NONE",
+    "numPartitions": -1
+  },
+  "schema": {
+    "columns": [
+      {"name":"id","type":"string","comment":"Unique identifier for each plugin, key for tracking.","meaning":"Text"},
+      {"name":"label","type":"string","comment":"Human-readable name of the plugin, aids recognition.","meaning":"Text"},
+      {"name":"code_env_name","type":"string","comment":"Name of the code environment associated with the plugin.","meaning":"Text"},
+      {"name":"version","type":"string","comment":"Current version of the plugin, important for updates.","meaning":"Text"},
+      {"name":"author","type":"string","comment":"Creator or maintainer of the plugin, indicates responsibility.","meaning":"Text"},
+      {"name":"tags","type":"string","comment":"Keywords associated with the plugin, useful for categorization.","meaning":"JSONArrayMeaning"},
+      {"name":"description","type":"string","comment":"Detailed explanation of the plugin\u0027s functionality.","meaning":"FreeText"},
+      {"name":"plugin_used_in_projectkeys","type":"string","comment":"List of project keys where the plugin is used.","meaning":"JSONArrayMeaning"},
+      {"name":"isDev","type":"boolean","comment":"Indicates if the plugin is in development, boolean value.","meaning":"Boolean"},
+      {"name":"total_usages","type":"bigint","comment":"Number of times the plugin has been used, usage metric.","meaning":"LongMeaning"},
+      {"name":"is_built_in_plugin","type":"boolean","comment":"Indicates if the plugin is built-in, boolean value.","meaning":"Boolean"},
+      {"name":"url","type":"string","comment":"Web link to the plugin\u0027s summary or documentation.","meaning":"URL"}
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

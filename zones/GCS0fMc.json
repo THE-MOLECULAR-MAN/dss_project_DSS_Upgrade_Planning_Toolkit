@@ -1,0 +1,57 @@
+{
+  "name": "Analysis by User",
+  "color": "#F9BE40",
+  "items": [
+    {
+      "objectId": "dss_users_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_users_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_potentially_recoverable_licenses",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_dss_users_cached2",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "users_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recent_commits_by_user",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_recent_jobs_and_scenarios_by_user",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_users_joined",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "commits_by_user",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "jobs_by_user",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "user_activity_summary",
+      "objectType": "DATASET"
+    }
+  ],
+  "shared": [],
+  "position": {},
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

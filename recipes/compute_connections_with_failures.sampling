@@ -1,0 +1,19 @@
+{
+  "uiData": {
+    "mode": "\u0026\u0026",
+    "$latestOperator": "\u0026\u0026",
+    "$filterOptions": "rules",
+    "conditions": [
+      {
+        "input": "connection_test_status",
+        "col": "type",
+        "string": "FAILED",
+        "$showList": false,
+        "operator": "\u003d\u003d [string]"
+      }
+    ]
+  },
+  "$status": {},
+  "distinct": false,
+  "enabled": true
+}

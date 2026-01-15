@@ -1,0 +1,145 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL",
+      "list": [
+        {
+          "name": "scenario_project_key",
+          "d": true
+        },
+        {
+          "name": "scenario_id",
+          "d": true
+        },
+        {
+          "name": "scenario_run_id",
+          "d": true
+        },
+        {
+          "name": "time_start",
+          "d": true
+        },
+        {
+          "name": "time_end",
+          "d": true
+        },
+        {
+          "name": "outcome",
+          "d": true
+        },
+        {
+          "name": "warnings_count",
+          "d": true
+        },
+        {
+          "name": "scenario_name",
+          "d": true
+        },
+        {
+          "name": "trigger_name",
+          "d": true
+        },
+        {
+          "name": "scenario_run_as_user",
+          "d": true
+        },
+        {
+          "name": "run_as_user_identifier",
+          "d": true
+        },
+        {
+          "name": "run_as_user_via",
+          "d": true
+        }
+      ]
+    },
+    "columnOrder": [],
+    "columnWidthsByName": {
+      "scenario_project_key": 225,
+      "scenario_id": 246,
+      "scenario_run_id": 176,
+      "time_start": 183,
+      "time_end": 183,
+      "outcome": 100,
+      "warnings_count": 120,
+      "scenario_name": 246,
+      "trigger_name": 218,
+      "scenario_run_as_user": 165,
+      "run_as_user_identifier": 180,
+      "run_as_user_via": 190
+    },
+    "columnUseScientificNotationByName": {},
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "individualColumnsRules": [],
+      "valueColoringMode": "HASH",
+      "coloringGroups": []
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxRecordsForDisplay": -1,
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 1768503596501
+    },
+    "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [],
+  "interactiveSearch": {
+    "savedQueries": []
+  },
+  "customMeasures": [],
+  "reusableDimensions": [],
+  "hierarchies": []
+}

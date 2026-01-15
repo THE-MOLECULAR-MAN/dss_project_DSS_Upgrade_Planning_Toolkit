@@ -1,0 +1,299 @@
+{
+  "columnsSelection": {
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "login"
+      },
+      {
+        "d": true,
+        "name": "displayName"
+      },
+      {
+        "d": true,
+        "name": "userProfile"
+      },
+      {
+        "d": true,
+        "name": "groups"
+      },
+      {
+        "d": true,
+        "name": "sourceType"
+      },
+      {
+        "d": true,
+        "name": "email"
+      },
+      {
+        "d": true,
+        "name": "enabled"
+      },
+      {
+        "d": true,
+        "name": "resultingUserProfile"
+      },
+      {
+        "d": true,
+        "name": "created_timestamp"
+      },
+      {
+        "d": true,
+        "name": "last_successful_login"
+      },
+      {
+        "d": true,
+        "name": "last_session_activity"
+      },
+      {
+        "d": true,
+        "name": "days_since_last_activity_or_login"
+      },
+      {
+        "d": true,
+        "name": "url"
+      },
+      {
+        "d": true,
+        "name": "creationDate"
+      }
+    ]
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "maxRecordsForDisplay": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "maxStoredBytes": 104857600,
+      "ascending": true,
+      "timeout": -1,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "columnOrder": [],
+  "columnUseScientificNotationByName": {},
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "days_since_last_activity",
+        "excludeHolidays": false,
+        "excludeWeekends": false,
+        "calendar_id": "FR",
+        "outputUnit": "DAYS",
+        "input1": "last_session_activity",
+        "timezone_id": "use_preferred_timezone",
+        "compareTo": "NOW",
+        "reverse": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "days_since_last_login",
+        "excludeHolidays": false,
+        "excludeWeekends": false,
+        "calendar_id": "FR",
+        "outputUnit": "DAYS",
+        "input1": "last_successful_login",
+        "timezone_id": "use_preferred_timezone",
+        "compareTo": "NOW",
+        "reverse": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "min(days_since_last_login,days_since_last_activity)",
+        "column": "days_since_last_activity_or_login",
+        "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "days_since_last_login",
+          "days_since_last_activity"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "enabled"
+        ],
+        "values": [
+          "true"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN",
+        "exclude": false,
+        "processNullOrEmptyValues": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": true,
+      "type": "FilterOnNumericalRange",
+      "params": {
+        "max": 90.0,
+        "booleanMode": "AND",
+        "columns": [
+          "days_since_last_activity_or_login"
+        ],
+        "action": "REMOVE_ROW",
+        "appliesTo": "SINGLE_COLUMN",
+        "includeEmptyValues": false
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL",
+      "ascending": true
+    },
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {
+    "last_session_activity": {
+      "isColumnEdited": false,
+      "meaning": "Date"
+    },
+    "sourceType": {
+      "isColumnEdited": false,
+      "meaning": "Text"
+    },
+    "displayName": {
+      "isColumnEdited": false,
+      "meaning": "Text"
+    },
+    "groups": {
+      "isColumnEdited": false,
+      "meaning": "JSONArrayMeaning"
+    },
+    "created_timestamp": {
+      "isColumnEdited": false,
+      "meaning": "DatetimeNoTz"
+    },
+    "last_successful_login": {
+      "isColumnEdited": false,
+      "meaning": "Date"
+    },
+    "resultingUserProfile": {
+      "isColumnEdited": false,
+      "meaning": "Text"
+    },
+    "login": {
+      "isColumnEdited": false,
+      "meaning": "Text"
+    },
+    "userProfile": {
+      "isColumnEdited": false,
+      "meaning": "Text"
+    },
+    "email": {
+      "isColumnEdited": false,
+      "meaning": "Text"
+    },
+    "enabled": {
+      "isColumnEdited": false,
+      "meaning": "Boolean"
+    },
+    "url": {
+      "isColumnEdited": false,
+      "meaning": "URL"
+    }
+  },
+  "columnWidthsByName": {
+    "days_since_last_activity_or_login": 263,
+    "last_session_activity": 197,
+    "displayName": 148,
+    "groups": 300,
+    "created_timestamp": 176,
+    "last_successful_login": 197,
+    "login": 148,
+    "creationDate": 183,
+    "userProfile": 127,
+    "enabled": 100,
+    "url": 300,
+    "sourceType": 100,
+    "resultingUserProfile": 190,
+    "email": 204
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "coloringGroups": [],
+    "valueColoringMode": "HASH",
+    "individualColumnsRules": []
+  }
+}

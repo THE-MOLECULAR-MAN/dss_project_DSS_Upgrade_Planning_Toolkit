@@ -1,0 +1,150 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL",
+      "list": [
+        {
+          "name": "login",
+          "d": true
+        },
+        {
+          "name": "displayName",
+          "d": true
+        },
+        {
+          "name": "userProfile",
+          "d": true
+        },
+        {
+          "name": "groups",
+          "d": true
+        },
+        {
+          "name": "sourceType",
+          "d": true
+        },
+        {
+          "name": "email",
+          "d": true
+        },
+        {
+          "name": "enabled",
+          "d": true
+        },
+        {
+          "name": "resultingUserProfile",
+          "d": true
+        },
+        {
+          "name": "created_timestamp",
+          "d": true
+        },
+        {
+          "name": "last_successful_login",
+          "d": true
+        },
+        {
+          "name": "last_session_activity",
+          "d": true
+        },
+        {
+          "name": "url",
+          "d": true
+        },
+        {
+          "name": "creationDate",
+          "d": true
+        }
+      ]
+    },
+    "columnOrder": [],
+    "columnWidthsByName": {
+      "login": 148,
+      "sourceType": 100,
+      "displayName": 148,
+      "groups": 300,
+      "email": 204,
+      "userProfile": 204,
+      "creationDate": 197,
+      "enabled": 100,
+      "resultingUserProfile": 204,
+      "last_successful_login": 239,
+      "last_session_activity": 239,
+      "url": 300,
+      "created_timestamp": 197
+    },
+    "columnUseScientificNotationByName": {},
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "individualColumnsRules": [],
+      "valueColoringMode": "HASH",
+      "coloringGroups": []
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxRecordsForDisplay": -1,
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": true,
+      "_refreshTrigger": 1768504011133
+    },
+    "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [],
+  "interactiveSearch": {
+    "savedQueries": []
+  },
+  "customMeasures": [],
+  "reusableDimensions": [],
+  "hierarchies": []
+}

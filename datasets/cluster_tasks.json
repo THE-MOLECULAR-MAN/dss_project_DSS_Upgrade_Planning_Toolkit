@@ -1,0 +1,147 @@
+{
+  "type": "StatsDB",
+  "managed": false,
+  "featureGroup": false,
+  "description": "The \u0027cluster_tasks\u0027 dataset provides detailed information about tasks executed within a cluster environment. It includes key data points such as the type of connection used, the nature of the task, and the project it is associated with. This dataset is particularly useful for monitoring and analyzing task execution patterns, performance, and user activity within a cluster. Each entry in the dataset captures the start and end times of a task, allowing for precise calculation of task duration and efficiency. The \u0027task_data\u0027 column contains JSON objects that provide additional context about the job and activity details, which can be crucial for debugging and optimization purposes. The dataset is valuable for system administrators and data engineers who need to track and optimize task execution, manage resources, and ensure efficient operation of the cluster. By analyzing this dataset, users can identify bottlenecks, optimize task scheduling, and improve overall system performance.",
+  "shortDesc": "Dataset of cluster task executions with connection, task, and timing details.",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT",
+    "ignoreErrorStatusOnBuild": false
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1763991927030
+  },
+  "tags": [
+    "ai_generated_description"
+  ],
+  "params": {
+    "view": "CLUSTER_TASKS",
+    "orderByDate": false,
+    "clusterTasks": {},
+    "commits": {},
+    "jobs": {},
+    "scenarioRuns": {},
+    "flowActions": {}
+  },
+  "schema": {
+    "columns": [
+      {"name":"connection","type":"string","comment":"Type of connection used, e.g., database name.","meaning":"Text","isColumnEdited":true},
+      {"name":"task_type","type":"string","comment":"Type of task executed, e.g., SQL operation.","meaning":"Text","isColumnEdited":true},
+      {"name":"project_key","type":"string","comment":"Identifier for the associated project.","meaning":"Text","isColumnEdited":true},
+      {"name":"task_data","type":"string","comment":"JSON object with job and activity details.","meaning":"JSONObjectMeaning","isColumnEdited":true},
+      {"name":"user","type":"string","comment":"User who initiated the task.","meaning":"Text","isColumnEdited":true},
+      {"name":"start_time","type":"int","comment":"Timestamp when the task started.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"end_time","type":"int","comment":"Timestamp when the task ended.","meaning":"LongMeaning","isColumnEdited":true}
+    ],
+    "userModified": true
+  },
+  "typeSystemVersion": "V2",
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "monitor": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

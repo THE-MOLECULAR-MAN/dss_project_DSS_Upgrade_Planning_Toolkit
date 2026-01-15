@@ -1,0 +1,164 @@
+{
+  "type": "PostgreSQL",
+  "managed": true,
+  "featureGroup": false,
+  "description": "The \u0027jobs_and_scenarios\u0027 dataset provides a comprehensive overview of various job scenarios, capturing essential details such as project identifiers, start times, and user information. This dataset is particularly useful for analyzing job execution patterns, monitoring performance, and identifying potential issues through error and warning counts. Each entry in the dataset includes a unique project key, the start time of the task, and the duration in seconds, allowing for precise tracking of job execution. Additionally, the dataset records the age of the job in days, any errors encountered, and the number of warnings generated, which are crucial for debugging and improving job reliability. The inclusion of user information and scenario identifiers further enhances the dataset\u0027s utility by enabling user-specific analysis and scenario tracking. This dataset is ideal for IT departments, data analysts, and project managers who need to monitor and optimize job performance and troubleshoot issues effectively.",
+  "shortDesc": "Dataset of job scenarios with timestamps and user details.",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 3,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1768508826727,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "demo"
+    },
+    "lastModifiedOn": 1767584281784,
+    "extendedProperties": {}
+  },
+  "tags": [
+    "ai_generated_description"
+  ],
+  "params": {
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "postgres_local",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_recent_jobs_and_scenarios",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true,
+    "sparkJdbcAccess": "NONE",
+    "numPartitions": -1
+  },
+  "schema": {
+    "columns": [
+      {"name":"projectKey","type":"string","comment":"Identifier for the project; key for project events."},
+      {"name":"start_time","type":"date","comment":"Timestamp when the task started; event timing.","meaning":"Text"},
+      {"name":"duration_seconds","type":"bigint","meaning":"LongMeaning"},
+      {"name":"end_time","type":"date"},
+      {"name":"state","type":"string","comment":"Current state of the job execution, indicates status."},
+      {"name":"error","type":"bigint","comment":"Indicates if an error occurred; error status."},
+      {"name":"warnings_count","type":"bigint","comment":"Number of warnings generated during the job; warning tally.","meaning":"LongMeaning"},
+      {"name":"scenario_id","type":"string","comment":"Unique identifier for the scenario; scenario key.","meaning":"Text"},
+      {"name":"user","type":"string","comment":"User who initiated the task; task initiator.","meaning":"Text"},
+      {"name":"event_type","type":"string","comment":"Type of event, e.g., job run; event category."}
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

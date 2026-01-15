@@ -1,0 +1,302 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL",
+      "list": [
+        {
+          "name": "id",
+          "d": true
+        },
+        {
+          "name": "name",
+          "d": true
+        },
+        {
+          "name": "projectKey",
+          "d": true
+        },
+        {
+          "name": "type",
+          "d": true
+        },
+        {
+          "name": "shortDesc",
+          "d": true
+        },
+        {
+          "name": "description",
+          "d": true
+        },
+        {
+          "name": "exists",
+          "d": true
+        },
+        {
+          "name": "formatType",
+          "d": true
+        },
+        {
+          "name": "params.connection",
+          "d": true
+        },
+        {
+          "name": "managed",
+          "d": true
+        },
+        {
+          "name": "params.mode",
+          "d": true
+        },
+        {
+          "name": "params.table",
+          "d": true
+        },
+        {
+          "name": "params.schema",
+          "d": true
+        },
+        {
+          "name": "params.path",
+          "d": true
+        },
+        {
+          "name": "creationTag.lastModifiedBy.login",
+          "d": true
+        },
+        {
+          "name": "creationTag.lastModifiedOn",
+          "d": true
+        },
+        {
+          "name": "versionTag.lastModifiedBy.login",
+          "d": true
+        },
+        {
+          "name": "versionTag.lastModifiedOn",
+          "d": true
+        },
+        {
+          "name": "params.metastoreDatabaseName",
+          "d": true
+        },
+        {
+          "name": "params.folderSmartId",
+          "d": true
+        },
+        {
+          "name": "tags",
+          "d": true
+        },
+        {
+          "name": "featureGroup",
+          "d": true
+        },
+        {
+          "name": "num_metrics_checks",
+          "d": true
+        },
+        {
+          "name": "num_columns",
+          "d": true
+        },
+        {
+          "name": "column_names",
+          "d": true
+        },
+        {
+          "name": "url",
+          "d": true
+        },
+        {
+          "name": "data_lineage",
+          "d": true
+        },
+        {
+          "name": "num_data_quality_rules",
+          "d": true
+        }
+      ]
+    },
+    "columnOrder": [],
+    "columnWidthsByName": {
+      "projectKey": 300,
+      "id": 232,
+      "name": 232,
+      "exists": 100,
+      "type": 169,
+      "formatType": 100,
+      "params.connection": 197,
+      "managed": 100,
+      "params.mode": 100,
+      "params.table": 300,
+      "params.schema": 113,
+      "params.path": 183,
+      "creationTag.lastModifiedBy.login": 255,
+      "creationTag.lastModifiedOn": 232,
+      "versionTag.lastModifiedBy.login": 248,
+      "versionTag.lastModifiedOn": 225,
+      "shortDesc": 300,
+      "description": 300,
+      "params.metastoreDatabaseName": 225,
+      "params.folderSmartId": 165,
+      "tags": 100,
+      "featureGroup": 105,
+      "num_metrics_checks": 150,
+      "num_columns": 100,
+      "column_names": 300,
+      "dataset_url": 300,
+      "url": 300,
+      "data_lineage": 300,
+      "num_data_quality_rules": 180
+    },
+    "columnUseScientificNotationByName": {},
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "individualColumnsRules": [],
+      "valueColoringMode": "HASH",
+      "coloringGroups": []
+    },
+    "sorting": [
+      {
+        "column": "projectKey",
+        "ascending": true
+      }
+    ],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxRecordsForDisplay": -1,
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 100,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 1767323534939
+    },
+    "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [
+      {
+        "column": "num_data_quality_rules",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "num_data_quality_rules",
+          "columnType": "NUMERICAL",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {
+            "1": true
+          }
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "num_data_quality_rules",
+          "selectedValues": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "num_data_quality_rules",
+          "params": {
+            "type": "LongMeaning",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      },
+      {
+        "column": "projectKey",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "projectKey",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {
+            "DSS_Data_Plugin_Test": true
+          }
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "projectKey",
+          "selectedValues": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "projectKey",
+          "params": {
+            "type": "Text",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      }
+    ],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [],
+  "interactiveSearch": {
+    "savedQueries": []
+  },
+  "customMeasures": [],
+  "reusableDimensions": [],
+  "hierarchies": []
+}

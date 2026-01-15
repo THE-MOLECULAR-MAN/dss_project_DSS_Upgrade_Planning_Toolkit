@@ -1,0 +1,28 @@
+{
+  "name": "Misc Issues",
+  "color": "#D03713",
+  "items": [
+    {
+      "objectId": "compute_connections_with_failures",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "connections_with_failures",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recipes_with_no_output",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "recipes_missing_either_input_or_output",
+      "objectType": "DATASET"
+    }
+  ],
+  "shared": [],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

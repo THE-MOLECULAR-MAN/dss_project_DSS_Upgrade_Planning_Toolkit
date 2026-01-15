@@ -1,0 +1,159 @@
+{
+  "mode": "UNION",
+  "originColumnName": "reason_to_investigate",
+  "selectedColumns": [
+    "code_env_name",
+    "code_env_lang",
+    "deployment_mode",
+    "owner",
+    "python_interpreter",
+    "core_packages_set",
+    "path",
+    "size_in_MB",
+    "projectKeys_where_code_env_used",
+    "total_instances_of_code_env",
+    "url"
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "spark-k8s",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "potentially unused",
+      "index": 0
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "old Python version no longer supported in DSS",
+      "index": 1
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "code_env_name",
+            "comment": "Name of the code environment, identifies environment.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "code_env_lang",
+            "comment": "Programming language used in the environment, e.g., Python, R.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "deployment_mode",
+            "comment": "Mode of deployment, e.g., DESIGN_MANAGED, DSS_INTERNAL.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "owner",
+            "comment": "Email of the environment owner, identifies responsible person.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "python_interpreter",
+            "comment": "Version of Python interpreter used, e.g., PYTHON36.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "core_packages_set",
+            "comment": "Set of core packages, e.g., PANDAS10, AUTO.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "path",
+            "comment": "File path to the code environment, storage location.",
+            "type": "string"
+          },
+          {
+            "meaning": "DoubleMeaning",
+            "name": "size_in_MB",
+            "type": "double"
+          },
+          {
+            "meaning": "JSONArrayMeaning",
+            "name": "projectKeys_where_code_env_used",
+            "type": "string"
+          },
+          {
+            "meaning": "LongMeaning",
+            "name": "total_instances_of_code_env",
+            "type": "bigint"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "URL",
+            "name": "url",
+            "comment": "URL to access the code environment, direct link.",
+            "type": "string"
+          },
+          {
+            "name": "reason_to_investigate",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "enabled": false
+  },
+  "addOriginColumn": true
+}

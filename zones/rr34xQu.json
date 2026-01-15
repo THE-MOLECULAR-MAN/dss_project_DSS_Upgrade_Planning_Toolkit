@@ -1,0 +1,86 @@
+{
+  "name": "Misc datasets",
+  "color": "#8C2DA7",
+  "items": [
+    {
+      "objectId": "dss_apps_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_apps_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_apps_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_clusters_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_clusters_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_clusters_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_projects_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_projects_cached_psql",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_projects_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_webapps_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_webapps_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_webapps_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_recipes_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_recipes_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_recipes_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_connections_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_connections_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_connections_live",
+      "objectType": "DATASET"
+    }
+  ],
+  "shared": [],
+  "position": {},
+  "description": "This data processing flow is designed to manage and update various live datasets related to a Dataiku DSS platform. The flow involves synchronizing live data from multiple sources, ensuring that the most current information is available for analysis and decision-making. The input datasets include information about connections, meanings, applications, clusters, users, plugins, agents, web applications, code environments, datasets, agent tools, projects, and recipes. Each of these datasets contains specific details relevant to their respective categories, such as identifiers, types, descriptions, and metadata.\n\nThe processing steps involve synchronizing each of these live datasets to ensure they are up-to-date. This synchronization process likely involves refreshing the data to reflect the latest changes and updates from the live environment.\n\nThe output of this flow is a series of cached datasets, which serve as a snapshot of the live data at a particular point in time. These cached datasets include:\n\n1. **dss_codeenvs_cached**: Contains details about code environments, including language, owner, and access paths.\n2. **dss_plugins_cached**: Provides information on plugins, including ID, version, and author.\n3. **dss_meanings_cached**: Categorizes and detects data patterns and values.\n4. **dss_users_cached**: Offers user data with login, profile, and activity details.\n5. **dss_agents_cached**: Details about agents, including name, type, and version.\n6. **dss_connections_cached**: Information on DSS connections, including type, credentials, and access.\n7. **dss_webapps_cached**: Metadata and status of web applications.\n8. **dss_agenttools_cached**: Metadata and configuration details of agent tools.\n9. **dss_recipes_cached**: Metadata and project links for recipes.\n10. **dss_projects_cached**: Metadata and descriptions of DSS projects.\n11. **dss_datasets_cached**: Management and access details for datasets in projects.\n12. **dss_apps_cached**: Metadata and visibility details of applications.\n13. **dss_clusters_cached**: Identifiers, types, and usage metrics of clusters.\n\nOverall, this flow ensures that the cached datasets are reflective of the current state of the live environment, providing a reliable basis for further analysis, reporting, and decision-making within the Dataiku DSS platform.",
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

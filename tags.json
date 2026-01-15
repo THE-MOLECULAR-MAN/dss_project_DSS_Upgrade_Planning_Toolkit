@@ -1,0 +1,24 @@
+{
+  "tags": {
+    "duplicated": {
+      "color": "#3A85AD"
+    },
+    "do_not_auto_disable_scenario": {},
+    "Upgrades": {},
+    "owner:Tim Honker": {
+      "color": "#1ac2ab"
+    },
+    "auto_disabled": {},
+    "imported": {
+      "color": "#263238"
+    },
+    "Maintenance": {
+      "color": "#de1ea5"
+    },
+    "ai_generated_description": {},
+    "Admin": {},
+    "internals": {
+      "color": "#00a55a"
+    }
+  }
+}
