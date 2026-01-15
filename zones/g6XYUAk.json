@@ -3,10 +3,6 @@
   "color": "#31439C",
   "items": [
     {
-      "objectId": "plugins_and_their_code_env",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "unused_plugins",
       "objectType": "DATASET"
     },
