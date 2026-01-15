@@ -1,20 +1,7 @@
 {
   "name": "Analysis by User",
   "color": "#F9BE40",
-  "items": [
-    {
-      "objectId": "dss_users_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_users_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_users_cached2",
-      "objectType": "RECIPE"
-    }
-  ],
+  "items": [],
   "shared": [],
   "tags": [],
   "customFields": {},
