@@ -1,5 +1,5 @@
 {
-  "name": "DSS Internals Logs - can be slow depending on log size",
+  "name": "Job and Scenario usage",
   "color": "#C54F00",
   "items": [
     {
@@ -68,7 +68,6 @@
     }
   ],
   "shared": [],
-  "position": {},
   "description": "This data processing flow is designed to transform and prepare various datasets related to scenario runs, cluster tasks, job executions, and software project commits. The flow takes four input datasets: `scenario_runs`, `cluster_tasks`, `jobs`, and `commits`, each containing detailed information about different aspects of project execution and development.\n\nThe primary goal of the flow is to convert raw data into a more usable format by parsing timestamps and caching the data for efficient access. For instance, timestamps in the `cluster_tasks` and `commits` datasets, originally in UNIX format, are converted into a more readable date format. This transformation facilitates easier analysis and reporting.\n\nThe output datasets are:\n\n1. **Scenario Runs Cached**: This dataset provides a structured view of scenario executions, including identifiers, start and end times, outcomes, and user information. It helps in tracking the performance and results of different scenarios within projects.\n\n2. **Commits Cached**: This dataset offers insights into software project commits, detailing the author, timestamp, and changes made (such as files and lines added or removed). It is useful for understanding the development history and contributions to a project.\n\n3. **Jobs Cached**: This dataset captures job execution details, including project identifiers, job states, and timestamps. It is essential for monitoring job performance and stability within the project lifecycle.\n\n4. **Cluster Tasks Cached**: This dataset contains metadata and timing information about tasks executed on clusters, such as database operations. It aids in analyzing task execution patterns and resource usage.\n\nOverall, the flow enhances data accessibility and readability, enabling better analysis and decision-making based on scenario runs, job executions, task performance, and software development activities.",
   "tags": [],
   "customFields": {},
