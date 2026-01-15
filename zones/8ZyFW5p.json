@@ -45,10 +45,6 @@
     {
       "objectId": "dss_datasets_cached",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "potentially_problem_datasets_by_connection",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
