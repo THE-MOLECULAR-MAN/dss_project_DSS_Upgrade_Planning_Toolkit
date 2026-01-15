@@ -19,10 +19,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "compute_recent_jobs_and_scenarios_by_user",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "user_activity_summary",
       "objectType": "DATASET"
     }
