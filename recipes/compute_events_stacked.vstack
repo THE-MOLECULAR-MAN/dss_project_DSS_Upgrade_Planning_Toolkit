@@ -84,22 +84,8 @@
     },
     {
       "preFilter": {},
-      "originLabel": "commit",
-      "index": 2,
-      "columnsMatch": [
-        "project_key",
-        "timestamp",
-        "",
-        "",
-        "",
-        "",
-        "author"
-      ]
-    },
-    {
-      "preFilter": {},
       "originLabel": "cluster_task",
-      "index": 3,
+      "index": 2,
       "columnsMatch": [
         "project_key",
         "start_time",

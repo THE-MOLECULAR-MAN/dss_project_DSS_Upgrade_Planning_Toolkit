@@ -1,12 +1,12 @@
 {
   "type": "vstack",
   "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
   "customMeta": {
     "kv": {}
   },
   "redispatchPartitioning": false,
   "maxRunningActivities": 0,
-  "hashPropagationBehavior": "INHERIT",
   "variables": {},
   "dkuProperties": [],
   "inputs": {
@@ -18,10 +18,6 @@
         },
         {
           "ref": "scenario_runs",
-          "deps": []
-        },
-        {
-          "ref": "commits_cached",
           "deps": []
         },
         {
@@ -42,12 +38,21 @@
     }
   },
   "labels": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1768517491223,
+    "extendedProperties": {}
+  },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "demo"
     },
-    "lastModifiedOn": 1767565654095
+    "lastModifiedOn": 1767565654095,
+    "extendedProperties": {}
   },
   "tags": [],
   "customFields": {},
