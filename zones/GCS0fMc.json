@@ -31,10 +31,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "jobs_by_user",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "user_activity_summary",
       "objectType": "DATASET"
     }
