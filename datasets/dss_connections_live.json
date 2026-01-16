@@ -31,11 +31,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768517999887,
+    "lastModifiedOn": 1768528885653,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -61,8 +61,6 @@
       {"name":"name","type":"string","meaning":"Text"},
       {"name":"type","type":"string","meaning":"Text"},
       {"name":"credentialsMode","type":"string","meaning":"Text"},
-      {"name":"connection_test_status","type":"string","meaning":"Text"},
-      {"name":"connection_test_error_msg","type":"string","meaning":"Text"},
       {"name":"usableBy","type":"string","meaning":"Text"},
       {"name":"params.credentialsMode","type":"string","meaning":"Text"},
       {"name":"params.authType","type":"string","meaning":"Text"},
