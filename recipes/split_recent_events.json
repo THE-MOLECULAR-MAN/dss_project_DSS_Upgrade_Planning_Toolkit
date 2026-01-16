@@ -29,17 +29,21 @@
         {
           "ref": "cluster_tasks_prepared",
           "appendMode": false
+        },
+        {
+          "ref": "jobs_prepared",
+          "appendMode": false
         }
       ]
     }
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768530883365,
+    "lastModifiedOn": 1768530922808,
     "extendedProperties": {}
   },
   "creationTag": {
