@@ -13,11 +13,18 @@
             "table": 0
           },
           "dateDiffUnit": "SECOND",
+          "windowFrom": 0,
           "column2": {
             "name": "project_key",
             "table": 1
           },
-          "type": "EQ"
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
         }
       ]
     },
@@ -58,7 +65,11 @@
       "table2": 3,
       "table1": 0,
       "conditionsMode": "AND",
-      "rightLimit": {},
+      "rightLimit": {
+        "maxMatches": 1,
+        "strict": false,
+        "enabled": false
+      },
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
       "on": [
@@ -87,121 +98,99 @@
   "selectedColumns": [
     {
       "name": "projectKey",
-      "type": "string",
       "table": 0
     },
     {
       "name": "name",
       "alias": "project_name",
-      "type": "string",
       "table": 0
     },
     {
       "name": "shortDesc",
-      "type": "string",
       "table": 0
     },
     {
       "name": "description",
-      "type": "string",
       "table": 0
     },
     {
       "name": "ownerLogin",
       "alias": "project_owner",
-      "type": "string",
       "table": 0
     },
     {
       "name": "projectStatus",
-      "type": "string",
       "table": 0
     },
     {
       "name": "tags",
-      "type": "string",
       "table": 0
     },
     {
       "name": "last_modified_timestamp",
-      "type": "string",
       "table": 0
     },
     {
       "name": "tutorialProject",
-      "type": "boolean",
       "table": 0
     },
     {
       "name": "url",
       "alias": "project_url",
-      "type": "string",
       "table": 0
     },
     {
       "name": "num_unique_contributors",
-      "type": "bigint",
       "table": 1
     },
     {
       "name": "latest_change",
-      "type": "date",
       "table": 1
     },
     {
       "name": "num_of_changes",
-      "type": "bigint",
       "table": 1
     },
     {
       "name": "start_time_max",
       "alias": "most_recent_runtime",
-      "type": "date",
       "table": 2
     },
     {
       "name": "error_avg",
       "alias": "avg_num_errors",
-      "type": "double",
       "table": 2
     },
     {
       "name": "error_sum",
       "alias": "total_errors",
-      "type": "bigint",
       "table": 2
     },
     {
       "name": "warnings_count_avg",
       "alias": "avg_warnings",
-      "type": "double",
       "table": 2
     },
     {
       "name": "warnings_count_sum",
       "alias": "total_warnings",
-      "type": "bigint",
       "table": 2
     },
     {
       "name": "count",
       "alias": "num_jobs_and_scenarios",
-      "type": "bigint",
       "table": 2
     },
     {
       "name": "cluster_task_earliest",
-      "type": "date",
       "table": 3
     },
     {
       "name": "cluster_task_latest",
-      "type": "date",
       "table": 3
     },
     {
       "name": "num_cluster_tasks",
-      "type": "bigint",
       "table": 3
     }
   ],
@@ -269,116 +258,14 @@
     },
     {
       "outputColumnsSelectionMode": "MANUAL",
-      "preFilter": {},
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
       "index": 3
     }
   ],
   "postFilter": {
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "meaning": "Text",
-            "name": "projectKey",
-            "type": "string"
-          },
-          {
-            "meaning": "Text",
-            "name": "project_name",
-            "type": "string"
-          },
-          {
-            "meaning": "FreeText",
-            "name": "shortDesc",
-            "type": "string"
-          },
-          {
-            "meaning": "FreeText",
-            "name": "description",
-            "type": "string"
-          },
-          {
-            "meaning": "Text",
-            "name": "project_owner",
-            "type": "string"
-          },
-          {
-            "meaning": "Text",
-            "name": "projectStatus",
-            "type": "string"
-          },
-          {
-            "meaning": "JSONArrayMeaning",
-            "name": "tags",
-            "type": "string"
-          },
-          {
-            "meaning": "Text",
-            "name": "last_modified_timestamp",
-            "type": "string"
-          },
-          {
-            "meaning": "Boolean",
-            "name": "tutorialProject",
-            "type": "boolean"
-          },
-          {
-            "meaning": "URL",
-            "name": "project_url",
-            "type": "string"
-          },
-          {
-            "name": "num_unique_contributors",
-            "type": "bigint"
-          },
-          {
-            "name": "latest_change",
-            "type": "date"
-          },
-          {
-            "name": "num_of_changes",
-            "type": "bigint"
-          },
-          {
-            "name": "most_recent_runtime",
-            "type": "date"
-          },
-          {
-            "name": "avg_num_errors",
-            "type": "double"
-          },
-          {
-            "name": "total_errors",
-            "type": "bigint"
-          },
-          {
-            "name": "avg_warnings",
-            "type": "double"
-          },
-          {
-            "name": "total_warnings",
-            "type": "bigint"
-          },
-          {
-            "name": "num_jobs_and_scenarios",
-            "type": "bigint"
-          },
-          {
-            "name": "cluster_task_earliest",
-            "type": "date"
-          },
-          {
-            "name": "cluster_task_latest",
-            "type": "date"
-          },
-          {
-            "name": "num_cluster_tasks",
-            "type": "bigint"
-          }
-        ],
-        "userModified": false
-      }
-    },
     "distinct": false,
     "enabled": false
   },

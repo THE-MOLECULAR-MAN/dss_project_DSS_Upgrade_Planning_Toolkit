@@ -17,7 +17,7 @@
           "deps": []
         },
         {
-          "ref": "jobs_and_scenarios_by_project_key",
+          "ref": "scenarios_by_project_key",
           "deps": []
         },
         {
@@ -43,11 +43,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768529497288,
+    "lastModifiedOn": 1768530891407,
     "extendedProperties": {}
   },
   "creationTag": {
