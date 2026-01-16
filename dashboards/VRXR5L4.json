@@ -34,64 +34,6 @@
       "title": "Deprecated Python versions used in code env",
       "showTitle": true,
       "backgroundColor": "#FFFFFF"
-    },
-    {
-      "id": "fgOX3f0",
-      "grid": {
-        "tiles": [
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 0,
-              "left": 0,
-              "width": 32,
-              "height": 8
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "viewKind": "EXPLORE",
-              "showName": true,
-              "showDescription": true,
-              "showCustomFields": true,
-              "showStorageType": false,
-              "showMeaning": false,
-              "showProgressBar": false
-            },
-            "autoLoad": true,
-            "insightId": "t8klhOh",
-            "insightType": "dataset_table",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          },
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 8,
-              "left": 0,
-              "width": 32,
-              "height": 10
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "viewKind": "EXPLORE",
-              "showName": true,
-              "showDescription": true,
-              "showCustomFields": true,
-              "showStorageType": false,
-              "showMeaning": false,
-              "showProgressBar": false
-            },
-            "autoLoad": true,
-            "insightId": "Z2VP3v4",
-            "insightType": "dataset_table",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          }
-        ]
-      },
-      "title": "Connections \u0026 Datasets",
-      "showTitle": false,
-      "backgroundColor": "#FFFFFF"
     }
   ],
   "owner": "demo",
@@ -99,11 +41,11 @@
   "name": "Problems",
   "showGrid": false,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768573791218,
+    "lastModifiedOn": 1768573832307,
     "extendedProperties": {}
   },
   "creationTag": {
