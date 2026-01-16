@@ -55,6 +55,7 @@
     },
     {
       "name": "label",
+      "alias": "Plugin_Name",
       "type": "string",
       "table": 1
     },
@@ -153,7 +154,7 @@
           },
           {
             "meaning": "Text",
-            "name": "label",
+            "name": "Plugin_Name",
             "type": "string"
           },
           {
