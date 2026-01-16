@@ -253,7 +253,7 @@
     },
     "dkuProperties": []
   },
-  "name": "DSS v12.3.2 Admin and Upgrade planning",
+  "name": "DSS v12 Upgrade Planning Toolkit",
   "imgPattern": 1,
   "metrics": {
     "probes": [],
@@ -311,11 +311,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 26,
+    "versionNumber": 27,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768577310431,
+    "lastModifiedOn": 1768581910356,
     "extendedProperties": {}
   },
   "creationTag": {
