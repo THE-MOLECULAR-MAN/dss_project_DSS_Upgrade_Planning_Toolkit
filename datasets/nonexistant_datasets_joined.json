@@ -30,6 +30,14 @@
     "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1768530066111,
+    "extendedProperties": {}
+  },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
@@ -63,7 +71,6 @@
       {"name":"projectKey","type":"string","comment":"Project identifier, links datasets to specific projects.","meaning":"Text"},
       {"name":"exists","type":"boolean","comment":"Indicates if the dataset currently exists, boolean value.","meaning":"Boolean"},
       {"name":"dataset_url","type":"string","comment":"URL for accessing the dataset, used for exploration and analysis.","meaning":"URL"},
-      {"name":"num_data_quality_rules","type":"int","meaning":"LongMeaning"},
       {"name":"project_owner","type":"string","comment":"Email or login of the project owner, indicating responsibility.","meaning":"Text"}
     ],
     "userModified": true
