@@ -235,7 +235,7 @@
       "index": 2
     },
     {
-      "outputColumnsSelectionMode": "MANUAL",
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
       "preFilter": {
         "distinct": false,
         "enabled": false
@@ -320,6 +320,47 @@
           },
           {
             "name": "num_of_changes",
+            "type": "bigint"
+          },
+          {
+            "name": "scenarios_projectKey",
+            "comment": "Identifier for the project; key for project events.",
+            "type": "string"
+          },
+          {
+            "name": "scenarios_earliest_start_time",
+            "type": "date"
+          },
+          {
+            "name": "scenarios_most_recent_start_time",
+            "type": "date"
+          },
+          {
+            "name": "scenarios_total_duration_seconds",
+            "type": "bigint"
+          },
+          {
+            "name": "scenarios_avg_num_of_errors",
+            "type": "double"
+          },
+          {
+            "name": "scenarios_total_num_errors",
+            "type": "bigint"
+          },
+          {
+            "name": "scenarios_avg_num_of_warnings",
+            "type": "double"
+          },
+          {
+            "name": "scenarios_total_num_of_warnings",
+            "type": "bigint"
+          },
+          {
+            "name": "scenarios_unique_users",
+            "type": "bigint"
+          },
+          {
+            "name": "scenarios_total_num",
             "type": "bigint"
           },
           {
