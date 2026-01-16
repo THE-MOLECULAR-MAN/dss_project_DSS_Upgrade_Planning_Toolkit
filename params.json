@@ -31,7 +31,7 @@
       },
       {
         "objectRef": {
-          "objectId": "jobs_and_scenarios",
+          "objectId": "scenarios",
           "objectType": "DATASET"
         },
         "modes": [
@@ -293,11 +293,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768530161691,
+    "lastModifiedOn": 1768530883360,
     "extendedProperties": {}
   },
   "creationTag": {

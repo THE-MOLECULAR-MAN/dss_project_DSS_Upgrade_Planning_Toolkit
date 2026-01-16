@@ -1,7 +1,7 @@
 {
   "type": "chart",
   "params": {
-    "datasetSmartName": "jobs_and_scenarios",
+    "datasetSmartName": "scenarios",
     "engineType": "LINO",
     "refreshableSelection": {
       "selection": {
@@ -501,11 +501,11 @@
   "name": "Analysis of scenarios on jobs_and_scenarios",
   "dashboardCreationId": "725LHH4",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768509366545,
+    "lastModifiedOn": 1768530883357,
     "extendedProperties": {}
   },
   "creationTag": {

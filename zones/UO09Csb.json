@@ -43,11 +43,11 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "jobs_and_scenarios",
+      "objectId": "combined_events_prepared",
       "objectType": "DATASET"
     },
     {
-      "objectId": "combined_events_prepared",
+      "objectId": "scenarios",
       "objectType": "DATASET"
     }
   ],

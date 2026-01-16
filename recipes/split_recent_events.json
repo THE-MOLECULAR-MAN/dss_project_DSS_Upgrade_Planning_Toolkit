@@ -23,7 +23,7 @@
     "main": {
       "items": [
         {
-          "ref": "jobs_and_scenarios",
+          "ref": "scenarios",
           "appendMode": false
         },
         {
@@ -35,11 +35,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768530637799,
+    "lastModifiedOn": 1768530883365,
     "extendedProperties": {}
   },
   "creationTag": {
