@@ -3,33 +3,7 @@
     {
       "id": "jbCBByz",
       "grid": {
-        "tiles": [
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 7,
-              "left": 0,
-              "width": 8,
-              "height": 3
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "showXAxis": true,
-              "showYAxis": true,
-              "showLegend": true,
-              "inheritLegendPlacement": true,
-              "legendPlacement": "SIDEBAR",
-              "showTooltips": true,
-              "autoPlayAnimation": true
-            },
-            "autoLoad": true,
-            "borderColor": "",
-            "insightId": "idFEEnK",
-            "insightType": "chart",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          }
-        ]
+        "tiles": []
       },
       "title": "Jobs \u0026 Scenarios",
       "showTitle": false,
@@ -109,11 +83,11 @@
   "name": "Overview",
   "showGrid": false,
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768573954883,
+    "lastModifiedOn": 1768573978219,
     "extendedProperties": {}
   },
   "creationTag": {
