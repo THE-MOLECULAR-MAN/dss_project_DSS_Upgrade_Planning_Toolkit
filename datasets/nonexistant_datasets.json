@@ -31,11 +31,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768507982371,
+    "lastModifiedOn": 1768530065656,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -92,9 +92,7 @@
       {"name":"num_metrics_checks","type":"int","meaning":"LongMeaning"},
       {"name":"num_columns","type":"int","meaning":"LongMeaning"},
       {"name":"column_names","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"url","type":"string","meaning":"URL"},
-      {"name":"data_lineage","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"num_data_quality_rules","type":"int","meaning":"LongMeaning"}
+      {"name":"url","type":"string","meaning":"URL"}
     ],
     "userModified": true
   },
