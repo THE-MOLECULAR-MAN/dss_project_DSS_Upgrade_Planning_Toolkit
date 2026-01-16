@@ -98,69 +98,85 @@
   "selectedColumns": [
     {
       "name": "projectKey",
+      "type": "string",
       "table": 0
     },
     {
       "name": "name",
       "alias": "project_name",
+      "type": "string",
       "table": 0
     },
     {
       "name": "shortDesc",
+      "type": "string",
       "table": 0
     },
     {
       "name": "description",
+      "type": "string",
       "table": 0
     },
     {
       "name": "ownerLogin",
       "alias": "project_owner",
+      "type": "string",
       "table": 0
     },
     {
       "name": "projectStatus",
+      "type": "string",
       "table": 0
     },
     {
       "name": "tags",
+      "type": "string",
       "table": 0
     },
     {
       "name": "last_modified_timestamp",
+      "type": "string",
       "table": 0
     },
     {
       "name": "tutorialProject",
+      "type": "boolean",
       "table": 0
     },
     {
       "name": "url",
       "alias": "project_url",
+      "type": "string",
       "table": 0
     },
     {
       "name": "num_unique_contributors",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "latest_change",
+      "type": "date",
       "table": 1
     },
     {
       "name": "num_of_changes",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "cluster_task_earliest",
+      "type": "date",
       "table": 3
     },
     {
       "name": "cluster_task_latest",
+      "type": "date",
       "table": 3
     },
     {
       "name": "num_cluster_tasks",
+      "type": "bigint",
       "table": 3
     }
   ],
@@ -224,6 +240,7 @@
         "distinct": false,
         "enabled": false
       },
+      "prefix": "scenarios",
       "name": "import2.scenarios_by_project_key",
       "alias": "scenarios_by_project_key",
       "index": 1
@@ -240,6 +257,87 @@
     }
   ],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "meaning": "Text",
+            "name": "projectKey",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "project_name",
+            "type": "string"
+          },
+          {
+            "meaning": "FreeText",
+            "name": "shortDesc",
+            "type": "string"
+          },
+          {
+            "meaning": "FreeText",
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "project_owner",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "projectStatus",
+            "type": "string"
+          },
+          {
+            "meaning": "JSONArrayMeaning",
+            "name": "tags",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "last_modified_timestamp",
+            "type": "string"
+          },
+          {
+            "meaning": "Boolean",
+            "name": "tutorialProject",
+            "type": "boolean"
+          },
+          {
+            "meaning": "URL",
+            "name": "project_url",
+            "type": "string"
+          },
+          {
+            "name": "num_unique_contributors",
+            "type": "bigint"
+          },
+          {
+            "name": "latest_change",
+            "type": "date"
+          },
+          {
+            "name": "num_of_changes",
+            "type": "bigint"
+          },
+          {
+            "name": "cluster_task_earliest",
+            "type": "date"
+          },
+          {
+            "name": "cluster_task_latest",
+            "type": "date"
+          },
+          {
+            "name": "num_cluster_tasks",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
