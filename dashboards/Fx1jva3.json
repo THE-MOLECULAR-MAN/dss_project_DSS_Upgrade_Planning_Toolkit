@@ -31,6 +31,7 @@
           }
         ]
       },
+      "title": "Summary of all projects",
       "showTitle": false
     },
     {
@@ -66,6 +67,13 @@
       },
       "title": "Scenarios",
       "showTitle": false
+    },
+    {
+      "id": "oaAfvJR",
+      "grid": {
+        "tiles": []
+      },
+      "showTitle": false
     }
   ],
   "owner": "admin",
@@ -73,11 +81,11 @@
   "name": "Administrator\u0027s dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768573619664,
+    "lastModifiedOn": 1768573636197,
     "extendedProperties": {}
   },
   "creationTag": {
