@@ -1,12 +1,12 @@
 {
   "type": "grouping",
   "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
   "customMeta": {
     "kv": {}
   },
   "redispatchPartitioning": false,
   "maxRunningActivities": 0,
-  "hashPropagationBehavior": "INHERIT",
   "variables": {},
   "dkuProperties": [],
   "inputs": {
@@ -30,12 +30,21 @@
     }
   },
   "labels": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1768530736463,
+    "extendedProperties": {}
+  },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "demo"
     },
-    "lastModifiedOn": 1767584475433
+    "lastModifiedOn": 1767584475433,
+    "extendedProperties": {}
   },
   "tags": [],
   "customFields": {},
