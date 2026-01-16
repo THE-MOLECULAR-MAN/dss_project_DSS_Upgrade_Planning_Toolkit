@@ -42,8 +42,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 0,
+              "left": 0,
               "width": 6,
               "height": 3
             },
@@ -75,11 +75,11 @@
   "name": "Some issues that need to be addressed for upgrades",
   "showGrid": false,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768577097116,
+    "lastModifiedOn": 1768577097310,
     "extendedProperties": {}
   },
   "creationTag": {
