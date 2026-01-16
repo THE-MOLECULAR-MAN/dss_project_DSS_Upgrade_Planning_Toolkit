@@ -3,20 +3,30 @@
     "duplicated": {
       "color": "#3A85AD"
     },
-    "do_not_auto_disable_scenario": {},
-    "Upgrades": {},
+    "do_not_auto_disable_scenario": {
+      "color": "#0f6d82"
+    },
+    "Upgrades": {
+      "color": "#94be8e"
+    },
     "owner:Tim Honker": {
       "color": "#1ac2ab"
     },
-    "auto_disabled": {},
+    "auto_disabled": {
+      "color": "#1ac2ab"
+    },
     "imported": {
       "color": "#263238"
     },
     "Maintenance": {
       "color": "#de1ea5"
     },
-    "ai_generated_description": {},
-    "Admin": {},
+    "ai_generated_description": {
+      "color": "#77bec2"
+    },
+    "Admin": {
+      "color": "#de1ea5"
+    },
     "internals": {
       "color": "#00a55a"
     }
