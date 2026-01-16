@@ -30,6 +30,14 @@
     "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1768529558951,
+    "extendedProperties": {}
+  },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
@@ -62,8 +70,6 @@
       {"name":"name","type":"string","comment":"Connection name, identifies the connection.","meaning":"Text"},
       {"name":"type","type":"string","comment":"Connection type, specifies the technology used.","meaning":"Text"},
       {"name":"credentialsMode","type":"string","comment":"Mode of credentials, defines access level.","meaning":"Text"},
-      {"name":"connection_test_status","type":"string","comment":"Status of connection test, indicates success or failure.","meaning":"Text"},
-      {"name":"connection_test_error_msg","type":"string","comment":"Error message from connection test, details issues.","meaning":"Text"},
       {"name":"usableBy","type":"string","comment":"Who can use the connection, defines access.","meaning":"Text"},
       {"name":"params.credentialsMode","type":"string","comment":"Credentials mode in parameters, specifies access method.","meaning":"Text"},
       {"name":"params.authType","type":"string","comment":"Authentication type in parameters, defines auth method.","meaning":"Text"},
