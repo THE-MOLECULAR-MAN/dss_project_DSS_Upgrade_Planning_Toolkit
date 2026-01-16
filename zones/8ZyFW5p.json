@@ -19,10 +19,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_datasets_from_errored_connections",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "dss_datasets_live",
       "objectType": "DATASET"
     },
