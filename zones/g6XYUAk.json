@@ -61,6 +61,10 @@
     {
       "objectId": "dss_recipes_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "live_plugin_usages",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
