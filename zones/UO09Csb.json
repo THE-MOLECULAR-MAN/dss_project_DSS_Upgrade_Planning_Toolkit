@@ -43,10 +43,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "commits_prepared",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "jobs_and_scenarios",
       "objectType": "DATASET"
     },
