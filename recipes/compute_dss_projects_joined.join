@@ -152,36 +152,6 @@
       "table": 1
     },
     {
-      "name": "start_time_max",
-      "alias": "most_recent_runtime",
-      "table": 2
-    },
-    {
-      "name": "error_avg",
-      "alias": "avg_num_errors",
-      "table": 2
-    },
-    {
-      "name": "error_sum",
-      "alias": "total_errors",
-      "table": 2
-    },
-    {
-      "name": "warnings_count_avg",
-      "alias": "avg_warnings",
-      "table": 2
-    },
-    {
-      "name": "warnings_count_sum",
-      "alias": "total_warnings",
-      "table": 2
-    },
-    {
-      "name": "count",
-      "alias": "num_jobs_and_scenarios",
-      "table": 2
-    },
-    {
       "name": "cluster_task_earliest",
       "table": 3
     },
@@ -237,13 +207,15 @@
         "enabled": false
       },
       "originLabel": "dss_projects_cached",
-      "name": "DSS_v12_Admin_and_Migration_Planning.dss_projects_cached",
+      "name": "import2.dss_projects_cached",
       "alias": "dss_projects_cached",
       "index": 0,
       "computedColumns": []
     },
     {
       "outputColumnsSelectionMode": "MANUAL",
+      "name": "import2.commits_by_project_key",
+      "alias": "commits_by_project_key",
       "index": 2
     },
     {
@@ -252,8 +224,8 @@
         "distinct": false,
         "enabled": false
       },
-      "name": "DSS_v12_Admin_and_Migration_Planning.jobs_and_scenarios_by_project_key",
-      "alias": "jobs_and_scenarios_by_project_key",
+      "name": "import2.scenarios_by_project_key",
+      "alias": "scenarios_by_project_key",
       "index": 1
     },
     {
@@ -262,6 +234,8 @@
         "distinct": false,
         "enabled": false
       },
+      "name": "import2.cluster_tasks_by_projectKey",
+      "alias": "cluster_tasks_by_projectKey",
       "index": 3
     }
   ],
