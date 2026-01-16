@@ -45,6 +45,14 @@
     {
       "objectId": "commits_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_commits_by_project_key",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "commits_by_project_key",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
