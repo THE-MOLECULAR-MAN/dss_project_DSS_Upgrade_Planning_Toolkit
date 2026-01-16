@@ -59,6 +59,7 @@
             },
             "autoLoad": true,
             "showTitle": "YES",
+            "title": "Instances of deprecated plugins",
             "insightId": "2IqLxka",
             "insightType": "dataset_table",
             "displayMode": "INSIGHT",
@@ -75,11 +76,11 @@
   "name": "Some issues that need to be addressed for upgrades",
   "showGrid": false,
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768577101734,
+    "lastModifiedOn": 1768577123443,
     "extendedProperties": {}
   },
   "creationTag": {
