@@ -73,6 +73,14 @@
     {
       "objectId": "plugin_usages_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_deprecated_plugin_instances",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "deprecated_plugin_instances",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
