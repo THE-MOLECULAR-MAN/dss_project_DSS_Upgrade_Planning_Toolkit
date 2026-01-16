@@ -49,6 +49,10 @@
     {
       "objectId": "scenarios",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "jobs_prepared",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
