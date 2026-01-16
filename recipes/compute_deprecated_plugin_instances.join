@@ -54,62 +54,13 @@
       "table": 0
     },
     {
-      "name": "id",
-      "type": "string",
-      "table": 1
-    },
-    {
       "name": "label",
       "type": "string",
       "table": 1
     },
     {
-      "name": "code_env_name",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "version",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "author",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "tags",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "description",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "plugin_used_in_projectkeys",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "isDev",
-      "type": "boolean",
-      "table": 1
-    },
-    {
-      "name": "total_usages",
-      "type": "bigint",
-      "table": 1
-    },
-    {
-      "name": "is_built_in_plugin",
-      "type": "boolean",
-      "table": 1
-    },
-    {
       "name": "url",
+      "alias": "plugin_url",
       "type": "string",
       "table": 1
     }
@@ -151,7 +102,7 @@
   },
   "virtualInputs": [
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
@@ -161,7 +112,7 @@
       "computedColumns": []
     },
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
@@ -202,62 +153,12 @@
           },
           {
             "meaning": "Text",
-            "name": "id",
-            "type": "string"
-          },
-          {
-            "meaning": "Text",
             "name": "label",
             "type": "string"
           },
           {
-            "meaning": "Text",
-            "name": "code_env_name",
-            "type": "string"
-          },
-          {
-            "meaning": "Text",
-            "name": "version",
-            "type": "string"
-          },
-          {
-            "meaning": "Text",
-            "name": "author",
-            "type": "string"
-          },
-          {
-            "meaning": "JSONArrayMeaning",
-            "name": "tags",
-            "type": "string"
-          },
-          {
-            "meaning": "FreeText",
-            "name": "description",
-            "type": "string"
-          },
-          {
-            "meaning": "JSONArrayMeaning",
-            "name": "plugin_used_in_projectkeys",
-            "type": "string"
-          },
-          {
-            "meaning": "Boolean",
-            "name": "isDev",
-            "type": "boolean"
-          },
-          {
-            "meaning": "LongMeaning",
-            "name": "total_usages",
-            "type": "bigint"
-          },
-          {
-            "meaning": "Boolean",
-            "name": "is_built_in_plugin",
-            "type": "boolean"
-          },
-          {
             "meaning": "URL",
-            "name": "url",
+            "name": "plugin_url",
             "type": "string"
           }
         ],
