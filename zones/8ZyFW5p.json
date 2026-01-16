@@ -15,10 +15,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "nonexistant_datasets_joined",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_datasets_live",
       "objectType": "DATASET"
     },
@@ -28,6 +24,10 @@
     },
     {
       "objectId": "dss_datasets_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "nonexistant_datasets_with_projects",
       "objectType": "DATASET"
     }
   ],

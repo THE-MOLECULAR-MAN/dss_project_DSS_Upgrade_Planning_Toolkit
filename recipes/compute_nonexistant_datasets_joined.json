@@ -27,7 +27,7 @@
     "main": {
       "items": [
         {
-          "ref": "nonexistant_datasets_joined",
+          "ref": "nonexistant_datasets_with_projects",
           "appendMode": false
         }
       ]
@@ -35,11 +35,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768530066146,
+    "lastModifiedOn": 1768530178785,
     "extendedProperties": {}
   },
   "creationTag": {
