@@ -53,6 +53,35 @@
           "windowTo": 0
         }
       ]
+    },
+    {
+      "table2": 3,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "projectKey",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "projectKey",
+            "table": 3
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
     }
   ],
   "selectedColumns": [
@@ -159,6 +188,21 @@
       "alias": "num_jobs_and_scenarios",
       "type": "bigint",
       "table": 2
+    },
+    {
+      "name": "cluster_task_earliest",
+      "type": "date",
+      "table": 3
+    },
+    {
+      "name": "cluster_task_latest",
+      "type": "date",
+      "table": 3
+    },
+    {
+      "name": "num_cluster_tasks",
+      "type": "bigint",
+      "table": 3
     }
   ],
   "resolvedSelectedColumns": [],
@@ -222,6 +266,11 @@
       "name": "DSS_v12_Admin_and_Migration_Planning.jobs_and_scenarios_by_project_key",
       "alias": "jobs_and_scenarios_by_project_key",
       "index": 1
+    },
+    {
+      "outputColumnsSelectionMode": "MANUAL",
+      "preFilter": {},
+      "index": 3
     }
   ],
   "postFilter": {
@@ -312,6 +361,18 @@
           },
           {
             "name": "num_jobs_and_scenarios",
+            "type": "bigint"
+          },
+          {
+            "name": "cluster_task_earliest",
+            "type": "date"
+          },
+          {
+            "name": "cluster_task_latest",
+            "type": "date"
+          },
+          {
+            "name": "num_cluster_tasks",
             "type": "bigint"
           }
         ],

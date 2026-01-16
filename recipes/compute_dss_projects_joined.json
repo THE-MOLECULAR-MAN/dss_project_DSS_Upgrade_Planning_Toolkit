@@ -23,6 +23,10 @@
         {
           "ref": "commits_by_project_key",
           "deps": []
+        },
+        {
+          "ref": "cluster_tasks_by_projectKey",
+          "deps": []
         }
       ]
     }
@@ -39,11 +43,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768529316356,
+    "lastModifiedOn": 1768529493364,
     "extendedProperties": {}
   },
   "creationTag": {
