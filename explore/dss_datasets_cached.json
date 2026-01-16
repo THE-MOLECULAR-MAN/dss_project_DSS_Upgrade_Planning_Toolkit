@@ -3,123 +3,8 @@
     "steps": [],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
-      "mode": "ALL",
-      "list": [
-        {
-          "name": "id",
-          "d": true
-        },
-        {
-          "name": "name",
-          "d": true
-        },
-        {
-          "name": "projectKey",
-          "d": true
-        },
-        {
-          "name": "type",
-          "d": true
-        },
-        {
-          "name": "shortDesc",
-          "d": true
-        },
-        {
-          "name": "description",
-          "d": true
-        },
-        {
-          "name": "exists",
-          "d": true
-        },
-        {
-          "name": "formatType",
-          "d": true
-        },
-        {
-          "name": "params.connection",
-          "d": true
-        },
-        {
-          "name": "managed",
-          "d": true
-        },
-        {
-          "name": "params.mode",
-          "d": true
-        },
-        {
-          "name": "params.table",
-          "d": true
-        },
-        {
-          "name": "params.schema",
-          "d": true
-        },
-        {
-          "name": "params.path",
-          "d": true
-        },
-        {
-          "name": "creationTag.lastModifiedBy.login",
-          "d": true
-        },
-        {
-          "name": "creationTag.lastModifiedOn",
-          "d": true
-        },
-        {
-          "name": "versionTag.lastModifiedBy.login",
-          "d": true
-        },
-        {
-          "name": "versionTag.lastModifiedOn",
-          "d": true
-        },
-        {
-          "name": "params.metastoreDatabaseName",
-          "d": true
-        },
-        {
-          "name": "params.folderSmartId",
-          "d": true
-        },
-        {
-          "name": "tags",
-          "d": true
-        },
-        {
-          "name": "featureGroup",
-          "d": true
-        },
-        {
-          "name": "num_metrics_checks",
-          "d": true
-        },
-        {
-          "name": "num_columns",
-          "d": true
-        },
-        {
-          "name": "column_names",
-          "d": true
-        },
-        {
-          "name": "url",
-          "d": true
-        },
-        {
-          "name": "data_lineage",
-          "d": true
-        },
-        {
-          "name": "num_data_quality_rules",
-          "d": true
-        }
-      ]
+      "mode": "ALL"
     },
-    "columnOrder": [],
     "columnWidthsByName": {
       "projectKey": 300,
       "id": 232,
@@ -155,9 +40,7 @@
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
-      "individualColumnsRules": [],
-      "valueColoringMode": "HASH",
-      "coloringGroups": []
+      "valueColoringMode": "HASH"
     },
     "sorting": [
       {
@@ -230,9 +113,7 @@
           "columnType": "NUMERICAL",
           "currentMode": "ALPHANUM",
           "sort": "count",
-          "selectedValues": {
-            "1": true
-          }
+          "selectedValues": {}
         },
         "alphanumFilter": {
           "type": "alphanum",
@@ -265,9 +146,7 @@
           "columnType": "ALPHANUM",
           "currentMode": "ALPHANUM",
           "sort": "count",
-          "selectedValues": {
-            "DSS_Data_Plugin_Test": true
-          }
+          "selectedValues": {}
         },
         "alphanumFilter": {
           "type": "alphanum",
@@ -296,7 +175,5 @@
   "interactiveSearch": {
     "savedQueries": []
   },
-  "customMeasures": [],
-  "reusableDimensions": [],
-  "hierarchies": []
+  "customMeasures": []
 }
