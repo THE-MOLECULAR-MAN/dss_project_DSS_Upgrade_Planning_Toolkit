@@ -1,72 +1,11 @@
 {
   "pages": [
     {
-      "id": "ST94ZqY",
+      "id": "gd8rq30",
       "grid": {
-        "tiles": [
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 0,
-              "left": 0,
-              "width": 36,
-              "height": 18
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "viewKind": "EXPLORE",
-              "showName": true,
-              "showDescription": true,
-              "showCustomFields": true,
-              "showStorageType": false,
-              "showMeaning": false,
-              "showProgressBar": false
-            },
-            "autoLoad": true,
-            "insightId": "K3584gn",
-            "insightType": "dataset_table",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          }
-        ]
+        "tiles": []
       },
-      "title": "Projects",
-      "showTitle": false,
-      "backgroundColor": "#FFFFFF"
-    },
-    {
-      "id": "mDXSTuX",
-      "grid": {
-        "tiles": [
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 0,
-              "left": 0,
-              "width": 30,
-              "height": 11
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "viewKind": "EXPLORE",
-              "showName": true,
-              "showDescription": true,
-              "showCustomFields": true,
-              "showStorageType": false,
-              "showMeaning": false,
-              "showProgressBar": false
-            },
-            "autoLoad": true,
-            "insightId": "xnMDZPK",
-            "insightType": "dataset_table",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          }
-        ]
-      },
-      "title": "Users",
-      "showTitle": false,
-      "backgroundColor": "#FFFFFF"
+      "showTitle": false
     }
   ],
   "owner": "demo",
@@ -74,11 +13,11 @@
   "name": "Overview",
   "showGrid": false,
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768573992488,
+    "lastModifiedOn": 1768574000848,
     "extendedProperties": {}
   },
   "creationTag": {
