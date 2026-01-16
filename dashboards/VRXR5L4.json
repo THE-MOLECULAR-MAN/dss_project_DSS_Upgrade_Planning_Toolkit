@@ -34,6 +34,14 @@
       "title": "Deprecated Python versions used in code env",
       "showTitle": true,
       "backgroundColor": "#FFFFFF"
+    },
+    {
+      "id": "SCGddWY",
+      "grid": {
+        "tiles": []
+      },
+      "title": "Instances of deprecated plugins",
+      "showTitle": false
     }
   ],
   "owner": "demo",
@@ -41,11 +49,11 @@
   "name": "Some issues that need to be addressed for upgrades",
   "showGrid": false,
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768573864939,
+    "lastModifiedOn": 1768577097075,
     "extendedProperties": {}
   },
   "creationTag": {
