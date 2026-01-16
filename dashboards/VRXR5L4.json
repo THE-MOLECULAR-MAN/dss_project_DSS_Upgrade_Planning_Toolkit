@@ -68,7 +68,7 @@
         ]
       },
       "title": "Instances of deprecated plugins",
-      "showTitle": false
+      "showTitle": true
     }
   ],
   "owner": "demo",
@@ -76,11 +76,11 @@
   "name": "Some issues that need to be addressed for upgrades",
   "showGrid": false,
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768577123443,
+    "lastModifiedOn": 1768577130472,
     "extendedProperties": {}
   },
   "creationTag": {
