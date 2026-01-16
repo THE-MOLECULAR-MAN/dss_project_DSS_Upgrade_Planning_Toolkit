@@ -31,11 +31,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768508022057,
+    "lastModifiedOn": 1768529307653,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -77,9 +77,10 @@
       {"name":"last_modified_timestamp","type":"string","meaning":"Text"},
       {"name":"tutorialProject","type":"boolean","meaning":"Boolean"},
       {"name":"project_url","type":"string","meaning":"URL"},
-      {"name":"most_recent_commit","type":"date"},
-      {"name":"num_unique_committing_users","type":"bigint"},
-      {"name":"num_commits","type":"bigint"},
+      {"name":"project_key","type":"string","comment":"Unique identifier for the software project.","meaning":"Text"},
+      {"name":"num_unique_contributors","type":"bigint"},
+      {"name":"latest_change","type":"date"},
+      {"name":"num_of_changes","type":"bigint"},
       {"name":"most_recent_runtime","type":"date"},
       {"name":"avg_num_errors","type":"double"},
       {"name":"total_errors","type":"bigint"},
