@@ -31,11 +31,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768529493249,
+    "lastModifiedOn": 1768530930733,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -80,12 +80,6 @@
       {"name":"num_unique_contributors","type":"bigint"},
       {"name":"latest_change","type":"date"},
       {"name":"num_of_changes","type":"bigint"},
-      {"name":"most_recent_runtime","type":"date"},
-      {"name":"avg_num_errors","type":"double"},
-      {"name":"total_errors","type":"bigint"},
-      {"name":"avg_warnings","type":"double"},
-      {"name":"total_warnings","type":"bigint"},
-      {"name":"num_jobs_and_scenarios","type":"bigint"},
       {"name":"cluster_task_earliest","type":"date"},
       {"name":"cluster_task_latest","type":"date"},
       {"name":"num_cluster_tasks","type":"bigint"}
