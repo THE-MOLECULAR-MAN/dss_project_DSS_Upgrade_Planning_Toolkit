@@ -110,6 +110,21 @@
       "table": 0
     },
     {
+      "name": "num_unique_contributors",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "latest_change",
+      "type": "date",
+      "table": 1
+    },
+    {
+      "name": "num_of_changes",
+      "type": "bigint",
+      "table": 1
+    },
+    {
       "name": "start_time_max",
       "alias": "most_recent_runtime",
       "type": "date",
@@ -195,7 +210,7 @@
       "computedColumns": []
     },
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "index": 2
     },
     {
@@ -261,12 +276,6 @@
           {
             "meaning": "URL",
             "name": "project_url",
-            "type": "string"
-          },
-          {
-            "meaning": "Text",
-            "name": "project_key",
-            "comment": "Unique identifier for the software project.",
             "type": "string"
           },
           {
