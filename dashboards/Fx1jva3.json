@@ -71,14 +71,14 @@
   ],
   "owner": "admin",
   "listed": false,
-  "name": "Administrator\u0027s dashboard",
+  "name": "Usage Summary",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768573657428,
+    "lastModifiedOn": 1768573693851,
     "extendedProperties": {}
   },
   "creationTag": {
