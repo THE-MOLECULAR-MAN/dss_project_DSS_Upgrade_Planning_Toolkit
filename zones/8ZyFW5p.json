@@ -29,10 +29,6 @@
     {
       "objectId": "dss_datasets_cached",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "dummy_athena",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
