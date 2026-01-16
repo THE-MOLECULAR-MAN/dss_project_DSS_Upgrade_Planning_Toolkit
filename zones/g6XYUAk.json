@@ -41,6 +41,14 @@
     {
       "objectId": "dss_codeenvs_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_plugins_with_deprecation_mentioned",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "plugins_with_deprecation_mentioned",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
