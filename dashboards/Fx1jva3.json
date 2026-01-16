@@ -32,7 +32,7 @@
         ]
       },
       "title": "Summary of all projects",
-      "showTitle": false
+      "showTitle": true
     },
     {
       "id": "218xWuL",
@@ -81,11 +81,11 @@
   "name": "Administrator\u0027s dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768573636197,
+    "lastModifiedOn": 1768573638375,
     "extendedProperties": {}
   },
   "creationTag": {
