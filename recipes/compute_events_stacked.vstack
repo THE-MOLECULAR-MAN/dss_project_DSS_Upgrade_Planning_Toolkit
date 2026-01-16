@@ -53,7 +53,7 @@
         "distinct": false,
         "enabled": false
       },
-      "originLabel": "job_run",
+      "originLabel": "job",
       "index": 0,
       "columnsMatch": [
         "job_project_key",
@@ -70,7 +70,7 @@
         "distinct": false,
         "enabled": false
       },
-      "originLabel": "scenario_run",
+      "originLabel": "scenario",
       "index": 1,
       "columnsMatch": [
         "scenario_project_key",
