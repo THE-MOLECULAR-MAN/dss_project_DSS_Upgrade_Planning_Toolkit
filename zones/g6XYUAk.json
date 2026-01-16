@@ -49,6 +49,18 @@
     {
       "objectId": "plugins_with_deprecation_mentioned",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_recipes_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_recipes_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_recipes_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
