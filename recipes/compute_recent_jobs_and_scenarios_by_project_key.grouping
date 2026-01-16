@@ -223,7 +223,17 @@
     }
   },
   "enlargeYourBits": true,
-  "outputColumnNameOverrides": {},
+  "outputColumnNameOverrides": {
+    "warnings_count_avg": "avg_num_of_warnings",
+    "error_avg": "avg_num_of_errors",
+    "duration_seconds_sum": "total_duration_seconds",
+    "start_time_max": "most_recent_start_time",
+    "user_distinct": "unique_users",
+    "count": "total_num_of_jobs_scenarios",
+    "start_time_min": "earliest_start_time",
+    "error_sum": "total_num_errors",
+    "warnings_count_sum": "total_num_of_warnings"
+  },
   "computedColumns": [],
   "postFilter": {
     "$status": {
