@@ -3,10 +3,6 @@
   "color": "#D03713",
   "items": [
     {
-      "objectId": "compute_connections_with_failures",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_recipes_with_no_output",
       "objectType": "RECIPE"
     },
