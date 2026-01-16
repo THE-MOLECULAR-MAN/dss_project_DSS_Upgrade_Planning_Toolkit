@@ -1,15 +1,6 @@
 {
   "pages": [
     {
-      "id": "jbCBByz",
-      "grid": {
-        "tiles": []
-      },
-      "title": "Jobs \u0026 Scenarios",
-      "showTitle": false,
-      "backgroundColor": "#FFFFFF"
-    },
-    {
       "id": "ST94ZqY",
       "grid": {
         "tiles": [
@@ -83,11 +74,11 @@
   "name": "Overview",
   "showGrid": false,
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768573978219,
+    "lastModifiedOn": 1768573992488,
     "extendedProperties": {}
   },
   "creationTag": {
