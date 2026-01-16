@@ -1,0 +1,40 @@
+{
+  "projectExportManifest": {
+    "exportUploads": false,
+    "exportAllInputDatasets": false,
+    "exportAllDatasets": false,
+    "exportManagedFS": false,
+    "exportAnalysisModels": false,
+    "exportSavedModels": false,
+    "exportModelEvaluationStores": false,
+    "exportProjectResources": false,
+    "exportLabelingTasks": false,
+    "exportManagedFolders": false,
+    "exportAllInputManagedFolders": false,
+    "exportInsightsData": false,
+    "includedDatasetsData": [],
+    "includedSavedModels": [],
+    "includedManagedFolders": [],
+    "includedModelEvaluationStores": [],
+    "includedCodeStudios": [],
+    "includedLabelingTasks": [],
+    "exportGitRepository": false
+  },
+  "instanceFeatures": {
+    "showFlowNavLink": false,
+    "showLabNavLink": false,
+    "showCodeNavLink": false,
+    "showSwitchToProjectViewButton": true,
+    "showVersionControlFeatures": false
+  },
+  "useAppHomepage": true,
+  "homepageSections": [],
+  "label": "DSS v12.3.2 Admin and Upgrade planning",
+  "shortDesc": "The template *DSS v12.3.2 Admin and Upgrade planning* was created by Administrator on Jan 16th 2026",
+  "tags": [],
+  "instantiationPermission": "USE_APP_MASTER_PERMISSIONS",
+  "limitedVisibilityEnabled": "INHERIT",
+  "accessRequestsEnabled": "INHERIT",
+  "allowedMissingConnections": [],
+  "allowedMissingCodeEnvs": []
+}
