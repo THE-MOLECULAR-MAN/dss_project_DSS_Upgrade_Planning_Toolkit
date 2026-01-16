@@ -32,34 +32,24 @@
   "selectedColumns": [
     {
       "name": "name",
-      "type": "string",
       "table": 0
     },
     {
       "name": "projectKey",
-      "type": "string",
       "table": 0
     },
     {
       "name": "exists",
-      "type": "boolean",
       "table": 0
     },
     {
       "name": "url",
       "alias": "dataset_url",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "num_data_quality_rules",
-      "type": "int",
       "table": 0
     },
     {
       "name": "ownerLogin",
       "alias": "project_owner",
-      "type": "string",
       "table": 1
     }
   ],
@@ -78,9 +68,6 @@
     },
     "impala": {
       "forceStreamMode": true
-    },
-    "containerSelection": {
-      "containerMode": "INHERIT"
     },
     "lowerCaseSchemaIfEngineRequiresIt": true,
     "sparkSQL": {
@@ -109,6 +96,8 @@
         "enabled": false
       },
       "originLabel": "nonexistant_datasets",
+      "name": "import2.nonexistant_datasets",
+      "alias": "nonexistant_datasets",
       "index": 0,
       "computedColumns": []
     },
@@ -119,59 +108,16 @@
         "enabled": false
       },
       "originLabel": "dss_projects_cached",
+      "name": "import2.dss_projects_cached",
+      "alias": "dss_projects_cached",
       "index": 1,
       "computedColumns": []
     }
   ],
-  "computedColumns": [],
   "postFilter": {
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "isColumnEdited": true,
-            "meaning": "Text",
-            "name": "name",
-            "comment": "Name of the dataset, used for identification and reference.",
-            "type": "string"
-          },
-          {
-            "isColumnEdited": true,
-            "meaning": "Text",
-            "name": "projectKey",
-            "comment": "Project identifier, links datasets to specific projects.",
-            "type": "string"
-          },
-          {
-            "isColumnEdited": true,
-            "meaning": "Boolean",
-            "name": "exists",
-            "comment": "Indicates if the dataset currently exists, boolean value.",
-            "type": "boolean"
-          },
-          {
-            "isColumnEdited": true,
-            "meaning": "URL",
-            "name": "dataset_url",
-            "comment": "URL for accessing the dataset, used for exploration and analysis.",
-            "type": "string"
-          },
-          {
-            "meaning": "LongMeaning",
-            "name": "num_data_quality_rules",
-            "type": "int"
-          },
-          {
-            "isColumnEdited": true,
-            "meaning": "Text",
-            "name": "project_owner",
-            "comment": "Email or login of the project owner, indicating responsibility.",
-            "type": "string"
-          }
-        ],
-        "userModified": false
-      }
-    }
+    "distinct": false,
+    "enabled": false
   },
+  "computedColumns": [],
   "enableAutoCastInJoinConditions": false
 }
