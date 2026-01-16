@@ -66,8 +66,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 4,
+              "left": 0,
               "width": 6,
               "height": 3
             },
@@ -99,11 +99,11 @@
   "name": "Usage Summary",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768573914601,
+    "lastModifiedOn": 1768573928461,
     "extendedProperties": {}
   },
   "creationTag": {
