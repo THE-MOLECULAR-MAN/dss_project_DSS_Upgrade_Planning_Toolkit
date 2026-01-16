@@ -65,8 +65,8 @@
           }
         ]
       },
-      "title": "Scenarios",
-      "showTitle": false
+      "title": "Scenarios by project",
+      "showTitle": true
     },
     {
       "id": "oaAfvJR",
@@ -81,11 +81,11 @@
   "name": "Administrator\u0027s dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768573638375,
+    "lastModifiedOn": 1768573649556,
     "extendedProperties": {}
   },
   "creationTag": {
