@@ -1,13 +1,25 @@
 {
   "name": "Project Overview",
   "layout": "WIKI_ARTICLE",
-  "attachments": [],
+  "attachments": [
+    {
+      "attachmentType": "FILE",
+      "smartId": "ySTDYtQHzbVT",
+      "details": {
+        "objectDisplayName": "Screenshot 2026-01-16 at 10.48.58 AM.png",
+        "size": 53860,
+        "mimeType": "image/png"
+      },
+      "attachedBy": "admin",
+      "attachedOn": 1768578553504
+    }
+  ],
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768578433107,
+    "lastModifiedOn": 1768578553504,
     "extendedProperties": {}
   },
   "creationTag": {
