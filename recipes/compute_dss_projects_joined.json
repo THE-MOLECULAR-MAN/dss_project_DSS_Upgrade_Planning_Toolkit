@@ -17,11 +17,11 @@
           "deps": []
         },
         {
-          "ref": "commits_by_projectKey",
+          "ref": "jobs_and_scenarios_by_project_key",
           "deps": []
         },
         {
-          "ref": "jobs_and_scenarios_by_project_key",
+          "ref": "commits_by_project_key",
           "deps": []
         }
       ]
@@ -39,11 +39,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768508022087,
+    "lastModifiedOn": 1768529307768,
     "extendedProperties": {}
   },
   "creationTag": {
