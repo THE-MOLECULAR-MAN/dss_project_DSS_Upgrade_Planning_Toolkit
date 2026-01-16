@@ -36,12 +36,12 @@
     {
       "outputIndex": 0,
       "caseSensitive": false,
-      "value": "job_run"
+      "value": "job"
     },
     {
       "outputIndex": 0,
       "caseSensitive": false,
-      "value": "scenario_run"
+      "value": "scenario"
     },
     {
       "outputIndex": 1,
