@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768530916972,
+    "lastModifiedOn": 1768530922696,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -62,7 +62,18 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"projectKey","type":"string"},
+      {"name":"start_time","type":"date"},
+      {"name":"duration_seconds","type":"bigint"},
+      {"name":"end_time","type":"date"},
+      {"name":"state","type":"string"},
+      {"name":"error","type":"bigint"},
+      {"name":"warnings_count","type":"bigint"},
+      {"name":"scenario_id","type":"string"},
+      {"name":"user","type":"string"},
+      {"name":"event_type","type":"string"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],
