@@ -311,11 +311,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 28,
+    "versionNumber": 35,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768582413072,
+    "lastModifiedOn": 1768582707170,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -326,7 +326,7 @@
     "lastModifiedOn": 1762960930329,
     "extendedProperties": {}
   },
-  "description": "This project requires the [Datasets about Dataiku Instance Plugin](https://github.com/THE-MOLECULAR-MAN/dss-plugin-xzibit/releases/) .\n\n**This branch of this project is designed for DSS v12 and does not include v13+ features like GenAI and LLM Mesh**\n\nPlease see the Wiki for set up and usage instructions.",
+  "description": "This project requires the [Datasets about Dataiku Instance Plugin](https://github.com/THE-MOLECULAR-MAN/dss-plugin-xzibit/releases/) .\n\n**This branch of this project is designed for DSS v12 and does not include v13+ features like GenAI and LLM Mesh**\n\nPlease see the Wiki for set up and usage instructions.\n\n\n[[PROJECT_KEY.Wiki Article 1]]\n",
   "shortDesc": "This project has not been certified for use in production instances. Do not use this project on production or mission critical DSS nodes.\n\nThis project assists with administering DSS and planning DSS upgrades.",
   "tags": [
     "Maintenance",
