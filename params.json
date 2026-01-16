@@ -311,11 +311,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 27,
+    "versionNumber": 28,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768581910356,
+    "lastModifiedOn": 1768582413072,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -326,7 +326,7 @@
     "lastModifiedOn": 1762960930329,
     "extendedProperties": {}
   },
-  "description": "This project requires the [Datasets about Dataiku Instance Plugin](https://github.com/THE-MOLECULAR-MAN/dss-plugin-xzibit/releases/) .\n\n**This branch of this project is designed for DSS v12 and does not include v13+ features like GenAI and LLM Mesh**\n\nThis data processing flow is designed to manage and transform datasets related to both internal statistics and plugin datasets within a Dataiku DSS (Data Science Studio) environment. \n\nThis project builds datasets and dashboards useful for:\n\n**General day to day administrative tasks:**\n* Determining which scenarios are running most often and taking the most time\n* Listing which plugins are unused and could potentially be uninstalled.\n* Locating projects with configuration issues like: datasets with errors, recipes missing input/output datasets\n\n**Planning upgrades**\n* Determining which projects and scenarios are the most actively run and under development.\n* Listing Code Environments that use deprecated versions of Python in future DSS releases, and where they are used, and who their owners are.\n* Listing usages of recipes, plugins, connections, etc  to cross reference with [DSS Release Notes and their deprecation notices](https://doc.dataiku.com/dss/latest/release_notes/13.html).\n\nThis project does **not** assist with the following:\n* gathering information/configuration about the underlying operating system\u0027s packages - for example: extra packages installed in Alma Linux to support custom plugins\n* listing Docker images used\n* providing a list of deprecated features - see  [DSS Release Notes and their deprecation notices]\n* searching custom code (Python, R, SQL, etc) for any potential upgrade/migration issues",
+  "description": "This project requires the [Datasets about Dataiku Instance Plugin](https://github.com/THE-MOLECULAR-MAN/dss-plugin-xzibit/releases/) .\n\n**This branch of this project is designed for DSS v12 and does not include v13+ features like GenAI and LLM Mesh**\n\nPlease see the Wiki for set up and usage instructions.",
   "shortDesc": "This project has not been certified for use in production instances. Do not use this project on production or mission critical DSS nodes.\n\nThis project assists with administering DSS and planning DSS upgrades.",
   "tags": [
     "Maintenance",
