@@ -9,7 +9,7 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 6,
+              "width": 12,
               "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
@@ -39,11 +39,11 @@
   "name": "Administrator\u0027s dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768573573258,
+    "lastModifiedOn": 1768573578473,
     "extendedProperties": {}
   },
   "creationTag": {
