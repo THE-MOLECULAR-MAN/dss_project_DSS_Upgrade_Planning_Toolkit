@@ -7,10 +7,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "connections_with_failures",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_recipes_with_no_output",
       "objectType": "RECIPE"
     },
