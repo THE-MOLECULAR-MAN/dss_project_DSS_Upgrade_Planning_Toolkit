@@ -3,14 +3,14 @@
   "centileSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
-  "defaultOutputIndex": -1,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
+  "defaultOutputIndex": -1,
   "seed": 1337,
   "randomColumns": [],
   "centileOrders": [],
@@ -19,13 +19,13 @@
   "randomSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "randomColumnsSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "computedColumns": [],
@@ -39,17 +39,12 @@
       "value": "job_run"
     },
     {
-      "outputIndex": 1,
-      "caseSensitive": false,
-      "value": "commit"
-    },
-    {
       "outputIndex": 0,
       "caseSensitive": false,
       "value": "scenario_run"
     },
     {
-      "outputIndex": 2,
+      "outputIndex": 1,
       "caseSensitive": false,
       "value": "cluster_task"
     }
@@ -110,6 +105,52 @@
         "uiData": {
           "mode": "\u0026\u0026",
           "conditions": []
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "projectKey",
+                "type": "string"
+              },
+              {
+                "name": "start_time",
+                "type": "date"
+              },
+              {
+                "name": "duration_seconds",
+                "type": "bigint"
+              },
+              {
+                "name": "end_time",
+                "type": "date"
+              },
+              {
+                "name": "state",
+                "type": "string"
+              },
+              {
+                "name": "error",
+                "type": "bigint"
+              },
+              {
+                "name": "warnings_count",
+                "type": "bigint"
+              },
+              {
+                "name": "scenario_id",
+                "type": "string"
+              },
+              {
+                "name": "user",
+                "type": "string"
+              },
+              {
+                "name": "event_type",
+                "type": "string"
+              }
+            ]
+          }
         },
         "distinct": false,
         "enabled": true
