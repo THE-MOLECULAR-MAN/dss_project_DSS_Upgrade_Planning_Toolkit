@@ -1,12 +1,7 @@
 {
   "name": "Misc Issues",
   "color": "#D03713",
-  "items": [
-    {
-      "objectId": "recipes_missing_either_input_or_output",
-      "objectType": "DATASET"
-    }
-  ],
+  "items": [],
   "shared": [],
   "tags": [],
   "customFields": {},
