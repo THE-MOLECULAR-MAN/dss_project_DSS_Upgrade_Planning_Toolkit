@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769184370383,
+    "lastModifiedOn": 1769184397337,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -63,7 +63,8 @@
   },
   "schema": {
     "columns": [
-      {"name":"recipe_type","type":"string","meaning":"Text"}
+      {"name":"recipe_type","type":"string","meaning":"Text"},
+      {"name":"recipe_upgrade_status","type":"string"}
     ],
     "userModified": true
   },
