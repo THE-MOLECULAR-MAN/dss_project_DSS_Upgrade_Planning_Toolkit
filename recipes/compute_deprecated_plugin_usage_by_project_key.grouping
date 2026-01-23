@@ -5,18 +5,7 @@
   },
   "keys": [
     {
-      "countDistinct": false,
-      "min": false,
-      "avg": false,
-      "last": false,
-      "max": false,
-      "column": "project_key",
-      "count": false,
-      "sum": false,
-      "concat": false,
-      "type": "string",
-      "stddev": false,
-      "first": false
+      "column": "project_key"
     }
   ],
   "values": [
@@ -26,7 +15,6 @@
       "firstLastNotNull": false,
       "column": "plugin_id",
       "count": false,
-      "$idx": 0,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -44,7 +32,6 @@
       "firstLastNotNull": false,
       "column": "element_kind",
       "count": false,
-      "$idx": 1,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -62,7 +49,6 @@
       "firstLastNotNull": false,
       "column": "element_type",
       "count": false,
-      "$idx": 2,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -80,7 +66,6 @@
       "firstLastNotNull": false,
       "column": "object_id",
       "count": false,
-      "$idx": 3,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -98,7 +83,6 @@
       "firstLastNotNull": false,
       "column": "object_type",
       "count": false,
-      "$idx": 4,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -152,21 +136,6 @@
   },
   "computedColumns": [],
   "postFilter": {
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "name": "project_key",
-            "type": "string"
-          },
-          {
-            "name": "count",
-            "type": "bigint"
-          }
-        ],
-        "userModified": false
-      }
-    },
     "distinct": false,
     "enabled": false
   }

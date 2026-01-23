@@ -4,7 +4,11 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
-      "rightLimit": {},
+      "rightLimit": {
+        "maxMatches": 1,
+        "strict": false,
+        "enabled": false
+      },
       "type": "INNER",
       "outerJoinOnTheLeft": true,
       "on": [
@@ -33,32 +37,26 @@
   "selectedColumns": [
     {
       "name": "plugin_id",
-      "type": "string",
       "table": 0
     },
     {
       "name": "element_kind",
-      "type": "string",
       "table": 0
     },
     {
       "name": "element_type",
-      "type": "string",
       "table": 0
     },
     {
       "name": "object_id",
-      "type": "string",
       "table": 0
     },
     {
       "name": "object_type",
-      "type": "string",
       "table": 0
     },
     {
       "name": "project_key",
-      "type": "string",
       "table": 0
     }
   ],
@@ -113,39 +111,10 @@
       "index": 1
     }
   ],
-  "computedColumns": [],
   "postFilter": {
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "name": "plugin_id",
-            "type": "string"
-          },
-          {
-            "name": "element_kind",
-            "type": "string"
-          },
-          {
-            "name": "element_type",
-            "type": "string"
-          },
-          {
-            "name": "object_id",
-            "type": "string"
-          },
-          {
-            "name": "object_type",
-            "type": "string"
-          },
-          {
-            "name": "project_key",
-            "type": "string"
-          }
-        ],
-        "userModified": false
-      }
-    }
+    "distinct": false,
+    "enabled": false
   },
+  "computedColumns": [],
   "enableAutoCastInJoinConditions": false
 }
