@@ -3,10 +3,6 @@
   "color": "#087ABF",
   "items": [
     {
-      "objectId": "nonexistant_datasets",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_datasets_live",
       "objectType": "DATASET"
     },
