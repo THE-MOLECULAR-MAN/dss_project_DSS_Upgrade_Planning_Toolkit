@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769184100533,
+    "lastModifiedOn": 1769184102418,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -62,7 +62,9 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"recipe_type","type":"string","meaning":"Text"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],
