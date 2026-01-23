@@ -12,6 +12,14 @@
           "$showList": false,
           "num": 0,
           "operator": "\u003d\u003d [string]"
+        },
+        {
+          "input": "output_datasets",
+          "col": "recipe_name",
+          "string": "DEF_DEP__",
+          "$showList": false,
+          "num": 0,
+          "operator": "contains"
         }
       ]
     },
@@ -22,9 +30,6 @@
   "keys": [
     {
       "column": "recipe_type"
-    },
-    {
-      "column": "output_datasets"
     }
   ],
   "globalCount": false,
@@ -70,11 +75,6 @@
           {
             "meaning": "Text",
             "name": "recipe_type",
-            "type": "string"
-          },
-          {
-            "meaning": "JSONArrayMeaning",
-            "name": "output_datasets",
             "type": "string"
           }
         ],
