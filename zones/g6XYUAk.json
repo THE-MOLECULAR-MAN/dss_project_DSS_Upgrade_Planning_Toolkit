@@ -35,10 +35,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_plugins_with_deprecation_mentioned",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "live_plugin_usages",
       "objectType": "DATASET"
     },
