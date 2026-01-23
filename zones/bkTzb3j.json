@@ -37,6 +37,14 @@
     {
       "objectId": "recipe_types_safe",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recipe_types_stacked",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "recipe_types_stacked",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
