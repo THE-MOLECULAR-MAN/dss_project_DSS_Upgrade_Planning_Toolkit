@@ -13,6 +13,14 @@
     {
       "objectId": "dss_recipes_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_problem_recipes",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "problem_recipes",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
