@@ -4,62 +4,88 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
-      "type": "LEFT",
+      "type": "INNER",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "id",
+            "table": 0
+          },
+          "dateDiffUnit": "SECOND",
+          "column2": {
+            "name": "line",
+            "table": 1
+          },
+          "type": "EQ"
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "id",
+      "type": "string",
       "table": 0
     },
     {
       "name": "label",
+      "type": "string",
       "table": 0
     },
     {
       "name": "code_env_name",
+      "type": "string",
       "table": 0
     },
     {
       "name": "version",
+      "type": "string",
       "table": 0
     },
     {
       "name": "author",
+      "type": "string",
       "table": 0
     },
     {
       "name": "tags",
+      "type": "string",
       "table": 0
     },
     {
       "name": "description",
+      "type": "string",
       "table": 0
     },
     {
       "name": "plugin_used_in_projectkeys",
+      "type": "string",
       "table": 0
     },
     {
       "name": "isDev",
+      "type": "boolean",
       "table": 0
     },
     {
       "name": "total_usages",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "is_built_in_plugin",
+      "type": "boolean",
       "table": 0
     },
     {
       "name": "url",
+      "type": "string",
       "table": 0
     },
     {
       "name": "line",
+      "type": "string",
       "table": 1
     }
   ],
@@ -120,5 +146,79 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "meaning": "Text",
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "label",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "code_env_name",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "version",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "author",
+            "type": "string"
+          },
+          {
+            "meaning": "JSONArrayMeaning",
+            "name": "tags",
+            "type": "string"
+          },
+          {
+            "meaning": "FreeText",
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "meaning": "JSONArrayMeaning",
+            "name": "plugin_used_in_projectkeys",
+            "type": "string"
+          },
+          {
+            "meaning": "Boolean",
+            "name": "isDev",
+            "type": "boolean"
+          },
+          {
+            "meaning": "LongMeaning",
+            "name": "total_usages",
+            "type": "bigint"
+          },
+          {
+            "meaning": "Boolean",
+            "name": "is_built_in_plugin",
+            "type": "boolean"
+          },
+          {
+            "meaning": "URL",
+            "name": "url",
+            "type": "string"
+          },
+          {
+            "name": "line",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
