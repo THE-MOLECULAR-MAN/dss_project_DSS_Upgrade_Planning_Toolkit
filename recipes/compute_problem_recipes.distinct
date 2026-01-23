@@ -32,6 +32,9 @@
       "column": "recipe_type"
     },
     {
+      "column": "output_datasets"
+    },
+    {
       "column": "engine_parameters"
     }
   ],
@@ -78,6 +81,11 @@
           {
             "meaning": "Text",
             "name": "recipe_type",
+            "type": "string"
+          },
+          {
+            "meaning": "JSONArrayMeaning",
+            "name": "output_datasets",
             "type": "string"
           },
           {
