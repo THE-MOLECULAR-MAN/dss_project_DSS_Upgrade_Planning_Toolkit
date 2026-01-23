@@ -4,6 +4,7 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "type": "INNER",
       "outerJoinOnTheLeft": true,
       "on": [
@@ -109,13 +110,8 @@
     },
     {
       "outputColumnsSelectionMode": "MANUAL",
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "originLabel": "plugins_not_compat_with_dss_14",
-      "index": 1,
-      "computedColumns": []
+      "preFilter": {},
+      "index": 1
     }
   ],
   "computedColumns": [],
