@@ -19,10 +19,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "compute_dss_plugins_cached",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "dss_codeenvs_live",
       "objectType": "DATASET"
     },
