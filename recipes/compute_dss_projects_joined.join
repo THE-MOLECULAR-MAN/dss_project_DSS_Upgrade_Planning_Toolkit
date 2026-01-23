@@ -93,6 +93,28 @@
           "windowTo": 0
         }
       ]
+    },
+    {
+      "table2": 4,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "projectKey",
+            "table": 0
+          },
+          "dateDiffUnit": "SECOND",
+          "column2": {
+            "name": "project_key",
+            "table": 4
+          },
+          "type": "EQ"
+        }
+      ]
     }
   ],
   "selectedColumns": [
@@ -178,6 +200,16 @@
       "name": "num_cluster_tasks",
       "type": "bigint",
       "table": 3
+    },
+    {
+      "name": "project_key",
+      "type": "string",
+      "table": 4
+    },
+    {
+      "name": "num_instances_of_deprecated_plugin_usages",
+      "type": "bigint",
+      "table": 4
     }
   ],
   "resolvedSelectedColumns": [],
@@ -254,6 +286,11 @@
       "name": "import2.cluster_tasks_by_projectKey",
       "alias": "cluster_tasks_by_projectKey",
       "index": 3
+    },
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {},
+      "index": 4
     }
   ],
   "postFilter": {
@@ -373,6 +410,14 @@
           },
           {
             "name": "num_cluster_tasks",
+            "type": "bigint"
+          },
+          {
+            "name": "project_key",
+            "type": "string"
+          },
+          {
+            "name": "num_instances_of_deprecated_plugin_usages",
             "type": "bigint"
           }
         ],

@@ -27,6 +27,10 @@
         {
           "ref": "cluster_tasks_by_projectKey",
           "deps": []
+        },
+        {
+          "ref": "deprecated_plugin_usage_by_project_key",
+          "deps": []
         }
       ]
     }
@@ -43,11 +47,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768531021579,
+    "lastModifiedOn": 1769192844039,
     "extendedProperties": {}
   },
   "creationTag": {
