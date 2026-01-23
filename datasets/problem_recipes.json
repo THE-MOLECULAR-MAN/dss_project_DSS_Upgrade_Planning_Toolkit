@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769182815829,
+    "lastModifiedOn": 1769182904558,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -63,16 +63,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"recipe_id","type":"string","meaning":"Text"},
-      {"name":"recipe_name","type":"string","meaning":"Text"},
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"recipe_type","type":"string","meaning":"Text"},
-      {"name":"input_datasets","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"output_datasets","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"engine_parameters","type":"string","meaning":"JSONObjectMeaning"},
-      {"name":"last_modified_user","type":"string","meaning":"Text"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"recipe_type","type":"string","meaning":"Text"}
     ],
     "userModified": true
   },
