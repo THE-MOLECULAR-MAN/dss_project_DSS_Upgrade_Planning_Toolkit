@@ -95,10 +95,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_deprecated_plugin_ids_distinct",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "deprecated_plugin_ids_distinct",
       "objectType": "DATASET"
     },
