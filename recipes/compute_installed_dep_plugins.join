@@ -14,7 +14,7 @@
           },
           "dateDiffUnit": "SECOND",
           "column2": {
-            "name": "line",
+            "name": "plugin_id",
             "table": 1
           },
           "type": "EQ"
@@ -82,11 +82,6 @@
       "name": "url",
       "type": "string",
       "table": 0
-    },
-    {
-      "name": "line",
-      "type": "string",
-      "table": 1
     }
   ],
   "resolvedSelectedColumns": [],
@@ -212,7 +207,7 @@
             "type": "string"
           },
           {
-            "name": "line",
+            "name": "plugin_id",
             "type": "string"
           }
         ],
