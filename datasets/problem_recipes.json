@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769182939926,
+    "lastModifiedOn": 1769182977538,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -64,6 +64,7 @@
   "schema": {
     "columns": [
       {"name":"recipe_type","type":"string","meaning":"Text"},
+      {"name":"output_datasets","type":"string","meaning":"JSONArrayMeaning"},
       {"name":"engine_parameters","type":"string","meaning":"JSONObjectMeaning"}
     ],
     "userModified": true
