@@ -29,7 +29,7 @@
   },
   "keys": [
     {
-      "column": "input_datasets"
+      "column": "recipe_type"
     }
   ],
   "globalCount": false,
@@ -73,8 +73,8 @@
       "schema": {
         "columns": [
           {
-            "meaning": "JSONArrayMeaning",
-            "name": "input_datasets",
+            "meaning": "Text",
+            "name": "recipe_type",
             "type": "string"
           }
         ],
