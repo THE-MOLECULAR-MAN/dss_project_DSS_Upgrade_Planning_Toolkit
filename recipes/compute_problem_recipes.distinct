@@ -12,14 +12,6 @@
           "$showList": false,
           "num": 0,
           "operator": "\u003d\u003d [string]"
-        },
-        {
-          "input": "recipe_type",
-          "col": "recipe_name",
-          "string": "prepare",
-          "$showList": false,
-          "num": 0,
-          "operator": "!\u003d [string]"
         }
       ]
     },
