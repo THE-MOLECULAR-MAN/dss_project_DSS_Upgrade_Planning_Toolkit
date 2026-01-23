@@ -29,6 +29,14 @@
     {
       "objectId": "recipe_types_questionable",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recipe_types_safe",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "recipe_types_safe",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
