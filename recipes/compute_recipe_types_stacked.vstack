@@ -1,6 +1,9 @@
 {
   "mode": "UNION",
-  "originColumnName": "original_dataset",
+  "originColumnName": "recipe_upgrade_status",
+  "selectedColumns": [
+    "recipe_type"
+  ],
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -41,7 +44,7 @@
         "distinct": false,
         "enabled": false
       },
-      "originLabel": "recipe_types_definitely_deprecated",
+      "originLabel": "definitely_deprecated",
       "index": 0
     },
     {
@@ -49,7 +52,7 @@
         "distinct": false,
         "enabled": false
       },
-      "originLabel": "recipe_types_questionable",
+      "originLabel": "questionable",
       "index": 1
     },
     {
@@ -57,13 +60,29 @@
         "distinct": false,
         "enabled": false
       },
-      "originLabel": "recipe_types_safe",
+      "originLabel": "safe",
       "index": 2
     }
   ],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "meaning": "Text",
+            "name": "recipe_type",
+            "type": "string"
+          },
+          {
+            "name": "original_dataset",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
-  "addOriginColumn": false
+  "addOriginColumn": true
 }
