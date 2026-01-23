@@ -22,11 +22,19 @@
       },
       {
         "input": "label",
-        "col": "label",
+        "col": "id",
         "string": "legacy",
         "$showList": false,
         "num": 0,
         "operator": "contains [string]i"
+      },
+      {
+        "input": "description",
+        "col": "label",
+        "string": "⚠️",
+        "$showList": false,
+        "num": 0,
+        "operator": "contains"
       }
     ]
   },
