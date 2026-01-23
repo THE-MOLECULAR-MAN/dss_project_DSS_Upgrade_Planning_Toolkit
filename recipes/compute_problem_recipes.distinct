@@ -30,6 +30,9 @@
   "keys": [
     {
       "column": "recipe_type"
+    },
+    {
+      "column": "engine_parameters"
     }
   ],
   "globalCount": false,
@@ -75,6 +78,11 @@
           {
             "meaning": "Text",
             "name": "recipe_type",
+            "type": "string"
+          },
+          {
+            "meaning": "JSONObjectMeaning",
+            "name": "engine_parameters",
             "type": "string"
           }
         ],
