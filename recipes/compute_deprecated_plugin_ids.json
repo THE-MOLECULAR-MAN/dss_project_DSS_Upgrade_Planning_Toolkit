@@ -19,6 +19,10 @@
         {
           "ref": "plugins_not_compat_with_dss_14",
           "deps": []
+        },
+        {
+          "ref": "deprecated_plugin_ids_manual",
+          "deps": []
         }
       ]
     }
@@ -35,11 +39,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769192508738,
+    "lastModifiedOn": 1769192949690,
     "extendedProperties": {}
   },
   "creationTag": {
