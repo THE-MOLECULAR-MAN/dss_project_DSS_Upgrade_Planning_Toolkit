@@ -110,7 +110,6 @@
     },
     {
       "outputColumnsSelectionMode": "MANUAL",
-      "preFilter": {},
       "index": 1
     }
   ],
