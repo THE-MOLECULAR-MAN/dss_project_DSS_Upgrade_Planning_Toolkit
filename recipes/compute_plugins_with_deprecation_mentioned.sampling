@@ -14,8 +14,16 @@
       },
       {
         "input": "label",
-        "col": "label",
+        "col": "id",
         "string": "deprecat",
+        "$showList": false,
+        "num": 0,
+        "operator": "contains [string]i"
+      },
+      {
+        "input": "label",
+        "col": "label",
+        "string": "legacy",
         "$showList": false,
         "num": 0,
         "operator": "contains [string]i"
