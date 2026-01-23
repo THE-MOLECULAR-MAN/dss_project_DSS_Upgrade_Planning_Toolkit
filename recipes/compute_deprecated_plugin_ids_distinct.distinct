@@ -1,7 +1,21 @@
 {
   "preFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "$latestOperator": "\u0026\u0026",
+      "$filterOptions": "rules",
+      "conditions": [
+        {
+          "input": "plugin_id",
+          "$showList": false,
+          "num": 0,
+          "operator": "not empty"
+        }
+      ]
+    },
+    "$status": {},
     "distinct": false,
-    "enabled": false
+    "enabled": true
   },
   "keys": [
     {
