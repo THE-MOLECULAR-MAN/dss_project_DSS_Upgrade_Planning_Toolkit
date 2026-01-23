@@ -17,6 +17,10 @@
     {
       "objectId": "problem_recipes",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_problem_recipes",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
