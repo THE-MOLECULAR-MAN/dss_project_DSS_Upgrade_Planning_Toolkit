@@ -2,6 +2,7 @@
   "type": "Inline",
   "managed": true,
   "featureGroup": false,
+  "formatType": "json",
   "checklists": {
     "checklists": []
   },
@@ -23,17 +24,25 @@
       "rules": []
     }
   },
+  "formatParams": {
+    "maxExpansionDepth": -1,
+    "nestedArraysHandling": "FLATTEN",
+    "extractFromSingleElement": false,
+    "nestedArraysMaxElements": 100,
+    "nestedArraysMaxContentSize": 300000,
+    "headerRow": true
+  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769192292806,
+    "lastModifiedOn": 1769192292825,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -53,7 +62,9 @@
     "importDatasetSmartName": "plugins_not_compat_with_dss_14"
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"plugin_id","type":"string"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],
