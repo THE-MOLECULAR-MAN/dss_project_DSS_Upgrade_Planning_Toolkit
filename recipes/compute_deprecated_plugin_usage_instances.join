@@ -109,7 +109,7 @@
       "computedColumns": []
     },
     {
-      "outputColumnsSelectionMode": "MANUAL",
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
       "index": 1
     }
   ],
