@@ -1,7 +1,20 @@
 {
   "name": "Deprecated Recipes",
   "color": "#31439C",
-  "items": [],
+  "items": [
+    {
+      "objectId": "dss_recipes_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_recipes_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_recipes_cached",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
