@@ -4,6 +4,7 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "type": "INNER",
       "outerJoinOnTheLeft": true,
       "on": [
@@ -82,6 +83,11 @@
       "name": "url",
       "type": "string",
       "table": 0
+    },
+    {
+      "name": "plugin_id",
+      "type": "string",
+      "table": 1
     }
   ],
   "resolvedSelectedColumns": [],
@@ -132,13 +138,8 @@
     },
     {
       "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "originLabel": "plugins_not_compat_with_dss_14",
-      "index": 1,
-      "computedColumns": []
+      "preFilter": {},
+      "index": 1
     }
   ],
   "computedColumns": [],
