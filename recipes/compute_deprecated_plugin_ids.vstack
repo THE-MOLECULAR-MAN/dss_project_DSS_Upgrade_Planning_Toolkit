@@ -83,7 +83,7 @@
         "userModified": false
       }
     },
-    "distinct": true,
+    "distinct": false,
     "enabled": false
   },
   "addOriginColumn": false
