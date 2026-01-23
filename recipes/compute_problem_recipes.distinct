@@ -1,38 +1,27 @@
 {
   "preFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "$latestOperator": "\u0026\u0026",
+      "$filterOptions": "rules",
+      "conditions": [
+        {
+          "input": "projectKey",
+          "col": "recipe_name",
+          "string": "DEPRECATED_TESTS_DSS_V12",
+          "$showList": false,
+          "num": 0,
+          "operator": "\u003d\u003d [string]"
+        }
+      ]
+    },
+    "$status": {},
     "distinct": false,
-    "enabled": false
+    "enabled": true
   },
   "keys": [
     {
-      "column": "recipe_id"
-    },
-    {
-      "column": "recipe_name"
-    },
-    {
-      "column": "projectKey"
-    },
-    {
       "column": "recipe_type"
-    },
-    {
-      "column": "input_datasets"
-    },
-    {
-      "column": "output_datasets"
-    },
-    {
-      "column": "tags"
-    },
-    {
-      "column": "engine_parameters"
-    },
-    {
-      "column": "last_modified_user"
-    },
-    {
-      "column": "url"
     }
   ],
   "globalCount": false,
@@ -72,6 +61,18 @@
   },
   "outputColumnNameOverrides": {},
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "meaning": "Text",
+            "name": "recipe_type",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
