@@ -51,10 +51,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "deprecated_plugin_ids_manual",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_installed_plugins_live",
       "objectType": "DATASET"
     },
