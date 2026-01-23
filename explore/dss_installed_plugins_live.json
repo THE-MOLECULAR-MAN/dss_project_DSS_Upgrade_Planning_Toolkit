@@ -47,7 +47,6 @@
         }
       ]
     },
-    "columnOrder": [],
     "columnWidthsByName": {
       "id": 204,
       "label": 232,
@@ -64,9 +63,7 @@
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
-      "individualColumnsRules": [],
-      "valueColoringMode": "HASH",
-      "coloringGroups": []
+      "valueColoringMode": "HASH"
     },
     "sorting": [],
     "analysisColumnData": {},
@@ -129,6 +126,5 @@
   "interactiveSearch": {
     "savedQueries": []
   },
-  "customMeasures": [],
-  "reusableDimensions": []
+  "customMeasures": []
 }

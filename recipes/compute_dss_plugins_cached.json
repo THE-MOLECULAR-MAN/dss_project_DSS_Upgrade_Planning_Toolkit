@@ -1,6 +1,7 @@
 {
   "type": "sync",
   "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
   "params": {
     "schemaMode": "STRICT_SYNC",
     "forcePipelineableForTests": false,
@@ -44,13 +45,7 @@
         "pipelineAllowStart": true,
         "pipelineAllowMerge": true
       },
-      "redshiftParams": {
-        "writeDatesInParquet": true
-      },
-      "lowerCaseSchemaIfEngineRequiresIt": false,
-      "containerSelection": {
-        "containerMode": "INHERIT"
-      }
+      "lowerCaseSchemaIfEngineRequiresIt": false
     }
   },
   "customMeta": {
@@ -58,14 +53,13 @@
   },
   "redispatchPartitioning": false,
   "maxRunningActivities": 0,
-  "hashPropagationBehavior": "INHERIT",
   "variables": {},
   "dkuProperties": [],
   "inputs": {
     "main": {
       "items": [
         {
-          "ref": "dss_plugins_live",
+          "ref": "dss_installed_plugins_live",
           "deps": []
         }
       ]
@@ -82,12 +76,21 @@
     }
   },
   "labels": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1769192657309,
+    "extendedProperties": {}
+  },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1763992043279
+    "lastModifiedOn": 1763992043279,
+    "extendedProperties": {}
   },
   "tags": [],
   "customFields": {},
