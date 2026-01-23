@@ -1,6 +1,9 @@
 {
-  "mode": "UNION",
+  "mode": "REMAP",
   "originColumnName": "original_dataset",
+  "selectedColumns": [
+    "plugin_id"
+  ],
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -42,7 +45,10 @@
         "enabled": false
       },
       "originLabel": "plugins_with_deprecation_mentioned",
-      "index": 0
+      "index": 0,
+      "columnsMatch": [
+        "id"
+      ]
     },
     {
       "preFilter": {
@@ -50,10 +56,25 @@
         "enabled": false
       },
       "originLabel": "plugins_not_compat_with_dss_14",
-      "index": 1
+      "index": 1,
+      "columnsMatch": [
+        "plugin_id"
+      ]
     }
   ],
+  "copySchemaFromDatasetWithName": "plugins_with_deprecation_mentioned",
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "plugin_id",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
