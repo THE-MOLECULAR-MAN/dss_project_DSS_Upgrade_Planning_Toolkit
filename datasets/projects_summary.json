@@ -31,11 +31,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768531021471,
+    "lastModifiedOn": 1769192843959,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -92,7 +92,9 @@
       {"name":"scenarios_total_num","type":"bigint"},
       {"name":"cluster_task_earliest","type":"date"},
       {"name":"cluster_task_latest","type":"date"},
-      {"name":"num_cluster_tasks","type":"bigint"}
+      {"name":"num_cluster_tasks","type":"bigint"},
+      {"name":"project_key","type":"string"},
+      {"name":"num_instances_of_deprecated_plugin_usages","type":"bigint"}
     ],
     "userModified": true
   },
