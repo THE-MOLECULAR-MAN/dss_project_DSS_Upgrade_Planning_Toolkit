@@ -51,10 +51,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "plugins_not_compat_with_dss_14",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_deprecated_plugin_usage_instances",
       "objectType": "RECIPE"
     },
