@@ -113,6 +113,18 @@
     ],
     [
       "moderna-llm"
+    ],
+    [
+      "list-folder-contents"
+    ],
+    [
+      "model-lightgbm"
+    ],
+    [
+      "join-and-keep-unmatched"
+    ],
+    [
+      "model-data-compliance"
     ]
   ],
   "schema": {
