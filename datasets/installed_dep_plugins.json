@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769188531851,
+    "lastModifiedOn": 1769188623183,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -75,7 +75,7 @@
       {"name":"total_usages","type":"bigint","meaning":"LongMeaning"},
       {"name":"is_built_in_plugin","type":"boolean","meaning":"Boolean"},
       {"name":"url","type":"string","meaning":"URL"},
-      {"name":"line","type":"string"}
+      {"name":"plugin_id","type":"string"}
     ],
     "userModified": true
   },
