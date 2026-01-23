@@ -3,10 +3,6 @@
   "color": "#D03713",
   "items": [
     {
-      "objectId": "compute_recipes_with_no_output",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "recipes_missing_either_input_or_output",
       "objectType": "DATASET"
     }
