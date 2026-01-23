@@ -69,6 +69,10 @@
     {
       "objectId": "deprecated_plugin_instances",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "plugins_not_compat_with_dss_14",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
