@@ -109,7 +109,10 @@
       "azure-ad-sync"
     ],
     [
-      null
+      "emr-clusters"
+    ],
+    [
+      "moderna-llm"
     ]
   ],
   "schema": {
