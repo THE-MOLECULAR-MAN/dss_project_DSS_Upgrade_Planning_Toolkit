@@ -70,7 +70,7 @@
     "main": {
       "items": [
         {
-          "ref": "dss_plugins_cached",
+          "ref": "dss_installed_plugins_cached",
           "deps": []
         }
       ]
@@ -88,11 +88,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769188487753,
+    "lastModifiedOn": 1769192663336,
     "extendedProperties": {}
   },
   "creationTag": {

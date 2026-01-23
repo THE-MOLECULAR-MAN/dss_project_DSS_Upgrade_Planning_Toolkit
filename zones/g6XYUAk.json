@@ -23,10 +23,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "dss_plugins_cached",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_codeenvs_live",
       "objectType": "DATASET"
     },
@@ -84,6 +80,10 @@
     },
     {
       "objectId": "dss_installed_plugins_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_installed_plugins_cached",
       "objectType": "DATASET"
     }
   ],
