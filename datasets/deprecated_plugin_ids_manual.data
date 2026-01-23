@@ -104,12 +104,18 @@
     ],
     [
       "events-aggregator"
+    ],
+    [
+      "azure-ad-sync"
+    ],
+    [
+      null
     ]
   ],
   "schema": {
     "columns": [
       {"name":"plugin_id","type":"string"}
     ],
-    "userModified": true
+    "userModified": false
   }
 }
