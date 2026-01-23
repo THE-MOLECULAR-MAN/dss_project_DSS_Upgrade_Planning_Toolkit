@@ -34,11 +34,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769187003444,
+    "lastModifiedOn": 1769188570036,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -62,7 +62,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"line","type":"string"}
+      {"name":"plugin_id","type":"string"}
     ],
     "userModified": true
   },
