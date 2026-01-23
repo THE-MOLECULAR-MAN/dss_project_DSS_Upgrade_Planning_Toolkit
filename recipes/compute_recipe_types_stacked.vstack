@@ -74,7 +74,7 @@
             "type": "string"
           },
           {
-            "name": "original_dataset",
+            "name": "recipe_upgrade_status",
             "type": "string"
           }
         ],
