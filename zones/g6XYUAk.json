@@ -89,6 +89,10 @@
     {
       "objectId": "deprecated_plugin_usage_instances",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "deprecated_plugin_ids_manual",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
