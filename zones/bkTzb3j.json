@@ -21,6 +21,10 @@
     {
       "objectId": "compute_problem_recipes",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "recipe_types_definitely_deprecated",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
