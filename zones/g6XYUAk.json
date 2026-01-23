@@ -73,6 +73,14 @@
     {
       "objectId": "plugins_not_compat_with_dss_14",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_installed_dep_plugins",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "installed_dep_plugins",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

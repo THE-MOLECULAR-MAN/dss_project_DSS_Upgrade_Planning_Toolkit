@@ -1,0 +1,124 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "id",
+      "table": 0
+    },
+    {
+      "name": "label",
+      "table": 0
+    },
+    {
+      "name": "code_env_name",
+      "table": 0
+    },
+    {
+      "name": "version",
+      "table": 0
+    },
+    {
+      "name": "author",
+      "table": 0
+    },
+    {
+      "name": "tags",
+      "table": 0
+    },
+    {
+      "name": "description",
+      "table": 0
+    },
+    {
+      "name": "plugin_used_in_projectkeys",
+      "table": 0
+    },
+    {
+      "name": "isDev",
+      "table": 0
+    },
+    {
+      "name": "total_usages",
+      "table": 0
+    },
+    {
+      "name": "is_built_in_plugin",
+      "table": 0
+    },
+    {
+      "name": "url",
+      "table": 0
+    },
+    {
+      "name": "line",
+      "table": 1
+    }
+  ],
+  "resolvedSelectedColumns": [],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "dss_plugins_cached",
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "plugins_not_compat_with_dss_14",
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}
