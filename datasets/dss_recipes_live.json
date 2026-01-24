@@ -14,8 +14,7 @@
   "flowOptions": {
     "virtualizable": false,
     "rebuildBehavior": "NORMAL",
-    "crossProjectBuildBehavior": "DEFAULT",
-    "ignoreErrorStatusOnBuild": false
+    "crossProjectBuildBehavior": "DEFAULT"
   },
   "readWriteOptions": {
     "preserveOrder": false,
@@ -31,12 +30,21 @@
     "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1769231642824,
+    "extendedProperties": {}
+  },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "tim.honker"
     },
-    "lastModifiedOn": 1762962169438
+    "lastModifiedOn": 1762962169438,
+    "extendedProperties": {}
   },
   "tags": [
     "ai_generated_description"
@@ -57,11 +65,11 @@
       {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
       {"name":"engine_parameters","type":"string","meaning":"JSONObjectMeaning"},
       {"name":"last_modified_user","type":"string","meaning":"Text"},
+      {"name":"deprecated_prepare_steps_found","type":"string","meaning":"Text"},
       {"name":"url","type":"string","meaning":"URL"}
     ],
     "userModified": true
   },
-  "typeSystemVersion": "V2",
   "dkuProperties": [],
   "metrics": {
     "probes": [
@@ -136,7 +144,7 @@
     }
   },
   "metricsChecks": {
-    "monitor": false,
+    "runOnBuild": false,
     "checks": [],
     "displayedState": {
       "checks": []
