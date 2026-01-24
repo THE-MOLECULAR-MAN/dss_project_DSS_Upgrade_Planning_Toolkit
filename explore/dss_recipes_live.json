@@ -3,43 +3,8 @@
     "steps": [],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
-      "mode": "ALL",
-      "list": [
-        {
-          "name": "id",
-          "d": true
-        },
-        {
-          "name": "name",
-          "d": true
-        },
-        {
-          "name": "projectKey",
-          "d": true
-        },
-        {
-          "name": "type",
-          "d": true
-        },
-        {
-          "name": "input_datasets",
-          "d": true
-        },
-        {
-          "name": "output_datasets",
-          "d": true
-        },
-        {
-          "name": "tags",
-          "d": true
-        },
-        {
-          "name": "url",
-          "d": true
-        }
-      ]
+      "mode": "ALL"
     },
-    "columnOrder": [],
     "columnWidthsByName": {
       "id": 300,
       "name": 300,
@@ -48,17 +13,26 @@
       "input_datasets": 300,
       "output_datasets": 300,
       "tags": 232,
-      "url": 300
+      "url": 300,
+      "recipe_id": 300,
+      "recipe_name": 300,
+      "recipe_type": 204,
+      "engine_parameters": 300,
+      "last_modified_user": 150,
+      "deprecated_prepare_steps_found": 240
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
-      "individualColumnsRules": [],
-      "valueColoringMode": "HASH",
-      "coloringGroups": []
+      "valueColoringMode": "HASH"
     },
-    "sorting": [],
+    "sorting": [
+      {
+        "column": "deprecated_prepare_steps_found",
+        "ascending": false
+      }
+    ],
     "analysisColumnData": {},
     "explorationSampling": {
       "selection": {
@@ -119,6 +93,5 @@
   "interactiveSearch": {
     "savedQueries": []
   },
-  "customMeasures": [],
-  "reusableDimensions": []
+  "customMeasures": []
 }
