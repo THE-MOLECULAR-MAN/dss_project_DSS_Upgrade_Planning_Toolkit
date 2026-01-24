@@ -49,10 +49,6 @@
     {
       "objectId": "compute_should_be",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "should_be",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
