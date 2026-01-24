@@ -31,11 +31,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769291234363,
+    "lastModifiedOn": 1769291406471,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -56,17 +56,17 @@
   },
   "schema": {
     "columns": [
-      {"name":"recipe_id","type":"string","meaning":"Text"},
-      {"name":"recipe_name","type":"string","meaning":"Text"},
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"recipe_type","type":"string","meaning":"Text"},
-      {"name":"input_datasets","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"output_datasets","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"engine_parameters","type":"string","meaning":"JSONObjectMeaning"},
-      {"name":"last_modified_user","type":"string","meaning":"Text"},
-      {"name":"deprecated_prepare_steps_found","type":"string","meaning":"Text"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"projectKey","type":"string"},
+      {"name":"recipe_id","type":"string"},
+      {"name":"recipe_type","type":"string"},
+      {"name":"recipe_name","type":"string"},
+      {"name":"tags","type":"string"},
+      {"name":"url","type":"string"},
+      {"name":"deprecated_prepare_steps_found","type":"string"},
+      {"name":"engine_parameters","type":"string"},
+      {"name":"last_modified_user","type":"string"},
+      {"name":"input_datasets","type":"string"},
+      {"name":"output_datasets","type":"string"}
     ],
     "userModified": true
   },
