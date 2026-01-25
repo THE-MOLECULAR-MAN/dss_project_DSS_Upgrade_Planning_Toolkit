@@ -1,6 +1,5 @@
 {
   "mode": "REMAP",
-  "originColumnName": "event_type",
   "selectedColumns": [
     "project_key",
     "start_time",
@@ -10,6 +9,7 @@
     "scenario_id",
     "user"
   ],
+  "originColumnName": "event_type",
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -24,9 +24,6 @@
     },
     "impala": {
       "forceStreamMode": true
-    },
-    "containerSelection": {
-      "containerMode": "INHERIT"
     },
     "lowerCaseSchemaIfEngineRequiresIt": true,
     "sparkSQL": {
@@ -47,6 +44,7 @@
       }
     }
   },
+  "copySchemaFromDatasetWithName": "cluster_tasks",
   "virtualInputs": [
     {
       "preFilter": {
@@ -83,7 +81,10 @@
       ]
     },
     {
-      "preFilter": {},
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
       "originLabel": "cluster_task",
       "index": 2,
       "columnsMatch": [
@@ -97,12 +98,9 @@
       ]
     }
   ],
-  "copySchemaFromDatasetWithName": "cluster_tasks",
   "postFilter": {
     "uiData": {
       "mode": "\u0026\u0026",
-      "$latestOperator": "\u0026\u0026",
-      "$filterOptions": "rules",
       "conditions": [
         {
           "date": "1970-01-01",
@@ -110,59 +108,20 @@
           "col": "project_key",
           "time2": "00:00",
           "unit": "days",
-          "$showList": false,
+          "num": 0.0,
           "time": "00:00",
           "date2": "2026-01-04",
           "items": [
             {
               "date": "1970-01-01",
               "unit": "days",
-              "num": 0,
+              "num": 0.0,
               "time": "00:00"
             }
           ],
           "operator": "not empty string"
         }
       ]
-    },
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "name": "project_key",
-            "type": "string"
-          },
-          {
-            "name": "start_time",
-            "type": "date"
-          },
-          {
-            "name": "end_time",
-            "type": "date"
-          },
-          {
-            "name": "state",
-            "type": "string"
-          },
-          {
-            "name": "warnings_count",
-            "type": "int"
-          },
-          {
-            "name": "scenario_id",
-            "type": "string"
-          },
-          {
-            "name": "user",
-            "type": "string"
-          },
-          {
-            "name": "event_type",
-            "type": "string"
-          }
-        ],
-        "userModified": false
-      }
     },
     "distinct": false,
     "enabled": false
