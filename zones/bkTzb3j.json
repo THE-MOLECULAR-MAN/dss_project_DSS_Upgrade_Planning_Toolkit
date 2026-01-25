@@ -17,6 +17,10 @@
     {
       "objectId": "deprecated_recipes",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "recipes_needing_manual_checking",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
