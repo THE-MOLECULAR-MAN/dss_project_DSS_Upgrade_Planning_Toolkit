@@ -30,7 +30,7 @@
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
-  "mode": "VALUES",
+  "mode": "FILTERS",
   "centileTDigest": false,
   "valueSplits": [
     {
@@ -91,7 +91,19 @@
       "filter": {
         "uiData": {
           "mode": "\u0026\u0026",
-          "conditions": []
+          "$latestOperator": "\u0026\u0026",
+          "$filterOptions": "rules",
+          "conditions": [
+            {
+              "input": "deprecation_status",
+              "col": "recipe_id",
+              "string": "deprecat",
+              "$showList": false,
+              "num": 0,
+              "items": [],
+              "operator": "contains [string]i"
+            }
+          ]
         },
         "$status": {
           "schema": {
