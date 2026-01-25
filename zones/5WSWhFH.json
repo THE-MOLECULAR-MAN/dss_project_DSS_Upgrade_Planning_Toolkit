@@ -25,6 +25,14 @@
     {
       "objectId": "dss_recipes_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_projects_cached_psql",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_projects_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

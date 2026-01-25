@@ -63,10 +63,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "compute_dss_projects_cached_psql",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_commits_prepared",
       "objectType": "RECIPE"
     },
@@ -80,10 +76,6 @@
     },
     {
       "objectId": "commits_by_project_key",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_projects_cached",
       "objectType": "DATASET"
     },
     {
