@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769314737644,
+    "lastModifiedOn": 1769314777306,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -63,10 +63,12 @@
   },
   "schema": {
     "columns": [
-      {"name":"deprecation_status","type":"string"},
-      {"name":"DEPRECATED_TESTS_DSS_V12_count","type":"bigint"},
-      {"name":"DSS_v12_Admin_and_Migration_Planning_count","type":"bigint"},
-      {"name":"import2_count","type":"bigint"}
+      {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"Deprecated_count","type":"bigint"},
+      {"name":"Needs manual checking_count","type":"bigint"},
+      {"name":"Prepare recipe uses deprecated preprocessors_count","type":"bigint"},
+      {"name":"Safe_count","type":"bigint"},
+      {"name":"Usually safe_count","type":"bigint"}
     ],
     "userModified": false,
     "metadata": {
@@ -75,7 +77,7 @@
         {
           "pivotElement": {
             "keyColumns": [
-              "projectKey"
+              "deprecation_status"
             ],
             "valueLimit": "TOP_N",
             "topnLimit": 20,
@@ -87,27 +89,43 @@
           "pivotedModalities": [
             {
               "keyValues": [
-                "DEPRECATED_TESTS_DSS_V12"
+                "Deprecated"
               ],
-              "name": "DEPRECATED_TESTS_DSS_V12",
+              "name": "Deprecated",
               "valueColumns": [],
-              "globalCountColumn": "DEPRECATED_TESTS_DSS_V12_count"
+              "globalCountColumn": "Deprecated_count"
             },
             {
               "keyValues": [
-                "DSS_v12_Admin_and_Migration_Planning"
+                "Needs manual checking"
               ],
-              "name": "DSS_v12_Admin_and_Migration_Planning",
+              "name": "Needs manual checking",
               "valueColumns": [],
-              "globalCountColumn": "DSS_v12_Admin_and_Migration_Planning_count"
+              "globalCountColumn": "Needs manual checking_count"
             },
             {
               "keyValues": [
-                "import2"
+                "Prepare recipe uses deprecated preprocessors"
               ],
-              "name": "import2",
+              "name": "Prepare recipe uses deprecated preprocessors",
               "valueColumns": [],
-              "globalCountColumn": "import2_count"
+              "globalCountColumn": "Prepare recipe uses deprecated preprocessors_count"
+            },
+            {
+              "keyValues": [
+                "Safe"
+              ],
+              "name": "Safe",
+              "valueColumns": [],
+              "globalCountColumn": "Safe_count"
+            },
+            {
+              "keyValues": [
+                "Usually safe"
+              ],
+              "name": "Usually safe",
+              "valueColumns": [],
+              "globalCountColumn": "Usually safe_count"
             }
           ]
         }
