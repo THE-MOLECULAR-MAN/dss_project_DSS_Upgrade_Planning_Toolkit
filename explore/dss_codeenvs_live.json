@@ -3,55 +3,8 @@
     "steps": [],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
-      "mode": "ALL",
-      "list": [
-        {
-          "name": "code_env_name",
-          "d": true
-        },
-        {
-          "name": "code_env_lang",
-          "d": true
-        },
-        {
-          "name": "deployment_mode",
-          "d": true
-        },
-        {
-          "name": "owner",
-          "d": true
-        },
-        {
-          "name": "python_interpreter",
-          "d": true
-        },
-        {
-          "name": "core_packages_set",
-          "d": true
-        },
-        {
-          "name": "path",
-          "d": true
-        },
-        {
-          "name": "size_in_MB",
-          "d": true
-        },
-        {
-          "name": "projectKeys_where_code_env_used",
-          "d": true
-        },
-        {
-          "name": "total_instances_of_code_env",
-          "d": true
-        },
-        {
-          "name": "url",
-          "d": true
-        }
-      ]
+      "mode": "ALL"
     },
-    "columnOrder": [],
     "columnWidthsByName": {
       "envName": 300,
       "envLang": 100,
@@ -71,15 +24,14 @@
       "core_packages_set": 143,
       "size_in_MB": 134,
       "projectKeys_where_code_env_used": 300,
-      "total_instances_of_code_env": 218
+      "total_instances_of_code_env": 218,
+      "python_version_support_status": 233
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
-      "individualColumnsRules": [],
-      "valueColoringMode": "HASH",
-      "coloringGroups": []
+      "valueColoringMode": "HASH"
     },
     "sorting": [],
     "analysisColumnData": {},
@@ -99,14 +51,14 @@
           "rules": []
         },
         "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 5,
+        "maxRecords": 100,
         "targetRatio": 0.02,
         "ascending": true,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1767607993278
+      "_refreshTrigger": 1769311086935
     },
     "vizSampling": {
       "selection": {
@@ -142,7 +94,5 @@
   "interactiveSearch": {
     "savedQueries": []
   },
-  "customMeasures": [],
-  "reusableDimensions": [],
-  "hierarchies": []
+  "customMeasures": []
 }
