@@ -1,0 +1,105 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "maxRecordsForDisplay": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "maxStoredBytes": 104857600,
+      "ascending": true,
+      "timeout": -1,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "columnUseScientificNotationByName": {},
+  "exploreUIParams": {},
+  "steps": [],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL",
+      "ascending": true
+    },
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {
+    "plugin_used_in_projectkeys": {
+      "meaning": "JSONArrayMeaning"
+    },
+    "author": {
+      "meaning": "Text"
+    },
+    "plugin_is_deprecated": {
+      "meaning": "Boolean"
+    },
+    "isDev": {
+      "meaning": "Boolean"
+    },
+    "description": {
+      "meaning": "FreeText"
+    },
+    "code_env_name": {
+      "meaning": "Text"
+    },
+    "is_built_in_plugin": {
+      "meaning": "Boolean"
+    },
+    "id": {
+      "meaning": "Text"
+    },
+    "label": {
+      "meaning": "Text"
+    },
+    "version": {
+      "meaning": "Text"
+    },
+    "url": {
+      "meaning": "URL"
+    },
+    "tags": {
+      "meaning": "JSONArrayMeaning"
+    }
+  },
+  "columnWidthsByName": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

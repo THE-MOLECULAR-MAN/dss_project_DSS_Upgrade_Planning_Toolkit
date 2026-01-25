@@ -165,6 +165,14 @@
     {
       "objectId": "dss_plugins_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "deprecated_plugins",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_deprecated_plugins",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
