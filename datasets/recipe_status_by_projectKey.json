@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769314785475,
+    "lastModifiedOn": 1769314882148,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -79,7 +79,7 @@
             "keyColumns": [
               "deprecation_status"
             ],
-            "valueLimit": "TOP_N",
+            "valueLimit": "NO_LIMIT",
             "topnLimit": 20,
             "minOccLimit": 0,
             "explicitValues": [],
