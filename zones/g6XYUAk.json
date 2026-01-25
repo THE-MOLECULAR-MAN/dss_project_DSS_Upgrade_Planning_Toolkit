@@ -35,10 +35,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "deprecated_plugin_usage_by_project_key",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "instances_of_deprecated_plugins",
       "objectType": "DATASET"
     }
