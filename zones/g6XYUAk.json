@@ -3,10 +3,6 @@
   "color": "#31439C",
   "items": [
     {
-      "objectId": "deprecated_code_envs",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_deprecated_code_envs",
       "objectType": "RECIPE"
     },
