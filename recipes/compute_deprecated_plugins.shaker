@@ -75,6 +75,21 @@
         "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "id",
+            "to": "plugin_id"
+          }
+        ]
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -141,18 +156,19 @@
     }
   },
   "columnWidthsByName": {
+    "plugin_id": 176,
     "plugin_used_in_projectkeys": 210,
     "author": 239,
     "plugin_is_deprecated": 165,
-    "isDev": 100,
     "description": 300,
-    "code_env_name": 169,
     "is_built_in_plugin": 150,
-    "id": 176,
     "label": 300,
     "version": 100,
     "url": 300,
-    "tags": 300
+    "tags": 300,
+    "isDev": 100,
+    "code_env_name": 169,
+    "id": 176
   },
   "sorting": [],
   "globalSearchQuery": "",
