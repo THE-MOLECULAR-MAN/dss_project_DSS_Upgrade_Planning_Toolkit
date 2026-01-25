@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769314398039,
+    "lastModifiedOn": 1769314424321,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -62,7 +62,19 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"recipe_id","type":"string","meaning":"Text"},
+      {"name":"recipe_type","type":"string","meaning":"Text"},
+      {"name":"recipe_name","type":"string","meaning":"Text"},
+      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"url","type":"string","meaning":"URL"},
+      {"name":"engine_parameters","type":"string","meaning":"JSONObjectMeaning"},
+      {"name":"last_modified_user","type":"string","meaning":"Text"},
+      {"name":"input_datasets","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"deprecation_status","type":"string"},
+      {"name":"output_datasets","type":"string","meaning":"JSONArrayMeaning"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],
