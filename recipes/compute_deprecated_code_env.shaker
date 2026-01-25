@@ -29,8 +29,53 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "python_version_support_status"
+        ],
+        "values": [
+          "deprecated"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN",
+        "exclude": false,
+        "processNullOrEmptyValues": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "python_version_support_status",
+          "code_env_lang",
+          "deployment_mode",
+          "core_packages_set",
+          "path",
+          "size_in_MB"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -85,7 +130,20 @@
       "meaning": "Text"
     }
   },
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "owner": 100,
+    "path": 300,
+    "core_packages_set": 169,
+    "code_env_lang": 113,
+    "python_version_support_status": 233,
+    "total_instances_of_code_env": 218,
+    "projectKeys_where_code_env_used": 248,
+    "code_env_name": 274,
+    "size_in_MB": 134,
+    "python_interpreter": 150,
+    "url": 300,
+    "deployment_mode": 155
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
