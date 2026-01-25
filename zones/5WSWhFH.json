@@ -45,6 +45,18 @@
     {
       "objectId": "commits",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_recipes_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "live_plugin_usages",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_codeenvs_live",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
