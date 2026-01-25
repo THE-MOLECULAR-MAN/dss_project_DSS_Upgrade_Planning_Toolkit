@@ -3,37 +3,40 @@
   "centileSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
-  "defaultOutputIndex": 1,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
+  "defaultOutputIndex": -1,
   "seed": 1337,
   "randomColumns": [],
   "centileOrders": [],
   "rangeSetTime": false,
+  "column": "plugin_is_deprecated",
   "randomSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "randomColumnsSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
+  "mode": "VALUES",
   "centileTDigest": false,
   "valueSplits": [
     {
       "outputIndex": 0,
-      "caseSensitive": false
+      "caseSensitive": false,
+      "value": "True"
     }
   ],
   "rangeSplits": [
@@ -89,6 +92,40 @@
         "uiData": {
           "mode": "\u0026\u0026",
           "conditions": []
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "plugin_id",
+                "type": "string"
+              },
+              {
+                "name": "plugin_is_deprecated",
+                "type": "string"
+              },
+              {
+                "name": "element_kind",
+                "type": "string"
+              },
+              {
+                "name": "element_type",
+                "type": "string"
+              },
+              {
+                "name": "object_id",
+                "type": "string"
+              },
+              {
+                "name": "object_type",
+                "type": "string"
+              },
+              {
+                "name": "project_key",
+                "type": "string"
+              }
+            ]
+          }
         },
         "distinct": false,
         "enabled": true
