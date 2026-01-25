@@ -13,6 +13,10 @@
     {
       "objectId": "dss_recipes_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "deprecated_recipes",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
