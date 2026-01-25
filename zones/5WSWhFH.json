@@ -155,7 +155,7 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "dss_plugins_installed_live",
+      "objectId": "dss_plugins_live",
       "objectType": "DATASET"
     }
   ],
