@@ -166,7 +166,10 @@
     }
   },
   "enlargeYourBits": true,
-  "outputColumnNameOverrides": {},
+  "outputColumnNameOverrides": {
+    "project_key_distinct": "num_project_keys",
+    "count": "plugin_usage_count"
+  },
   "computedColumns": [],
   "postFilter": {
     "$status": {
