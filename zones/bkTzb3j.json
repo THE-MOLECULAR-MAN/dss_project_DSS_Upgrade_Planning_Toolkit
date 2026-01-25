@@ -15,10 +15,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "recipe_types_definitely_deprecated",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "recipe_types_safe",
       "objectType": "DATASET"
     },
