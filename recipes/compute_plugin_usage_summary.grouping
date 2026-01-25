@@ -168,7 +168,7 @@
   "enlargeYourBits": true,
   "outputColumnNameOverrides": {
     "project_key_distinct": "num_project_keys",
-    "count": "plugin_usage_count"
+    "count": "total_num_of_instances_of_plugin"
   },
   "computedColumns": [],
   "postFilter": {
