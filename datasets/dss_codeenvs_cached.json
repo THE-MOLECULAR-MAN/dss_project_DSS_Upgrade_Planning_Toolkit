@@ -31,11 +31,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769314989058,
+    "lastModifiedOn": 1769315351935,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -77,7 +77,9 @@
       {"name":"core_packages_set","type":"string","meaning":"Text"},
       {"name":"path","type":"string","meaning":"Text"},
       {"name":"python_version_support_status","type":"string"},
-      {"name":"size_in_MB","type":"string","meaning":"DoubleMeaning"}
+      {"name":"size_in_MB","type":"string","meaning":"DoubleMeaning"},
+      {"name":"projectKeys_where_code_env_used","type":"string"},
+      {"name":"total_instances_of_code_env","type":"string"}
     ],
     "userModified": true
   },
