@@ -1,7 +1,32 @@
 {
   "name": "Cache latest data",
   "color": "#C82423",
-  "items": [],
+  "items": [
+    {
+      "objectId": "compute_plugin_usages_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_dss_codeenvs_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_dss_recipes_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "plugin_usages_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_codeenvs_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_recipes_cached",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
