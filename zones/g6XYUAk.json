@@ -39,10 +39,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "compute_deprecated_plugin_usage_by_project_key",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "deprecated_plugin_usage_by_project_key",
       "objectType": "DATASET"
     },
