@@ -117,6 +117,30 @@
     {
       "objectId": "dss_apps_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_connections_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_clusters_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_apps_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_users_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_webapps_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_datasets_live",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
