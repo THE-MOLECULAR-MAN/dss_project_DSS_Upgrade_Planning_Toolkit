@@ -74,6 +74,22 @@
         "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "url",
+        "columns": [
+          "python_interpreter",
+          "total_instances_of_code_env"
+        ],
+        "reorderAction": "BEFORE_COLUMN",
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
