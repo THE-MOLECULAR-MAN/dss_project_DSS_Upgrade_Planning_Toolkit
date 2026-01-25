@@ -95,10 +95,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "projects_summary",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "commits",
       "objectType": "DATASET"
     },
