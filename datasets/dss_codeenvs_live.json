@@ -31,11 +31,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769315194510,
+    "lastModifiedOn": 1769317083416,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -51,7 +51,7 @@
   ],
   "params": {
     "customConfig": {
-      "compute_codeenv_disk_space_usage": true,
+      "compute_codeenv_disk_space_usage": false,
       "compute_codeenv_usages": true
     },
     "notReadyIfEmpty": false,
