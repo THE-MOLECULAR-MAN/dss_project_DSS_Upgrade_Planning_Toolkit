@@ -19,10 +19,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_recipe_types_questionable",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "recipe_types_questionable",
       "objectType": "DATASET"
     },
