@@ -31,11 +31,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769293673193,
+    "lastModifiedOn": 1769314299716,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -77,8 +77,8 @@
       {"name":"engine_parameters","type":"string","meaning":"JSONObjectMeaning"},
       {"name":"last_modified_user","type":"string","meaning":"Text"},
       {"name":"input_datasets","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"output_datasets","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"deprecated_prepare_steps_found","type":"string","meaning":"Text"}
+      {"name":"deprecation_status","type":"string"},
+      {"name":"output_datasets","type":"string","meaning":"JSONArrayMeaning"}
     ],
     "userModified": true
   },
