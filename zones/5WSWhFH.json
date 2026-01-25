@@ -33,6 +33,18 @@
     {
       "objectId": "dss_projects_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "cluster_tasks",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "jobs",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "commits",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
