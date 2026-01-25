@@ -10,7 +10,7 @@
     "distinct": false,
     "enabled": false
   },
-  "defaultOutputIndex": 1,
+  "defaultOutputIndex": 2,
   "seed": 1337,
   "randomColumns": [],
   "centileOrders": [],
@@ -30,13 +30,25 @@
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
-  "mode": "FILTERS",
+  "mode": "VALUES",
   "centileTDigest": false,
   "valueSplits": [
     {
       "outputIndex": 0,
       "caseSensitive": false,
-      "value": ""
+      "value": "Deprecated"
+    },
+    {
+      "outputIndex": 1,
+      "value": "Needs manual checking"
+    },
+    {
+      "outputIndex": -1,
+      "value": "Safe"
+    },
+    {
+      "outputIndex": 1,
+      "value": "Usually safe"
     }
   ],
   "rangeSplits": [

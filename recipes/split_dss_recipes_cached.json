@@ -29,17 +29,21 @@
         {
           "ref": "recipes_needing_manual_checking",
           "appendMode": false
+        },
+        {
+          "ref": "other",
+          "appendMode": false
         }
       ]
     }
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769314469782,
+    "lastModifiedOn": 1769314573960,
     "extendedProperties": {}
   },
   "creationTag": {
