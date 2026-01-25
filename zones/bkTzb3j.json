@@ -17,10 +17,6 @@
     {
       "objectId": "compute_recipes_to_check",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "recipes_to_check",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
