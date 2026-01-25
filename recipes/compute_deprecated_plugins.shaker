@@ -29,8 +29,50 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "plugin_is_deprecated"
+        ],
+        "values": [
+          "true"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN",
+        "exclude": false,
+        "processNullOrEmptyValues": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "isDev",
+          "is_built_in_plugin",
+          "plugin_is_deprecated"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -94,7 +136,20 @@
       "meaning": "JSONArrayMeaning"
     }
   },
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "plugin_used_in_projectkeys": 210,
+    "author": 239,
+    "plugin_is_deprecated": 165,
+    "isDev": 100,
+    "description": 300,
+    "code_env_name": 169,
+    "is_built_in_plugin": 150,
+    "id": 176,
+    "label": 300,
+    "version": 100,
+    "url": 300,
+    "tags": 300
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
