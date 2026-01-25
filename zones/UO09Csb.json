@@ -7,14 +7,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_cluster_tasks_prepared",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "cluster_tasks_cached",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_events_stacked",
       "objectType": "RECIPE"
     },
