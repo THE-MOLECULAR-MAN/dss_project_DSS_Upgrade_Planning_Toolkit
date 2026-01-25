@@ -31,10 +31,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "split_plugin_usages_cached",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "deprecated_code_env",
       "objectType": "DATASET"
     },
