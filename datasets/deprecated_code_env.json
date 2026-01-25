@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769315423615,
+    "lastModifiedOn": 1769315446149,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -64,11 +64,11 @@
   "schema": {
     "columns": [
       {"name":"code_env_name","type":"string","meaning":"Text"},
-      {"name":"url","type":"string","meaning":"URL"},
       {"name":"python_interpreter","type":"string","meaning":"Text"},
+      {"name":"total_instances_of_code_env","type":"bigint"},
+      {"name":"url","type":"string","meaning":"URL"},
       {"name":"owner","type":"string","meaning":"Text"},
-      {"name":"projectKeys_where_code_env_used","type":"string"},
-      {"name":"total_instances_of_code_env","type":"bigint"}
+      {"name":"projectKeys_where_code_env_used","type":"string"}
     ],
     "userModified": true
   },
