@@ -59,7 +59,7 @@
     "main": {
       "items": [
         {
-          "ref": "live_plugin_usages",
+          "ref": "dss_plugin_usages_live",
           "deps": []
         }
       ]
@@ -77,11 +77,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768576460858,
+    "lastModifiedOn": 1769322807129,
     "extendedProperties": {}
   },
   "creationTag": {
