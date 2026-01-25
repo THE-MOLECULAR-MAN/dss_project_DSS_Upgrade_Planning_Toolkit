@@ -65,6 +65,10 @@
     {
       "objectId": "commits_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_projects_live",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

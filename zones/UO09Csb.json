@@ -69,10 +69,6 @@
     {
       "objectId": "scenarios_by_project_key",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_projects_live",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
