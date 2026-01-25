@@ -93,6 +93,10 @@
     {
       "objectId": "scenarios_by_project_key",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "projects_summary",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
