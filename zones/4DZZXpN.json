@@ -7,51 +7,11 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_recent_jobs_and_scenarios_by_project_key",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "compute_recent_cluster_tasks_by_projectKey",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "cluster_tasks_by_projectKey",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "commits",
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_commits_prepared",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "commits_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_commits_by_project_key",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "commits_by_project_key",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "scenarios_by_project_key",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_projects_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_projects_cached_psql",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_projects_cached",
       "objectType": "DATASET"
     }
   ],
