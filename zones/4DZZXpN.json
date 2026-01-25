@@ -3,10 +3,6 @@
   "color": "#8C2DA7",
   "items": [
     {
-      "objectId": "commits",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_projects_live",
       "objectType": "DATASET"
     }

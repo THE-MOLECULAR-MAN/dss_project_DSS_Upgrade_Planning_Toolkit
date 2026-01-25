@@ -97,6 +97,10 @@
     {
       "objectId": "projects_summary",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "commits",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
