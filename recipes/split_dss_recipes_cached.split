@@ -3,37 +3,40 @@
   "centileSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
-  "defaultOutputIndex": 1,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
+  "defaultOutputIndex": 1,
   "seed": 1337,
   "randomColumns": [],
   "centileOrders": [],
   "rangeSetTime": false,
+  "column": "deprecation_status",
   "randomSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "randomColumnsSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
+  "mode": "VALUES",
   "centileTDigest": false,
   "valueSplits": [
     {
       "outputIndex": 0,
-      "caseSensitive": false
+      "caseSensitive": false,
+      "value": ""
     }
   ],
   "rangeSplits": [
@@ -89,6 +92,66 @@
         "uiData": {
           "mode": "\u0026\u0026",
           "conditions": []
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "meaning": "Text",
+                "name": "projectKey",
+                "type": "string"
+              },
+              {
+                "meaning": "Text",
+                "name": "recipe_id",
+                "type": "string"
+              },
+              {
+                "meaning": "Text",
+                "name": "recipe_type",
+                "type": "string"
+              },
+              {
+                "meaning": "Text",
+                "name": "recipe_name",
+                "type": "string"
+              },
+              {
+                "meaning": "JSONArrayMeaning",
+                "name": "tags",
+                "type": "string"
+              },
+              {
+                "meaning": "URL",
+                "name": "url",
+                "type": "string"
+              },
+              {
+                "meaning": "JSONObjectMeaning",
+                "name": "engine_parameters",
+                "type": "string"
+              },
+              {
+                "meaning": "Text",
+                "name": "last_modified_user",
+                "type": "string"
+              },
+              {
+                "meaning": "JSONArrayMeaning",
+                "name": "input_datasets",
+                "type": "string"
+              },
+              {
+                "name": "deprecation_status",
+                "type": "string"
+              },
+              {
+                "meaning": "JSONArrayMeaning",
+                "name": "output_datasets",
+                "type": "string"
+              }
+            ]
+          }
         },
         "distinct": false,
         "enabled": true
