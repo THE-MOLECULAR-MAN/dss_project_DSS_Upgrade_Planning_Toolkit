@@ -57,6 +57,14 @@
     {
       "objectId": "dss_codeenvs_live",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_commits_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "commits_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

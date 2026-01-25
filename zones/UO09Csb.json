@@ -55,14 +55,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "compute_commits_prepared",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "commits_cached",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_commits_by_project_key",
       "objectType": "RECIPE"
     },
