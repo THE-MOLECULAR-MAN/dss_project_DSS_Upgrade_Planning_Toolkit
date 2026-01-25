@@ -63,10 +63,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "other",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "recipes_needing_manual_checking",
       "objectType": "DATASET"
     },
@@ -76,6 +72,10 @@
     },
     {
       "objectId": "recipe_status_by_projectKey",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "unknown",
       "objectType": "DATASET"
     }
   ],

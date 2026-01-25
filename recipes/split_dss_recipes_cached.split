@@ -3,14 +3,14 @@
   "centileSplits": [
     {
       "outputIndex": 0,
-      "share": 50
+      "share": 50.0
     }
   ],
+  "defaultOutputIndex": 2,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
-  "defaultOutputIndex": 2,
   "seed": 1337,
   "randomColumns": [],
   "centileOrders": [],
@@ -19,13 +19,13 @@
   "randomSplits": [
     {
       "outputIndex": 0,
-      "share": 50
+      "share": 50.0
     }
   ],
   "randomColumnsSplits": [
     {
       "outputIndex": 0,
-      "share": 50
+      "share": 50.0
     }
   ],
   "computedColumns": [],
@@ -40,18 +40,22 @@
     },
     {
       "outputIndex": 1,
+      "caseSensitive": false,
       "value": "Needs manual checking"
     },
     {
       "outputIndex": -1,
+      "caseSensitive": false,
       "value": "Safe"
     },
     {
       "outputIndex": 1,
+      "caseSensitive": false,
       "value": "Usually safe"
     },
     {
       "outputIndex": 0,
+      "caseSensitive": false,
       "value": "Prepare recipe uses deprecated preprocessors"
     }
   ],
@@ -107,79 +111,16 @@
       "filter": {
         "uiData": {
           "mode": "\u0026\u0026",
-          "$latestOperator": "\u0026\u0026",
-          "$filterOptions": "rules",
           "conditions": [
             {
               "input": "deprecation_status",
               "col": "recipe_id",
               "string": "deprecat",
-              "$showList": false,
-              "num": 0,
+              "num": 0.0,
               "items": [],
               "operator": "contains [string]i"
             }
           ]
-        },
-        "$status": {
-          "schema": {
-            "columns": [
-              {
-                "meaning": "Text",
-                "name": "projectKey",
-                "type": "string"
-              },
-              {
-                "meaning": "Text",
-                "name": "recipe_id",
-                "type": "string"
-              },
-              {
-                "meaning": "Text",
-                "name": "recipe_type",
-                "type": "string"
-              },
-              {
-                "meaning": "Text",
-                "name": "recipe_name",
-                "type": "string"
-              },
-              {
-                "meaning": "JSONArrayMeaning",
-                "name": "tags",
-                "type": "string"
-              },
-              {
-                "meaning": "URL",
-                "name": "url",
-                "type": "string"
-              },
-              {
-                "meaning": "JSONObjectMeaning",
-                "name": "engine_parameters",
-                "type": "string"
-              },
-              {
-                "meaning": "Text",
-                "name": "last_modified_user",
-                "type": "string"
-              },
-              {
-                "meaning": "JSONArrayMeaning",
-                "name": "input_datasets",
-                "type": "string"
-              },
-              {
-                "name": "deprecation_status",
-                "type": "string"
-              },
-              {
-                "meaning": "JSONArrayMeaning",
-                "name": "output_datasets",
-                "type": "string"
-              }
-            ]
-          }
         },
         "distinct": false,
         "enabled": true
