@@ -153,6 +153,10 @@
     {
       "objectId": "dss_plugin_usages_live",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_plugins_installed_live",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
