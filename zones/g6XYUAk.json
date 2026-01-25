@@ -3,10 +3,6 @@
   "color": "#31439C",
   "items": [
     {
-      "objectId": "compute_deprecated_code_envs",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "dss_codeenvs_live",
       "objectType": "DATASET"
     },
