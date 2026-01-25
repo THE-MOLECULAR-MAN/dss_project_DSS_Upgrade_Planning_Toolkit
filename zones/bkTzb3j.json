@@ -13,10 +13,6 @@
     {
       "objectId": "dss_recipes_cached",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_recipes_to_check",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
