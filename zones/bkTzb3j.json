@@ -29,6 +29,14 @@
     {
       "objectId": "other",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recipe_status_by_projectKey",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "recipe_status_by_projectKey",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
