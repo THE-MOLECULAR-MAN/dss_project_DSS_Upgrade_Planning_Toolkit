@@ -25,6 +25,10 @@
     {
       "objectId": "split_dss_recipes_cached",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "other",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
