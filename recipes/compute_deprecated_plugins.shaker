@@ -63,6 +63,7 @@
       "type": "ColumnsSelector",
       "params": {
         "columns": [
+          "plugin_used_in_projectkeys",
           "author",
           "tags",
           "description",
