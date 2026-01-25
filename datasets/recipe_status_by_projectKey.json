@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769314882148,
+    "lastModifiedOn": 1769322477737,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -67,7 +67,6 @@
       {"name":"Deprecated_count","type":"bigint"},
       {"name":"Needs manual checking_count","type":"bigint"},
       {"name":"Prepare recipe uses deprecated preprocessors_count","type":"bigint"},
-      {"name":"Safe_count","type":"bigint"},
       {"name":"Usually safe_count","type":"bigint"}
     ],
     "userModified": false,
@@ -110,14 +109,6 @@
               "name": "Prepare recipe uses deprecated preprocessors",
               "valueColumns": [],
               "globalCountColumn": "Prepare recipe uses deprecated preprocessors_count"
-            },
-            {
-              "keyValues": [
-                "Safe"
-              ],
-              "name": "Safe",
-              "valueColumns": [],
-              "globalCountColumn": "Safe_count"
             },
             {
               "keyValues": [
