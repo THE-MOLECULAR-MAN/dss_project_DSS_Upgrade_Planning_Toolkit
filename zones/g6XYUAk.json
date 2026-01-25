@@ -33,10 +33,6 @@
     {
       "objectId": "plugin_usages_cached",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "instances_of_deprecated_plugins",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
