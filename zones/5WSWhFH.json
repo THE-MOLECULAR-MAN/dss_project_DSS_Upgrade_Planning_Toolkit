@@ -149,6 +149,10 @@
     {
       "objectId": "cluster_tasks_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "scenario_runs",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

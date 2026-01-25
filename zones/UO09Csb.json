@@ -3,10 +3,6 @@
   "color": "#C54F00",
   "items": [
     {
-      "objectId": "scenario_runs",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_events_stacked",
       "objectType": "RECIPE"
     },
