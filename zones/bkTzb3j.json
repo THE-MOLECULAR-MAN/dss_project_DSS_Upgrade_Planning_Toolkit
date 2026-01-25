@@ -17,10 +17,6 @@
     {
       "objectId": "recipe_types_safe",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "recipe_types_stacked",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
