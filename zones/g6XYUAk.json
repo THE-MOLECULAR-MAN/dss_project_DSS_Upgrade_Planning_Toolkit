@@ -41,6 +41,42 @@
     {
       "objectId": "compute_deprecated_code_env",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_recipes_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_recipes_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_recipes_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recipe_status_by_projectKey",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "split_dss_recipes_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "other",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "recipes_needing_manual_checking",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "deprecated_recipes",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "recipe_status_by_projectKey",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
