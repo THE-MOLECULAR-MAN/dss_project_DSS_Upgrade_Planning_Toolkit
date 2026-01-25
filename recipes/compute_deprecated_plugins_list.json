@@ -60,7 +60,7 @@
     "main": {
       "items": [
         {
-          "ref": "deprecated_plugins_list",
+          "ref": "instances_of_deprecated_plugin_usage",
           "appendMode": false
         }
       ]
@@ -68,11 +68,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769316341289,
+    "lastModifiedOn": 1769323429218,
     "extendedProperties": {}
   },
   "creationTag": {
