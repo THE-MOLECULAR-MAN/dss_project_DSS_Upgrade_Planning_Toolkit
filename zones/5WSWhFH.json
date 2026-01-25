@@ -35,10 +35,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "cluster_tasks",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "jobs",
       "objectType": "DATASET"
     },
@@ -140,6 +136,10 @@
     },
     {
       "objectId": "dss_datasets_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "cluster_tasks_live",
       "objectType": "DATASET"
     }
   ],

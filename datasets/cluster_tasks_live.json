@@ -14,8 +14,7 @@
   "flowOptions": {
     "virtualizable": false,
     "rebuildBehavior": "NORMAL",
-    "crossProjectBuildBehavior": "DEFAULT",
-    "ignoreErrorStatusOnBuild": false
+    "crossProjectBuildBehavior": "DEFAULT"
   },
   "readWriteOptions": {
     "preserveOrder": false,
@@ -36,7 +35,8 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1763991927030
+    "lastModifiedOn": 1763991927030,
+    "extendedProperties": {}
   },
   "tags": [
     "ai_generated_description"
@@ -52,17 +52,16 @@
   },
   "schema": {
     "columns": [
-      {"name":"connection","type":"string","comment":"Type of connection used, e.g., database name.","meaning":"Text","isColumnEdited":true},
-      {"name":"task_type","type":"string","comment":"Type of task executed, e.g., SQL operation.","meaning":"Text","isColumnEdited":true},
-      {"name":"project_key","type":"string","comment":"Identifier for the associated project.","meaning":"Text","isColumnEdited":true},
-      {"name":"task_data","type":"string","comment":"JSON object with job and activity details.","meaning":"JSONObjectMeaning","isColumnEdited":true},
-      {"name":"user","type":"string","comment":"User who initiated the task.","meaning":"Text","isColumnEdited":true},
-      {"name":"start_time","type":"int","comment":"Timestamp when the task started.","meaning":"LongMeaning","isColumnEdited":true},
-      {"name":"end_time","type":"int","comment":"Timestamp when the task ended.","meaning":"LongMeaning","isColumnEdited":true}
+      {"name":"connection","type":"string","comment":"Type of connection used, e.g., database name.","meaning":"Text"},
+      {"name":"task_type","type":"string","comment":"Type of task executed, e.g., SQL operation.","meaning":"Text"},
+      {"name":"project_key","type":"string","comment":"Identifier for the associated project.","meaning":"Text"},
+      {"name":"task_data","type":"string","comment":"JSON object with job and activity details.","meaning":"JSONObjectMeaning"},
+      {"name":"user","type":"string","comment":"User who initiated the task.","meaning":"Text"},
+      {"name":"start_time","type":"int","comment":"Timestamp when the task started.","meaning":"LongMeaning"},
+      {"name":"end_time","type":"int","comment":"Timestamp when the task ended.","meaning":"LongMeaning"}
     ],
     "userModified": true
   },
-  "typeSystemVersion": "V2",
   "dkuProperties": [],
   "metrics": {
     "probes": [
@@ -137,7 +136,7 @@
     }
   },
   "metricsChecks": {
-    "monitor": false,
+    "runOnBuild": false,
     "checks": [],
     "displayedState": {
       "checks": []

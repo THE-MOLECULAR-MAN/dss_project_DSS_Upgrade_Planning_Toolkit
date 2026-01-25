@@ -58,7 +58,6 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "columnOrder": [],
   "columnUseScientificNotationByName": {},
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
@@ -71,8 +70,8 @@
       "disabled": false,
       "type": "UNIXTimestampParser",
       "params": {
-        "milliseconds": true,
-        "inCol": "start_time"
+        "inCol": "start_time",
+        "milliseconds": true
       },
       "alwaysShowComment": false
     },
@@ -82,8 +81,8 @@
       "disabled": false,
       "type": "UNIXTimestampParser",
       "params": {
-        "milliseconds": true,
-        "inCol": "end_time"
+        "inCol": "end_time",
+        "milliseconds": true
       },
       "alwaysShowComment": false
     }
@@ -115,31 +114,24 @@
   },
   "analysisColumnData": {
     "start_time": {
-      "isColumnEdited": false,
       "meaning": "LongMeaning"
     },
     "task_data": {
-      "isColumnEdited": false,
       "meaning": "JSONObjectMeaning"
     },
     "project_key": {
-      "isColumnEdited": false,
       "meaning": "Text"
     },
     "end_time": {
-      "isColumnEdited": false,
       "meaning": "LongMeaning"
     },
     "connection": {
-      "isColumnEdited": false,
       "meaning": "Text"
     },
     "task_type": {
-      "isColumnEdited": false,
       "meaning": "Text"
     },
     "user": {
-      "isColumnEdited": false,
       "meaning": "Text"
     }
   },
@@ -157,8 +149,6 @@
   "coloring": {
     "scheme": "MEANING_AND_STATUS",
     "individualColumns": [],
-    "coloringGroups": [],
-    "valueColoringMode": "HASH",
-    "individualColumnsRules": []
+    "valueColoringMode": "HASH"
   }
 }

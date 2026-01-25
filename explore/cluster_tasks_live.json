@@ -35,7 +35,6 @@
         }
       ]
     },
-    "columnOrder": [],
     "columnWidthsByName": {
       "connection": 239,
       "task_type": 120,
@@ -49,9 +48,7 @@
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
-      "individualColumnsRules": [],
-      "valueColoringMode": "HASH",
-      "coloringGroups": []
+      "valueColoringMode": "HASH"
     },
     "sorting": [],
     "analysisColumnData": {},
@@ -114,6 +111,5 @@
   "interactiveSearch": {
     "savedQueries": []
   },
-  "customMeasures": [],
-  "reusableDimensions": []
+  "customMeasures": []
 }
