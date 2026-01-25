@@ -41,6 +41,14 @@
     {
       "objectId": "compute_deprecated_plugins_list",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_deprecated_plugins",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "deprecated_plugins",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
