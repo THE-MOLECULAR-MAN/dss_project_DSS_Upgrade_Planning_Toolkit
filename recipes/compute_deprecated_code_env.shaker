@@ -84,7 +84,9 @@
         "referenceColumn": "url",
         "columns": [
           "python_interpreter",
-          "total_instances_of_code_env"
+          "total_instances_of_code_env",
+          "owner",
+          "projectKeys_where_code_env_used"
         ],
         "reorderAction": "BEFORE_COLUMN",
         "appliesTo": "COLUMNS"
