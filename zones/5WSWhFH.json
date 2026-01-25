@@ -69,6 +69,54 @@
     {
       "objectId": "dss_projects_live",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_webapps_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_dss_users_cached2",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_dss_datasets_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_dss_connections_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_dss_clusters_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_dss_apps_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_webapps_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_users_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_datasets_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_connections_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_clusters_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_apps_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
