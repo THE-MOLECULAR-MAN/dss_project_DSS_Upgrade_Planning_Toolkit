@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769315333219,
+    "lastModifiedOn": 1769315423615,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -64,15 +64,11 @@
   "schema": {
     "columns": [
       {"name":"code_env_name","type":"string","meaning":"Text"},
-      {"name":"code_env_lang","type":"string","meaning":"Text"},
       {"name":"url","type":"string","meaning":"URL"},
-      {"name":"deployment_mode","type":"string","meaning":"Text"},
       {"name":"python_interpreter","type":"string","meaning":"Text"},
       {"name":"owner","type":"string","meaning":"Text"},
-      {"name":"core_packages_set","type":"string","meaning":"Text"},
-      {"name":"path","type":"string","meaning":"Text"},
-      {"name":"python_version_support_status","type":"string"},
-      {"name":"size_in_MB","type":"string","meaning":"DoubleMeaning"}
+      {"name":"projectKeys_where_code_env_used","type":"string"},
+      {"name":"total_instances_of_code_env","type":"bigint"}
     ],
     "userModified": true
   },
