@@ -152,32 +152,6 @@
             "insightType": "dataset_table",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
-          },
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 6,
-              "left": 0,
-              "width": 12,
-              "height": 3
-            },
-            "clickAction": "OPEN_INSIGHT",
-            "tileParams": {
-              "viewKind": "EXPLORE",
-              "showName": true,
-              "showDescription": true,
-              "showCustomFields": true,
-              "showStorageType": false,
-              "showMeaning": false,
-              "showProgressBar": false
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "title": "Recipes that need additional investigation - may need changes",
-            "insightId": "9Vb1i0z",
-            "insightType": "dataset_table",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -190,11 +164,11 @@
   "name": "Migration considerations",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 32,
+    "versionNumber": 33,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769447381806,
+    "lastModifiedOn": 1769447404896,
     "extendedProperties": {}
   },
   "creationTag": {
