@@ -102,7 +102,7 @@
       "grid": {
         "tiles": []
       },
-      "title": "Detailed findings - deprecations",
+      "title": "Detailed deprecations list across all projects",
       "showTitle": true
     }
   ],
@@ -111,11 +111,11 @@
   "name": "Migration considerations",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 22,
+    "versionNumber": 23,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769447194050,
+    "lastModifiedOn": 1769447217251,
     "extendedProperties": {}
   },
   "creationTag": {
