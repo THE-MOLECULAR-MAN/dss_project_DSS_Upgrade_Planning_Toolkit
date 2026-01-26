@@ -115,8 +115,23 @@
     {
       "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
       "preFilter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "$latestOperator": "\u0026\u0026",
+          "$filterOptions": "rules",
+          "conditions": [
+            {
+              "input": "num_jobs_run_recently",
+              "col": "num_jobs_run_recently",
+              "$showList": false,
+              "num": 0,
+              "operator": "\u003e  [number]"
+            }
+          ]
+        },
+        "$status": {},
         "distinct": false,
-        "enabled": false
+        "enabled": true
       },
       "originLabel": "recent_jobs_summary_prepared",
       "index": 0,
