@@ -29,8 +29,26 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "forcedCast": {
+          "type": "double"
+        },
+        "expression": "job_duration_seconds_avg/60.0\t",
+        "column": "avg_job_duration_min"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -57,7 +75,16 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "job_duration_seconds_sum": 195,
+    "project_key": 267,
+    "job_error_avg": 148,
+    "num_jobs": 100,
+    "avg_job_duration_min": 165,
+    "job_duration_seconds_avg": 218,
+    "job_most_recent_timestamp": 225,
+    "error_sum": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
