@@ -31,11 +31,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769314033550,
+    "lastModifiedOn": 1769449346488,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -65,6 +65,7 @@
       {"name":"engine_parameters","type":"string"},
       {"name":"last_modified_user","type":"string"},
       {"name":"input_datasets","type":"string"},
+      {"name":"code_env","type":"string"},
       {"name":"deprecation_status","type":"string"},
       {"name":"output_datasets","type":"string"}
     ],
