@@ -50,7 +50,7 @@
     "main": {
       "items": [
         {
-          "ref": "recent_cluster_tasks_summary_joined",
+          "ref": "recent_cluster_tasks_summary2",
           "deps": []
         }
       ]
@@ -68,11 +68,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769434939967,
+    "lastModifiedOn": 1769465253309,
     "extendedProperties": {}
   },
   "creationTag": {
