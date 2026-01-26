@@ -45,6 +45,7 @@
     },
     {
       "name": "projectKey",
+      "alias": "project_key",
       "type": "string",
       "table": 1
     },
@@ -168,7 +169,7 @@
           },
           {
             "meaning": "Text",
-            "name": "projectKey",
+            "name": "project_key",
             "type": "string"
           },
           {
