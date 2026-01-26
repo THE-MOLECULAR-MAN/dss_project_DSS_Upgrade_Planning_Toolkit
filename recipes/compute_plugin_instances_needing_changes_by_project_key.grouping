@@ -33,7 +33,7 @@
       "concatDistinct": false,
       "sum2": false,
       "min": false,
-      "countDistinct": false,
+      "countDistinct": true,
       "avg": false,
       "$selected": false,
       "stddev": false,
@@ -253,6 +253,10 @@
           {
             "name": "project_key",
             "type": "string"
+          },
+          {
+            "name": "plugin_id_distinct",
+            "type": "bigint"
           },
           {
             "name": "object_id_concat",
