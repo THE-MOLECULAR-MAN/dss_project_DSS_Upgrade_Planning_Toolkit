@@ -31,11 +31,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768508390744,
+    "lastModifiedOn": 1769406409183,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -71,6 +71,7 @@
       {"name":"commit_id","type":"string","comment":"Unique identifier for each commit.","meaning":"Text"},
       {"name":"author","type":"string","comment":"Name or identifier of the commit author.","meaning":"Text"},
       {"name":"timestamp","type":"date","comment":"Time when the commit was made, in milliseconds.","meaning":"Date"},
+      {"name":"days_since_commit","type":"bigint"},
       {"name":"added_files","type":"int","comment":"Number of files added in the commit.","meaning":"LongMeaning"},
       {"name":"added_lines","type":"int","comment":"Number of lines added in the commit.","meaning":"LongMeaning"},
       {"name":"removed_files","type":"int","comment":"Number of files removed in the commit.","meaning":"LongMeaning"},
