@@ -57,6 +57,14 @@
     {
       "objectId": "recipe_status_summary",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "deprecated_recipes_dashboard",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_deprecated_recipes_dashboard",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
