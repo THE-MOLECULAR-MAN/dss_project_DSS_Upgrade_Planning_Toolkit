@@ -48,8 +48,9 @@
       "concatDistinct": false,
       "sum2": false,
       "min": false,
-      "countDistinct": false,
+      "countDistinct": true,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -198,7 +199,7 @@
       "first": false
     }
   ],
-  "globalCount": true,
+  "globalCount": false,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -251,16 +252,16 @@
             "type": "string"
           },
           {
+            "name": "commit_id_distinct",
+            "type": "bigint"
+          },
+          {
             "name": "author_distinct",
             "type": "bigint"
           },
           {
             "name": "timestamp_max",
             "type": "date"
-          },
-          {
-            "name": "count",
-            "type": "bigint"
           }
         ],
         "userModified": false
