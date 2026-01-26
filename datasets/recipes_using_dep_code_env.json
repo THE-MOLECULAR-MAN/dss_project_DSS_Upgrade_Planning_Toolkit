@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769449503285,
+    "lastModifiedOn": 1769449648108,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -64,28 +64,14 @@
   "schema": {
     "columns": [
       {"name":"code_env_name","type":"string","meaning":"Text"},
-      {"name":"code_env_lang","type":"string","meaning":"Text"},
-      {"name":"url","type":"string","meaning":"URL"},
-      {"name":"deployment_mode","type":"string","meaning":"Text"},
       {"name":"python_interpreter","type":"string","meaning":"Text"},
       {"name":"owner","type":"string","meaning":"Text"},
-      {"name":"core_packages_set","type":"string","meaning":"Text"},
-      {"name":"path","type":"string","meaning":"Text"},
       {"name":"python_version_support_status","type":"string"},
-      {"name":"size_in_MB","type":"string","meaning":"DoubleMeaning"},
-      {"name":"projectKeys_where_code_env_used","type":"string"},
-      {"name":"total_instances_of_code_env","type":"string"},
       {"name":"projectKey","type":"string","meaning":"Text"},
       {"name":"recipe_id","type":"string","meaning":"Text"},
       {"name":"recipe_type","type":"string","meaning":"Text"},
       {"name":"recipe_name","type":"string","meaning":"Text"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"engine_parameters","type":"string","meaning":"JSONObjectMeaning"},
-      {"name":"last_modified_user","type":"string","meaning":"Text"},
-      {"name":"input_datasets","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"code_env","type":"string"},
-      {"name":"deprecation_status","type":"string"},
-      {"name":"output_datasets","type":"string","meaning":"JSONArrayMeaning"}
+      {"name":"last_modified_user","type":"string","meaning":"Text"}
     ],
     "userModified": true
   },
