@@ -24,6 +24,7 @@
             },
             "autoLoad": true,
             "showTitle": "YES",
+            "title": "Scenarios run in past 90 days",
             "insightId": "UVzTunn",
             "insightType": "dataset_table",
             "displayMode": "INSIGHT",
@@ -40,11 +41,11 @@
   "name": "Locating most active projects",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769457294006,
+    "lastModifiedOn": 1769457307127,
     "extendedProperties": {}
   },
   "creationTag": {
