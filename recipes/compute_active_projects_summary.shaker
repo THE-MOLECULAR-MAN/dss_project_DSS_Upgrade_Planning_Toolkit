@@ -40,8 +40,15 @@
       "disabled": false,
       "type": "FillEmptyWithValue",
       "params": {
-        "columns": [],
-        "appliesTo": "ALL",
+        "columns": [
+          "num_deprecated_plugin_instances_in_project",
+          "num_deprecated_recipes",
+          "num_distinct_deprecated_plugins_in_project",
+          "total_number_of_scenario_runs",
+          "total_recipes_to_check",
+          "total_scenario_runtime_hours"
+        ],
+        "appliesTo": "COLUMNS",
         "value": "0"
       },
       "alwaysShowComment": false
@@ -78,10 +85,15 @@
     }
   },
   "columnWidthsByName": {
+    "total_scenario_runtime_hours": 225,
+    "most_recent_runtime": 183,
     "project_key": 183,
     "num_deprecated_plugin_instances_in_project": 300,
     "total_recipes_to_check": 180,
+    "project_url": 300,
+    "project_name": 288,
     "num_distinct_deprecated_plugins_in_project": 300,
+    "total_number_of_scenario_runs": 233,
     "num_deprecated_recipes": 180
   },
   "sorting": [],
