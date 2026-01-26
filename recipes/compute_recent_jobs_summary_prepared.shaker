@@ -35,7 +35,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
@@ -45,6 +45,20 @@
         },
         "expression": "job_duration_seconds_avg/60.0\t",
         "column": "avg_job_duration_min"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "forcedCast": {
+          "type": "double"
+        },
+        "expression": "job_duration_seconds_sum/3600.0\t",
+        "column": "total_job_duration_hours"
       },
       "alwaysShowComment": false
     }
@@ -77,6 +91,7 @@
   "analysisColumnData": {},
   "columnWidthsByName": {
     "job_duration_seconds_sum": 195,
+    "total_job_duration_hours": 218,
     "project_key": 267,
     "job_error_avg": 148,
     "num_jobs": 100,
