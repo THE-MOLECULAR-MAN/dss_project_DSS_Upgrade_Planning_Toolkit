@@ -31,11 +31,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768508801256,
+    "lastModifiedOn": 1769403104140,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -71,6 +71,8 @@
       {"name":"start_time","type":"date"},
       {"name":"duration_seconds","type":"bigint"},
       {"name":"end_time","type":"date"},
+      {"name":"hours_since_finish","type":"bigint"},
+      {"name":"days_since_scenario_run","type":"double"},
       {"name":"state","type":"string"},
       {"name":"error","type":"bigint"},
       {"name":"warnings_count","type":"bigint"},
