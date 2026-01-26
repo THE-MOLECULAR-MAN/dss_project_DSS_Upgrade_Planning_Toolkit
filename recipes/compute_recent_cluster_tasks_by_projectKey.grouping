@@ -41,23 +41,24 @@
     },
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "duration_seconds",
       "count": false,
       "$idx": 1,
-      "sum": false,
+      "sum": true,
       "concat": false,
       "type": "bigint",
       "countDistinct": false,
       "min": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "end_time",
       "count": false,
@@ -68,6 +69,7 @@
       "countDistinct": false,
       "min": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -101,8 +103,9 @@
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -120,8 +123,9 @@
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -244,6 +248,30 @@
           {
             "name": "start_time_max",
             "type": "date"
+          },
+          {
+            "name": "duration_seconds_max",
+            "type": "bigint"
+          },
+          {
+            "name": "duration_seconds_avg",
+            "type": "double"
+          },
+          {
+            "name": "duration_seconds_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "end_time_max",
+            "type": "date"
+          },
+          {
+            "name": "error_avg",
+            "type": "double"
+          },
+          {
+            "name": "warnings_count_avg",
+            "type": "double"
           },
           {
             "name": "count",
