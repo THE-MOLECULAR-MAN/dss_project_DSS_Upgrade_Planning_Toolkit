@@ -29,31 +29,6 @@
       "table": 0
     },
     {
-      "name": "num_jobs_run_recently",
-      "type": "bigint",
-      "table": 0
-    },
-    {
-      "name": "total_job_duration_run_recently_in_hours",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "avg_recent_job_duration_min",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "most_recent_run",
-      "type": "date",
-      "table": 0
-    },
-    {
-      "name": "recent_job_error_rate",
-      "type": "double",
-      "table": 0
-    },
-    {
       "name": "name",
       "type": "string",
       "table": 1
@@ -114,28 +89,7 @@
   "virtualInputs": [
     {
       "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
-      "preFilter": {
-        "uiData": {
-          "mode": "\u0026\u0026",
-          "$latestOperator": "\u0026\u0026",
-          "$filterOptions": "rules",
-          "conditions": [
-            {
-              "input": "num_jobs_run_recently",
-              "col": "num_jobs_run_recently",
-              "$showList": false,
-              "num": 0,
-              "operator": "\u003e  [number]"
-            }
-          ]
-        },
-        "$status": {},
-        "distinct": false,
-        "enabled": true
-      },
-      "originLabel": "recent_jobs_summary_prepared",
-      "index": 0,
-      "computedColumns": []
+      "index": 1
     },
     {
       "outputColumnsSelectionMode": "MANUAL",
@@ -145,7 +99,7 @@
       },
       "originLabel": "dss_projects_cached",
       "prefix": "project",
-      "index": 1,
+      "index": 0,
       "computedColumns": []
     }
   ],
@@ -159,24 +113,28 @@
             "type": "string"
           },
           {
-            "name": "num_jobs_run_recently",
+            "name": "job_duration_seconds_avg",
+            "type": "double"
+          },
+          {
+            "name": "job_duration_seconds_sum",
             "type": "bigint"
           },
           {
-            "name": "total_job_duration_run_recently_in_hours",
-            "type": "double"
-          },
-          {
-            "name": "avg_recent_job_duration_min",
-            "type": "double"
-          },
-          {
-            "name": "most_recent_run",
+            "name": "job_most_recent_timestamp",
             "type": "date"
           },
           {
-            "name": "recent_job_error_rate",
+            "name": "job_error_avg",
             "type": "double"
+          },
+          {
+            "name": "error_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "num_jobs",
+            "type": "bigint"
           },
           {
             "meaning": "Text",
