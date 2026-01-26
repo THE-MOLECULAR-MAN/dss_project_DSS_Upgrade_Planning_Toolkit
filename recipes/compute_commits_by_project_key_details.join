@@ -32,38 +32,47 @@
   "selectedColumns": [
     {
       "name": "project_key",
+      "type": "string",
       "table": 0
     },
     {
       "name": "name",
+      "type": "string",
       "table": 1
     },
     {
       "name": "shortDesc",
+      "type": "string",
       "table": 1
     },
     {
       "name": "description",
+      "type": "string",
       "table": 1
     },
     {
       "name": "ownerLogin",
+      "type": "string",
       "table": 1
     },
     {
       "name": "projectStatus",
+      "type": "string",
       "table": 1
     },
     {
       "name": "last_modified_timestamp",
+      "type": "string",
       "table": 1
     },
     {
       "name": "contributors",
+      "type": "string",
       "table": 1
     },
     {
       "name": "url",
+      "type": "string",
       "table": 1
     }
   ],
@@ -125,8 +134,94 @@
     }
   ],
   "postFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "$latestOperator": "\u0026\u0026",
+      "$filterOptions": "rules",
+      "conditions": [
+        {
+          "input": "num_recent_commits",
+          "col": "num_recent_commits",
+          "$showList": false,
+          "num": 0,
+          "operator": "\u003e  [number]"
+        },
+        {
+          "input": "name",
+          "col": "num_recent_commits",
+          "$showList": false,
+          "num": 0,
+          "operator": "contains"
+        }
+      ]
+    },
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "meaning": "Text",
+            "name": "project_key",
+            "comment": "Unique identifier for the software project.",
+            "type": "string"
+          },
+          {
+            "name": "num_recent_commits",
+            "type": "bigint"
+          },
+          {
+            "name": "num_contributors",
+            "type": "bigint"
+          },
+          {
+            "name": "latest_commit",
+            "type": "date"
+          },
+          {
+            "meaning": "Text",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "meaning": "FreeText",
+            "name": "shortDesc",
+            "type": "string"
+          },
+          {
+            "meaning": "FreeText",
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "ownerLogin",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "projectStatus",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "last_modified_timestamp",
+            "type": "string"
+          },
+          {
+            "meaning": "JSONArrayMeaning",
+            "name": "contributors",
+            "type": "string"
+          },
+          {
+            "meaning": "URL",
+            "name": "url",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
-    "enabled": false
+    "enabled": true
   },
   "computedColumns": [],
   "enableAutoCastInJoinConditions": false
