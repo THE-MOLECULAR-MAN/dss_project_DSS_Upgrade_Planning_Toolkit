@@ -50,7 +50,7 @@
     "main": {
       "items": [
         {
-          "ref": "commits_by_project_key_details",
+          "ref": "recent_commits_summary_raw",
           "deps": []
         }
       ]
@@ -68,11 +68,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769406735616,
+    "lastModifiedOn": 1769406771541,
     "extendedProperties": {}
   },
   "creationTag": {

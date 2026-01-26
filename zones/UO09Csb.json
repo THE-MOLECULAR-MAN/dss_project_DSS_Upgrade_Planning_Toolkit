@@ -47,10 +47,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "commits_by_project_key_details",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_commits_by_project_key_details_prepared",
       "objectType": "RECIPE"
     },
@@ -88,6 +84,10 @@
     },
     {
       "objectId": "recent_commit_summary",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "recent_commits_summary_raw",
       "objectType": "DATASET"
     }
   ],
