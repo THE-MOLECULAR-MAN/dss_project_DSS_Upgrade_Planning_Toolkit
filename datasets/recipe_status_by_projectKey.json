@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769408306850,
+    "lastModifiedOn": 1769444290059,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -52,7 +52,7 @@
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "table": "${projectKey}_recipe_status_by_projectkey",
+    "table": "${projectKey}_recipe_status_by_projectKey",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
@@ -70,7 +70,7 @@
       {"name":"Unknown_count","type":"bigint"},
       {"name":"Usually safe_count","type":"bigint"}
     ],
-    "userModified": false,
+    "userModified": true,
     "metadata": {
       "engineType": "SQL",
       "pivotElementsModalities": [
