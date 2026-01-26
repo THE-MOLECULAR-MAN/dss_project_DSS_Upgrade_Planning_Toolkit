@@ -6,80 +6,118 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "projectKey",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "projectKey",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "projectKey",
+      "type": "string",
       "table": 0
     },
     {
       "name": "duration_seconds_max",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "duration_seconds_avg",
+      "type": "double",
       "table": 0
     },
     {
       "name": "total_duration_seconds",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "end_time_max",
+      "type": "date",
       "table": 0
     },
     {
       "name": "avg_num_of_errors",
+      "type": "double",
       "table": 0
     },
     {
       "name": "avg_num_of_warnings",
+      "type": "double",
       "table": 0
     },
     {
       "name": "total_num",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "name",
+      "type": "string",
       "table": 1
     },
     {
       "name": "shortDesc",
+      "type": "string",
       "table": 1
     },
     {
       "name": "description",
+      "type": "string",
       "table": 1
     },
     {
       "name": "ownerLogin",
+      "type": "string",
       "table": 1
     },
     {
       "name": "projectStatus",
+      "type": "string",
       "table": 1
     },
     {
       "name": "tags",
+      "type": "string",
       "table": 1
     },
     {
       "name": "last_modified_timestamp",
+      "type": "string",
       "table": 1
     },
     {
       "name": "tutorialProject",
+      "type": "boolean",
       "table": 1
     },
     {
       "name": "contributors",
+      "type": "string",
       "table": 1
     },
     {
       "name": "url",
+      "type": "string",
       "table": 1
     }
   ],
@@ -140,5 +178,98 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "projectKey",
+            "comment": "Identifier for the project; key for project events.",
+            "type": "string"
+          },
+          {
+            "name": "duration_seconds_max",
+            "type": "bigint"
+          },
+          {
+            "name": "duration_seconds_avg",
+            "type": "double"
+          },
+          {
+            "name": "total_duration_seconds",
+            "type": "bigint"
+          },
+          {
+            "name": "end_time_max",
+            "type": "date"
+          },
+          {
+            "name": "avg_num_of_errors",
+            "type": "double"
+          },
+          {
+            "name": "avg_num_of_warnings",
+            "type": "double"
+          },
+          {
+            "name": "total_num",
+            "type": "bigint"
+          },
+          {
+            "meaning": "Text",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "meaning": "FreeText",
+            "name": "shortDesc",
+            "type": "string"
+          },
+          {
+            "meaning": "FreeText",
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "ownerLogin",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "projectStatus",
+            "type": "string"
+          },
+          {
+            "meaning": "JSONArrayMeaning",
+            "name": "tags",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "last_modified_timestamp",
+            "type": "string"
+          },
+          {
+            "meaning": "Boolean",
+            "name": "tutorialProject",
+            "type": "boolean"
+          },
+          {
+            "meaning": "JSONArrayMeaning",
+            "name": "contributors",
+            "type": "string"
+          },
+          {
+            "meaning": "URL",
+            "name": "url",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
