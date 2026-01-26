@@ -60,7 +60,7 @@
     "main": {
       "items": [
         {
-          "ref": "recent_commit_summary",
+          "ref": "recent_commit_dashboard",
           "appendMode": false
         }
       ]
@@ -68,11 +68,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769406771541,
+    "lastModifiedOn": 1769434969642,
     "extendedProperties": {}
   },
   "creationTag": {
