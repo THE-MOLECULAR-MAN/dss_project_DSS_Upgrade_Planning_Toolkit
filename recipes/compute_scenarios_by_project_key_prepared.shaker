@@ -129,7 +129,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "RoundProcessor",
@@ -143,6 +143,63 @@
         ],
         "precision": 0,
         "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "projectKey",
+            "to": "project_key"
+          },
+          {
+            "from": "max_duration_hours",
+            "to": "longest_scenario_run_in_hours"
+          },
+          {
+            "from": "avg_duration_minutes",
+            "to": "avg_scenario_runtime_in_minutes"
+          },
+          {
+            "from": "total_duration_hours",
+            "to": "total_scenario_runtime_hours"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "longest_scenario_run_in_hours",
+        "columns": [
+          "total_num_runs"
+        ],
+        "reorderAction": "BEFORE_COLUMN",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "total_num_runs",
+            "to": "total_number_of_scenario_runs"
+          }
+        ]
       },
       "alwaysShowComment": false
     }
@@ -174,26 +231,31 @@
   },
   "analysisColumnData": {},
   "columnWidthsByName": {
-    "duration_seconds_avg": 190,
     "average_scenario_runtime_minutes": 274,
+    "total_scenario_runtime_hours": 246,
+    "project_key": 127,
+    "avg_scenario_runtime_in_minutes": 267,
+    "most_recent_start_time": 204,
+    "total_number_of_scenario_runs": 253,
+    "projectKey": 120,
+    "longest_scenario_runtime_hours": 260,
+    "total_num": 113,
+    "avg_duration_minutes": 190,
+    "avg_num_of_errors": 169,
+    "avg_duration_hours": 176,
+    "max_duration_hours": 176,
+    "duration_seconds_avg": 190,
     "total_duration_hours": 190,
     "most_recent_runtime": 183,
-    "most_recent_start_time": 204,
-    "projectKey": 120,
+    "longest_scenario_run_in_hours": 253,
     "num_recent_scenario_runs": 218,
     "num_recent_scenarios": 190,
     "end_time_max": 183,
-    "longest_scenario_runtime_hours": 260,
     "total_scenario_runtimes_hours": 253,
     "total_duration_seconds": 204,
-    "total_num": 113,
-    "avg_duration_minutes": 190,
     "avg_num_of_warnings": 183,
-    "avg_num_of_errors": 169,
-    "avg_duration_hours": 176,
     "total_num_runs": 148,
-    "duration_seconds_max": 190,
-    "max_duration_hours": 176
+    "duration_seconds_max": 190
   },
   "sorting": [],
   "globalSearchQuery": "",
