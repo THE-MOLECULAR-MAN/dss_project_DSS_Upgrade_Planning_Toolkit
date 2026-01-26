@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769449648108,
+    "lastModifiedOn": 1769449657241,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -71,6 +71,7 @@
       {"name":"recipe_id","type":"string","meaning":"Text"},
       {"name":"recipe_type","type":"string","meaning":"Text"},
       {"name":"recipe_name","type":"string","meaning":"Text"},
+      {"name":"recipe_url","type":"string","meaning":"URL"},
       {"name":"last_modified_user","type":"string","meaning":"Text"}
     ],
     "userModified": true
