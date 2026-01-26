@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769403381796,
+    "lastModifiedOn": 1769406886880,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -64,12 +64,12 @@
   "schema": {
     "columns": [
       {"name":"projectKey","type":"string","comment":"Identifier for the project; key for project events."},
-      {"name":"longest_scenario_runtime_hours","type":"bigint"},
-      {"name":"average_scenario_runtime_minutes","type":"double"},
-      {"name":"total_scenario_runtimes_hours","type":"bigint"},
+      {"name":"longest_scenario_runtime_hours","type":"double","meaning":"DoubleMeaning"},
+      {"name":"average_scenario_runtime_minutes","type":"double","meaning":"DoubleMeaning"},
+      {"name":"total_scenario_runtimes_hours","type":"double","meaning":"DoubleMeaning"},
       {"name":"end_time_max","type":"date"},
       {"name":"avg_num_of_errors","type":"double"},
-      {"name":"avg_num_of_warnings","type":"double"},
+      {"name":"avg_num_of_warnings","type":"double","meaning":"DoubleMeaning"},
       {"name":"total_num","type":"bigint"}
     ],
     "userModified": true
