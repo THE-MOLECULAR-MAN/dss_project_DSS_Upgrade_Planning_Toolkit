@@ -29,8 +29,35 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "duration_seconds_max",
+            "to": "longest_scenario_runtime_hours"
+          },
+          {
+            "from": "duration_seconds_avg",
+            "to": "average_scenario_runtime_minutes"
+          },
+          {
+            "from": "total_duration_seconds",
+            "to": "total_scenario_runtimes_hours"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -57,7 +84,20 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "duration_seconds_avg": 190,
+    "average_scenario_runtime_minutes": 274,
+    "projectKey": 120,
+    "end_time_max": 183,
+    "longest_scenario_runtime_hours": 260,
+    "total_scenario_runtimes_hours": 253,
+    "total_duration_seconds": 204,
+    "total_num": 113,
+    "avg_num_of_warnings": 183,
+    "avg_num_of_errors": 169,
+    "most_recent_start_time": 204,
+    "duration_seconds_max": 190
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
