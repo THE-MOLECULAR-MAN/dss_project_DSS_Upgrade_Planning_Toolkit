@@ -71,7 +71,7 @@
             "box": {
               "top": 4,
               "left": 0,
-              "width": 6,
+              "width": 9,
               "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
@@ -86,6 +86,7 @@
             },
             "autoLoad": true,
             "showTitle": "YES",
+            "title": "Deprecated Plugins",
             "insightId": "lqTvL2k",
             "insightType": "dataset_table",
             "displayMode": "INSIGHT",
@@ -102,11 +103,11 @@
   "name": "Migration considerations",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 19,
+    "versionNumber": 20,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769447073928,
+    "lastModifiedOn": 1769447091431,
     "extendedProperties": {}
   },
   "creationTag": {
