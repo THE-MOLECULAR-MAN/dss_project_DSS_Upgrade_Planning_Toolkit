@@ -9,22 +9,15 @@
       "on": [
         {
           "column1": {
-            "name": "url",
+            "name": "code_env_name",
             "table": 0
           },
-          "dateDiffUnit": "DAY",
-          "windowFrom": 0,
+          "dateDiffUnit": "SECOND",
           "column2": {
-            "name": "url",
+            "name": "code_env",
             "table": 1
           },
-          "maxMatches": 1,
-          "caseInsensitive": false,
-          "maxDistance": 0,
-          "normalizeText": false,
-          "type": "EQ",
-          "strict": false,
-          "windowTo": 0
+          "type": "EQ"
         }
       ]
     }
