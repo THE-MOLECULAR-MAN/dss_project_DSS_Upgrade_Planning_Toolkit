@@ -158,6 +158,22 @@
           {
             "from": "avg_job_error_rate_percentage",
             "to": "avg_job_error_rate"
+          },
+          {
+            "from": "total_number_of_recent_jobs_run",
+            "to": "num_jobs_run_recently"
+          },
+          {
+            "from": "total_job_duration_hours",
+            "to": "total_job_duration_run_recently_in_hours"
+          },
+          {
+            "from": "avg_job_duration_min",
+            "to": "avg_recent_job_duration_min"
+          },
+          {
+            "from": "job_most_recent_timestamp",
+            "to": "most_recent_run"
           }
         ]
       },
@@ -195,13 +211,17 @@
     "project_key": 267,
     "job_error_avg": 148,
     "num_jobs": 100,
+    "total_job_duration_run_recently_in_hours": 300,
     "job_duration_seconds_avg": 218,
     "job_most_recent_timestamp": 225,
     "avg_job_error_rate_percentage": 233,
     "total_job_duration_hours": 218,
+    "avg_recent_job_duration_min": 218,
+    "most_recent_run": 183,
     "total_number_of_recent_jobs_run": 248,
     "error_rate_percentage": 197,
     "avg_job_duration_min": 165,
+    "num_jobs_run_recently": 173,
     "error_sum": 100,
     "avg_job_error_rate": 176
   },
