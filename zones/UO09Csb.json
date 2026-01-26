@@ -89,10 +89,6 @@
     {
       "objectId": "jobs",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "recent_scenarios_summary_dashboard",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
