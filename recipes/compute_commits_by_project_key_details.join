@@ -41,17 +41,8 @@
       "table": 1
     },
     {
-      "name": "shortDesc",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "description",
-      "type": "string",
-      "table": 1
-    },
-    {
       "name": "ownerLogin",
+      "alias": "project_owner",
       "type": "string",
       "table": 1
     },
@@ -129,6 +120,7 @@
         "enabled": false
       },
       "originLabel": "dss_projects_cached",
+      "prefix": "project",
       "index": 1,
       "computedColumns": []
     }
@@ -178,42 +170,32 @@
           },
           {
             "meaning": "Text",
-            "name": "name",
-            "type": "string"
-          },
-          {
-            "meaning": "FreeText",
-            "name": "shortDesc",
-            "type": "string"
-          },
-          {
-            "meaning": "FreeText",
-            "name": "description",
+            "name": "project_name",
             "type": "string"
           },
           {
             "meaning": "Text",
-            "name": "ownerLogin",
+            "name": "project_owner",
             "type": "string"
           },
           {
             "meaning": "Text",
-            "name": "projectStatus",
+            "name": "project_projectStatus",
             "type": "string"
           },
           {
             "meaning": "Text",
-            "name": "last_modified_timestamp",
+            "name": "project_last_modified_timestamp",
             "type": "string"
           },
           {
             "meaning": "JSONArrayMeaning",
-            "name": "contributors",
+            "name": "project_contributors",
             "type": "string"
           },
           {
             "meaning": "URL",
-            "name": "url",
+            "name": "project_url",
             "type": "string"
           }
         ],
