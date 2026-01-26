@@ -33,7 +33,7 @@
           }
         ]
       },
-      "title": "Migration summary",
+      "title": "Migration summary for active projects",
       "showTitle": true
     },
     {
@@ -77,11 +77,11 @@
   "name": "Migration considerations",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769446991292,
+    "lastModifiedOn": 1769447008740,
     "extendedProperties": {}
   },
   "creationTag": {
