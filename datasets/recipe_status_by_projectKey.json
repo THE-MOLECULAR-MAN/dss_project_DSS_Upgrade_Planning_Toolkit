@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769407969329,
+    "lastModifiedOn": 1769408287918,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -62,15 +62,8 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"Deprecated_count","type":"bigint"},
-      {"name":"Needs manual checking_count","type":"bigint"},
-      {"name":"Prepare recipe uses deprecated preprocessors_count","type":"bigint"},
-      {"name":"Recipe Type \u0027CustomCode_hubspot\u0027 Not Found_count","type":"bigint"},
-      {"name":"Usually safe_count","type":"bigint"}
-    ],
-    "userModified": false,
+    "columns": [],
+    "userModified": true,
     "metadata": {
       "engineType": "SQL",
       "pivotElementsModalities": [
