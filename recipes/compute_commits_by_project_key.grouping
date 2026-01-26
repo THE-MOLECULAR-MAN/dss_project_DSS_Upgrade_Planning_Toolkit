@@ -1,7 +1,22 @@
 {
   "preFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "$latestOperator": "\u0026\u0026",
+      "$filterOptions": "rules",
+      "conditions": [
+        {
+          "input": "days_since_commit",
+          "col": "commit_id",
+          "$showList": false,
+          "num": 90,
+          "operator": "\u003c\u003d [number]"
+        }
+      ]
+    },
+    "$status": {},
     "distinct": false,
-    "enabled": false
+    "enabled": true
   },
   "keys": [
     {
@@ -80,16 +95,14 @@
       "last": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "added_files",
+      "column": "days_since_commit",
       "count": false,
       "$idx": 3,
       "sum": false,
       "concat": false,
-      "type": "int",
-      "concatDistinct": false,
-      "sum2": false,
-      "min": false,
+      "type": "bigint",
       "countDistinct": false,
+      "min": false,
       "avg": false,
       "stddev": false,
       "first": false
@@ -98,7 +111,7 @@
       "last": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "added_lines",
+      "column": "added_files",
       "count": false,
       "$idx": 4,
       "sum": false,
@@ -116,7 +129,7 @@
       "last": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "removed_files",
+      "column": "added_lines",
       "count": false,
       "$idx": 5,
       "sum": false,
@@ -134,7 +147,7 @@
       "last": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "removed_lines",
+      "column": "removed_files",
       "count": false,
       "$idx": 6,
       "sum": false,
@@ -152,9 +165,27 @@
       "last": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "changed_files",
+      "column": "removed_lines",
       "count": false,
       "$idx": 7,
+      "sum": false,
+      "concat": false,
+      "type": "int",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "changed_files",
+      "count": false,
+      "$idx": 8,
       "sum": false,
       "concat": false,
       "type": "int",
