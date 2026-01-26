@@ -1,5 +1,5 @@
 {
-  "schemaComputation": "ALWAYS",
+  "schemaComputation": "ONLY_IF_NO_METADATA",
   "identifierColumnsSelection": "EXPLICIT",
   "modalitySlugification": "NONE",
   "sortModalities": true,
