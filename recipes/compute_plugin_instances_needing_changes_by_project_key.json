@@ -23,7 +23,7 @@
     "main": {
       "items": [
         {
-          "ref": "plugin_instances_needing_changes_by_project_key",
+          "ref": "dep_plugins_summary",
           "appendMode": false
         }
       ]
@@ -31,11 +31,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 18,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769438785741,
+    "lastModifiedOn": 1769438901076,
     "extendedProperties": {}
   },
   "creationTag": {

@@ -50,7 +50,7 @@
     "main": {
       "items": [
         {
-          "ref": "plugin_instances_needing_changes_by_project_key",
+          "ref": "dep_plugins_summary",
           "deps": []
         }
       ]
@@ -68,11 +68,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769438667285,
+    "lastModifiedOn": 1769438901077,
     "extendedProperties": {}
   },
   "creationTag": {
