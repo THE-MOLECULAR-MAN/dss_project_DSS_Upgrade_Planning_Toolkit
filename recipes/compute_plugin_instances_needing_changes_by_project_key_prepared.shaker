@@ -56,10 +56,6 @@
       "params": {
         "renamings": [
           {
-            "from": "plugin_id_distinct",
-            "to": "num_unique_deprecated_plugins_in_project"
-          },
-          {
             "from": "plugin_name_concat",
             "to": "deprecated_plugin_names"
           },
