@@ -131,7 +131,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "RoundProcessor",
@@ -145,6 +145,21 @@
         ],
         "precision": 0,
         "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "avg_job_error_rate_percentage",
+            "to": "avg_job_error_rate"
+          }
+        ]
       },
       "alwaysShowComment": false
     }
