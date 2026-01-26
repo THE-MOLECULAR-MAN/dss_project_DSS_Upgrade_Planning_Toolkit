@@ -71,10 +71,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "jobs_by_projectKey",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_scenarios",
       "objectType": "RECIPE"
     },
@@ -89,6 +85,10 @@
     {
       "objectId": "compute_events",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "recent_jobs_by_projectKey",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

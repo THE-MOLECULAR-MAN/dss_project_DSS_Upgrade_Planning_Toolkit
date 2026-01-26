@@ -23,7 +23,7 @@
     "main": {
       "items": [
         {
-          "ref": "jobs_by_projectKey",
+          "ref": "recent_jobs_by_projectKey",
           "appendMode": false
         }
       ]
@@ -31,11 +31,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769406157644,
+    "lastModifiedOn": 1769406180236,
     "extendedProperties": {}
   },
   "creationTag": {
