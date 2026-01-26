@@ -31,11 +31,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769403380507,
+    "lastModifiedOn": 1769403439611,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -70,7 +70,7 @@
       {"name":"projectKey","type":"string","comment":"Identifier for the project; key for project events."},
       {"name":"duration_seconds","type":"bigint","meaning":"LongMeaning"},
       {"name":"end_time","type":"date"},
-      {"name":"days_since_scenario_run","type":"double"},
+      {"name":"days_since_finish","type":"double"},
       {"name":"state","type":"string","comment":"Current state of the job execution, indicates status."},
       {"name":"error","type":"bigint","comment":"Indicates if an error occurred; error status."},
       {"name":"warnings_count","type":"bigint","comment":"Number of warnings generated during the job; warning tally.","meaning":"LongMeaning"},
