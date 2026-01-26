@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769434283678,
+    "lastModifiedOn": 1769434340302,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -63,15 +63,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"project_key","type":"string"},
+      {"name":"project_name","type":"string"},
       {"name":"num_jobs_run_recently","type":"bigint"},
       {"name":"total_job_duration_run_recently_in_hours","type":"double"},
       {"name":"avg_recent_job_duration_min","type":"double"},
       {"name":"most_recent_run","type":"date"},
-      {"name":"recent_job_error_rate","type":"double"},
-      {"name":"project_name","type":"string"},
       {"name":"project_owner","type":"string"},
       {"name":"project_status","type":"string"},
+      {"name":"project_key","type":"string"},
+      {"name":"recent_job_error_rate","type":"double"},
       {"name":"project_url","type":"string"}
     ],
     "userModified": true
