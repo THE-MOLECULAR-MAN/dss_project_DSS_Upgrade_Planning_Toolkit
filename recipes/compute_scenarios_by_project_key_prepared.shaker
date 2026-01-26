@@ -51,8 +51,8 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "duration_seconds_avg/3600.0\t",
-        "column": "avg_duration_hours"
+        "expression": "duration_seconds_avg/60.0",
+        "column": "avg_duration_minutes"
       },
       "alwaysShowComment": false
     },
@@ -187,6 +187,7 @@
     "total_scenario_runtimes_hours": 253,
     "total_duration_seconds": 204,
     "total_num": 113,
+    "avg_duration_minutes": 190,
     "avg_num_of_warnings": 183,
     "avg_num_of_errors": 169,
     "avg_duration_hours": 176,
