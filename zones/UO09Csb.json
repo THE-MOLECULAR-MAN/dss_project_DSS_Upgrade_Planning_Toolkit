@@ -63,10 +63,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "scenarios_by_project_key_prepared",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_scenarios_by_project_key_prepared",
       "objectType": "RECIPE"
     },
@@ -88,6 +84,10 @@
     },
     {
       "objectId": "recent_scenarios_summary_raw",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "recent_scenarios_summary",
       "objectType": "DATASET"
     }
   ],
