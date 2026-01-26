@@ -24,7 +24,7 @@
             },
             "autoLoad": true,
             "showTitle": "YES",
-            "title": "Migration Summary - Projects that ran scenarios within the last 90 days",
+            "title": "Migration Summary - Projects that ran at least 1 scenario within the last 90 days",
             "borderColor": "",
             "insightId": "P1u7qB8",
             "insightType": "dataset_table",
@@ -75,11 +75,11 @@
   "name": "Migration considerations",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769446813057,
+    "lastModifiedOn": 1769446851240,
     "extendedProperties": {}
   },
   "creationTag": {
