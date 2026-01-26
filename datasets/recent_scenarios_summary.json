@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769407167054,
+    "lastModifiedOn": 1769407231115,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -69,6 +69,7 @@
       {"name":"duration_seconds_avg","type":"double"},
       {"name":"avg_duration_hours","type":"double"},
       {"name":"total_duration_seconds","type":"bigint"},
+      {"name":"total_duration_hours","type":"double"},
       {"name":"end_time_max","type":"date"},
       {"name":"avg_num_of_errors","type":"double"},
       {"name":"avg_num_of_warnings","type":"double","meaning":"DoubleMeaning"},
