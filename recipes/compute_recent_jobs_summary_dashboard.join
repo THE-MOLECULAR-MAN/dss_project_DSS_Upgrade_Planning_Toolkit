@@ -32,24 +32,29 @@
   "selectedColumns": [
     {
       "name": "project_key",
+      "type": "string",
       "table": 0
     },
     {
       "name": "name",
+      "type": "string",
       "table": 1
     },
     {
       "name": "ownerLogin",
       "alias": "project_owner",
+      "type": "string",
       "table": 1
     },
     {
       "name": "projectStatus",
       "alias": "project_status",
+      "type": "string",
       "table": 1
     },
     {
       "name": "url",
+      "type": "string",
       "table": 1
     }
   ],
@@ -106,8 +111,84 @@
     }
   ],
   "postFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "$latestOperator": "\u0026\u0026",
+      "$filterOptions": "rules",
+      "conditions": [
+        {
+          "input": "project_name",
+          "col": "job_duration_seconds_avg",
+          "$showList": false,
+          "num": 0,
+          "operator": "not empty"
+        },
+        {
+          "input": "num_jobs",
+          "col": "job_duration_seconds_avg",
+          "$showList": false,
+          "num": 0,
+          "operator": "\u003e  [number]"
+        }
+      ]
+    },
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "project_key",
+            "type": "string"
+          },
+          {
+            "name": "job_duration_seconds_avg",
+            "type": "double"
+          },
+          {
+            "name": "job_duration_seconds_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "job_most_recent_timestamp",
+            "type": "date"
+          },
+          {
+            "name": "job_error_avg",
+            "type": "double"
+          },
+          {
+            "name": "error_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "num_jobs",
+            "type": "bigint"
+          },
+          {
+            "meaning": "Text",
+            "name": "project_name",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "project_owner",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "project_status",
+            "type": "string"
+          },
+          {
+            "meaning": "URL",
+            "name": "project_url",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
-    "enabled": false
+    "enabled": true
   },
   "computedColumns": [],
   "enableAutoCastInJoinConditions": false
