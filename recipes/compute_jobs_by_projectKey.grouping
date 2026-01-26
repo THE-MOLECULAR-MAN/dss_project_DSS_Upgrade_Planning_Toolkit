@@ -2,36 +2,21 @@
   "preFilter": {
     "uiData": {
       "mode": "\u0026\u0026",
-      "$latestOperator": "\u0026\u0026",
-      "$filterOptions": "rules",
       "conditions": [
         {
           "input": "duration_seconds",
           "col": "duration_seconds",
-          "$showList": false,
-          "num": 0,
+          "num": 0.0,
           "operator": "\u003e\u003d [number]"
         }
       ]
     },
-    "$status": {},
     "distinct": false,
     "enabled": true
   },
   "keys": [
     {
-      "countDistinct": false,
-      "min": false,
-      "avg": false,
-      "last": false,
-      "max": false,
-      "column": "projectKey",
-      "count": false,
-      "sum": false,
-      "concat": false,
-      "type": "string",
-      "stddev": false,
-      "first": false
+      "column": "projectKey"
     }
   ],
   "values": [
@@ -39,28 +24,8 @@
       "last": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "start_time",
-      "count": false,
-      "$idx": 0,
-      "sum": false,
-      "concat": false,
-      "type": "date",
-      "concatDistinct": false,
-      "sum2": false,
-      "min": false,
-      "countDistinct": false,
-      "avg": false,
-      "$selected": false,
-      "stddev": false,
-      "first": false
-    },
-    {
-      "last": false,
-      "max": false,
-      "firstLastNotNull": false,
       "column": "duration_seconds",
       "count": false,
-      "$idx": 1,
       "sum": true,
       "concat": false,
       "type": "bigint",
@@ -69,7 +34,6 @@
       "min": false,
       "countDistinct": false,
       "avg": true,
-      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -79,7 +43,6 @@
       "firstLastNotNull": false,
       "column": "end_time",
       "count": false,
-      "$idx": 2,
       "sum": false,
       "concat": false,
       "type": "date",
@@ -88,7 +51,6 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -98,7 +60,6 @@
       "firstLastNotNull": false,
       "column": "state",
       "count": false,
-      "$idx": 3,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -116,7 +77,6 @@
       "firstLastNotNull": false,
       "column": "error",
       "count": false,
-      "$idx": 4,
       "sum": false,
       "concat": false,
       "type": "bigint",
@@ -125,7 +85,6 @@
       "min": false,
       "countDistinct": false,
       "avg": true,
-      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -135,7 +94,6 @@
       "firstLastNotNull": false,
       "column": "warnings_count",
       "count": false,
-      "$idx": 5,
       "sum": false,
       "concat": false,
       "type": "bigint",
@@ -144,7 +102,6 @@
       "min": false,
       "countDistinct": false,
       "avg": true,
-      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -154,7 +111,6 @@
       "firstLastNotNull": false,
       "column": "scenario_id",
       "count": false,
-      "$idx": 6,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -172,7 +128,6 @@
       "firstLastNotNull": false,
       "column": "user",
       "count": false,
-      "$idx": 7,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -190,7 +145,6 @@
       "firstLastNotNull": false,
       "column": "event_type",
       "count": false,
-      "$idx": 8,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -250,41 +204,6 @@
   },
   "computedColumns": [],
   "postFilter": {
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "name": "projectKey",
-            "type": "string"
-          },
-          {
-            "name": "duration_seconds_avg",
-            "type": "double"
-          },
-          {
-            "name": "duration_seconds_sum",
-            "type": "bigint"
-          },
-          {
-            "name": "end_time_max",
-            "type": "date"
-          },
-          {
-            "name": "error_avg",
-            "type": "double"
-          },
-          {
-            "name": "warnings_count_avg",
-            "type": "double"
-          },
-          {
-            "name": "count",
-            "type": "bigint"
-          }
-        ],
-        "userModified": false
-      }
-    },
     "distinct": false,
     "enabled": false
   }
