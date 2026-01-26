@@ -31,10 +31,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "recipe_with_unknown_status",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dep_plugins_summary",
       "objectType": "DATASET"
     },
