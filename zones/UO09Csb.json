@@ -81,6 +81,14 @@
     {
       "objectId": "compute_scenarios",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "scenarios_by_project_key_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_scenarios_by_project_key_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
