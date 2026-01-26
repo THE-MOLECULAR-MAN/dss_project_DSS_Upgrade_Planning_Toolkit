@@ -35,10 +35,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_recent_jobs_and_scenarios_by_project_key",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_recent_cluster_tasks_by_projectKey",
       "objectType": "RECIPE"
     },
@@ -81,6 +77,10 @@
     {
       "objectId": "jobs_by_projectKey",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_scenarios",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
