@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769446176556,
+    "lastModifiedOn": 1769446298861,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -63,7 +63,12 @@
   },
   "schema": {
     "columns": [
+      {"name":"project_name","type":"string"},
       {"name":"project_key","type":"string","meaning":"Text"},
+      {"name":"total_number_of_scenario_runs","type":"bigint"},
+      {"name":"most_recent_runtime","type":"date"},
+      {"name":"total_scenario_runtime_hours","type":"double"},
+      {"name":"project_url","type":"string"},
       {"name":"num_distinct_deprecated_plugins_in_project","type":"bigint"},
       {"name":"num_deprecated_plugin_instances_in_project","type":"bigint"},
       {"name":"num_deprecated_recipes","type":"bigint"},
