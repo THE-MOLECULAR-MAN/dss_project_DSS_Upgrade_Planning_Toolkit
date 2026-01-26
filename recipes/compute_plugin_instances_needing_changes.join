@@ -6,52 +6,83 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "plugin_id",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "plugin_id",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "plugin_id",
+      "type": "string",
       "table": 0
     },
     {
       "name": "plugin_is_deprecated",
+      "type": "string",
       "table": 0
     },
     {
       "name": "element_kind",
+      "type": "string",
       "table": 0
     },
     {
       "name": "element_type",
+      "type": "string",
       "table": 0
     },
     {
       "name": "object_id",
+      "type": "string",
       "table": 0
     },
     {
       "name": "object_type",
+      "type": "string",
       "table": 0
     },
     {
       "name": "project_key",
+      "type": "string",
       "table": 0
     },
     {
       "name": "DSS_v14_support",
+      "type": "string",
       "table": 1
     },
     {
       "name": "plugin_name",
+      "type": "string",
       "table": 1
     },
     {
       "name": "description",
+      "type": "string",
       "table": 1
     },
     {
       "name": "plugin_description_url",
+      "type": "string",
       "table": 1
     }
   ],
@@ -102,7 +133,7 @@
       "computedColumns": []
     },
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
@@ -112,5 +143,59 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "plugin_id",
+            "type": "string"
+          },
+          {
+            "name": "plugin_is_deprecated",
+            "type": "string"
+          },
+          {
+            "name": "element_kind",
+            "type": "string"
+          },
+          {
+            "name": "element_type",
+            "type": "string"
+          },
+          {
+            "name": "object_id",
+            "type": "string"
+          },
+          {
+            "name": "object_type",
+            "type": "string"
+          },
+          {
+            "name": "project_key",
+            "type": "string"
+          },
+          {
+            "name": "DSS_v14_support",
+            "type": "string"
+          },
+          {
+            "name": "plugin_name",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "name": "plugin_description_url",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
