@@ -29,21 +29,6 @@
       "table": 0
     },
     {
-      "name": "num_unique_contributors",
-      "type": "bigint",
-      "table": 0
-    },
-    {
-      "name": "latest_change",
-      "type": "date",
-      "table": 0
-    },
-    {
-      "name": "num_of_changes",
-      "type": "bigint",
-      "table": 0
-    },
-    {
       "name": "name",
       "type": "string",
       "table": 1
@@ -153,16 +138,16 @@
             "type": "string"
           },
           {
-            "name": "num_unique_contributors",
+            "name": "num_recent_commits",
             "type": "bigint"
           },
           {
-            "name": "latest_change",
+            "name": "num_contributors",
+            "type": "bigint"
+          },
+          {
+            "name": "latest_commit",
             "type": "date"
-          },
-          {
-            "name": "num_of_changes",
-            "type": "bigint"
           },
           {
             "meaning": "Text",
