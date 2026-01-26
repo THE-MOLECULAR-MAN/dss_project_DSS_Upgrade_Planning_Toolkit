@@ -179,11 +179,11 @@
           "operator": "\u003e  [number]"
         },
         {
-          "input": "name",
+          "input": "project_name",
           "col": "cluster_tasks_longest_runtime_seconds",
           "$showList": false,
           "num": 0,
-          "operator": "contains"
+          "operator": "not empty"
         }
       ]
     },
