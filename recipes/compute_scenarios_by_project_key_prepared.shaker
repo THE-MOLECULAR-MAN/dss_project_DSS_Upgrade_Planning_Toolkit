@@ -260,6 +260,25 @@
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "last_modified_timestamp_parsed",
+        "formats": [
+          "yyyy-MM-dd HH:mm:ss"
+        ],
+        "columns": [
+          "last_modified_timestamp"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "en_US"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -298,6 +317,7 @@
     "project_name": 239,
     "most_recent_start_time": 204,
     "total_number_of_scenario_runs": 253,
+    "last_modified_timestamp_parsed": 260,
     "projectKey": 120,
     "project_owner": 141,
     "longest_scenario_runtime_hours": 260,
