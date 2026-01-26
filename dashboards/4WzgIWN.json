@@ -68,8 +68,8 @@
           }
         ]
       },
-      "title": "Details about deprecations by project",
-      "showTitle": false
+      "title": "Details about deprecations - across all projects",
+      "showTitle": true
     }
   ],
   "owner": "admin",
@@ -77,11 +77,11 @@
   "name": "Migration considerations",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769446947117,
+    "lastModifiedOn": 1769446991292,
     "extendedProperties": {}
   },
   "creationTag": {
