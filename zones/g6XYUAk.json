@@ -55,10 +55,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "plugin_instances_needing_changes_by_plugin_is_deprecated",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "plugin_instances_needing_changes_by_project_key_prepared",
       "objectType": "DATASET"
     },
