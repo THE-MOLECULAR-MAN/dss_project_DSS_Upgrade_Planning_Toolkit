@@ -71,7 +71,7 @@
       "params": {
         "referenceColumn": "project_key",
         "columns": [
-          "num_unique_contributors"
+          "num_contributors"
         ],
         "reorderAction": "BEFORE_COLUMN",
         "appliesTo": "SINGLE_COLUMN"
@@ -173,11 +173,14 @@
     "last_modified_timestamp": 211,
     "num_unique_contributors": 188,
     "description": 300,
+    "latest_commit": 183,
     "Project_Name": 281,
     "url": 300,
     "projectStatus": 113,
     "num_of_changes": 120,
+    "num_recent_commits": 150,
     "latest_change": 183,
+    "num_contributors": 135,
     "name": 281,
     "shortDesc": 300,
     "contributors": 105,
