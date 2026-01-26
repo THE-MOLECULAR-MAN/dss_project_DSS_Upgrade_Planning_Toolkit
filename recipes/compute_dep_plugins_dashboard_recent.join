@@ -54,7 +54,32 @@
   ],
   "selectedColumns": [
     {
+      "name": "project_name",
+      "type": "string",
+      "table": 0
+    },
+    {
       "name": "project_key",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "total_number_of_scenario_runs",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "most_recent_runtime",
+      "type": "date",
+      "table": 0
+    },
+    {
+      "name": "total_scenario_runtime_hours",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "project_url",
       "type": "string",
       "table": 0
     },
@@ -116,18 +141,18 @@
   },
   "virtualInputs": [
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
+      "index": 2
+    },
+    {
+      "outputColumnsSelectionMode": "MANUAL",
+      "preFilter": {},
       "index": 0
     },
     {
       "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {},
       "index": 1
-    },
-    {
-      "outputColumnsSelectionMode": "MANUAL",
-      "preFilter": {},
-      "index": 2
     }
   ],
   "postFilter": {
@@ -135,7 +160,27 @@
       "schema": {
         "columns": [
           {
+            "name": "project_name",
+            "type": "string"
+          },
+          {
             "name": "project_key",
+            "type": "string"
+          },
+          {
+            "name": "total_number_of_scenario_runs",
+            "type": "bigint"
+          },
+          {
+            "name": "most_recent_runtime",
+            "type": "date"
+          },
+          {
+            "name": "total_scenario_runtime_hours",
+            "type": "double"
+          },
+          {
+            "name": "project_url",
             "type": "string"
           },
           {

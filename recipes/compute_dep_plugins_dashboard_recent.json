@@ -13,15 +13,15 @@
     "main": {
       "items": [
         {
-          "ref": "projects_with_recent_scenario_runs",
-          "deps": []
-        },
-        {
           "ref": "dep_plugins_dashboard",
           "deps": []
         },
         {
           "ref": "dep_recipes_dashboard",
+          "deps": []
+        },
+        {
+          "ref": "recent_scenarios_dashboard",
           "deps": []
         }
       ]
@@ -39,11 +39,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769446047676,
+    "lastModifiedOn": 1769446284385,
     "extendedProperties": {}
   },
   "creationTag": {
