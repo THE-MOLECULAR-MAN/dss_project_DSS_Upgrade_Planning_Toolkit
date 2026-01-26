@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769445070784,
+    "lastModifiedOn": 1769445117401,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -52,7 +52,7 @@
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "table": "${projectKey}_recent_scenarios_dashboard_distinct",
+    "table": "${projectKey}_projects_with_recent_scenario_runs",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
