@@ -31,7 +31,7 @@
           "appendMode": false
         },
         {
-          "ref": "unknown",
+          "ref": "recipe_with_unknown_status",
           "appendMode": false
         }
       ]
@@ -39,11 +39,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769316148705,
+    "lastModifiedOn": 1769408834410,
     "extendedProperties": {}
   },
   "creationTag": {

@@ -31,10 +31,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "unknown",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_plugin_instances_needing_changes",
       "objectType": "RECIPE"
     },
@@ -57,6 +53,10 @@
     {
       "objectId": "compute_plugin_instances_needing_changes_by_project_key_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "recipe_with_unknown_status",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
