@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769435038821,
+    "lastModifiedOn": 1769444289847,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -52,7 +52,7 @@
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "table": "${projectKey}_commits_by_project_key_details_prepared",
+    "table": "${projectKey}_recent_commit_dashboard",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
