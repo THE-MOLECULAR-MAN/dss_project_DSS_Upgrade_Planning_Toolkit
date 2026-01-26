@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769402956020,
+    "lastModifiedOn": 1769403381796,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -64,7 +64,6 @@
   "schema": {
     "columns": [
       {"name":"projectKey","type":"string","comment":"Identifier for the project; key for project events."},
-      {"name":"most_recent_start_time","type":"date"},
       {"name":"longest_scenario_runtime_hours","type":"bigint"},
       {"name":"average_scenario_runtime_minutes","type":"double"},
       {"name":"total_scenario_runtimes_hours","type":"bigint"},
