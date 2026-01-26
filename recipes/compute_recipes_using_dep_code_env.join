@@ -49,11 +49,6 @@
       "table": 1
     },
     {
-      "name": "recipe_id",
-      "type": "string",
-      "table": 1
-    },
-    {
       "name": "recipe_type",
       "type": "string",
       "table": 1
@@ -174,11 +169,6 @@
           {
             "meaning": "Text",
             "name": "projectKey",
-            "type": "string"
-          },
-          {
-            "meaning": "Text",
-            "name": "recipe_id",
             "type": "string"
           },
           {
