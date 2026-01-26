@@ -1,7 +1,7 @@
 {
   "type": "dataset_table",
   "params": {
-    "datasetSmartName": "cluster_tasks_by_projectKey",
+    "datasetSmartName": "recent_cluster_tasks_summary",
     "shakerScript": {
       "steps": [],
       "maxProcessedMemTableBytes": -1,
@@ -76,11 +76,11 @@
   "name": "cluster_tasks_by_projectKey",
   "dashboardCreationId": "0ZBbL6D",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769402052209,
+    "lastModifiedOn": 1769406322041,
     "extendedProperties": {}
   },
   "creationTag": {

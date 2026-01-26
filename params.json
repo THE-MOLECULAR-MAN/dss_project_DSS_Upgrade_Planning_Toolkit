@@ -67,7 +67,7 @@
       },
       {
         "objectRef": {
-          "objectId": "cluster_tasks_by_projectKey",
+          "objectId": "recent_cluster_tasks_summary",
           "objectType": "DATASET"
         },
         "modes": [
@@ -311,11 +311,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 70,
+    "versionNumber": 71,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769406312503,
+    "lastModifiedOn": 1769406322042,
     "extendedProperties": {}
   },
   "creationTag": {

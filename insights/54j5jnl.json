@@ -1,21 +1,19 @@
 {
   "type": "dataset_table",
   "params": {
+    "datasetSmartName": "recent_cluster_tasks_summary",
     "shakerScript": {
       "steps": [],
       "maxProcessedMemTableBytes": -1,
       "columnsSelection": {
         "mode": "ALL"
       },
-      "columnOrder": [],
       "columnWidthsByName": {},
       "columnUseScientificNotationByName": {},
       "coloring": {
         "scheme": "MEANING_AND_STATUS",
         "individualColumns": [],
-        "individualColumnsRules": [],
-        "valueColoringMode": "HASH",
-        "coloringGroups": []
+        "valueColoringMode": "HASH"
       },
       "sorting": [],
       "analysisColumnData": {},
@@ -71,19 +69,27 @@
       "globalSearchQuery": "",
       "explorationFilters": [],
       "previewMode": "ALL_ROWS"
-    },
-    "datasetSmartName": "cluster_tasks_by_projectKey"
+    }
   },
   "owner": "admin",
   "listed": false,
   "name": "cluster_tasks_by_projectKey",
   "dashboardCreationId": "725LHH4",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1769406322041,
+    "extendedProperties": {}
+  },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768232221952
+    "lastModifiedOn": 1768232221952,
+    "extendedProperties": {}
   },
   "tags": [],
   "customFields": {},

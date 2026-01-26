@@ -23,7 +23,7 @@
     "main": {
       "items": [
         {
-          "ref": "cluster_tasks_by_projectKey",
+          "ref": "recent_cluster_tasks_summary",
           "appendMode": false
         }
       ]
@@ -31,11 +31,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769406215708,
+    "lastModifiedOn": 1769406322043,
     "extendedProperties": {}
   },
   "creationTag": {
