@@ -76,42 +76,14 @@
       "table": 1
     },
     {
-      "name": "shortDesc",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "description",
-      "type": "string",
-      "table": 1
-    },
-    {
       "name": "ownerLogin",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "projectStatus",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "tags",
+      "alias": "project_owner",
       "type": "string",
       "table": 1
     },
     {
       "name": "last_modified_timestamp",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "tutorialProject",
-      "type": "boolean",
-      "table": 1
-    },
-    {
-      "name": "contributors",
+      "alias": "last_modified_timestamp",
       "type": "string",
       "table": 1
     },
@@ -168,12 +140,13 @@
       "computedColumns": []
     },
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
       },
       "originLabel": "dss_projects_cached",
+      "prefix": "project",
       "index": 1,
       "computedColumns": []
     }
@@ -218,32 +191,12 @@
           },
           {
             "meaning": "Text",
-            "name": "name",
-            "type": "string"
-          },
-          {
-            "meaning": "FreeText",
-            "name": "shortDesc",
-            "type": "string"
-          },
-          {
-            "meaning": "FreeText",
-            "name": "description",
+            "name": "project_name",
             "type": "string"
           },
           {
             "meaning": "Text",
-            "name": "ownerLogin",
-            "type": "string"
-          },
-          {
-            "meaning": "Text",
-            "name": "projectStatus",
-            "type": "string"
-          },
-          {
-            "meaning": "JSONArrayMeaning",
-            "name": "tags",
+            "name": "project_owner",
             "type": "string"
           },
           {
@@ -252,18 +205,8 @@
             "type": "string"
           },
           {
-            "meaning": "Boolean",
-            "name": "tutorialProject",
-            "type": "boolean"
-          },
-          {
-            "meaning": "JSONArrayMeaning",
-            "name": "contributors",
-            "type": "string"
-          },
-          {
             "meaning": "URL",
-            "name": "url",
+            "name": "project_url",
             "type": "string"
           }
         ],
