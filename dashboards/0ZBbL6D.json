@@ -35,8 +35,8 @@
             "box": {
               "top": 5,
               "left": 0,
-              "width": 6,
-              "height": 3
+              "width": 12,
+              "height": 4
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -50,6 +50,7 @@
             },
             "autoLoad": true,
             "showTitle": "YES",
+            "title": "Projects using clusters",
             "insightId": "iULZkF6",
             "insightType": "dataset_table",
             "displayMode": "INSIGHT",
@@ -65,11 +66,11 @@
   "name": "Active Projects",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769402052363,
+    "lastModifiedOn": 1769402102453,
     "extendedProperties": {}
   },
   "creationTag": {
