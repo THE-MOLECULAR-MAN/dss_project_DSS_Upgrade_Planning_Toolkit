@@ -57,6 +57,14 @@
     {
       "objectId": "instances_of_deprecated_plugin_usage",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_plugin_instances_needing_changes",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "plugin_instances_needing_changes",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
