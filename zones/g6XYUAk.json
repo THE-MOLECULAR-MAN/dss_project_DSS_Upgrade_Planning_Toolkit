@@ -61,6 +61,14 @@
     {
       "objectId": "dep_code_env_in_use",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recipes_using_dep_code_env",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "recipes_using_dep_code_env",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
