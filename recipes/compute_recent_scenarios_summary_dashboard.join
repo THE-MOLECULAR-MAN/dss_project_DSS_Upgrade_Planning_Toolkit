@@ -108,7 +108,7 @@
   },
   "virtualInputs": [
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "ALL",
       "preFilter": {
         "distinct": false,
         "enabled": false
