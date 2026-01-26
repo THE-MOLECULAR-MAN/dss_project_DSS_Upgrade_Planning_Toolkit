@@ -27,7 +27,7 @@
     "main": {
       "items": [
         {
-          "ref": "plugin_instances_needing_changes",
+          "ref": "dep_plugin_instances",
           "appendMode": false
         }
       ]
@@ -35,11 +35,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769436103886,
+    "lastModifiedOn": 1769443152164,
     "extendedProperties": {}
   },
   "creationTag": {

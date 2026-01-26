@@ -35,10 +35,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "plugin_instances_needing_changes",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_plugin_instances_needing_changes_by_project_key",
       "objectType": "RECIPE"
     },
@@ -56,6 +52,10 @@
     },
     {
       "objectId": "dep_plugins_dashboard",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dep_plugin_instances",
       "objectType": "DATASET"
     }
   ],
