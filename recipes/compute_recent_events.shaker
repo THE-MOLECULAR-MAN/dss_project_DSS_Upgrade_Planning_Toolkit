@@ -231,10 +231,11 @@
       "type": "ColumnsSelector",
       "params": {
         "columns": [
+          "start_time",
           "hours_since_finish"
         ],
         "keep": false,
-        "appliesTo": "SINGLE_COLUMN"
+        "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
     }
