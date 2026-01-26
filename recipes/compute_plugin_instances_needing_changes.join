@@ -152,7 +152,7 @@
         },
         "$status": {},
         "distinct": false,
-        "enabled": true
+        "enabled": false
       },
       "originLabel": "dss_v14_plugin_support_psql",
       "index": 1,
