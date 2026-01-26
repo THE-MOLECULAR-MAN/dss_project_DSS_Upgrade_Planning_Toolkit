@@ -49,7 +49,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
@@ -59,6 +59,74 @@
         },
         "expression": "job_duration_seconds_sum/3600.0\t",
         "column": "total_job_duration_hours"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "error_sum"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "job_error_avg",
+            "to": "avg_job_error_rate"
+          },
+          {
+            "from": "avg_job_error_rate",
+            "to": "avg_job_error_rate_percentage"
+          },
+          {
+            "from": "num_jobs",
+            "to": "total_number_of_recent_jobs_run"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "job_duration_seconds_avg",
+          "job_duration_seconds_sum"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "avg_job_duration_min",
+        "columns": [
+          "total_number_of_recent_jobs_run",
+          "total_job_duration_hours"
+        ],
+        "reorderAction": "BEFORE_COLUMN",
+        "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
     }
@@ -91,14 +159,18 @@
   "analysisColumnData": {},
   "columnWidthsByName": {
     "job_duration_seconds_sum": 195,
-    "total_job_duration_hours": 218,
     "project_key": 267,
     "job_error_avg": 148,
     "num_jobs": 100,
-    "avg_job_duration_min": 165,
     "job_duration_seconds_avg": 218,
     "job_most_recent_timestamp": 225,
-    "error_sum": 100
+    "avg_job_error_rate_percentage": 233,
+    "total_job_duration_hours": 218,
+    "total_number_of_recent_jobs_run": 248,
+    "error_rate_percentage": 197,
+    "avg_job_duration_min": 165,
+    "error_sum": 100,
+    "avg_job_error_rate": 176
   },
   "sorting": [],
   "globalSearchQuery": "",
