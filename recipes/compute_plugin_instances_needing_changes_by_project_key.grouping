@@ -101,7 +101,7 @@
       "count": false,
       "$idx": 4,
       "sum": false,
-      "concat": true,
+      "concat": false,
       "type": "string",
       "concatDistinct": true,
       "sum2": false,
@@ -245,7 +245,11 @@
   },
   "engineType": "SQL",
   "enlargeYourBits": true,
-  "outputColumnNameOverrides": {},
+  "outputColumnNameOverrides": {
+    "plugin_id_distinct": "num_distinct_deprecated_plugins_in_project",
+    "count": "num_deprecated_plugin_instances_in_project",
+    "plugin_name_concat": "plugin_name"
+  },
   "computedColumns": [],
   "postFilter": {
     "$status": {
@@ -258,10 +262,6 @@
           {
             "name": "plugin_id_distinct",
             "type": "bigint"
-          },
-          {
-            "name": "object_id_concat",
-            "type": "string"
           },
           {
             "name": "plugin_name_concat",
