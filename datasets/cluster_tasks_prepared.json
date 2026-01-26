@@ -31,11 +31,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769403171035,
+    "lastModifiedOn": 1769403380534,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -68,7 +68,6 @@
   "schema": {
     "columns": [
       {"name":"projectKey","type":"string","comment":"Identifier for the project; key for project events."},
-      {"name":"start_time","type":"date","comment":"Timestamp when the task started; event timing.","meaning":"Text"},
       {"name":"duration_seconds","type":"bigint","meaning":"LongMeaning"},
       {"name":"end_time","type":"date"},
       {"name":"days_since_scenario_run","type":"double"},
