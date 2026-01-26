@@ -129,6 +129,14 @@
     {
       "objectId": "recent_commit_dashboard",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "scenario_runs",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "jobs_live",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

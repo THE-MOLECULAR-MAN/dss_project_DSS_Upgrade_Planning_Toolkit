@@ -69,14 +69,6 @@
     {
       "objectId": "recipes_using_dep_code_env",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "jobs_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "scenario_runs",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
