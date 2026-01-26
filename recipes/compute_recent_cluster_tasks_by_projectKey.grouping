@@ -112,14 +112,15 @@
       "column": "error",
       "count": false,
       "$idx": 4,
-      "sum": false,
+      "sum": true,
       "concat": false,
       "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": true,
+      "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -130,14 +131,15 @@
       "column": "warnings_count",
       "count": false,
       "$idx": 5,
-      "sum": false,
+      "sum": true,
       "concat": false,
       "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": true,
+      "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -270,12 +272,12 @@
             "type": "date"
           },
           {
-            "name": "error_avg",
-            "type": "double"
+            "name": "error_sum",
+            "type": "bigint"
           },
           {
-            "name": "warnings_count_avg",
-            "type": "double"
+            "name": "warnings_count_sum",
+            "type": "bigint"
           },
           {
             "name": "count",
