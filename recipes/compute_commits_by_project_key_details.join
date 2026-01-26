@@ -58,11 +58,6 @@
       "table": 1
     },
     {
-      "name": "contributors",
-      "type": "string",
-      "table": 1
-    },
-    {
       "name": "url",
       "type": "string",
       "table": 1
@@ -187,11 +182,6 @@
           {
             "meaning": "Text",
             "name": "project_last_modified_timestamp",
-            "type": "string"
-          },
-          {
-            "meaning": "JSONArrayMeaning",
-            "name": "project_contributors",
             "type": "string"
           },
           {
