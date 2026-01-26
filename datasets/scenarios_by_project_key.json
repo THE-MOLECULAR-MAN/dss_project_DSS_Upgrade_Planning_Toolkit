@@ -31,11 +31,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769402732378,
+    "lastModifiedOn": 1769403381280,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -68,7 +68,6 @@
   "schema": {
     "columns": [
       {"name":"projectKey","type":"string","comment":"Identifier for the project; key for project events."},
-      {"name":"most_recent_start_time","type":"date"},
       {"name":"duration_seconds_max","type":"bigint"},
       {"name":"duration_seconds_avg","type":"double"},
       {"name":"total_duration_seconds","type":"bigint"},
