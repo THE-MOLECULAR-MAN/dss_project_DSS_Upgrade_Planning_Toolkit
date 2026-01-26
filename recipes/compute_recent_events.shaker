@@ -166,6 +166,31 @@
         "processNullOrEmptyValues": false
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "hours_since_finish",
+        "outputUnit": "HOURS",
+        "input1": "end_time",
+        "compareTo": "NOW",
+        "reverse": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "hours_since_finish/24.0\t",
+        "column": "days_since_scenario_run"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -220,6 +245,8 @@
     "duration_seconds": 135,
     "age_days": 100,
     "project_key": 300,
+    "days_since_finish": 143,
+    "days_since_scenario_run": 188,
     "end_time": 106,
     "warnings_count": 120,
     "error": 100,
@@ -227,6 +254,7 @@
     "start_time": 183,
     "projectKey": 300,
     "event_type": 100,
+    "hours_since_finish": 150,
     "state": 100,
     "user": 113,
     "errors": 100,
