@@ -32,22 +32,18 @@
   "selectedColumns": [
     {
       "name": "project_key",
-      "type": "string",
       "table": 0
     },
     {
       "name": "num_distinct_deprecated_plugins_in_project",
-      "type": "bigint",
       "table": 0
     },
     {
       "name": "plugin_name",
-      "type": "string",
       "table": 0
     },
     {
       "name": "num_deprecated_plugin_instances_in_project",
-      "type": "bigint",
       "table": 0
     }
   ],
@@ -108,32 +104,10 @@
       "computedColumns": []
     }
   ],
-  "computedColumns": [],
   "postFilter": {
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "meaning": "Text",
-            "name": "project_key",
-            "type": "string"
-          },
-          {
-            "name": "num_distinct_deprecated_plugins_in_project",
-            "type": "bigint"
-          },
-          {
-            "name": "plugin_name",
-            "type": "string"
-          },
-          {
-            "name": "num_deprecated_plugin_instances_in_project",
-            "type": "bigint"
-          }
-        ],
-        "userModified": false
-      }
-    }
+    "distinct": false,
+    "enabled": false
   },
+  "computedColumns": [],
   "enableAutoCastInJoinConditions": false
 }
