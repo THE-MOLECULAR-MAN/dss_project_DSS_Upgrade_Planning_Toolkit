@@ -33,7 +33,7 @@
           }
         ]
       },
-      "title": "Migration Summary",
+      "title": "Migration summary",
       "showTitle": true
     },
     {
@@ -76,11 +76,11 @@
   "name": "Migration considerations",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769446897172,
+    "lastModifiedOn": 1769446915008,
     "extendedProperties": {}
   },
   "creationTag": {
