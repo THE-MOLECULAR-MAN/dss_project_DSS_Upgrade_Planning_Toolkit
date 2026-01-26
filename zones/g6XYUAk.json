@@ -65,6 +65,14 @@
     {
       "objectId": "dep_code_env_in_use",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dep_plugins_dashboard_recent",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dep_plugins_dashboard_recent",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
