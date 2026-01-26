@@ -107,7 +107,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
@@ -117,6 +117,36 @@
         },
         "expression": "error_sum/total_num_cluster_tasks",
         "column": "error_rate"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "warnings_count_sum",
+          "error_sum"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "total_num_cluster_tasks",
+            "to": "recent_cluster_task_count"
+          }
+        ]
       },
       "alwaysShowComment": false
     }
@@ -199,6 +229,7 @@
     "most_recent_runtime": 183,
     "url": 300,
     "tags": 300,
+    "recent_cluster_task_count": 203,
     "projectStatus": 113,
     "error_rate": 134,
     "end_time_max": 183,
