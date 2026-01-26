@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769446017611,
+    "lastModifiedOn": 1769446040836,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -66,13 +66,8 @@
       {"name":"project_key","type":"string","meaning":"Text"},
       {"name":"num_distinct_deprecated_plugins_in_project","type":"bigint"},
       {"name":"num_deprecated_plugin_instances_in_project","type":"bigint"},
-      {"name":"projectKey","type":"string","meaning":"Text"},
       {"name":"num_deprecated_recipes","type":"bigint"},
-      {"name":"num_recipes_needing_manual_investigation","type":"bigint"},
-      {"name":"prepare_recipes_using_deprecated_processors","type":"bigint"},
-      {"name":"recipes_with_unknown_upgrade_status","type":"bigint"},
-      {"name":"total_recipes_to_check","type":"bigint"},
-      {"name":"recipes_that_are_usually_safe","type":"bigint"}
+      {"name":"total_recipes_to_check","type":"bigint"}
     ],
     "userModified": true
   },
