@@ -118,6 +118,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "recent_scenarios_summary",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -320,11 +329,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 76,
+    "versionNumber": 77,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769433321219,
+    "lastModifiedOn": 1769433522538,
     "extendedProperties": {}
   },
   "creationTag": {
