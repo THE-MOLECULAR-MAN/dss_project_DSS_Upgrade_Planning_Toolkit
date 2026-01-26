@@ -154,6 +154,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "dep_recipes",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -356,11 +365,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 92,
+    "versionNumber": 93,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769447246832,
+    "lastModifiedOn": 1769447307589,
     "extendedProperties": {}
   },
   "creationTag": {
