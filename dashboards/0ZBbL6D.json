@@ -9,8 +9,8 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 6,
-              "height": 3
+              "width": 10,
+              "height": 5
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -24,6 +24,7 @@
             },
             "autoLoad": true,
             "showTitle": "YES",
+            "title": "Projects with scenarios",
             "insightId": "3KmyLKo",
             "insightType": "dataset_table",
             "displayMode": "INSIGHT",
@@ -39,11 +40,11 @@
   "name": "Active Projects",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769401990947,
+    "lastModifiedOn": 1769402004539,
     "extendedProperties": {}
   },
   "creationTag": {
