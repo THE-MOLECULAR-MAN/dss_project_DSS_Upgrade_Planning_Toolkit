@@ -204,7 +204,7 @@
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "hours_since_finish/24.0\t",
-        "column": "days_since_scenario_run"
+        "column": "days_since_finish"
       },
       "alwaysShowComment": false
     },
@@ -217,7 +217,7 @@
         "mode": "ROUND",
         "places": 1,
         "columns": [
-          "days_since_scenario_run"
+          "days_since_finish"
         ],
         "precision": 0,
         "appliesTo": "SINGLE_COLUMN"
