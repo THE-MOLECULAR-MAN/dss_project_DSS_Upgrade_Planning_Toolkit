@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769435817788,
+    "lastModifiedOn": 1769435845302,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -64,6 +64,7 @@
   "schema": {
     "columns": [
       {"name":"project_key","type":"string"},
+      {"name":"plugin_id_distinct","type":"bigint"},
       {"name":"object_id_concat","type":"string"},
       {"name":"plugin_name_concat","type":"string"},
       {"name":"count","type":"bigint"}
