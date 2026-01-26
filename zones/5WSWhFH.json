@@ -169,6 +169,14 @@
     {
       "objectId": "dss_v14_plugin_support",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_v14_plugin_support_psql",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_v14_plugin_support_psql",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
