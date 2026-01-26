@@ -121,6 +121,14 @@
     {
       "objectId": "recent_cluster_tasks_summary_joined",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "recent_cluster_tasks_dashboard",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recent_cluster_tasks_dashboard",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
