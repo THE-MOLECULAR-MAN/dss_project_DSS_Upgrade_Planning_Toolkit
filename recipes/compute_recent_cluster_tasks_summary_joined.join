@@ -6,84 +6,116 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "project_key",
+            "table": 0
+          },
+          "dateDiffUnit": "SECOND",
+          "column2": {
+            "name": "projectKey",
+            "table": 1
+          },
+          "type": "EQ"
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "project_key",
+      "type": "string",
       "table": 0
     },
     {
       "name": "cluster_tasks_longest_runtime_seconds",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "cluster_tasks_avg_runtime_seconds",
+      "type": "double",
       "table": 0
     },
     {
       "name": "cluster_tasks_total_runtime_seconds",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "end_time_max",
+      "type": "date",
       "table": 0
     },
     {
       "name": "error_sum",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "warnings_count_sum",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "total_num_cluster_tasks",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "projectKey",
+      "type": "string",
       "table": 1
     },
     {
       "name": "name",
+      "type": "string",
       "table": 1
     },
     {
       "name": "shortDesc",
+      "type": "string",
       "table": 1
     },
     {
       "name": "description",
+      "type": "string",
       "table": 1
     },
     {
       "name": "ownerLogin",
+      "type": "string",
       "table": 1
     },
     {
       "name": "projectStatus",
+      "type": "string",
       "table": 1
     },
     {
       "name": "tags",
+      "type": "string",
       "table": 1
     },
     {
       "name": "last_modified_timestamp",
+      "type": "string",
       "table": 1
     },
     {
       "name": "tutorialProject",
+      "type": "boolean",
       "table": 1
     },
     {
       "name": "contributors",
+      "type": "string",
       "table": 1
     },
     {
       "name": "url",
+      "type": "string",
       "table": 1
     }
   ],
@@ -126,6 +158,21 @@
     {
       "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
       "preFilter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "$latestOperator": "\u0026\u0026",
+          "$filterOptions": "rules",
+          "conditions": [
+            {
+              "input": "project_key",
+              "col": "cluster_tasks_longest_runtime_seconds",
+              "$showList": false,
+              "num": 0,
+              "operator": "contains"
+            }
+          ]
+        },
+        "$status": {},
         "distinct": false,
         "enabled": false
       },
@@ -144,5 +191,125 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "$latestOperator": "\u0026\u0026",
+      "$filterOptions": "rules",
+      "conditions": [
+        {
+          "input": "total_num_cluster_tasks",
+          "col": "cluster_tasks_longest_runtime_seconds",
+          "$showList": false,
+          "num": 0,
+          "operator": "\u003e  [number]"
+        },
+        {
+          "input": "name",
+          "col": "cluster_tasks_longest_runtime_seconds",
+          "$showList": false,
+          "num": 0,
+          "operator": "contains"
+        }
+      ]
+    },
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "project_key",
+            "comment": "Identifier for the project; key for project events.",
+            "type": "string"
+          },
+          {
+            "name": "cluster_tasks_longest_runtime_seconds",
+            "type": "bigint"
+          },
+          {
+            "name": "cluster_tasks_avg_runtime_seconds",
+            "type": "double"
+          },
+          {
+            "name": "cluster_tasks_total_runtime_seconds",
+            "type": "bigint"
+          },
+          {
+            "name": "end_time_max",
+            "type": "date"
+          },
+          {
+            "name": "error_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "warnings_count_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "total_num_cluster_tasks",
+            "type": "bigint"
+          },
+          {
+            "meaning": "Text",
+            "name": "projectKey",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "meaning": "FreeText",
+            "name": "shortDesc",
+            "type": "string"
+          },
+          {
+            "meaning": "FreeText",
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "ownerLogin",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "projectStatus",
+            "type": "string"
+          },
+          {
+            "meaning": "JSONArrayMeaning",
+            "name": "tags",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "last_modified_timestamp",
+            "type": "string"
+          },
+          {
+            "meaning": "Boolean",
+            "name": "tutorialProject",
+            "type": "boolean"
+          },
+          {
+            "meaning": "JSONArrayMeaning",
+            "name": "contributors",
+            "type": "string"
+          },
+          {
+            "meaning": "URL",
+            "name": "url",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "enabled": true
+  },
   "enableAutoCastInJoinConditions": false
 }
