@@ -29,8 +29,41 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "cluster_tasks_longest_runtime_seconds"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "error_sum",
+          "warnings_count_sum"
+        ],
+        "appliesTo": "COLUMNS",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -91,7 +124,27 @@
       "meaning": "JSONArrayMeaning"
     }
   },
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "tutorialProject": 128,
+    "cluster_tasks_total_runtime_seconds": 278,
+    "project_key": 267,
+    "last_modified_timestamp": 211,
+    "cluster_tasks_longest_runtime_seconds": 293,
+    "description": 300,
+    "url": 300,
+    "warnings_count_sum": 150,
+    "tags": 300,
+    "projectStatus": 113,
+    "projectKey": 267,
+    "end_time_max": 183,
+    "name": 281,
+    "shortDesc": 300,
+    "contributors": 105,
+    "total_num_cluster_tasks": 188,
+    "cluster_tasks_avg_runtime_seconds": 263,
+    "error_sum": 100,
+    "ownerLogin": 120
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
