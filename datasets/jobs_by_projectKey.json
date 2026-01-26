@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769402436407,
+    "lastModifiedOn": 1769402471491,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -64,7 +64,6 @@
   "schema": {
     "columns": [
       {"name":"projectKey","type":"string"},
-      {"name":"start_time_min","type":"date"},
       {"name":"duration_seconds_avg","type":"double"},
       {"name":"duration_seconds_sum","type":"bigint"},
       {"name":"end_time_max","type":"date"},
