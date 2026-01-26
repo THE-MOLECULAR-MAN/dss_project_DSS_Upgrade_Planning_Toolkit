@@ -1,7 +1,7 @@
 {
   "type": "dataset_table",
   "params": {
-    "datasetSmartName": "recent_scenarios_summary",
+    "datasetSmartName": "recent_scenarios_dashboard",
     "shakerScript": {
       "steps": [],
       "maxProcessedMemTableBytes": -1,
@@ -76,11 +76,11 @@
   "name": "recent_scenarios_summary",
   "dashboardCreationId": "0ZBbL6D",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769433522552,
+    "lastModifiedOn": 1769433598811,
     "extendedProperties": {}
   },
   "creationTag": {

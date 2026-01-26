@@ -71,10 +71,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "recent_scenarios_summary",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "recent_commit_summary",
       "objectType": "DATASET"
     },
@@ -96,6 +92,10 @@
     },
     {
       "objectId": "recent_scenarios_summary_joined",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "recent_scenarios_dashboard",
       "objectType": "DATASET"
     }
   ],

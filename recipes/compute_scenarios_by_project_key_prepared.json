@@ -60,7 +60,7 @@
     "main": {
       "items": [
         {
-          "ref": "recent_scenarios_summary",
+          "ref": "recent_scenarios_dashboard",
           "appendMode": false
         }
       ]
@@ -68,11 +68,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 23,
+    "versionNumber": 24,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769433447351,
+    "lastModifiedOn": 1769433598814,
     "extendedProperties": {}
   },
   "creationTag": {

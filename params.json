@@ -121,7 +121,7 @@
       },
       {
         "objectRef": {
-          "objectId": "recent_scenarios_summary",
+          "objectId": "recent_scenarios_dashboard",
           "objectType": "DATASET"
         },
         "modes": [
@@ -329,11 +329,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 77,
+    "versionNumber": 78,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769433522538,
+    "lastModifiedOn": 1769433598812,
     "extendedProperties": {}
   },
   "creationTag": {
