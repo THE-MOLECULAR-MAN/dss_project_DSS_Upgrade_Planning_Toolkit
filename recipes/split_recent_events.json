@@ -31,7 +31,7 @@
           "appendMode": false
         },
         {
-          "ref": "jobs_prepared",
+          "ref": "jobs",
           "appendMode": false
         }
       ]
@@ -39,11 +39,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769406791338,
+    "lastModifiedOn": 1769406799498,
     "extendedProperties": {}
   },
   "creationTag": {

@@ -23,10 +23,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "jobs_prepared",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_recent_cluster_tasks_by_projectKey",
       "objectType": "RECIPE"
     },
@@ -88,6 +84,10 @@
     },
     {
       "objectId": "cluster_tasks",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "jobs",
       "objectType": "DATASET"
     }
   ],
