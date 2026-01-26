@@ -64,6 +64,12 @@
       "table": 1
     },
     {
+      "name": "url",
+      "alias": "recipe_url",
+      "type": "string",
+      "table": 1
+    },
+    {
       "name": "last_modified_user",
       "type": "string",
       "table": 1
@@ -183,6 +189,11 @@
           {
             "meaning": "Text",
             "name": "recipe_name",
+            "type": "string"
+          },
+          {
+            "meaning": "URL",
+            "name": "recipe_url",
             "type": "string"
           },
           {
