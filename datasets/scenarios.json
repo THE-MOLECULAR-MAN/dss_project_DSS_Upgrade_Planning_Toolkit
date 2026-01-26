@@ -31,11 +31,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769403439611,
+    "lastModifiedOn": 1769444290162,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -56,7 +56,7 @@
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "table": "${projectKey}_recent_jobs_and_scenarios",
+    "table": "${projectKey}_scenarios",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
