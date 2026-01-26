@@ -23,7 +23,7 @@
     "main": {
       "items": [
         {
-          "ref": "deprecated_recipes",
+          "ref": "dep_recipes",
           "appendMode": false
         },
         {
@@ -39,11 +39,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769408834410,
+    "lastModifiedOn": 1769444936163,
     "extendedProperties": {}
   },
   "creationTag": {

@@ -19,10 +19,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "deprecated_recipes",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_plugin_instances_needing_changes",
       "objectType": "RECIPE"
     },
@@ -64,6 +60,10 @@
     },
     {
       "objectId": "dep_recipes_dashboard",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dep_recipes",
       "objectType": "DATASET"
     }
   ],
