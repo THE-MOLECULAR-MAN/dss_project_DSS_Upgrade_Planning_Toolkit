@@ -1,44 +1,6 @@
 {
   "columnsSelection": {
-    "mode": "ALL",
-    "list": [
-      {
-        "d": true,
-        "name": "project_key"
-      },
-      {
-        "d": true,
-        "name": "commit_id"
-      },
-      {
-        "d": true,
-        "name": "author"
-      },
-      {
-        "d": true,
-        "name": "timestamp"
-      },
-      {
-        "d": true,
-        "name": "added_files"
-      },
-      {
-        "d": true,
-        "name": "added_lines"
-      },
-      {
-        "d": true,
-        "name": "removed_files"
-      },
-      {
-        "d": true,
-        "name": "removed_lines"
-      },
-      {
-        "d": true,
-        "name": "changed_files"
-      }
-    ]
+    "mode": "ALL"
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -66,7 +28,6 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "columnOrder": [],
   "columnUseScientificNotationByName": {},
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
@@ -74,13 +35,27 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "UNIXTimestampParser",
       "params": {
-        "milliseconds": true,
-        "inCol": "timestamp"
+        "inCol": "timestamp",
+        "milliseconds": true
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "days_since_commit",
+        "outputUnit": "DAYS",
+        "input1": "timestamp",
+        "compareTo": "NOW",
+        "reverse": false
       },
       "alwaysShowComment": false
     }
@@ -112,39 +87,30 @@
   },
   "analysisColumnData": {
     "project_key": {
-      "isColumnEdited": true,
       "meaning": "Text"
     },
     "author": {
-      "isColumnEdited": true,
       "meaning": "Text"
     },
     "added_lines": {
-      "isColumnEdited": true,
       "meaning": "LongMeaning"
     },
     "removed_lines": {
-      "isColumnEdited": true,
       "meaning": "LongMeaning"
     },
     "changed_files": {
-      "isColumnEdited": true,
       "meaning": "LongMeaning"
     },
     "removed_files": {
-      "isColumnEdited": true,
       "meaning": "LongMeaning"
     },
     "added_files": {
-      "isColumnEdited": true,
       "meaning": "LongMeaning"
     },
     "commit_id": {
-      "isColumnEdited": true,
       "meaning": "Text"
     },
     "timestamp": {
-      "isColumnEdited": true,
       "meaning": "LongMeaning"
     }
   },
@@ -157,15 +123,14 @@
     "removed_files": 113,
     "added_files": 100,
     "commit_id": 295,
-    "timestamp": 113
+    "timestamp": 113,
+    "days_since_commit": 143
   },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
     "scheme": "MEANING_AND_STATUS",
     "individualColumns": [],
-    "coloringGroups": [],
-    "valueColoringMode": "HASH",
-    "individualColumnsRules": []
+    "valueColoringMode": "HASH"
   }
 }

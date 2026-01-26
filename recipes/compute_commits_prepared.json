@@ -1,6 +1,7 @@
 {
   "type": "shaker",
   "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
   "params": {
     "engineParams": {
       "spark": {
@@ -35,10 +36,7 @@
         "pipelineAllowStart": true,
         "pipelineAllowMerge": true
       },
-      "maxThreads": 8,
-      "containerSelection": {
-        "containerMode": "INHERIT"
-      }
+      "maxThreads": 8
     }
   },
   "customMeta": {
@@ -46,7 +44,6 @@
   },
   "redispatchPartitioning": false,
   "maxRunningActivities": 0,
-  "hashPropagationBehavior": "INHERIT",
   "variables": {},
   "dkuProperties": [],
   "inputs": {
@@ -70,12 +67,21 @@
     }
   },
   "labels": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1769406409312,
+    "extendedProperties": {}
+  },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1765051569496
+    "lastModifiedOn": 1765051569496,
+    "extendedProperties": {}
   },
   "tags": [],
   "customFields": {},
