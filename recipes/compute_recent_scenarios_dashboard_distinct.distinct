@@ -5,31 +5,7 @@
   },
   "keys": [
     {
-      "column": "project_name"
-    },
-    {
       "column": "project_key"
-    },
-    {
-      "column": "total_number_of_scenario_runs"
-    },
-    {
-      "column": "project_owner"
-    },
-    {
-      "column": "most_recent_runtime"
-    },
-    {
-      "column": "avg_scenario_runtime_in_minutes"
-    },
-    {
-      "column": "total_scenario_runtime_hours"
-    },
-    {
-      "column": "last_modified_timestamp"
-    },
-    {
-      "column": "project_url"
     }
   ],
   "globalCount": false,
@@ -69,6 +45,17 @@
   },
   "outputColumnNameOverrides": {},
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "project_key",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
