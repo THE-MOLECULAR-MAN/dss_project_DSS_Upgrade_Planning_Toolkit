@@ -49,7 +49,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FillEmptyWithValue",
@@ -60,6 +60,49 @@
         ],
         "appliesTo": "COLUMNS",
         "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "columns": [
+          "project_name"
+        ],
+        "reorderAction": "AT_START",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "project_key"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "end_time_max",
+            "to": "most_recent_runtime"
+          }
+        ]
       },
       "alwaysShowComment": false
     }
@@ -126,24 +169,30 @@
   },
   "columnWidthsByName": {
     "tutorialProject": 128,
-    "cluster_tasks_total_runtime_seconds": 278,
     "project_key": 267,
     "last_modified_timestamp": 211,
     "cluster_tasks_longest_runtime_seconds": 293,
     "description": 300,
-    "url": 300,
+    "project_url": 300,
+    "project_name": 281,
+    "project_Status": 120,
     "warnings_count_sum": 150,
+    "projectKey": 267,
+    "project_owner": 141,
+    "project_last_modified_timestamp": 267,
+    "ownerLogin": 120,
+    "cluster_tasks_total_runtime_seconds": 278,
+    "most_recent_runtime": 183,
+    "url": 300,
     "tags": 300,
     "projectStatus": 113,
-    "projectKey": 267,
     "end_time_max": 183,
     "name": 281,
     "shortDesc": 300,
     "contributors": 105,
     "total_num_cluster_tasks": 188,
     "cluster_tasks_avg_runtime_seconds": 263,
-    "error_sum": 100,
-    "ownerLogin": 120
+    "error_sum": 100
   },
   "sorting": [],
   "globalSearchQuery": "",
