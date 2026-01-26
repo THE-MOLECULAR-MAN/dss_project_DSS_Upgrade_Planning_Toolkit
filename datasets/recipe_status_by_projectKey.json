@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769322477737,
+    "lastModifiedOn": 1769407723874,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -67,6 +67,7 @@
       {"name":"Deprecated_count","type":"bigint"},
       {"name":"Needs manual checking_count","type":"bigint"},
       {"name":"Prepare recipe uses deprecated preprocessors_count","type":"bigint"},
+      {"name":"Recipe Type \u0027CustomCode_hubspot\u0027 Not Found_count","type":"bigint"},
       {"name":"Usually safe_count","type":"bigint"}
     ],
     "userModified": false,
@@ -109,6 +110,14 @@
               "name": "Prepare recipe uses deprecated preprocessors",
               "valueColumns": [],
               "globalCountColumn": "Prepare recipe uses deprecated preprocessors_count"
+            },
+            {
+              "keyValues": [
+                "Recipe Type \u0027CustomCode_hubspot\u0027 Not Found"
+              ],
+              "name": "Recipe Type \u0027CustomCode_hubspot\u0027 Not Found",
+              "valueColumns": [],
+              "globalCountColumn": "Recipe Type \u0027CustomCode_hubspot\u0027 Not Found_count"
             },
             {
               "keyValues": [
