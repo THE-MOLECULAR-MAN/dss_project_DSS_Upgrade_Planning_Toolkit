@@ -4,7 +4,8 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
-      "type": "INNER",
+      "rightLimit": {},
+      "type": "LEFT",
       "outerJoinOnTheLeft": true,
       "on": [
         {
@@ -32,19 +33,23 @@
   "selectedColumns": [
     {
       "name": "project_key",
+      "type": "string",
       "table": 0
     },
     {
       "name": "num_distinct_deprecated_plugins_in_project",
-      "table": 0
+      "type": "bigint",
+      "table": 1
     },
     {
       "name": "plugin_name",
-      "table": 0
+      "type": "string",
+      "table": 1
     },
     {
       "name": "num_deprecated_plugin_instances_in_project",
-      "table": 0
+      "type": "bigint",
+      "table": 1
     }
   ],
   "resolvedSelectedColumns": [],
@@ -84,27 +89,39 @@
   },
   "virtualInputs": [
     {
-      "outputColumnsSelectionMode": "MANUAL",
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "originLabel": "dep_plugins_dashboard",
-      "index": 0,
-      "computedColumns": []
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "index": 0
     },
     {
-      "outputColumnsSelectionMode": "MANUAL",
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "originLabel": "projects_with_recent_scenario_runs",
-      "index": 1,
-      "computedColumns": []
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {},
+      "index": 1
     }
   ],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "project_key",
+            "type": "string"
+          },
+          {
+            "name": "num_distinct_deprecated_plugins_in_project",
+            "type": "bigint"
+          },
+          {
+            "name": "plugin_name",
+            "type": "string"
+          },
+          {
+            "name": "num_deprecated_plugin_instances_in_project",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
