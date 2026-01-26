@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769403171051,
+    "lastModifiedOn": 1769403380556,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -64,7 +64,6 @@
   "schema": {
     "columns": [
       {"name":"projectKey","type":"string"},
-      {"name":"start_time","type":"date"},
       {"name":"duration_seconds","type":"bigint"},
       {"name":"end_time","type":"date"},
       {"name":"days_since_scenario_run","type":"double"},
