@@ -129,13 +129,13 @@
       "conditions": [
         {
           "input": "num_recent_commits",
-          "col": "num_recent_commits",
+          "col": "project_key",
           "$showList": false,
           "num": 0,
           "operator": "\u003e  [number]"
         },
         {
-          "input": "name",
+          "input": "project_name",
           "col": "num_recent_commits",
           "$showList": false,
           "num": 0,
