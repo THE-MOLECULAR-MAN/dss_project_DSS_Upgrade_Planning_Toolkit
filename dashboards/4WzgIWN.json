@@ -132,7 +132,7 @@
             "box": {
               "top": 3,
               "left": 0,
-              "width": 6,
+              "width": 12,
               "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
@@ -147,6 +147,7 @@
             },
             "autoLoad": true,
             "showTitle": "YES",
+            "title": "Instances of deprecated recipes",
             "insightId": "3y5LiR0",
             "insightType": "dataset_table",
             "displayMode": "INSIGHT",
@@ -163,11 +164,11 @@
   "name": "Migration considerations",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 28,
+    "versionNumber": 29,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769447307772,
+    "lastModifiedOn": 1769447328018,
     "extendedProperties": {}
   },
   "creationTag": {
