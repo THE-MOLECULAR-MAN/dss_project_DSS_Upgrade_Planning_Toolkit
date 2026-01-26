@@ -64,11 +64,6 @@
       "table": 1
     },
     {
-      "name": "plugin_name",
-      "type": "string",
-      "table": 1
-    },
-    {
       "name": "num_deprecated_plugin_instances_in_project",
       "type": "bigint",
       "table": 1
@@ -150,7 +145,7 @@
       "index": 0
     },
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {},
       "index": 1
     },
@@ -171,10 +166,6 @@
           {
             "name": "num_distinct_deprecated_plugins_in_project",
             "type": "bigint"
-          },
-          {
-            "name": "plugin_name",
-            "type": "string"
           },
           {
             "name": "num_deprecated_plugin_instances_in_project",
