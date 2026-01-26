@@ -11,7 +11,8 @@
       "element_type": 300,
       "object_id": 225,
       "object_type": 127,
-      "project_key": 267
+      "project_key": 267,
+      "plugin_is_deprecated": 165
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -21,7 +22,7 @@
     },
     "sorting": [
       {
-        "column": "project_key",
+        "column": "plugin_is_deprecated",
         "ascending": true
       }
     ],
