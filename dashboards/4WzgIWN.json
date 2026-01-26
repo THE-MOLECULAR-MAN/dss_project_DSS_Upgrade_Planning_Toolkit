@@ -7,7 +7,41 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 4,
+              "top": 0,
+              "left": 0,
+              "width": 12,
+              "height": 7
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "viewKind": "EXPLORE",
+              "showName": true,
+              "showDescription": true,
+              "showCustomFields": true,
+              "showStorageType": false,
+              "showMeaning": false,
+              "showProgressBar": false
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "title": "Migration Summary - Projects that ran scenarios within the last 90 days",
+            "insightId": "P1u7qB8",
+            "insightType": "dataset_table",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
+      },
+      "showTitle": false
+    },
+    {
+      "id": "2ezMbf1",
+      "grid": {
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
               "left": 0,
               "width": 12,
               "height": 4
@@ -25,32 +59,7 @@
             "autoLoad": true,
             "showTitle": "YES",
             "title": "Projects using deprecated recipes",
-            "insightId": "Ua1LKo6",
-            "insightType": "dataset_table",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          },
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 0,
-              "left": 0,
-              "width": 12,
-              "height": 3
-            },
-            "clickAction": "OPEN_INSIGHT",
-            "tileParams": {
-              "viewKind": "EXPLORE",
-              "showName": true,
-              "showDescription": true,
-              "showCustomFields": true,
-              "showStorageType": false,
-              "showMeaning": false,
-              "showProgressBar": false
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "P1u7qB8",
+            "insightId": "u4i78dS",
             "insightType": "dataset_table",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
@@ -65,11 +74,11 @@
   "name": "Migration considerations",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769446728725,
+    "lastModifiedOn": 1769446807018,
     "extendedProperties": {}
   },
   "creationTag": {
