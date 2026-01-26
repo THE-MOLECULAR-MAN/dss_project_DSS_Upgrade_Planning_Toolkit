@@ -167,11 +167,12 @@
       "$filterOptions": "rules",
       "conditions": [
         {
-          "input": "plugin_id",
+          "input": "DSS_v14_support",
           "col": "plugin_is_deprecated",
+          "string": "Supported",
           "$showList": false,
           "num": 0,
-          "operator": "contains"
+          "operator": "!\u003d [string]"
         }
       ]
     },
@@ -226,7 +227,7 @@
         "userModified": false
       }
     },
-    "enabled": false
+    "enabled": true
   },
   "enableAutoCastInJoinConditions": false
 }
