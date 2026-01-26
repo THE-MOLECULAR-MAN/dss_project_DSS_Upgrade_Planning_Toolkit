@@ -129,6 +129,14 @@
     {
       "objectId": "recent_commit_dashboard",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recent_scenarios_dashboard_distinct",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "recent_scenarios_dashboard_distinct",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
