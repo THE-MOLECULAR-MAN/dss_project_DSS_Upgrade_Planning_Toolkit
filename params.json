@@ -145,6 +145,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "dep_plugin_instances",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -347,11 +356,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 91,
+    "versionNumber": 92,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769447073758,
+    "lastModifiedOn": 1769447246832,
     "extendedProperties": {}
   },
   "creationTag": {
