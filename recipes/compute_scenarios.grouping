@@ -247,10 +247,13 @@
   "postFilter": {
     "uiData": {
       "mode": "\u0026\u0026",
+      "$latestOperator": "\u0026\u0026",
+      "$filterOptions": "rules",
       "conditions": [
         {
           "input": "count",
           "col": "duration_seconds_sum",
+          "$showList": false,
           "num": 0,
           "operator": "\u003e  [number]"
         }
