@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769434912865,
+    "lastModifiedOn": 1769434939893,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -63,11 +63,11 @@
   },
   "schema": {
     "columns": [
+      {"name":"recent_cluster_task_count","type":"bigint"},
       {"name":"project_name","type":"string"},
       {"name":"cluster_tasks_avg_runtime_seconds","type":"double"},
       {"name":"cluster_tasks_total_runtime_seconds","type":"bigint"},
       {"name":"most_recent_runtime","type":"date"},
-      {"name":"recent_cluster_task_count","type":"bigint"},
       {"name":"error_rate","type":"double"},
       {"name":"project_owner","type":"string"},
       {"name":"project_Status","type":"string"},
