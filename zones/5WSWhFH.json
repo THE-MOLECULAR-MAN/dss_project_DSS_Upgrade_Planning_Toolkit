@@ -135,19 +135,11 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "jobs_live",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_cluster_tasks_prepared",
       "objectType": "RECIPE"
     },
     {
       "objectId": "cluster_tasks_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "scenario_runs",
       "objectType": "DATASET"
     },
     {
