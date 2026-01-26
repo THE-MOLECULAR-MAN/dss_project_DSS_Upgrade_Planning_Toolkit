@@ -23,10 +23,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "recipe_status_by_projectKey",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_plugin_instances_needing_changes",
       "objectType": "RECIPE"
     },
@@ -56,6 +52,10 @@
     },
     {
       "objectId": "deprecated_code_env_in_use",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "recipe_status_summary",
       "objectType": "DATASET"
     }
   ],

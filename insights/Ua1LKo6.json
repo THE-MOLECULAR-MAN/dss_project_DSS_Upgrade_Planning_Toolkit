@@ -1,7 +1,7 @@
 {
   "type": "dataset_table",
   "params": {
-    "datasetSmartName": "recipe_status_by_projectKey",
+    "datasetSmartName": "recipe_status_summary",
     "shakerScript": {
       "steps": [],
       "maxProcessedMemTableBytes": -1,
@@ -76,11 +76,11 @@
   "name": "recipe_status_by_projectKey",
   "dashboardCreationId": "4WzgIWN",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769408335049,
+    "lastModifiedOn": 1769444578538,
     "extendedProperties": {}
   },
   "creationTag": {

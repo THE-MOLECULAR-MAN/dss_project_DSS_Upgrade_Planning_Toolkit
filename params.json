@@ -112,7 +112,7 @@
       },
       {
         "objectRef": {
-          "objectId": "recipe_status_by_projectKey",
+          "objectId": "recipe_status_summary",
           "objectType": "DATASET"
         },
         "modes": [
@@ -329,11 +329,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 88,
+    "versionNumber": 89,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769438968062,
+    "lastModifiedOn": 1769444578539,
     "extendedProperties": {}
   },
   "creationTag": {
