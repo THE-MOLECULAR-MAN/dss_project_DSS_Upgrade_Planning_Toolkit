@@ -129,14 +129,6 @@
     {
       "objectId": "recent_commit_dashboard",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_recent_scenarios_dashboard_distinct",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "projects_with_recent_scenario_runs",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
