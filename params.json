@@ -271,7 +271,8 @@
     },
     "dkuProperties": []
   },
-  "name": "DSS v12 Upgrade Planning Toolkit",
+  "name": "DSS v12 to v14 Upgrade Planning Toolkit",
+  "projectStatus": "Draft",
   "imgPattern": 1,
   "metrics": {
     "probes": [],
@@ -329,11 +330,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 78,
+    "versionNumber": 80,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769433598812,
+    "lastModifiedOn": 1769435134269,
     "extendedProperties": {}
   },
   "creationTag": {
