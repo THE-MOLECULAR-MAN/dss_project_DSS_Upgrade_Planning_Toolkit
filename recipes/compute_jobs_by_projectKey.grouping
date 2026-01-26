@@ -47,7 +47,7 @@
       "type": "date",
       "concatDistinct": false,
       "sum2": false,
-      "min": true,
+      "min": false,
       "countDistinct": false,
       "avg": false,
       "$selected": false,
@@ -248,10 +248,6 @@
           {
             "name": "projectKey",
             "type": "string"
-          },
-          {
-            "name": "start_time_min",
-            "type": "date"
           },
           {
             "name": "duration_seconds_avg",
