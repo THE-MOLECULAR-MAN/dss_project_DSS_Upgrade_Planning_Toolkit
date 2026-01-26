@@ -3,34 +3,7 @@
     {
       "id": "m8UoWFx",
       "grid": {
-        "tiles": [
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 0,
-              "left": 0,
-              "width": 12,
-              "height": 5
-            },
-            "clickAction": "OPEN_INSIGHT",
-            "tileParams": {
-              "viewKind": "EXPLORE",
-              "showName": true,
-              "showDescription": true,
-              "showCustomFields": true,
-              "showStorageType": false,
-              "showMeaning": false,
-              "showProgressBar": false
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "title": "Projects with scenarios",
-            "insightId": "3KmyLKo",
-            "insightType": "dataset_table",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          }
-        ]
+        "tiles": []
       },
       "showTitle": false
     }
@@ -40,11 +13,11 @@
   "name": "Locating most active projects",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769432981819,
+    "lastModifiedOn": 1769433137119,
     "extendedProperties": {}
   },
   "creationTag": {
