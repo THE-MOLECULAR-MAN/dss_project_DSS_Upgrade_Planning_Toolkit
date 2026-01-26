@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769434632348,
+    "lastModifiedOn": 1769444289951,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -52,7 +52,7 @@
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "table": "${projectKey}_recent_jobs_summary_dashboard",
+    "table": "${projectKey}_recent_jobs_summary2",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
