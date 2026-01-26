@@ -47,10 +47,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "scenarios_by_project_key",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_commits_by_project_key_details",
       "objectType": "RECIPE"
     },
@@ -88,6 +84,10 @@
     },
     {
       "objectId": "recent_jobs_by_projectKey",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "recent_scenarios_summary",
       "objectType": "DATASET"
     }
   ],

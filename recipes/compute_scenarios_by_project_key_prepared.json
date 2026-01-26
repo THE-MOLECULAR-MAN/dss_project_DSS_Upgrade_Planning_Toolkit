@@ -50,7 +50,7 @@
     "main": {
       "items": [
         {
-          "ref": "scenarios_by_project_key",
+          "ref": "recent_scenarios_summary",
           "deps": []
         }
       ]
@@ -68,11 +68,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769402956071,
+    "lastModifiedOn": 1769406312505,
     "extendedProperties": {}
   },
   "creationTag": {
