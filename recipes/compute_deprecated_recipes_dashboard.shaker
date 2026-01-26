@@ -68,6 +68,17 @@
         ]
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "num_deprecated_recipes+num_recipes_needing_manual_investigation+prepare_recipes_using_deprecated_processors+recipes_with_unknown_upgrade_status",
+        "column": "total_recipes_to_check"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -102,16 +113,17 @@
   },
   "columnWidthsByName": {
     "Usually safe_count": 150,
+    "recipes_that_are_usually_safe": 233,
+    "total_recipes_to_check": 180,
+    "prepare_recipes_using_deprecated_processors": 300,
+    "Prepare recipe uses deprecated preprocessors_count": 300,
     "recipes_with_unknown_upgrade_status": 278,
     "projectKey": 281,
     "Needs manual checking_count": 218,
-    "recipes_that_are_usually_safe": 233,
-    "prepare_recipes_using_deprecated_processors": 300,
     "Deprecated_count": 135,
     "Unknown_count": 113,
     "num_deprecated_recipes_used_in_project": 300,
     "num_recipes_needing_manual_investigation": 300,
-    "Prepare recipe uses deprecated preprocessors_count": 300,
     "num_deprecated_recipes": 180
   },
   "sorting": [],
