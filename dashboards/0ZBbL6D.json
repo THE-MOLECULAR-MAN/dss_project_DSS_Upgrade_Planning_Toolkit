@@ -33,8 +33,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 5,
+              "left": 0,
               "width": 6,
               "height": 3
             },
@@ -65,11 +65,11 @@
   "name": "Active Projects",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769402052210,
+    "lastModifiedOn": 1769402052363,
     "extendedProperties": {}
   },
   "creationTag": {
