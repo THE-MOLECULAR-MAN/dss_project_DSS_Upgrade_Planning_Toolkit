@@ -113,6 +113,14 @@
     {
       "objectId": "recent_jobs_dashboard",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recent_cluster_tasks_summary_joined",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "recent_cluster_tasks_summary_joined",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
