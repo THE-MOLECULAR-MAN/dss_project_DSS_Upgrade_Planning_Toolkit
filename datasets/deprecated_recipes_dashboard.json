@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769444620718,
+    "lastModifiedOn": 1769444720386,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -64,11 +64,11 @@
   "schema": {
     "columns": [
       {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"Deprecated_count","type":"bigint"},
-      {"name":"Needs manual checking_count","type":"bigint"},
-      {"name":"Prepare recipe uses deprecated preprocessors_count","type":"bigint"},
-      {"name":"Unknown_count","type":"bigint"},
-      {"name":"Usually safe_count","type":"bigint"}
+      {"name":"num_deprecated_recipes","type":"bigint"},
+      {"name":"num_recipes_needing_manual_investigation","type":"bigint"},
+      {"name":"prepare_recipes_using_deprecated_processors","type":"bigint"},
+      {"name":"recipes_with_unknown_upgrade_status","type":"bigint"},
+      {"name":"recipes_that_are_usually_safe","type":"bigint"}
     ],
     "userModified": true
   },
