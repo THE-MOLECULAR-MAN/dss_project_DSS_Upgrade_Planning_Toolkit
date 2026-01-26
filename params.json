@@ -163,6 +163,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "recipes_needing_manual_checking",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -365,11 +374,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 93,
+    "versionNumber": 94,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769447307589,
+    "lastModifiedOn": 1769447346724,
     "extendedProperties": {}
   },
   "creationTag": {
