@@ -7,7 +7,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 0,
+              "top": 4,
               "left": 0,
               "width": 12,
               "height": 4
@@ -33,9 +33,9 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 4,
+              "top": 0,
               "left": 0,
-              "width": 6,
+              "width": 12,
               "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
@@ -65,11 +65,11 @@
   "name": "Migration considerations",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769446718939,
+    "lastModifiedOn": 1769446728725,
     "extendedProperties": {}
   },
   "creationTag": {
