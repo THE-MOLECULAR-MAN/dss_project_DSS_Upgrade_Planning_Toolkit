@@ -79,15 +79,15 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "recent_jobs_by_projectKey",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "recent_scenarios_summary",
       "objectType": "DATASET"
     },
     {
       "objectId": "recent_cluster_tasks_summary",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "recent_jobs_summary",
       "objectType": "DATASET"
     }
   ],
