@@ -185,6 +185,22 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
+      "type": "FilterOnNumericalRange",
+      "params": {
+        "min": 0.0,
+        "booleanMode": "AND",
+        "columns": [
+          "duration_seconds"
+        ],
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "hours_since_finish/24.0\t",
@@ -290,7 +306,12 @@
     "errors": 100,
     "run_errors": 100
   },
-  "sorting": [],
+  "sorting": [
+    {
+      "column": "duration_seconds",
+      "ascending": false
+    }
+  ],
   "globalSearchQuery": "",
   "coloring": {
     "scheme": "MEANING_AND_STATUS",
