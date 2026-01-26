@@ -31,11 +31,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768508459128,
+    "lastModifiedOn": 1769444289469,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -56,7 +56,7 @@
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "table": "${projectKey}_cluster_tasks_prepared",
+    "table": "${projectKey}_cluster_tasks_cached",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
