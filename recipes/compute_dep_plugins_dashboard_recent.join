@@ -28,6 +28,28 @@
           "windowTo": 0
         }
       ]
+    },
+    {
+      "table2": 2,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "project_key",
+            "table": 0
+          },
+          "dateDiffUnit": "SECOND",
+          "column2": {
+            "name": "projectKey",
+            "table": 2
+          },
+          "type": "EQ"
+        }
+      ]
     }
   ],
   "selectedColumns": [
@@ -50,6 +72,41 @@
       "name": "num_deprecated_plugin_instances_in_project",
       "type": "bigint",
       "table": 1
+    },
+    {
+      "name": "projectKey",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "num_deprecated_recipes",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "num_recipes_needing_manual_investigation",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "prepare_recipes_using_deprecated_processors",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "recipes_with_unknown_upgrade_status",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "total_recipes_to_check",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "recipes_that_are_usually_safe",
+      "type": "bigint",
+      "table": 2
     }
   ],
   "resolvedSelectedColumns": [],
@@ -96,6 +153,11 @@
       "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
       "preFilter": {},
       "index": 1
+    },
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {},
+      "index": 2
     }
   ],
   "postFilter": {
@@ -116,6 +178,35 @@
           },
           {
             "name": "num_deprecated_plugin_instances_in_project",
+            "type": "bigint"
+          },
+          {
+            "meaning": "Text",
+            "name": "projectKey",
+            "type": "string"
+          },
+          {
+            "name": "num_deprecated_recipes",
+            "type": "bigint"
+          },
+          {
+            "name": "num_recipes_needing_manual_investigation",
+            "type": "bigint"
+          },
+          {
+            "name": "prepare_recipes_using_deprecated_processors",
+            "type": "bigint"
+          },
+          {
+            "name": "recipes_with_unknown_upgrade_status",
+            "type": "bigint"
+          },
+          {
+            "name": "total_recipes_to_check",
+            "type": "bigint"
+          },
+          {
+            "name": "recipes_that_are_usually_safe",
             "type": "bigint"
           }
         ],

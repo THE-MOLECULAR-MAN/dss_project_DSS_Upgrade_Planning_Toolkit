@@ -19,6 +19,10 @@
         {
           "ref": "dep_plugins_dashboard",
           "deps": []
+        },
+        {
+          "ref": "dep_recipes_dashboard",
+          "deps": []
         }
       ]
     }
@@ -35,11 +39,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769445941696,
+    "lastModifiedOn": 1769445994992,
     "extendedProperties": {}
   },
   "creationTag": {
