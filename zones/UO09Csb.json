@@ -15,10 +15,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "cluster_tasks_prepared",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "combined_events_prepared",
       "objectType": "DATASET"
     },
@@ -88,6 +84,10 @@
     },
     {
       "objectId": "recent_commits_summary_raw",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "cluster_tasks",
       "objectType": "DATASET"
     }
   ],

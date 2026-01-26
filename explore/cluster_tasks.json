@@ -5,15 +5,12 @@
     "columnsSelection": {
       "mode": "ALL"
     },
-    "columnOrder": [],
     "columnWidthsByName": {},
     "columnUseScientificNotationByName": {},
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
-      "individualColumnsRules": [],
-      "valueColoringMode": "HASH",
-      "coloringGroups": []
+      "valueColoringMode": "HASH"
     },
     "sorting": [],
     "analysisColumnData": {},
@@ -74,7 +71,5 @@
   "interactiveSearch": {
     "savedQueries": []
   },
-  "customMeasures": [],
-  "reusableDimensions": [],
-  "hierarchies": []
+  "customMeasures": []
 }

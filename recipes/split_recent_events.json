@@ -27,7 +27,7 @@
           "appendMode": false
         },
         {
-          "ref": "cluster_tasks_prepared",
+          "ref": "cluster_tasks",
           "appendMode": false
         },
         {
@@ -39,11 +39,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768530924172,
+    "lastModifiedOn": 1769406791338,
     "extendedProperties": {}
   },
   "creationTag": {
