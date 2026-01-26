@@ -182,6 +182,36 @@
         ]
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "columns": [
+          "project_name"
+        ],
+        "reorderAction": "AT_START",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "project_status",
+        "columns": [
+          "project_key",
+          "recent_job_error_rate"
+        ],
+        "reorderAction": "AFTER_COLUMN",
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -217,14 +247,18 @@
     "num_jobs": 100,
     "total_job_duration_run_recently_in_hours": 300,
     "recent_job_error_rate": 173,
+    "project_status": 120,
+    "project_url": 300,
     "job_duration_seconds_avg": 218,
     "job_most_recent_timestamp": 225,
+    "project_name": 281,
     "avg_job_error_rate_percentage": 233,
     "total_job_duration_hours": 218,
     "avg_recent_job_duration_min": 218,
     "most_recent_run": 183,
     "total_number_of_recent_jobs_run": 248,
     "error_rate_percentage": 197,
+    "project_owner": 113,
     "avg_job_duration_min": 165,
     "num_jobs_run_recently": 173,
     "error_sum": 100,
