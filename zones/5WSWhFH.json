@@ -177,6 +177,14 @@
     {
       "objectId": "dss_v14_plugin_support_psql",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recipes_using_dep_code_env",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "recipes_using_dep_code_env",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
