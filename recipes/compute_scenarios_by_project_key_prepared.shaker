@@ -66,6 +66,51 @@
         "column": "total_duration_hours"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "end_time_max",
+            "to": "most_recent_runtime"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "avg_num_of_warnings",
+          "avg_num_of_errors"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "total_num",
+            "to": "total_num_runs"
+          }
+        ]
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -98,6 +143,7 @@
     "duration_seconds_avg": 190,
     "average_scenario_runtime_minutes": 274,
     "total_duration_hours": 190,
+    "most_recent_runtime": 183,
     "most_recent_start_time": 204,
     "projectKey": 120,
     "num_recent_scenario_runs": 218,
@@ -110,6 +156,7 @@
     "avg_num_of_warnings": 183,
     "avg_num_of_errors": 169,
     "avg_duration_hours": 176,
+    "total_num_runs": 148,
     "duration_seconds_max": 190,
     "max_duration_hours": 176
   },
