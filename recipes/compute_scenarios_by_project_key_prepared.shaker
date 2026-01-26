@@ -35,13 +35,24 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "duration_seconds_max/3600.0\t",
         "column": "max_duration_hours"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "duration_seconds_avg/3600.0\t",
+        "column": "avg_duration_hours"
       },
       "alwaysShowComment": false
     }
@@ -86,6 +97,7 @@
     "total_num": 113,
     "avg_num_of_warnings": 183,
     "avg_num_of_errors": 169,
+    "avg_duration_hours": 176,
     "duration_seconds_max": 190,
     "max_duration_hours": 176
   },
