@@ -11,10 +11,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_recent_events",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "split_recent_events",
       "objectType": "RECIPE"
     },
@@ -88,6 +84,10 @@
     },
     {
       "objectId": "compute_scenarios_by_project_key_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_events",
       "objectType": "RECIPE"
     }
   ],
