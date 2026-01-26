@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769434874080,
+    "lastModifiedOn": 1769434912865,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -67,9 +67,7 @@
       {"name":"cluster_tasks_avg_runtime_seconds","type":"double"},
       {"name":"cluster_tasks_total_runtime_seconds","type":"bigint"},
       {"name":"most_recent_runtime","type":"date"},
-      {"name":"error_sum","type":"bigint"},
-      {"name":"warnings_count_sum","type":"bigint"},
-      {"name":"total_num_cluster_tasks","type":"bigint"},
+      {"name":"recent_cluster_task_count","type":"bigint"},
       {"name":"error_rate","type":"double"},
       {"name":"project_owner","type":"string"},
       {"name":"project_Status","type":"string"},
