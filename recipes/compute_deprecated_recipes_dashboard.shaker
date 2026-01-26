@@ -70,13 +70,29 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "num_deprecated_recipes+num_recipes_needing_manual_investigation+prepare_recipes_using_deprecated_processors+recipes_with_unknown_upgrade_status",
         "column": "total_recipes_to_check"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnNumericalRange",
+      "params": {
+        "min": 1.0,
+        "booleanMode": "AND",
+        "columns": [
+          "total_recipes_to_check"
+        ],
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
