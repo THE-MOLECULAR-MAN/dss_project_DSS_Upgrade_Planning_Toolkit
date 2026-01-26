@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769408300516,
+    "lastModifiedOn": 1769408306850,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -62,8 +62,75 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
-    "userModified": false
+    "columns": [
+      {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"Deprecated_count","type":"bigint"},
+      {"name":"Needs manual checking_count","type":"bigint"},
+      {"name":"Prepare recipe uses deprecated preprocessors_count","type":"bigint"},
+      {"name":"Unknown_count","type":"bigint"},
+      {"name":"Usually safe_count","type":"bigint"}
+    ],
+    "userModified": false,
+    "metadata": {
+      "engineType": "SQL",
+      "pivotElementsModalities": [
+        {
+          "pivotElement": {
+            "keyColumns": [
+              "deprecation_status"
+            ],
+            "valueLimit": "NO_LIMIT",
+            "topnLimit": 20,
+            "minOccLimit": 0,
+            "explicitValues": [],
+            "globalCount": true,
+            "valueColumns": []
+          },
+          "pivotedModalities": [
+            {
+              "keyValues": [
+                "Deprecated"
+              ],
+              "name": "Deprecated",
+              "valueColumns": [],
+              "globalCountColumn": "Deprecated_count"
+            },
+            {
+              "keyValues": [
+                "Needs manual checking"
+              ],
+              "name": "Needs manual checking",
+              "valueColumns": [],
+              "globalCountColumn": "Needs manual checking_count"
+            },
+            {
+              "keyValues": [
+                "Prepare recipe uses deprecated preprocessors"
+              ],
+              "name": "Prepare recipe uses deprecated preprocessors",
+              "valueColumns": [],
+              "globalCountColumn": "Prepare recipe uses deprecated preprocessors_count"
+            },
+            {
+              "keyValues": [
+                "Unknown"
+              ],
+              "name": "Unknown",
+              "valueColumns": [],
+              "globalCountColumn": "Unknown_count"
+            },
+            {
+              "keyValues": [
+                "Usually safe"
+              ],
+              "name": "Usually safe",
+              "valueColumns": [],
+              "globalCountColumn": "Usually safe_count"
+            }
+          ]
+        }
+      ]
+    }
   },
   "dkuProperties": [],
   "metrics": {
