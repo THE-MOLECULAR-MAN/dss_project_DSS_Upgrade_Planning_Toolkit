@@ -7,8 +7,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 0,
+              "left": 0,
               "width": 6,
               "height": 3
             },
@@ -39,11 +39,11 @@
   "name": "Locating most active projects",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769433522553,
+    "lastModifiedOn": 1769433522732,
     "extendedProperties": {}
   },
   "creationTag": {
