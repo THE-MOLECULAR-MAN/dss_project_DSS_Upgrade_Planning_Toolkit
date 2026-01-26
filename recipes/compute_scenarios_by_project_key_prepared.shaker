@@ -38,6 +38,16 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "column": "lon"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": true,
       "type": "ColumnRenamer",
       "params": {
         "renamings": [
