@@ -239,7 +239,15 @@
     }
   },
   "enlargeYourBits": true,
-  "outputColumnNameOverrides": {},
+  "outputColumnNameOverrides": {
+    "duration_seconds_avg": "job_duration_seconds_avg",
+    "warnings_count_avg": "job_warnings_avg",
+    "error_avg": "job_error_avg",
+    "projectKey": "project_key",
+    "end_time_max": "job_most_recent_timestamp",
+    "duration_seconds_sum": "job_duration_seconds_sum",
+    "count": "num_jobs"
+  },
   "computedColumns": [],
   "postFilter": {
     "$status": {
