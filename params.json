@@ -136,6 +136,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "dep_plugins_dashboard",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -338,11 +347,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 90,
+    "versionNumber": 91,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769446718757,
+    "lastModifiedOn": 1769447073758,
     "extendedProperties": {}
   },
   "creationTag": {
