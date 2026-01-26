@@ -121,7 +121,7 @@
       }
     }
   },
-  "engineType": "DSS",
+  "engineType": "SQL",
   "virtualInputs": [
     {
       "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
