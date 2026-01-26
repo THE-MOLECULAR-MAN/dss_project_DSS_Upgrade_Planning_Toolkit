@@ -65,6 +65,14 @@
     {
       "objectId": "commits_by_project_key_details",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "commits_by_project_key_details_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_commits_by_project_key_details_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
