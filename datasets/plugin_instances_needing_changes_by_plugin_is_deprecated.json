@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769408466896,
+    "lastModifiedOn": 1769408481501,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -62,8 +62,39 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
-    "userModified": false
+    "columns": [
+      {"name":"project_key","type":"string"},
+      {"name":"True_count","type":"bigint"}
+    ],
+    "userModified": false,
+    "metadata": {
+      "engineType": "SQL",
+      "pivotElementsModalities": [
+        {
+          "pivotElement": {
+            "keyColumns": [
+              "plugin_is_deprecated"
+            ],
+            "valueLimit": "TOP_N",
+            "topnLimit": 20,
+            "minOccLimit": 0,
+            "explicitValues": [],
+            "globalCount": true,
+            "valueColumns": []
+          },
+          "pivotedModalities": [
+            {
+              "keyValues": [
+                "True"
+              ],
+              "name": "True",
+              "valueColumns": [],
+              "globalCountColumn": "True_count"
+            }
+          ]
+        }
+      ]
+    }
   },
   "dkuProperties": [],
   "metrics": {
