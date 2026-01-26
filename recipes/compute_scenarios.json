@@ -23,7 +23,7 @@
     "main": {
       "items": [
         {
-          "ref": "recent_scenarios_summary",
+          "ref": "recent_scenarios_summary_raw",
           "appendMode": false
         }
       ]
@@ -31,11 +31,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769406312504,
+    "lastModifiedOn": 1769406719445,
     "extendedProperties": {}
   },
   "creationTag": {

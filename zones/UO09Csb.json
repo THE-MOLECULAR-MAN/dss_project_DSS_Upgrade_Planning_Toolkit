@@ -75,10 +75,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "recent_scenarios_summary",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "recent_cluster_tasks_summary",
       "objectType": "DATASET"
     },
@@ -88,6 +84,10 @@
     },
     {
       "objectId": "commit_summary",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "recent_scenarios_summary_raw",
       "objectType": "DATASET"
     }
   ],
