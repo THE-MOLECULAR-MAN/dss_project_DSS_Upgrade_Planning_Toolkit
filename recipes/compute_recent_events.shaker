@@ -182,13 +182,29 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "hours_since_finish/24.0\t",
         "column": "days_since_scenario_run"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RoundProcessor",
+      "params": {
+        "mode": "ROUND",
+        "places": 1,
+        "columns": [
+          "days_since_scenario_run"
+        ],
+        "precision": 0,
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
