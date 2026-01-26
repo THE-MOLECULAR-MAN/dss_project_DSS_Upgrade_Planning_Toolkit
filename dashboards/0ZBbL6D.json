@@ -37,14 +37,14 @@
   ],
   "owner": "admin",
   "listed": false,
-  "name": "Determine which projects are most active",
+  "name": "Locating most active projects",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769432953870,
+    "lastModifiedOn": 1769432981819,
     "extendedProperties": {}
   },
   "creationTag": {
