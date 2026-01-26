@@ -1,0 +1,36 @@
+{
+  "pages": [
+    {
+      "id": "m8UoWFx",
+      "grid": {
+        "tiles": []
+      },
+      "showTitle": false
+    }
+  ],
+  "owner": "admin",
+  "listed": false,
+  "name": "Active Projects",
+  "showGrid": true,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1769401854289,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1769401854289,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
