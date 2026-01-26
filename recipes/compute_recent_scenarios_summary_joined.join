@@ -153,6 +153,20 @@
   ],
   "computedColumns": [],
   "postFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "$latestOperator": "\u0026\u0026",
+      "$filterOptions": "rules",
+      "conditions": [
+        {
+          "input": "total_num",
+          "col": "duration_seconds_max",
+          "$showList": false,
+          "num": 0,
+          "operator": "\u003e  [number]"
+        }
+      ]
+    },
     "$status": {
       "schema": {
         "columns": [
@@ -212,7 +226,8 @@
         ],
         "userModified": false
       }
-    }
+    },
+    "enabled": true
   },
   "enableAutoCastInJoinConditions": false
 }
