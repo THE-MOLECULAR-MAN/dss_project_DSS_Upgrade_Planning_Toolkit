@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769434624696,
+    "lastModifiedOn": 1769434632348,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -62,7 +62,19 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"project_key","type":"string"},
+      {"name":"job_duration_seconds_avg","type":"double"},
+      {"name":"job_duration_seconds_sum","type":"bigint"},
+      {"name":"job_most_recent_timestamp","type":"date"},
+      {"name":"job_error_avg","type":"double"},
+      {"name":"error_sum","type":"bigint"},
+      {"name":"num_jobs","type":"bigint"},
+      {"name":"project_name","type":"string","meaning":"Text"},
+      {"name":"project_owner","type":"string","meaning":"Text"},
+      {"name":"project_status","type":"string","meaning":"Text"},
+      {"name":"project_url","type":"string","meaning":"URL"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],
