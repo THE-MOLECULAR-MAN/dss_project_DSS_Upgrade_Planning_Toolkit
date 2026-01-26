@@ -267,7 +267,7 @@
       "disabled": false,
       "type": "DateParser",
       "params": {
-        "outCol": "last_modified_timestamp_parsed",
+        "outCol": "",
         "formats": [
           "yyyy-MM-dd HH:mm:ss"
         ],
