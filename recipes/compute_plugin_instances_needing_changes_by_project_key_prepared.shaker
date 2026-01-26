@@ -47,29 +47,6 @@
         "value": "[plugin used outside of project]"
       },
       "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnRenamer",
-      "params": {
-        "renamings": [
-          {
-            "from": "plugin_name_concat",
-            "to": "deprecated_plugin_names"
-          },
-          {
-            "from": "count",
-            "to": "total_num_of_deprecated_usages_in_project"
-          },
-          {
-            "from": "plugin_id_distinct",
-            "to": "num_distinct_deprecated_plugins_used_in_project"
-          }
-        ]
-      },
-      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
