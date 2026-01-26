@@ -156,8 +156,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 6,
+              "left": 0,
               "width": 6,
               "height": 3
             },
@@ -189,11 +189,11 @@
   "name": "Migration considerations",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 34,
+    "versionNumber": 35,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769447555905,
+    "lastModifiedOn": 1769447556164,
     "extendedProperties": {}
   },
   "creationTag": {
