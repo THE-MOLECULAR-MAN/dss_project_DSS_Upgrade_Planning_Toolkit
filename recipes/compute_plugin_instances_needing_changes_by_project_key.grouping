@@ -3,22 +3,7 @@
     "distinct": false,
     "enabled": false
   },
-  "keys": [
-    {
-      "countDistinct": false,
-      "min": false,
-      "avg": false,
-      "last": false,
-      "max": false,
-      "column": "project_key",
-      "count": false,
-      "sum": false,
-      "concat": false,
-      "type": "string",
-      "stddev": false,
-      "first": false
-    }
-  ],
+  "keys": [],
   "values": [
     {
       "last": false,
@@ -136,9 +121,25 @@
       "last": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "DSS_v14_support",
+      "column": "project_key",
       "count": false,
       "$idx": 6,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "DSS_v14_support",
+      "count": false,
+      "$idx": 7,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -156,7 +157,7 @@
       "firstLastNotNull": false,
       "column": "plugin_name",
       "count": false,
-      "$idx": 7,
+      "$idx": 8,
       "sum": false,
       "concat": true,
       "type": "string",
@@ -177,7 +178,7 @@
       "firstLastNotNull": false,
       "column": "description",
       "count": false,
-      "$idx": 8,
+      "$idx": 9,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -195,7 +196,7 @@
       "firstLastNotNull": false,
       "column": "plugin_description_url",
       "count": false,
-      "$idx": 9,
+      "$idx": 10,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -255,10 +256,6 @@
     "$status": {
       "schema": {
         "columns": [
-          {
-            "name": "project_key",
-            "type": "string"
-          },
           {
             "name": "plugin_id_distinct",
             "type": "bigint"
