@@ -135,8 +135,24 @@
     {
       "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "$latestOperator": "\u0026\u0026",
+          "$filterOptions": "rules",
+          "conditions": [
+            {
+              "input": "DSS_v14_support",
+              "col": "DSS_v14_support",
+              "string": "Supported",
+              "$showList": false,
+              "num": 0,
+              "operator": "!\u003d [string]"
+            }
+          ]
+        },
+        "$status": {},
         "distinct": false,
-        "enabled": false
+        "enabled": true
       },
       "originLabel": "dss_v14_plugin_support_psql",
       "index": 1,
@@ -145,6 +161,20 @@
   ],
   "computedColumns": [],
   "postFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "$latestOperator": "\u0026\u0026",
+      "$filterOptions": "rules",
+      "conditions": [
+        {
+          "input": "plugin_id",
+          "col": "plugin_is_deprecated",
+          "$showList": false,
+          "num": 0,
+          "operator": "contains"
+        }
+      ]
+    },
     "$status": {
       "schema": {
         "columns": [
@@ -195,7 +225,8 @@
         ],
         "userModified": false
       }
-    }
+    },
+    "enabled": false
   },
   "enableAutoCastInJoinConditions": false
 }
