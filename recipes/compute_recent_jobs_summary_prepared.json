@@ -50,7 +50,7 @@
     "main": {
       "items": [
         {
-          "ref": "recent_jobs_summary",
+          "ref": "recent_jobs_summary2",
           "deps": []
         }
       ]
@@ -68,11 +68,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769434248780,
+    "lastModifiedOn": 1769434264454,
     "extendedProperties": {}
   },
   "creationTag": {
