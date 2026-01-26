@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769406470326,
+    "lastModifiedOn": 1769406516158,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -64,9 +64,9 @@
   "schema": {
     "columns": [
       {"name":"project_key","type":"string","comment":"Unique identifier for the software project.","meaning":"Text"},
-      {"name":"commit_id_distinct","type":"bigint"},
-      {"name":"num_unique_contributors","type":"bigint"},
-      {"name":"latest_change","type":"date"}
+      {"name":"num_recent_commits","type":"bigint"},
+      {"name":"num_contributors","type":"bigint"},
+      {"name":"latest_commit","type":"date"}
     ],
     "userModified": true
   },
