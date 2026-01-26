@@ -32,7 +32,7 @@
         ]
       },
       "title": "Most active projects in the last 90 days",
-      "showTitle": false
+      "showTitle": true
     }
   ],
   "owner": "admin",
@@ -40,11 +40,11 @@
   "name": "Locating most active projects",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769457289215,
+    "lastModifiedOn": 1769457294006,
     "extendedProperties": {}
   },
   "creationTag": {
