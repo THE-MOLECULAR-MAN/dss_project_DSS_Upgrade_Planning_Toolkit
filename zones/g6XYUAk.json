@@ -49,6 +49,14 @@
     {
       "objectId": "plugin_instances_needing_changes_by_project_key",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_plugin_instances_needing_changes_by_plugin_is_deprecated",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "plugin_instances_needing_changes_by_plugin_is_deprecated",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
