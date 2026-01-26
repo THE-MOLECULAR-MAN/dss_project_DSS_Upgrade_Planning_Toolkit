@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769433213347,
+    "lastModifiedOn": 1769433248338,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -68,16 +68,9 @@
       {"name":"most_recent_runtime","type":"date"},
       {"name":"avg_scenario_runtime_in_minutes","type":"double"},
       {"name":"total_scenario_runtime_hours","type":"double"},
-      {"name":"projectKey","type":"string","meaning":"Text"},
       {"name":"name","type":"string","meaning":"Text"},
-      {"name":"shortDesc","type":"string","meaning":"FreeText"},
-      {"name":"description","type":"string","meaning":"FreeText"},
       {"name":"ownerLogin","type":"string","meaning":"Text"},
       {"name":"projectStatus","type":"string","meaning":"Text"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"last_modified_timestamp","type":"string","meaning":"Text"},
-      {"name":"tutorialProject","type":"boolean","meaning":"Boolean"},
-      {"name":"contributors","type":"string","meaning":"JSONArrayMeaning"},
       {"name":"url","type":"string","meaning":"URL"}
     ],
     "userModified": true
