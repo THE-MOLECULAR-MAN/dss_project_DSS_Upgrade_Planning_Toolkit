@@ -60,7 +60,7 @@
     "main": {
       "items": [
         {
-          "ref": "deprecated_recipes_dashboard",
+          "ref": "dep_recipes_dashboard",
           "appendMode": false
         }
       ]
@@ -68,11 +68,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769444841474,
+    "lastModifiedOn": 1769444927319,
     "extendedProperties": {}
   },
   "creationTag": {
