@@ -55,6 +55,17 @@
         "column": "avg_duration_hours"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "total_duration_seconds/3600.0",
+        "column": "total_duration_hours"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -86,6 +97,7 @@
   "columnWidthsByName": {
     "duration_seconds_avg": 190,
     "average_scenario_runtime_minutes": 274,
+    "total_duration_hours": 190,
     "most_recent_start_time": 204,
     "projectKey": 120,
     "num_recent_scenario_runs": 218,
