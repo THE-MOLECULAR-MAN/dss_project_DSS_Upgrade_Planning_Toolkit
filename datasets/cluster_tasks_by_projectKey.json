@@ -31,11 +31,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769403381182,
+    "lastModifiedOn": 1769406215627,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -72,8 +72,8 @@
       {"name":"cluster_tasks_avg_runtime_seconds","type":"double"},
       {"name":"cluster_tasks_total_runtime_seconds","type":"bigint"},
       {"name":"end_time_max","type":"date"},
-      {"name":"cluster_tasks_avg_error","type":"double"},
-      {"name":"cluster_tasks_avg_warnings","type":"double"},
+      {"name":"error_sum","type":"bigint"},
+      {"name":"warnings_count_sum","type":"bigint"},
       {"name":"total_num_cluster_tasks","type":"bigint"}
     ],
     "userModified": true
