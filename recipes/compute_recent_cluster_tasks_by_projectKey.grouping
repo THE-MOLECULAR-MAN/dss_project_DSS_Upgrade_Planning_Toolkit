@@ -227,9 +227,15 @@
   },
   "enlargeYourBits": true,
   "outputColumnNameOverrides": {
-    "start_time_max": "cluster_task_latest",
-    "count": "num_cluster_tasks",
-    "start_time_min": "cluster_task_earliest"
+    "duration_seconds_avg": "cluster_tasks_avg_runtime_seconds",
+    "warnings_count_avg": "cluster_tasks_avg_warnings",
+    "projectKey": "project_key",
+    "error_avg": "cluster_tasks_avg_error",
+    "duration_seconds_sum": "cluster_tasks_total_runtime_seconds",
+    "start_time_max": "cluster_tasks_latest",
+    "count": "total_num_cluster_tasks",
+    "start_time_min": "cluster_tasks_earliest",
+    "duration_seconds_max": "cluster_tasks_longest_runtime_seconds"
   },
   "computedColumns": [],
   "postFilter": {
