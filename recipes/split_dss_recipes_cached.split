@@ -52,6 +52,10 @@
       "outputIndex": 0,
       "caseSensitive": false,
       "value": "Prepare recipe uses deprecated preprocessors"
+    },
+    {
+      "outputIndex": -1,
+      "value": "Usually safe"
     }
   ],
   "rangeSplits": [
