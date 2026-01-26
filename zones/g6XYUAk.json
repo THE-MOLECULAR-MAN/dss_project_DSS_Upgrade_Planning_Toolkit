@@ -47,10 +47,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "deprecated_code_env_in_use",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "recipe_status_summary",
       "objectType": "DATASET"
     },
@@ -64,6 +60,10 @@
     },
     {
       "objectId": "dep_recipes",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dep_code_env_in_use",
       "objectType": "DATASET"
     }
   ],
