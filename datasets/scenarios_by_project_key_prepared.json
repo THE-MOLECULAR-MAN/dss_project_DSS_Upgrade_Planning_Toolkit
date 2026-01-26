@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769402901063,
+    "lastModifiedOn": 1769402956020,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -65,9 +65,9 @@
     "columns": [
       {"name":"projectKey","type":"string","comment":"Identifier for the project; key for project events."},
       {"name":"most_recent_start_time","type":"date"},
-      {"name":"duration_seconds_max","type":"bigint"},
-      {"name":"duration_seconds_avg","type":"double"},
-      {"name":"total_duration_seconds","type":"bigint"},
+      {"name":"longest_scenario_runtime_hours","type":"bigint"},
+      {"name":"average_scenario_runtime_minutes","type":"double"},
+      {"name":"total_scenario_runtimes_hours","type":"bigint"},
       {"name":"end_time_max","type":"date"},
       {"name":"avg_num_of_errors","type":"double"},
       {"name":"avg_num_of_warnings","type":"double"},
