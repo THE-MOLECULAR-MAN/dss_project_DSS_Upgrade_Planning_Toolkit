@@ -91,10 +91,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_recent_scenarios_summary_dashboard",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "recent_scenarios_summary_dashboard",
       "objectType": "DATASET"
     }
