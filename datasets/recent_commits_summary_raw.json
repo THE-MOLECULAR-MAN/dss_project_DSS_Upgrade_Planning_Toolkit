@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769406522087,
+    "lastModifiedOn": 1769435011668,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -67,14 +67,12 @@
       {"name":"num_recent_commits","type":"bigint"},
       {"name":"num_contributors","type":"bigint"},
       {"name":"latest_commit","type":"date"},
-      {"name":"name","type":"string","meaning":"Text"},
-      {"name":"shortDesc","type":"string","meaning":"FreeText"},
-      {"name":"description","type":"string","meaning":"FreeText"},
-      {"name":"ownerLogin","type":"string","meaning":"Text"},
-      {"name":"projectStatus","type":"string","meaning":"Text"},
-      {"name":"last_modified_timestamp","type":"string","meaning":"Text"},
-      {"name":"contributors","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"project_name","type":"string","meaning":"Text"},
+      {"name":"project_owner","type":"string","meaning":"Text"},
+      {"name":"project_projectStatus","type":"string","meaning":"Text"},
+      {"name":"project_last_modified_timestamp","type":"string","meaning":"Text"},
+      {"name":"project_contributors","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"project_url","type":"string","meaning":"URL"}
     ],
     "userModified": true
   },
