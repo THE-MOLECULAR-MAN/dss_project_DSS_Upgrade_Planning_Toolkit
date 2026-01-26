@@ -96,6 +96,14 @@
       },
       "title": "Deprecations summaries - across all projects",
       "showTitle": true
+    },
+    {
+      "id": "sNMGmoC",
+      "grid": {
+        "tiles": []
+      },
+      "title": "Detailed findings - deprecations",
+      "showTitle": true
     }
   ],
   "owner": "admin",
@@ -103,11 +111,11 @@
   "name": "Migration considerations",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769447109087,
+    "lastModifiedOn": 1769447194050,
     "extendedProperties": {}
   },
   "creationTag": {
