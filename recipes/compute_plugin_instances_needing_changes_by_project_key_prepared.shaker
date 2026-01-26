@@ -29,8 +29,49 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "project_key"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "[plugin used outside of project]"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "plugin_id_distinct",
+            "to": "num_unique_deprecated_plugins_in_project"
+          },
+          {
+            "from": "plugin_name_concat",
+            "to": "deprecated_plugin_names"
+          },
+          {
+            "from": "count",
+            "to": "total_num_of_deprecated_usages_in_project"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -57,7 +98,16 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "deprecated_plugin_names": 300,
+    "plugin_id_distinct": 150,
+    "total_num_of_deprecated_usages_in_project": 300,
+    "project_key": 183,
+    "object_id_concat": 300,
+    "count": 100,
+    "plugin_name_concat": 300,
+    "num_unique_deprecated_plugins_in_project": 300
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
