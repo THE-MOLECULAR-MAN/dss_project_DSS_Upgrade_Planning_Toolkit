@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769433086764,
+    "lastModifiedOn": 1769433414050,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -67,7 +67,11 @@
       {"name":"total_number_of_scenario_runs","type":"bigint"},
       {"name":"most_recent_runtime","type":"date"},
       {"name":"avg_scenario_runtime_in_minutes","type":"double"},
-      {"name":"total_scenario_runtime_hours","type":"double"}
+      {"name":"total_scenario_runtime_hours","type":"double"},
+      {"name":"project_name","type":"string"},
+      {"name":"project_owner","type":"string"},
+      {"name":"last_modified_timestamp","type":"string"},
+      {"name":"project_url","type":"string"}
     ],
     "userModified": true
   },
