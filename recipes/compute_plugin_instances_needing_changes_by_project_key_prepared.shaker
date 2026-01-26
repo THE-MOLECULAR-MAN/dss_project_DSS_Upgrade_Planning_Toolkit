@@ -62,22 +62,12 @@
           {
             "from": "count",
             "to": "total_num_of_deprecated_usages_in_project"
+          },
+          {
+            "from": "plugin_id_distinct",
+            "to": "num_distinct_deprecated_plugins_used_in_project"
           }
         ]
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnsSelector",
-      "params": {
-        "columns": [
-          "object_id_concat"
-        ],
-        "keep": false,
-        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
@@ -116,6 +106,7 @@
     "object_id_concat": 300,
     "count": 100,
     "plugin_name_concat": 300,
+    "num_distinct_deprecated_plugins_used_in_project": 300,
     "num_unique_deprecated_plugins_in_project": 300
   },
   "sorting": [],
