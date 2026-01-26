@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769314424339,
+    "lastModifiedOn": 1769449402393,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -72,6 +72,7 @@
       {"name":"engine_parameters","type":"string","meaning":"JSONObjectMeaning"},
       {"name":"last_modified_user","type":"string","meaning":"Text"},
       {"name":"input_datasets","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"code_env","type":"string"},
       {"name":"deprecation_status","type":"string"},
       {"name":"output_datasets","type":"string","meaning":"JSONArrayMeaning"}
     ],
