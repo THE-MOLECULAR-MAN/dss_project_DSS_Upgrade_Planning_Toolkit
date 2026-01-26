@@ -105,6 +105,14 @@
     {
       "objectId": "compute_recent_jobs_summary_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_recent_jobs_summary_dashboard",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "recent_jobs_summary_dashboard",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
