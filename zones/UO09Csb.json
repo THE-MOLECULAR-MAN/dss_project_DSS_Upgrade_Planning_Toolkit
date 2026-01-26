@@ -79,15 +79,15 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "commit_summary",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "recent_scenarios_summary_raw",
       "objectType": "DATASET"
     },
     {
       "objectId": "recent_scenarios_summary",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "recent_commit_summary",
       "objectType": "DATASET"
     }
   ],
