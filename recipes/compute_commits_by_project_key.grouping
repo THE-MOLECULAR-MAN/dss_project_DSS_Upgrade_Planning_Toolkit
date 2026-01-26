@@ -236,9 +236,10 @@
   },
   "enlargeYourBits": true,
   "outputColumnNameOverrides": {
-    "author_distinct": "num_unique_contributors",
-    "timestamp_max": "latest_change",
-    "count": "num_of_changes"
+    "author_distinct": "num_contributors",
+    "timestamp_max": "latest_commit",
+    "count": "num_of_changes",
+    "commit_id_distinct": "num_recent_commits"
   },
   "computedColumns": [],
   "postFilter": {
