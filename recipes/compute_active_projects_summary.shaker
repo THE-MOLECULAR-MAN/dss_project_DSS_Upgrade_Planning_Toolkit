@@ -29,8 +29,24 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [],
+        "appliesTo": "ALL",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -61,7 +77,13 @@
       "meaning": "Text"
     }
   },
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "project_key": 183,
+    "num_deprecated_plugin_instances_in_project": 300,
+    "total_recipes_to_check": 180,
+    "num_distinct_deprecated_plugins_in_project": 300,
+    "num_deprecated_recipes": 180
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
