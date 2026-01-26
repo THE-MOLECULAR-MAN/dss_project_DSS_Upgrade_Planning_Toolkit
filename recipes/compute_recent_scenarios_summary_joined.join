@@ -164,6 +164,13 @@
           "$showList": false,
           "num": 0,
           "operator": "\u003e  [number]"
+        },
+        {
+          "input": "project_name",
+          "col": "duration_seconds_max",
+          "$showList": false,
+          "num": 0,
+          "operator": "not empty"
         }
       ]
     },
