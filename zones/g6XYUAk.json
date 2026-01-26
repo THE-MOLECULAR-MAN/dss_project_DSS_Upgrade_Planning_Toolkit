@@ -57,10 +57,6 @@
     {
       "objectId": "recipe_with_unknown_status",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_plugin_instances_needing_changes_by_project_key2",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
