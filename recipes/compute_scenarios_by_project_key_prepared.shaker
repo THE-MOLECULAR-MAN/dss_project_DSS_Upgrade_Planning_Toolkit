@@ -52,6 +52,10 @@
           {
             "from": "total_duration_seconds",
             "to": "total_scenario_runtimes_hours"
+          },
+          {
+            "from": "total_num",
+            "to": "num_recent_scenario_runs"
           }
         ]
       },
@@ -87,7 +91,10 @@
   "columnWidthsByName": {
     "duration_seconds_avg": 190,
     "average_scenario_runtime_minutes": 274,
+    "most_recent_start_time": 204,
     "projectKey": 120,
+    "num_recent_scenario_runs": 218,
+    "num_recent_scenarios": 190,
     "end_time_max": 183,
     "longest_scenario_runtime_hours": 260,
     "total_scenario_runtimes_hours": 253,
@@ -95,7 +102,6 @@
     "total_num": 113,
     "avg_num_of_warnings": 183,
     "avg_num_of_errors": 169,
-    "most_recent_start_time": 204,
     "duration_seconds_max": 190
   },
   "sorting": [],
