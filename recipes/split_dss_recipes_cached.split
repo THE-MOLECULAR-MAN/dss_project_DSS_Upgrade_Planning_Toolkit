@@ -10,7 +10,7 @@
     "distinct": false,
     "enabled": false
   },
-  "defaultOutputIndex": 2,
+  "defaultOutputIndex": 1,
   "seed": 1337,
   "randomColumns": [],
   "centileOrders": [],

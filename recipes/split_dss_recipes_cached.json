@@ -29,21 +29,17 @@
         {
           "ref": "recipes_needing_manual_checking",
           "appendMode": false
-        },
-        {
-          "ref": "recipe_with_unknown_status",
-          "appendMode": false
         }
       ]
     }
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769447496723,
+    "lastModifiedOn": 1769447614861,
     "extendedProperties": {}
   },
   "creationTag": {
