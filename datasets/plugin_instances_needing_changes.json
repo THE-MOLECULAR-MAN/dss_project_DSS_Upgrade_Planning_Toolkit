@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769435799334,
+    "lastModifiedOn": 1769436127179,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -62,19 +62,7 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [
-      {"name":"plugin_id","type":"string","meaning":"Text"},
-      {"name":"plugin_is_deprecated","type":"string"},
-      {"name":"element_kind","type":"string"},
-      {"name":"element_type","type":"string"},
-      {"name":"object_id","type":"string"},
-      {"name":"object_type","type":"string"},
-      {"name":"project_key","type":"string"},
-      {"name":"DSS_v14_support","type":"string"},
-      {"name":"plugin_name","type":"string"},
-      {"name":"description","type":"string"},
-      {"name":"plugin_description_url","type":"string"}
-    ],
+    "columns": [],
     "userModified": true
   },
   "dkuProperties": [],
