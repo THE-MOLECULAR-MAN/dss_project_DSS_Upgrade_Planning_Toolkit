@@ -137,7 +137,7 @@
         "mode": "ROUND",
         "places": 4,
         "columns": [
-          "avg_duration_hours",
+          "avg_duration_minutes",
           "max_duration_hours",
           "total_duration_hours"
         ],
