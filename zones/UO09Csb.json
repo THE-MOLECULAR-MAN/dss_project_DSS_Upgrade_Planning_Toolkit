@@ -97,6 +97,14 @@
     {
       "objectId": "recent_scenarios_dashboard",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "recent_jobs_summary_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recent_jobs_summary_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
