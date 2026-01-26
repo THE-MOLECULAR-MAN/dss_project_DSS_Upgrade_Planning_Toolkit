@@ -33,7 +33,19 @@
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "duration_seconds_max/3600.0\t",
+        "column": "max_duration_hours"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -74,7 +86,8 @@
     "total_num": 113,
     "avg_num_of_warnings": 183,
     "avg_num_of_errors": 169,
-    "duration_seconds_max": 190
+    "duration_seconds_max": 190,
+    "max_duration_hours": 176
   },
   "sorting": [],
   "globalSearchQuery": "",
