@@ -172,6 +172,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "dep_code_env_in_use",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -374,11 +383,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 96,
+    "versionNumber": 97,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769447637235,
+    "lastModifiedOn": 1769447691454,
     "extendedProperties": {}
   },
   "creationTag": {
