@@ -151,7 +151,7 @@
           "col": "num_recent_commits",
           "$showList": false,
           "num": 0,
-          "operator": "contains"
+          "operator": "not empty"
         }
       ]
     },
