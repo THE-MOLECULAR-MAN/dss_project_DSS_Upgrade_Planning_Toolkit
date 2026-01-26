@@ -135,7 +135,7 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "recent_scenarios_dashboard_distinct",
+      "objectId": "projects_with_recent_scenario_runs",
       "objectType": "DATASET"
     }
   ],

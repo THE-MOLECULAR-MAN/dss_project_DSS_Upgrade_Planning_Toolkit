@@ -45,17 +45,6 @@
   },
   "outputColumnNameOverrides": {},
   "postFilter": {
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "name": "project_key",
-            "type": "string"
-          }
-        ],
-        "userModified": false
-      }
-    },
     "distinct": false,
     "enabled": false
   }
