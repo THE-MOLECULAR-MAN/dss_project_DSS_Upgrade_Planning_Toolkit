@@ -6,76 +6,73 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "project_key",
+            "table": 0
+          },
+          "dateDiffUnit": "SECOND",
+          "column2": {
+            "name": "projectKey",
+            "table": 1
+          },
+          "type": "EQ"
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "project_key",
+      "type": "string",
       "table": 0
     },
     {
       "name": "num_jobs_run_recently",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "total_job_duration_run_recently_in_hours",
+      "type": "double",
       "table": 0
     },
     {
       "name": "avg_recent_job_duration_min",
+      "type": "double",
       "table": 0
     },
     {
       "name": "most_recent_run",
+      "type": "date",
       "table": 0
     },
     {
       "name": "recent_job_error_rate",
+      "type": "double",
       "table": 0
     },
     {
-      "name": "projectKey",
-      "table": 1
-    },
-    {
       "name": "name",
-      "table": 1
-    },
-    {
-      "name": "shortDesc",
-      "table": 1
-    },
-    {
-      "name": "description",
+      "type": "string",
       "table": 1
     },
     {
       "name": "ownerLogin",
+      "alias": "project_owner",
+      "type": "string",
       "table": 1
     },
     {
       "name": "projectStatus",
-      "table": 1
-    },
-    {
-      "name": "tags",
-      "table": 1
-    },
-    {
-      "name": "last_modified_timestamp",
-      "table": 1
-    },
-    {
-      "name": "tutorialProject",
-      "table": 1
-    },
-    {
-      "name": "contributors",
+      "alias": "project_status",
+      "type": "string",
       "table": 1
     },
     {
       "name": "url",
+      "type": "string",
       "table": 1
     }
   ],
@@ -126,15 +123,70 @@
       "computedColumns": []
     },
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
       },
       "originLabel": "dss_projects_cached",
+      "prefix": "project",
       "index": 1,
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "project_key",
+            "type": "string"
+          },
+          {
+            "name": "num_jobs_run_recently",
+            "type": "bigint"
+          },
+          {
+            "name": "total_job_duration_run_recently_in_hours",
+            "type": "double"
+          },
+          {
+            "name": "avg_recent_job_duration_min",
+            "type": "double"
+          },
+          {
+            "name": "most_recent_run",
+            "type": "date"
+          },
+          {
+            "name": "recent_job_error_rate",
+            "type": "double"
+          },
+          {
+            "meaning": "Text",
+            "name": "project_name",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "project_owner",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "project_status",
+            "type": "string"
+          },
+          {
+            "meaning": "URL",
+            "name": "project_url",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
