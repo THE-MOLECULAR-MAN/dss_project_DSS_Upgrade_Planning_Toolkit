@@ -50,7 +50,7 @@
     "main": {
       "items": [
         {
-          "ref": "recent_scenarios_summary_raw",
+          "ref": "recent_scenarios_summary_joined",
           "deps": []
         }
       ]
@@ -68,11 +68,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 20,
+    "versionNumber": 21,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769433086822,
+    "lastModifiedOn": 1769433409041,
     "extendedProperties": {}
   },
   "creationTag": {
