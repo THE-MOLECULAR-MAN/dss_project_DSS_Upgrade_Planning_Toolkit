@@ -99,10 +99,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "recent_jobs_summary_prepared",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_recent_jobs_summary_prepared",
       "objectType": "RECIPE"
     },
@@ -112,6 +108,10 @@
     },
     {
       "objectId": "recent_jobs_summary2",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "recent_jobs_dashboard",
       "objectType": "DATASET"
     }
   ],

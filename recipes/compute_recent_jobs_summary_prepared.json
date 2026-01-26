@@ -60,7 +60,7 @@
     "main": {
       "items": [
         {
-          "ref": "recent_jobs_summary_prepared",
+          "ref": "recent_jobs_dashboard",
           "appendMode": false
         }
       ]
@@ -68,11 +68,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769434100345,
+    "lastModifiedOn": 1769434248780,
     "extendedProperties": {}
   },
   "creationTag": {
