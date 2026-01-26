@@ -16,7 +16,8 @@
       "engine_parameters": 300,
       "last_modified_user": 150,
       "url": 300,
-      "deprecated_prepare_steps_found": 240
+      "deprecated_prepare_steps_found": 240,
+      "deprecation_status": 190
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -27,7 +28,7 @@
     "sorting": [
       {
         "column": "recipe_type",
-        "ascending": true
+        "ascending": false
       }
     ],
     "analysisColumnData": {},
@@ -83,7 +84,43 @@
       "autoRefresh": true
     },
     "globalSearchQuery": "",
-    "explorationFilters": [],
+    "explorationFilters": [
+      {
+        "column": "projectKey",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "projectKey",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {
+            "DEPRECATED_TESTS_DSS_V12": true
+          }
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "projectKey",
+          "selectedValues": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "projectKey",
+          "params": {
+            "type": "Text",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      }
+    ],
     "previewMode": "ALL_ROWS"
   },
   "charts": [],
