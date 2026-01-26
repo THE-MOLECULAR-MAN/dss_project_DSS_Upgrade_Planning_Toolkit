@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769407231115,
+    "lastModifiedOn": 1769407281791,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -70,10 +70,8 @@
       {"name":"avg_duration_hours","type":"double"},
       {"name":"total_duration_seconds","type":"bigint"},
       {"name":"total_duration_hours","type":"double"},
-      {"name":"end_time_max","type":"date"},
-      {"name":"avg_num_of_errors","type":"double"},
-      {"name":"avg_num_of_warnings","type":"double","meaning":"DoubleMeaning"},
-      {"name":"total_num","type":"bigint"}
+      {"name":"most_recent_runtime","type":"date"},
+      {"name":"total_num_runs","type":"bigint"}
     ],
     "userModified": true
   },
