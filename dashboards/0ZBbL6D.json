@@ -31,6 +31,7 @@
           }
         ]
       },
+      "title": "Most active projects in the last 90 days",
       "showTitle": false
     }
   ],
@@ -39,11 +40,11 @@
   "name": "Locating most active projects",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769433530614,
+    "lastModifiedOn": 1769457289215,
     "extendedProperties": {}
   },
   "creationTag": {
