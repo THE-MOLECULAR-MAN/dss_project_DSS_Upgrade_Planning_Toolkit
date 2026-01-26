@@ -32,15 +32,16 @@
       "type": "date",
       "concatDistinct": false,
       "sum2": false,
-      "min": true,
+      "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "duration_seconds",
       "count": false,
@@ -52,13 +53,14 @@
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "end_time",
       "count": false,
@@ -71,6 +73,7 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -99,7 +102,7 @@
       "column": "error",
       "count": false,
       "$idx": 4,
-      "sum": true,
+      "sum": false,
       "concat": false,
       "type": "bigint",
       "concatDistinct": false,
@@ -107,6 +110,7 @@
       "min": false,
       "countDistinct": false,
       "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -117,7 +121,7 @@
       "column": "warnings_count",
       "count": false,
       "$idx": 5,
-      "sum": true,
+      "sum": false,
       "concat": false,
       "type": "bigint",
       "concatDistinct": false,
@@ -125,6 +129,7 @@
       "min": false,
       "countDistinct": false,
       "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -159,8 +164,9 @@
       "concatDistinct": false,
       "sum2": false,
       "min": false,
-      "countDistinct": true,
+      "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -255,36 +261,32 @@
             "type": "string"
           },
           {
-            "name": "start_time_min",
+            "name": "start_time_max",
             "type": "date"
           },
           {
-            "name": "start_time_max",
-            "type": "date"
+            "name": "duration_seconds_max",
+            "type": "bigint"
+          },
+          {
+            "name": "duration_seconds_avg",
+            "type": "double"
           },
           {
             "name": "duration_seconds_sum",
             "type": "bigint"
           },
           {
+            "name": "end_time_max",
+            "type": "date"
+          },
+          {
             "name": "error_avg",
             "type": "double"
           },
           {
-            "name": "error_sum",
-            "type": "bigint"
-          },
-          {
             "name": "warnings_count_avg",
             "type": "double"
-          },
-          {
-            "name": "warnings_count_sum",
-            "type": "bigint"
-          },
-          {
-            "name": "user_distinct",
-            "type": "bigint"
           },
           {
             "name": "count",
