@@ -105,6 +105,20 @@
         ]
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "forcedCast": {
+          "type": "double"
+        },
+        "expression": "error_sum/total_num_cluster_tasks",
+        "column": "error_rate"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -186,6 +200,7 @@
     "url": 300,
     "tags": 300,
     "projectStatus": 113,
+    "error_rate": 134,
     "end_time_max": 183,
     "name": 281,
     "shortDesc": 300,
