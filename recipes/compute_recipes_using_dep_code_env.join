@@ -29,21 +29,6 @@
       "table": 0
     },
     {
-      "name": "code_env_lang",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "url",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "deployment_mode",
-      "type": "string",
-      "table": 0
-    },
-    {
       "name": "python_interpreter",
       "type": "string",
       "table": 0
@@ -54,32 +39,7 @@
       "table": 0
     },
     {
-      "name": "core_packages_set",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "path",
-      "type": "string",
-      "table": 0
-    },
-    {
       "name": "python_version_support_status",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "size_in_MB",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "projectKeys_where_code_env_used",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "total_instances_of_code_env",
       "type": "string",
       "table": 0
     },
@@ -104,37 +64,7 @@
       "table": 1
     },
     {
-      "name": "tags",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "engine_parameters",
-      "type": "string",
-      "table": 1
-    },
-    {
       "name": "last_modified_user",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "input_datasets",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "code_env",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "deprecation_status",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "output_datasets",
       "type": "string",
       "table": 1
     }
@@ -176,7 +106,7 @@
   },
   "virtualInputs": [
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
@@ -186,7 +116,7 @@
       "computedColumns": []
     },
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "uiData": {
           "mode": "\u0026\u0026",
@@ -223,21 +153,6 @@
           },
           {
             "meaning": "Text",
-            "name": "code_env_lang",
-            "type": "string"
-          },
-          {
-            "meaning": "URL",
-            "name": "url",
-            "type": "string"
-          },
-          {
-            "meaning": "Text",
-            "name": "deployment_mode",
-            "type": "string"
-          },
-          {
-            "meaning": "Text",
             "name": "python_interpreter",
             "type": "string"
           },
@@ -247,30 +162,7 @@
             "type": "string"
           },
           {
-            "meaning": "Text",
-            "name": "core_packages_set",
-            "type": "string"
-          },
-          {
-            "meaning": "Text",
-            "name": "path",
-            "type": "string"
-          },
-          {
             "name": "python_version_support_status",
-            "type": "string"
-          },
-          {
-            "meaning": "DoubleMeaning",
-            "name": "size_in_MB",
-            "type": "string"
-          },
-          {
-            "name": "projectKeys_where_code_env_used",
-            "type": "string"
-          },
-          {
-            "name": "total_instances_of_code_env",
             "type": "string"
           },
           {
@@ -294,36 +186,8 @@
             "type": "string"
           },
           {
-            "meaning": "JSONArrayMeaning",
-            "name": "tags",
-            "type": "string"
-          },
-          {
-            "meaning": "JSONObjectMeaning",
-            "name": "engine_parameters",
-            "type": "string"
-          },
-          {
             "meaning": "Text",
             "name": "last_modified_user",
-            "type": "string"
-          },
-          {
-            "meaning": "JSONArrayMeaning",
-            "name": "input_datasets",
-            "type": "string"
-          },
-          {
-            "name": "code_env",
-            "type": "string"
-          },
-          {
-            "name": "deprecation_status",
-            "type": "string"
-          },
-          {
-            "meaning": "JSONArrayMeaning",
-            "name": "output_datasets",
             "type": "string"
           }
         ],
