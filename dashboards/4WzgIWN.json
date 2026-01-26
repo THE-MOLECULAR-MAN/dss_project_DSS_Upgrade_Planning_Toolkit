@@ -86,7 +86,7 @@
             },
             "autoLoad": true,
             "showTitle": "YES",
-            "title": "Deprecated Plugins",
+            "title": "Deprecated plugins used in projects",
             "insightId": "lqTvL2k",
             "insightType": "dataset_table",
             "displayMode": "INSIGHT",
@@ -103,11 +103,11 @@
   "name": "Migration considerations",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 20,
+    "versionNumber": 21,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769447091431,
+    "lastModifiedOn": 1769447109087,
     "extendedProperties": {}
   },
   "creationTag": {
