@@ -43,10 +43,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_plugin_usage_summary",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_plugin_instances_needing_changes",
       "objectType": "RECIPE"
     },
