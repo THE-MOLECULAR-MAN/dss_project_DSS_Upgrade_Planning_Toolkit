@@ -61,10 +61,6 @@
     {
       "objectId": "compute_plugin_instances_needing_changes_by_project_key2",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "plugin_instances_needing_changes_by_project_key2",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
