@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769408287918,
+    "lastModifiedOn": 1769408300516,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -63,67 +63,7 @@
   },
   "schema": {
     "columns": [],
-    "userModified": true,
-    "metadata": {
-      "engineType": "SQL",
-      "pivotElementsModalities": [
-        {
-          "pivotElement": {
-            "keyColumns": [
-              "deprecation_status"
-            ],
-            "valueLimit": "NO_LIMIT",
-            "topnLimit": 20,
-            "minOccLimit": 0,
-            "explicitValues": [],
-            "globalCount": true,
-            "valueColumns": []
-          },
-          "pivotedModalities": [
-            {
-              "keyValues": [
-                "Deprecated"
-              ],
-              "name": "Deprecated",
-              "valueColumns": [],
-              "globalCountColumn": "Deprecated_count"
-            },
-            {
-              "keyValues": [
-                "Needs manual checking"
-              ],
-              "name": "Needs manual checking",
-              "valueColumns": [],
-              "globalCountColumn": "Needs manual checking_count"
-            },
-            {
-              "keyValues": [
-                "Prepare recipe uses deprecated preprocessors"
-              ],
-              "name": "Prepare recipe uses deprecated preprocessors",
-              "valueColumns": [],
-              "globalCountColumn": "Prepare recipe uses deprecated preprocessors_count"
-            },
-            {
-              "keyValues": [
-                "Recipe Type \u0027CustomCode_hubspot\u0027 Not Found"
-              ],
-              "name": "Recipe Type \u0027CustomCode_hubspot\u0027 Not Found",
-              "valueColumns": [],
-              "globalCountColumn": "Recipe Type \u0027CustomCode_hubspot\u0027 Not Found_count"
-            },
-            {
-              "keyValues": [
-                "Usually safe"
-              ],
-              "name": "Usually safe",
-              "valueColumns": [],
-              "globalCountColumn": "Usually safe_count"
-            }
-          ]
-        }
-      ]
-    }
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
