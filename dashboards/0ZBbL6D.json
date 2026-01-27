@@ -7,7 +7,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 7,
+              "top": 4,
               "left": 0,
               "width": 12,
               "height": 6
@@ -36,7 +36,7 @@
               "top": 0,
               "left": 0,
               "width": 12,
-              "height": 3
+              "height": 4
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -66,11 +66,11 @@
   "name": "Locating most active projects",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 20,
+    "versionNumber": 21,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769519671831,
+    "lastModifiedOn": 1769519683265,
     "extendedProperties": {}
   },
   "creationTag": {
