@@ -61,11 +61,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769519564010,
+    "lastModifiedOn": 1769519586555,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -89,7 +89,18 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"project_name","type":"string"},
+      {"name":"total_number_of_scenario_runs","type":"bigint"},
+      {"name":"most_recent_runtime","type":"date"},
+      {"name":"total_scenario_runtime_hours","type":"double"},
+      {"name":"num_distinct_deprecated_plugins_in_project","type":"bigint"},
+      {"name":"num_deprecated_plugin_instances_in_project","type":"bigint"},
+      {"name":"num_deprecated_recipes","type":"bigint"},
+      {"name":"total_recipes_to_check","type":"bigint"},
+      {"name":"project_url","type":"string"},
+      {"name":"project_key","type":"string","meaning":"Text"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],
