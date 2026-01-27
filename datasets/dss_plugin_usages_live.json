@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769481488996,
+    "lastModifiedOn": 1769482087517,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -55,7 +55,6 @@
       {"name":"object_type","type":"string"},
       {"name":"projectKey","type":"string"},
       {"name":"object_id","type":"string"},
-      {"name":"name","type":"string"},
       {"name":"subtype","type":"string"}
     ],
     "userModified": true
