@@ -5,49 +5,14 @@
     "columnsSelection": {
       "mode": "ALL"
     },
-    "columnWidthsByName": {
-      "projectKey": 300,
-      "id": 232,
-      "name": 232,
-      "exists": 100,
-      "type": 169,
-      "formatType": 100,
-      "params.connection": 197,
-      "managed": 100,
-      "params.mode": 100,
-      "params.table": 300,
-      "params.schema": 113,
-      "params.path": 183,
-      "creationTag.lastModifiedBy.login": 255,
-      "creationTag.lastModifiedOn": 232,
-      "versionTag.lastModifiedBy.login": 248,
-      "versionTag.lastModifiedOn": 225,
-      "shortDesc": 300,
-      "description": 300,
-      "params.metastoreDatabaseName": 225,
-      "params.folderSmartId": 165,
-      "tags": 100,
-      "featureGroup": 105,
-      "num_metrics_checks": 150,
-      "num_columns": 100,
-      "column_names": 300,
-      "dataset_url": 300,
-      "url": 300,
-      "data_lineage": 300,
-      "num_data_quality_rules": 180
-    },
+    "columnWidthsByName": {},
     "columnUseScientificNotationByName": {},
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
       "valueColoringMode": "HASH"
     },
-    "sorting": [
-      {
-        "column": "projectKey",
-        "ascending": true
-      }
-    ],
+    "sorting": [],
     "analysisColumnData": {},
     "explorationSampling": {
       "selection": {
@@ -65,14 +30,14 @@
           "rules": []
         },
         "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 100,
+        "maxRecords": 10000,
         "targetRatio": 0.02,
         "ascending": true,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1767323534939
+      "_refreshTrigger": 0
     },
     "vizSampling": {
       "selection": {
@@ -97,9 +62,7 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {
-      "autoRefresh": true
-    },
+    "exploreUIParams": {},
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"

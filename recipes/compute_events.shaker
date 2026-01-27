@@ -238,6 +238,24 @@
         "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnBadType",
+      "params": {
+        "booleanMode": "AND",
+        "columns": [
+          "error",
+          "duration_seconds",
+          "warnings_count"
+        ],
+        "action": "CLEAR_CELL",
+        "appliesTo": "COLUMNS",
+        "type": "LongMeaning"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,

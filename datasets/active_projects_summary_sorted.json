@@ -1,9 +1,7 @@
 {
-  "type": "CustomPython_xzibit_codeenvs",
-  "managed": false,
+  "type": "PostgreSQL",
+  "managed": true,
   "featureGroup": false,
-  "description": "",
-  "shortDesc": "Dataset of live code environments in Dataiku DSS, detailing configurations and usage.",
   "checklists": {
     "checklists": []
   },
@@ -17,7 +15,7 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "readWriteOptions": {
-    "preserveOrder": false,
+    "preserveOrder": true,
     "writeBuckets": 1,
     "forceSingleOutputFile": false,
     "defaultReadOrdering": {
@@ -31,44 +29,50 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769520354815,
+    "lastModifiedOn": 1769519472506,
     "extendedProperties": {}
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
-      "login": "tim.honker"
+      "login": "admin"
     },
-    "lastModifiedOn": 1762961228236,
+    "lastModifiedOn": 1769519472486,
     "extendedProperties": {}
   },
-  "tags": [
-    "ai_generated_description"
-  ],
+  "tags": [],
   "params": {
-    "customConfig": {
-      "compute_codeenv_disk_space_usage": false,
-      "compute_codeenv_usages": true
-    },
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "postgres_local",
     "notReadyIfEmpty": false,
-    "previewAllPartitions": false
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_active_projects_summary_sorted",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true,
+    "sparkJdbcAccess": "NONE",
+    "numPartitions": -1
   },
   "schema": {
     "columns": [
-      {"name":"code_env_name","type":"string"},
-      {"name":"code_env_lang","type":"string"},
-      {"name":"url","type":"string"},
-      {"name":"deployment_mode","type":"string"},
-      {"name":"python_interpreter","type":"string"},
-      {"name":"owner","type":"string"},
-      {"name":"core_packages_set","type":"string"},
-      {"name":"path","type":"string"},
-      {"name":"python_version_support_status","type":"string"},
-      {"name":"size_in_MB","type":"string"}
+      {"name":"project_name","type":"string"},
+      {"name":"total_number_of_scenario_runs","type":"bigint"},
+      {"name":"most_recent_runtime","type":"date"},
+      {"name":"total_scenario_runtime_hours","type":"double"},
+      {"name":"num_distinct_deprecated_plugins_in_project","type":"bigint"},
+      {"name":"num_deprecated_plugin_instances_in_project","type":"bigint"},
+      {"name":"num_deprecated_recipes","type":"bigint"},
+      {"name":"total_recipes_to_check","type":"bigint"},
+      {"name":"project_url","type":"string"},
+      {"name":"project_key","type":"string","meaning":"Text"}
     ],
     "userModified": true
   },

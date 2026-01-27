@@ -115,10 +115,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "recent_cluster_tasks_summary_joined",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "recent_cluster_tasks_dashboard",
       "objectType": "DATASET"
     },
@@ -128,6 +124,18 @@
     },
     {
       "objectId": "recent_commit_dashboard",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "scenario_runs",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "jobs_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "recent_cluster_tasks_summary2",
       "objectType": "DATASET"
     }
   ],

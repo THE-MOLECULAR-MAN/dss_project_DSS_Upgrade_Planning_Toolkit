@@ -1,5 +1,5 @@
 {
-  "type": "join",
+  "type": "topn",
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "customMeta": {
@@ -13,11 +13,7 @@
     "main": {
       "items": [
         {
-          "ref": "recent_cluster_tasks_summary",
-          "deps": []
-        },
-        {
-          "ref": "dss_projects_cached",
+          "ref": "active_projects_summary",
           "deps": []
         }
       ]
@@ -27,7 +23,7 @@
     "main": {
       "items": [
         {
-          "ref": "recent_cluster_tasks_summary2",
+          "ref": "top_active_projects",
           "appendMode": false
         }
       ]
@@ -35,11 +31,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769465253310,
+    "lastModifiedOn": 1769519617051,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -47,7 +43,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769434531961,
+    "lastModifiedOn": 1769519564016,
     "extendedProperties": {}
   },
   "tags": [],

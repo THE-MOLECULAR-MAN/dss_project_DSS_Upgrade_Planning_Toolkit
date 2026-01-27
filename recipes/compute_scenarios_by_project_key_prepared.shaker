@@ -135,7 +135,7 @@
       "type": "RoundProcessor",
       "params": {
         "mode": "ROUND",
-        "places": 4,
+        "places": 2,
         "columns": [
           "avg_duration_minutes",
           "max_duration_hours",

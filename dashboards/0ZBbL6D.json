@@ -7,7 +7,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 0,
+              "top": 4,
               "left": 0,
               "width": 12,
               "height": 6
@@ -24,14 +24,42 @@
             },
             "autoLoad": true,
             "showTitle": "YES",
+            "title": "Scenarios run in past 90 days",
             "insightId": "UVzTunn",
+            "insightType": "dataset_table",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 12,
+              "height": 4
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "viewKind": "EXPLORE",
+              "showName": true,
+              "showDescription": true,
+              "showCustomFields": true,
+              "showStorageType": false,
+              "showMeaning": false,
+              "showProgressBar": false
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "title": "Top 10 projects with the most run scenarios in the past 90 days",
+            "insightId": "on14ULQ",
             "insightType": "dataset_table",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
-      "showTitle": false
+      "title": "Most active projects in the last 90 days",
+      "showTitle": true
     }
   ],
   "owner": "admin",
@@ -39,11 +67,11 @@
   "name": "Locating most active projects",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 22,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769433530614,
+    "lastModifiedOn": 1769519712139,
     "extendedProperties": {}
   },
   "creationTag": {
