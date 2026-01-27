@@ -25,6 +25,14 @@
     {
       "objectId": "compute_commits_by_project_key_details_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "recent_scenarios_dashboard",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_scenarios_by_project_key_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
