@@ -71,10 +71,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "compute_dss_connections_cached",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "dss_webapps_cached",
       "objectType": "DATASET"
     },
@@ -84,14 +80,6 @@
     },
     {
       "objectId": "dss_datasets_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_connections_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_connections_live",
       "objectType": "DATASET"
     },
     {
