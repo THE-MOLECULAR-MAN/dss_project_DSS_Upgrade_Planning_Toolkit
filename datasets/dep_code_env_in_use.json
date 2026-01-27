@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769522166680,
+    "lastModifiedOn": 1769522175042,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -66,7 +66,6 @@
       {"name":"code_env_name","type":"string","meaning":"Text"},
       {"name":"python_interpreter","type":"string","meaning":"Text"},
       {"name":"owner","type":"string","meaning":"Text"},
-      {"name":"projectKeys_where_code_env_used","type":"string"},
       {"name":"url","type":"string","meaning":"URL"}
     ],
     "userModified": true
