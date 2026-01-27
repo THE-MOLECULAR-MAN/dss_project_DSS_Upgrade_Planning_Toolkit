@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769484866613,
+    "lastModifiedOn": 1769522066575,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -52,10 +52,13 @@
   },
   "schema": {
     "columns": [
-      {"name":"object_type","type":"string"},
-      {"name":"projectKey","type":"string"},
+      {"name":"plugin_id","type":"string"},
+      {"name":"plugin_is_deprecated","type":"string"},
+      {"name":"element_kind","type":"string"},
+      {"name":"element_type","type":"string"},
       {"name":"object_id","type":"string"},
-      {"name":"subtype","type":"string"}
+      {"name":"object_type","type":"string"},
+      {"name":"project_key","type":"string"}
     ],
     "userModified": true
   },
