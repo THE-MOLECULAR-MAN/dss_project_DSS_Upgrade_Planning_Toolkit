@@ -59,35 +59,11 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_dss_webapps_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "compute_dss_users_cached2",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_dss_datasets_cached",
       "objectType": "RECIPE"
     },
     {
-      "objectId": "dss_webapps_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_users_cached",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_datasets_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_users_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_webapps_live",
       "objectType": "DATASET"
     },
     {
