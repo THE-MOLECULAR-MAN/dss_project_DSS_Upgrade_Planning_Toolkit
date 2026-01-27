@@ -247,10 +247,12 @@
       "params": {
         "booleanMode": "AND",
         "columns": [
-          "error"
+          "error",
+          "duration_seconds",
+          "warnings_count"
         ],
         "action": "CLEAR_CELL",
-        "appliesTo": "SINGLE_COLUMN",
+        "appliesTo": "COLUMNS",
         "type": "LongMeaning"
       },
       "alwaysShowComment": false
