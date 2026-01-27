@@ -39,10 +39,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "compute_commits_by_project_key_details_prepared",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_jobs_by_projectKey",
       "objectType": "RECIPE"
     },
@@ -95,10 +91,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_recent_jobs_summary_prepared",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_recent_jobs_summary_dashboard",
       "objectType": "RECIPE"
     },
@@ -107,24 +99,8 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "recent_jobs_dashboard",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_recent_cluster_tasks_summary_joined",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "recent_cluster_tasks_dashboard",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_recent_cluster_tasks_dashboard",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "recent_commit_dashboard",
-      "objectType": "DATASET"
     },
     {
       "objectId": "scenario_runs",

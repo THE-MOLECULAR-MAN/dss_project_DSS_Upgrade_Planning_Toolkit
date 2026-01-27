@@ -1,7 +1,32 @@
 {
   "name": "Dashboards",
   "color": "#F9BE40",
-  "items": [],
+  "items": [
+    {
+      "objectId": "recent_jobs_dashboard",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "recent_cluster_tasks_dashboard",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "recent_commit_dashboard",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recent_jobs_summary_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_recent_cluster_tasks_dashboard",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_commits_by_project_key_details_prepared",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
