@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769484192326,
+    "lastModifiedOn": 1769522083441,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -62,12 +62,7 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [
-      {"name":"object_type","type":"string"},
-      {"name":"projectKey","type":"string"},
-      {"name":"object_id","type":"string"},
-      {"name":"subtype","type":"string"}
-    ],
+    "columns": [],
     "userModified": true
   },
   "dkuProperties": [],
