@@ -94,9 +94,9 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "FilterOnNumericalRange",
       "params": {
         "min": 1.0,
