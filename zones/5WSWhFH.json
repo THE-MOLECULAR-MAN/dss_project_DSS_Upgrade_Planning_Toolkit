@@ -59,18 +59,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_dss_datasets_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_datasets_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_datasets_live",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "cluster_tasks_live",
       "objectType": "DATASET"
     },
