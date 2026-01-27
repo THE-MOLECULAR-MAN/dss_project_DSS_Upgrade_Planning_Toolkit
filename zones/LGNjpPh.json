@@ -33,6 +33,22 @@
     {
       "objectId": "compute_scenarios_by_project_key_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "top_active_projects",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "projects_with_recent_scenario_runs",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_top_active_projects",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_recent_scenarios_dashboard_distinct",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
