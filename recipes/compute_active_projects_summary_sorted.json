@@ -23,7 +23,7 @@
     "main": {
       "items": [
         {
-          "ref": "active_projects_summary_sorted",
+          "ref": "projects_most_scenarios",
           "appendMode": false
         }
       ]
@@ -31,11 +31,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769519472514,
+    "lastModifiedOn": 1769519524581,
     "extendedProperties": {}
   },
   "creationTag": {
