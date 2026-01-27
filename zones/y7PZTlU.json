@@ -1,7 +1,32 @@
 {
   "name": "Optional/extra data",
   "color": "#C54F00",
-  "items": [],
+  "items": [
+    {
+      "objectId": "dss_apps_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_apps_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_apps_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_clusters_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_clusters_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_clusters_live",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},

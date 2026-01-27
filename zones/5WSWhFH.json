@@ -75,14 +75,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "compute_dss_clusters_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "compute_dss_apps_cached",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "dss_webapps_cached",
       "objectType": "DATASET"
     },
@@ -99,23 +91,7 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "dss_clusters_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_apps_cached",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_connections_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_clusters_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_apps_live",
       "objectType": "DATASET"
     },
     {
