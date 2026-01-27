@@ -50,6 +50,7 @@
             },
             "autoLoad": true,
             "showTitle": "YES",
+            "title": "Top 10 projects with the most run scenarios in the past 90 days",
             "insightId": "on14ULQ",
             "insightType": "dataset_table",
             "displayMode": "INSIGHT",
@@ -66,11 +67,11 @@
   "name": "Locating most active projects",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769519683265,
+    "lastModifiedOn": 1769519712139,
     "extendedProperties": {}
   },
   "creationTag": {
