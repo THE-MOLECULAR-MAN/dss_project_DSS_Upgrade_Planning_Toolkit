@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769522023559,
+    "lastModifiedOn": 1769522114989,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -62,19 +62,7 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [
-      {"name":"id","type":"string","meaning":"Text"},
-      {"name":"label","type":"string","meaning":"Text"},
-      {"name":"code_env_name","type":"string","meaning":"Text"},
-      {"name":"version","type":"string","meaning":"Text"},
-      {"name":"author","type":"string","meaning":"Text"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"description","type":"string","meaning":"FreeText"},
-      {"name":"isDev","type":"boolean","meaning":"Boolean"},
-      {"name":"is_built_in_plugin","type":"boolean","meaning":"Boolean"},
-      {"name":"plugin_is_deprecated","type":"boolean","meaning":"Boolean"},
-      {"name":"url","type":"string","meaning":"URL"}
-    ],
+    "columns": [],
     "userModified": true
   },
   "dkuProperties": [],
