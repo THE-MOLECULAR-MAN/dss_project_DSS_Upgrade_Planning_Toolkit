@@ -4,10 +4,21 @@
     "enabled": false
   },
   "retrievedColumnsSelectionMode": "ALL",
-  "firstRows": 1,
+  "firstRows": 10,
   "keys": [],
   "computedColumns": [],
-  "retrievedColumns": [],
+  "retrievedColumns": [
+    "project_name",
+    "total_number_of_scenario_runs",
+    "most_recent_runtime",
+    "total_scenario_runtime_hours",
+    "num_distinct_deprecated_plugins_in_project",
+    "num_deprecated_plugin_instances_in_project",
+    "num_deprecated_recipes",
+    "total_recipes_to_check",
+    "project_url",
+    "project_key"
+  ],
   "lastRows": 0,
   "duplicateCount": false,
   "engineParams": {
@@ -46,7 +57,12 @@
   },
   "rank": false,
   "denseRank": false,
-  "orders": [],
+  "orders": [
+    {
+      "column": "total_number_of_scenario_runs",
+      "desc": true
+    }
+  ],
   "rowNumber": false,
   "outputColumnNameOverrides": {}
 }
