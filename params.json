@@ -181,6 +181,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "top_active_projects",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -384,11 +393,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 100,
+    "versionNumber": 101,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769519626429,
+    "lastModifiedOn": 1769519658862,
     "extendedProperties": {}
   },
   "creationTag": {
