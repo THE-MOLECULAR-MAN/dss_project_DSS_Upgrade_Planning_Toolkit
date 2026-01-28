@@ -29,8 +29,344 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "concat(project_key,\".\",recipe_name)",
+        "column": "id"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "forcedCast": {},
+        "expression": "isNull(code_env_name)",
+        "column": "code_env_is_default"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "last_modified_by_user",
+          "last_modified_timestamp",
+          "code_env_name",
+          "project_key",
+          "recipe_name"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "min_python_version_from_Vermin"
+        ],
+        "values": [
+          "0.0",
+          "2.0"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "CLEAR_CELL",
+        "appliesTo": "SINGLE_COLUMN",
+        "exclude": false,
+        "processNullOrEmptyValues": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "est_py3_version",
+        "mapping": [
+          {
+            "from": "3.",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "min_python_version_from_Vermin"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "code_env_python_version",
+          "min_python_version_from_Vermin"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "num_lines_of_code\u003c\u003d30\t",
+        "column": "is_fewer_than_30_lines"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": true,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "radon_mi_score"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "1"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": true,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "-1",
+            "to": "1"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "radon_mi_score"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "N/A",
+            "to": ""
+          },
+          {
+            "from": "Error",
+            "to": ""
+          },
+          {
+            "from": "-1",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "radon_rank",
+          "radon_mi_score",
+          "radon_cc_avg",
+          "est_py3_version",
+          "ruff_violations",
+          "pylint_issues"
+        ],
+        "appliesTo": "COLUMNS",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "true",
+            "to": "1"
+          },
+          {
+            "from": "false",
+            "to": "0"
+          }
+        ],
+        "normalization": "LOWERCASE",
+        "columns": [],
+        "appliesTo": "ALL",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RoundProcessor",
+      "params": {
+        "mode": "ROUND",
+        "places": 0,
+        "columns": [
+          "radon_mi_score"
+        ],
+        "precision": 0,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(\n\tor(isBlank(est_py3_version),\n    isBlank(radon_cc_avg),\n    isBlank(radon_mi_score),\n    isBlank(radon_rank)\n    \t\n    ),\n    1,\n    0\n)",
+        "column": "analysis_had_errors"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "radon_mi_score/100\t",
+        "column": "radon_mi_score_scaled"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "radon_mi_score"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "min(radon_cc_avg,30)/30",
+        "column": "radon_cc_avg_scaled"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "radon_cc_avg"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "min(est_py3_version,14)/14",
+        "column": "py_3_version_scaled"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "radon_rank",
+          "est_py3_version"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RoundProcessor",
+      "params": {
+        "mode": "ROUND",
+        "places": 2,
+        "columns": [
+          "py_3_version_scaled",
+          "radon_cc_avg_scaled",
+          "radon_mi_score_scaled"
+        ],
+        "precision": 0,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -106,7 +442,31 @@
       "meaning": "DoubleMeaning"
     }
   },
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "num_lines_of_code": 143,
+    "py_3_version_scaled": 158,
+    "analysis_had_errors": 158,
+    "radon_mi_score": 134,
+    "radon_cc_avg_scaled": 158,
+    "project_key": 183,
+    "last_modified_timestamp": 211,
+    "radon_rank": 100,
+    "last_modified_by_user": 173,
+    "radon_mi_score_scaled": 173,
+    "code_env_python_version": 188,
+    "is_fewer_than_30_lines": 180,
+    "url": 300,
+    "code_sample": 300,
+    "pylint_issues": 113,
+    "min_python_version_from_Vermin": 240,
+    "code_env_is_default": 158,
+    "recipe_name": 274,
+    "is_likely_unaltered_default_code": 255,
+    "code_env_name": 113,
+    "id": 300,
+    "ruff_violations": 128,
+    "radon_cc_avg": 134
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
