@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769636432698,
+    "lastModifiedOn": 1769636434691,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -66,7 +66,7 @@
       {"name":"project_key","type":"string"},
       {"name":"recipe_name","type":"string"},
       {"name":"url","type":"string","meaning":"URL"},
-      {"name":"code_env_name","type":"string"},
+      {"name":"code_env_name","type":"string","meaning":"Text"},
       {"name":"uses_custom_code_env","type":"boolean","meaning":"Boolean"},
       {"name":"code_env_python_version","type":"string","meaning":"Text"},
       {"name":"num_lines_of_code","type":"int","meaning":"LongMeaning"},
