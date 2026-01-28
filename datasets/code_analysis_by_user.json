@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769629765910,
+    "lastModifiedOn": 1769629875740,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -64,6 +64,23 @@
   "schema": {
     "columns": [
       {"name":"last_modified_by_user","type":"string","meaning":"Text"},
+      {"name":"project_key_distinct","type":"bigint"},
+      {"name":"recipe_name_distinct","type":"bigint"},
+      {"name":"code_env_name_distinct","type":"bigint"},
+      {"name":"code_env_python_version_distinct","type":"bigint"},
+      {"name":"num_lines_of_code_max","type":"int"},
+      {"name":"num_lines_of_code_avg","type":"double"},
+      {"name":"num_lines_of_code_sum","type":"bigint"},
+      {"name":"last_modified_timestamp_max","type":"date"},
+      {"name":"is_likely_unaltered_default_code_avg","type":"double"},
+      {"name":"radon_cc_avg_avg","type":"double"},
+      {"name":"radon_cc_avg_sum","type":"double"},
+      {"name":"radon_mi_score_avg","type":"double"},
+      {"name":"radon_mi_score_sum","type":"bigint"},
+      {"name":"ruff_violations_avg","type":"double"},
+      {"name":"ruff_violations_sum","type":"bigint"},
+      {"name":"pylint_issues_avg","type":"double"},
+      {"name":"pylint_issues_sum","type":"bigint"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
