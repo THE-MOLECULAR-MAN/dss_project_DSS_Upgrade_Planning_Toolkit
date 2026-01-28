@@ -21,6 +21,14 @@
     {
       "objectId": "compute_python_code_analysis_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_code_analysis_by_user",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "code_analysis_by_user",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
