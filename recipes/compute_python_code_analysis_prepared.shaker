@@ -52,8 +52,8 @@
       "type": "CreateColumnWithGREL",
       "params": {
         "forcedCast": {},
-        "expression": "isNull(code_env_name)",
-        "column": "code_env_is_default"
+        "expression": "isNotNull(code_env_name)",
+        "column": "uses_custom_code_env"
       },
       "alwaysShowComment": false
     },
@@ -297,6 +297,7 @@
     "is_likely_unaltered_default_code": 255,
     "code_env_name": 113,
     "id": 300,
+    "uses_custom_code_env": 165,
     "ruff_violations": 128,
     "radon_cc_avg": 134
   },
