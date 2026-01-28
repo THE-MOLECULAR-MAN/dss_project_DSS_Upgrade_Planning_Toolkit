@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769629978321,
+    "lastModifiedOn": 1769630103318,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -73,10 +73,6 @@
       {"name":"last_modified_timestamp_min","type":"date"},
       {"name":"last_modified_timestamp_max","type":"date"},
       {"name":"is_likely_unaltered_default_code_avg","type":"double"},
-      {"name":"radon_cc_avg_avg","type":"double"},
-      {"name":"radon_cc_avg_sum","type":"double"},
-      {"name":"radon_mi_score_avg","type":"double"},
-      {"name":"radon_mi_score_sum","type":"bigint"},
       {"name":"ruff_violations_avg","type":"double"},
       {"name":"ruff_violations_sum","type":"bigint"},
       {"name":"pylint_issues_avg","type":"double"},
