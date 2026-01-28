@@ -235,14 +235,14 @@
       "column": "radon_cc_avg",
       "count": false,
       "$idx": 11,
-      "sum": true,
+      "sum": false,
       "concat": false,
       "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": true,
+      "avg": false,
       "$selected": false,
       "stddev": false,
       "first": false
@@ -254,14 +254,14 @@
       "column": "radon_mi_score",
       "count": false,
       "$idx": 12,
-      "sum": true,
+      "sum": false,
       "concat": false,
       "type": "int",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": true,
+      "avg": false,
       "$selected": false,
       "stddev": false,
       "first": false
@@ -422,22 +422,6 @@
           {
             "name": "is_likely_unaltered_default_code_avg",
             "type": "double"
-          },
-          {
-            "name": "radon_cc_avg_avg",
-            "type": "double"
-          },
-          {
-            "name": "radon_cc_avg_sum",
-            "type": "double"
-          },
-          {
-            "name": "radon_mi_score_avg",
-            "type": "double"
-          },
-          {
-            "name": "radon_mi_score_sum",
-            "type": "bigint"
           },
           {
             "name": "ruff_violations_avg",
