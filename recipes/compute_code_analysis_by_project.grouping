@@ -120,7 +120,7 @@
     },
     {
       "last": false,
-      "max": true,
+      "max": false,
       "firstLastNotNull": false,
       "column": "num_lines_of_code",
       "count": false,
@@ -166,7 +166,7 @@
       "type": "date",
       "concatDistinct": false,
       "sum2": false,
-      "min": false,
+      "min": true,
       "countDistinct": false,
       "avg": false,
       "$selected": false,
@@ -400,10 +400,6 @@
             "type": "bigint"
           },
           {
-            "name": "num_lines_of_code_max",
-            "type": "int"
-          },
-          {
             "name": "num_lines_of_code_avg",
             "type": "double"
           },
@@ -414,6 +410,10 @@
           {
             "name": "last_modified_by_user_distinct",
             "type": "bigint"
+          },
+          {
+            "name": "last_modified_timestamp_min",
+            "type": "date"
           },
           {
             "name": "last_modified_timestamp_max",
