@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769630236827,
+    "lastModifiedOn": 1769637480874,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -64,7 +64,7 @@
   "schema": {
     "columns": [
       {"name":"project_key","type":"string"},
-      {"name":"recipe_name_distinct","type":"bigint"},
+      {"name":"id_distinct","type":"bigint"},
       {"name":"code_env_name_distinct","type":"bigint"},
       {"name":"code_env_python_version_distinct","type":"bigint"},
       {"name":"num_lines_of_code_avg","type":"double"},
