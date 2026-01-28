@@ -148,7 +148,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FindReplace",
@@ -173,6 +173,30 @@
           "radon_rank"
         ],
         "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "-1.0",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "radon_cc_avg",
+          "radon_mi_score"
+        ],
+        "appliesTo": "COLUMNS",
         "stopAfterFirstMatch": false,
         "matching": "FULL_STRING"
       },
