@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769628144089,
+    "lastModifiedOn": 1769635847705,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -67,7 +67,8 @@
       {"name":"radon_rank","type":"string","meaning":"Text"},
       {"name":"ruff_violations","type":"int","meaning":"LongMeaning"},
       {"name":"pylint_issues","type":"int","meaning":"LongMeaning"},
-      {"name":"code_sample","type":"string","meaning":"FreeText"}
+      {"name":"code_sample","type":"string","meaning":"FreeText"},
+      {"name":"code_hashsum","type":"string","meaning":"Text"}
     ],
     "userModified": true
   },
