@@ -359,7 +359,7 @@
       "first": false
     }
   ],
-  "globalCount": false,
+  "globalCount": true,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -444,6 +444,10 @@
           },
           {
             "name": "pylint_issues_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "count",
             "type": "bigint"
           }
         ],
