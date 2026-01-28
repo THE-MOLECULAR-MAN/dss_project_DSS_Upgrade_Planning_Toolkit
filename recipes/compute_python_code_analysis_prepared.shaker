@@ -37,7 +37,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "concat(project_key,\".\",recipe_name)",
