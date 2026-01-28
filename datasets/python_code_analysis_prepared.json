@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769629326716,
+    "lastModifiedOn": 1769629363102,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -78,7 +78,6 @@
       {"name":"radon_cc_avg","type":"double","meaning":"DoubleMeaning"},
       {"name":"radon_mi_score","type":"double","meaning":"DoubleMeaning"},
       {"name":"radon_rank","type":"string","meaning":"Text"},
-      {"name":"radon_rank_numeric","type":"int","meaning":"LongMeaning"},
       {"name":"ruff_violations","type":"int","meaning":"LongMeaning"},
       {"name":"pylint_issues","type":"int","meaning":"LongMeaning"},
       {"name":"code_sample","type":"string","meaning":"FreeText"}
