@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769629875740,
+    "lastModifiedOn": 1769629882529,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -80,8 +80,7 @@
       {"name":"ruff_violations_avg","type":"double"},
       {"name":"ruff_violations_sum","type":"bigint"},
       {"name":"pylint_issues_avg","type":"double"},
-      {"name":"pylint_issues_sum","type":"bigint"},
-      {"name":"count","type":"bigint"}
+      {"name":"pylint_issues_sum","type":"bigint"}
     ],
     "userModified": true
   },
