@@ -15,10 +15,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "python_code_analysis_prepared",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_python_code_analysis_prepared",
       "objectType": "RECIPE"
     }
