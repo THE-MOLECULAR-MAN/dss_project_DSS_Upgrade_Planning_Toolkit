@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769637336335,
+    "lastModifiedOn": 1769637458793,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -65,6 +65,7 @@
     "columns": [
       {"name":"project_key","type":"string","meaning":"Text"},
       {"name":"recipe_name","type":"string","meaning":"Text"},
+      {"name":"id","type":"string","meaning":"Text"},
       {"name":"url","type":"string","meaning":"URL"},
       {"name":"code_env_name","type":"string","meaning":"Text"},
       {"name":"uses_custom_code_env","type":"boolean","meaning":"Boolean"},
