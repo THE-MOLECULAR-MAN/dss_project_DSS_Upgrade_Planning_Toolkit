@@ -137,13 +137,64 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "UNIXTimestampParser",
       "params": {
         "inCol": "last_modified_timestamp",
         "milliseconds": true
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "radon_rank_numeric",
+        "mapping": [
+          {
+            "from": "Error",
+            "to": "1"
+          },
+          {
+            "from": "N/A",
+            "to": "1"
+          },
+          {
+            "from": "A",
+            "to": "6"
+          },
+          {
+            "from": "B",
+            "to": "5"
+          },
+          {
+            "from": "C",
+            "to": "4"
+          },
+          {
+            "from": "D",
+            "to": "3"
+          },
+          {
+            "from": "E",
+            "to": "2"
+          },
+          {
+            "from": "F",
+            "to": "1"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "radon_rank"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
       },
       "alwaysShowComment": false
     }
@@ -237,6 +288,7 @@
     "pylint_issues": 113,
     "min_python_version_from_Vermin": 240,
     "code_env_is_default": 158,
+    "radon_rank_numeric": 150,
     "recipe_name": 274,
     "is_likely_unaltered_default_code": 255,
     "code_env_name": 113,
