@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769628212391,
+    "lastModifiedOn": 1769628240542,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -63,19 +63,16 @@
   },
   "schema": {
     "columns": [
-      {"name":"project_key","type":"string","meaning":"Text"},
-      {"name":"recipe_name","type":"string","meaning":"Text"},
+      {"name":"id","type":"string"},
       {"name":"url","type":"string","meaning":"URL"},
-      {"name":"code_env_name","type":"string","meaning":"Text"},
-      {"name":"code_env_python_version","type":"string","meaning":"Text"},
+      {"name":"code_env_is_default","type":"bigint"},
       {"name":"num_lines_of_code","type":"int","meaning":"LongMeaning"},
-      {"name":"last_modified_by_user","type":"string","meaning":"Text"},
-      {"name":"last_modified_timestamp","type":"string","meaning":"LongMeaning"},
+      {"name":"is_fewer_than_30_lines","type":"bigint"},
       {"name":"is_likely_unaltered_default_code","type":"boolean","meaning":"Boolean"},
-      {"name":"min_python_version_from_Vermin","type":"string","meaning":"Text"},
-      {"name":"radon_cc_avg","type":"double","meaning":"DoubleMeaning"},
-      {"name":"radon_mi_score","type":"double","meaning":"DoubleMeaning"},
-      {"name":"radon_rank","type":"string","meaning":"Text"},
+      {"name":"py_3_version_scaled","type":"double"},
+      {"name":"radon_cc_avg_scaled","type":"double"},
+      {"name":"radon_mi_score_scaled","type":"double"},
+      {"name":"analysis_had_errors","type":"bigint"},
       {"name":"ruff_violations","type":"int","meaning":"LongMeaning"},
       {"name":"pylint_issues","type":"int","meaning":"LongMeaning"},
       {"name":"code_sample","type":"string","meaning":"FreeText"}
