@@ -33,8 +33,9 @@
       "concatDistinct": false,
       "sum2": false,
       "min": false,
-      "countDistinct": false,
+      "countDistinct": true,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -51,8 +52,9 @@
       "concatDistinct": false,
       "sum2": false,
       "min": false,
-      "countDistinct": false,
+      "countDistinct": true,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -337,6 +339,14 @@
             "meaning": "Text",
             "name": "last_modified_by_user",
             "type": "string"
+          },
+          {
+            "name": "project_key_distinct",
+            "type": "bigint"
+          },
+          {
+            "name": "recipe_name_distinct",
+            "type": "bigint"
           },
           {
             "name": "count",
