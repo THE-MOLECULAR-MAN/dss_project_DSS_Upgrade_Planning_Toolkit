@@ -179,7 +179,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FindReplace",
@@ -199,6 +199,22 @@
         "appliesTo": "COLUMNS",
         "stopAfterFirstMatch": false,
         "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RoundProcessor",
+      "params": {
+        "mode": "ROUND",
+        "places": 0,
+        "columns": [
+          "radon_mi_score"
+        ],
+        "precision": 0,
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
