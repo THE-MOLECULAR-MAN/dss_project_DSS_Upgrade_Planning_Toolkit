@@ -5,7 +5,18 @@
   },
   "keys": [
     {
-      "column": "last_modified_by_user"
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "last_modified_by_user",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "stddev": false,
+      "first": false
     }
   ],
   "values": [
@@ -15,13 +26,16 @@
       "firstLastNotNull": false,
       "column": "project_key",
       "count": false,
+      "$idx": 0,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
-      "countDistinct": false,
+      "countDistinct": true,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -31,13 +45,16 @@
       "firstLastNotNull": false,
       "column": "recipe_name",
       "count": false,
+      "$idx": 1,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
-      "countDistinct": false,
+      "countDistinct": true,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -47,8 +64,10 @@
       "firstLastNotNull": false,
       "column": "url",
       "count": false,
+      "$idx": 2,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -63,13 +82,16 @@
       "firstLastNotNull": false,
       "column": "code_env_name",
       "count": false,
+      "$idx": 3,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
-      "countDistinct": false,
+      "countDistinct": true,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -79,8 +101,10 @@
       "firstLastNotNull": false,
       "column": "uses_custom_code_env",
       "count": false,
+      "$idx": 4,
       "sum": false,
       "concat": false,
+      "type": "boolean",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -95,45 +119,54 @@
       "firstLastNotNull": false,
       "column": "code_env_python_version",
       "count": false,
+      "$idx": 5,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
-      "countDistinct": false,
+      "countDistinct": true,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "num_lines_of_code",
       "count": false,
-      "sum": false,
+      "$idx": 6,
+      "sum": true,
       "concat": false,
+      "type": "int",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "last_modified_timestamp",
       "count": false,
+      "$idx": 7,
       "sum": false,
       "concat": false,
+      "type": "date",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -143,13 +176,16 @@
       "firstLastNotNull": false,
       "column": "is_likely_unaltered_default_code",
       "count": false,
+      "$idx": 8,
       "sum": false,
       "concat": false,
+      "type": "boolean",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -159,8 +195,10 @@
       "firstLastNotNull": false,
       "column": "min_python_version_from_Vermin",
       "count": false,
+      "$idx": 9,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -175,8 +213,10 @@
       "firstLastNotNull": false,
       "column": "est_py3_version",
       "count": false,
+      "$idx": 10,
       "sum": false,
       "concat": false,
+      "type": "int",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -191,13 +231,16 @@
       "firstLastNotNull": false,
       "column": "radon_cc_avg",
       "count": false,
-      "sum": false,
+      "$idx": 11,
+      "sum": true,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -207,13 +250,16 @@
       "firstLastNotNull": false,
       "column": "radon_mi_score",
       "count": false,
-      "sum": false,
+      "$idx": 12,
+      "sum": true,
       "concat": false,
+      "type": "int",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -223,8 +269,10 @@
       "firstLastNotNull": false,
       "column": "radon_rank",
       "count": false,
+      "$idx": 13,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -239,13 +287,16 @@
       "firstLastNotNull": false,
       "column": "ruff_violations",
       "count": false,
-      "sum": false,
+      "$idx": 14,
+      "sum": true,
       "concat": false,
+      "type": "int",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -255,13 +306,16 @@
       "firstLastNotNull": false,
       "column": "pylint_issues",
       "count": false,
-      "sum": false,
+      "$idx": 15,
+      "sum": true,
       "concat": false,
+      "type": "int",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -271,8 +325,10 @@
       "firstLastNotNull": false,
       "column": "code_sample",
       "count": false,
+      "$idx": 16,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -318,8 +374,93 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "meaning": "Text",
+            "name": "last_modified_by_user",
+            "type": "string"
+          },
+          {
+            "name": "project_key_distinct",
+            "type": "bigint"
+          },
+          {
+            "name": "recipe_name_distinct",
+            "type": "bigint"
+          },
+          {
+            "name": "code_env_name_distinct",
+            "type": "bigint"
+          },
+          {
+            "name": "code_env_python_version_distinct",
+            "type": "bigint"
+          },
+          {
+            "name": "num_lines_of_code_max",
+            "type": "int"
+          },
+          {
+            "name": "num_lines_of_code_avg",
+            "type": "double"
+          },
+          {
+            "name": "num_lines_of_code_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "last_modified_timestamp_max",
+            "type": "date"
+          },
+          {
+            "name": "is_likely_unaltered_default_code_avg",
+            "type": "double"
+          },
+          {
+            "name": "radon_cc_avg_avg",
+            "type": "double"
+          },
+          {
+            "name": "radon_cc_avg_sum",
+            "type": "double"
+          },
+          {
+            "name": "radon_mi_score_avg",
+            "type": "double"
+          },
+          {
+            "name": "radon_mi_score_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "ruff_violations_avg",
+            "type": "double"
+          },
+          {
+            "name": "ruff_violations_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "pylint_issues_avg",
+            "type": "double"
+          },
+          {
+            "name": "pylint_issues_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
