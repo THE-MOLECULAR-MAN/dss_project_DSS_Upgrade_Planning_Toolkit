@@ -13,10 +13,6 @@
     {
       "objectId": "python_code_analysis_cached",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_python_code_analysis_prepared",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
