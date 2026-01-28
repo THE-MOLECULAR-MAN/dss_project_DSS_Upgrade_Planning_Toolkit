@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769636437151,
+    "lastModifiedOn": 1769636439026,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -63,7 +63,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"project_key","type":"string"},
+      {"name":"project_key","type":"string","meaning":"Text"},
       {"name":"recipe_name","type":"string","meaning":"Text"},
       {"name":"url","type":"string","meaning":"URL"},
       {"name":"code_env_name","type":"string","meaning":"Text"},
