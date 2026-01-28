@@ -5,6 +5,14 @@
     {
       "objectId": "live_python_code_analysis",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_python_code_analysis_by_user",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "python_code_analysis_by_user",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
