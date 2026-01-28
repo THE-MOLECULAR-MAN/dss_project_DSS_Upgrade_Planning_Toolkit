@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769628639730,
+    "lastModifiedOn": 1769628675610,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -63,12 +63,12 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"string"},
+      {"name":"id","type":"string","meaning":"Text"},
       {"name":"url","type":"string","meaning":"URL"},
-      {"name":"code_env_is_default","type":"boolean"},
+      {"name":"code_env_is_default","type":"boolean","meaning":"Boolean"},
       {"name":"num_lines_of_code","type":"int","meaning":"LongMeaning"},
       {"name":"is_likely_unaltered_default_code","type":"boolean","meaning":"Boolean"},
-      {"name":"est_py3_version","type":"bigint"},
+      {"name":"est_py3_version","type":"int","meaning":"LongMeaning"},
       {"name":"radon_cc_avg","type":"double","meaning":"DoubleMeaning"},
       {"name":"radon_mi_score","type":"double","meaning":"DoubleMeaning"},
       {"name":"radon_rank","type":"string","meaning":"Text"},
