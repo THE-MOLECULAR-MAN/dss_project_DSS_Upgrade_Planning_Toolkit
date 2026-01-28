@@ -60,7 +60,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "ColumnsSelector",
       "params": {
         "columns": [
@@ -124,7 +124,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "ColumnsSelector",
       "params": {
         "columns": [
