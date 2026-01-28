@@ -374,14 +374,68 @@
       "def": {
         "type": "pie",
         "variant": "normal",
-        "name": "New chart",
+        "name": "Avg of num_lines_of_code_sum by last_modified_by_user",
         "userEditedName": false,
         "displayWithEChartsByDefault": true,
-        "genericDimension0": [],
+        "genericDimension0": [
+          {
+            "column": "last_modified_by_user",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "forceLastPositionOthers": false,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of num_lines_of_code_sum, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of num_lines_of_code_sum, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            "digitGrouping": "DEFAULT"
+          }
+        ],
         "genericDimension1": [],
         "facetDimension": [],
         "animationDimension": [],
-        "genericMeasures": [],
+        "genericMeasures": [
+          {
+            "column": "num_lines_of_code_sum",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "digitGrouping": "DEFAULT",
+            "showDisplayLabel": true,
+            "labelPosition": "BOTTOM",
+            "colorRules": []
+          }
+        ],
         "xDimension": [],
         "yDimension": [],
         "uaXDimension": [],
@@ -598,6 +652,7 @@
             "type": "SOLID"
           }
         },
+        "thumbnailData": "data:image/png;base64,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",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
