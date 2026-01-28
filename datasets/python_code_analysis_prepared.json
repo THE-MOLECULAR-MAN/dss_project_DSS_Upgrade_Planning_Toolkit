@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769628675610,
+    "lastModifiedOn": 1769628952703,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -63,11 +63,18 @@
   },
   "schema": {
     "columns": [
+      {"name":"project_key","type":"string"},
+      {"name":"recipe_name","type":"string"},
       {"name":"id","type":"string","meaning":"Text"},
       {"name":"url","type":"string","meaning":"URL"},
+      {"name":"code_env_name","type":"string"},
       {"name":"code_env_is_default","type":"boolean","meaning":"Boolean"},
+      {"name":"code_env_python_version","type":"double"},
       {"name":"num_lines_of_code","type":"int","meaning":"LongMeaning"},
+      {"name":"last_modified_by_user","type":"string"},
+      {"name":"last_modified_timestamp","type":"bigint"},
       {"name":"is_likely_unaltered_default_code","type":"boolean","meaning":"Boolean"},
+      {"name":"min_python_version_from_Vermin","type":"double"},
       {"name":"est_py3_version","type":"int","meaning":"LongMeaning"},
       {"name":"radon_cc_avg","type":"double","meaning":"DoubleMeaning"},
       {"name":"radon_mi_score","type":"double","meaning":"DoubleMeaning"},
