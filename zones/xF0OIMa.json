@@ -5,10 +5,6 @@
     {
       "objectId": "live_python_code_analysis",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "python_code_analysis_by_user",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
