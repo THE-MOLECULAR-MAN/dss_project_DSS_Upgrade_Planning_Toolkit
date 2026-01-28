@@ -219,7 +219,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FindReplace",
@@ -238,6 +238,20 @@
         "appliesTo": "SINGLE_COLUMN",
         "stopAfterFirstMatch": false,
         "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "days_since_last_edit",
+        "outputUnit": "DAYS",
+        "input1": "last_modified_timestamp",
+        "compareTo": "NOW",
+        "reverse": false
       },
       "alwaysShowComment": false
     }
@@ -321,6 +335,7 @@
     "num_lines_of_code": 143,
     "radon_mi_score": 134,
     "est_py3_version": 128,
+    "code_hashsum": 239,
     "project_key": 183,
     "last_modified_timestamp": 211,
     "radon_rank": 100,
@@ -328,6 +343,8 @@
     "code_env_python_version": 188,
     "url": 300,
     "code_sample": 300,
+    "days_since_last_edit": 165,
+    "months_since_last_edit": 180,
     "pylint_issues": 113,
     "min_python_version_from_Vermin": 240,
     "code_env_is_default": 158,
