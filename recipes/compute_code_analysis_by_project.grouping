@@ -3,22 +3,7 @@
     "distinct": false,
     "enabled": false
   },
-  "keys": [
-    {
-      "countDistinct": false,
-      "min": false,
-      "avg": false,
-      "last": false,
-      "max": false,
-      "column": "last_modified_by_user",
-      "count": false,
-      "sum": false,
-      "concat": false,
-      "type": "string",
-      "stddev": false,
-      "first": false
-    }
-  ],
+  "keys": [],
   "values": [
     {
       "last": false,
@@ -33,7 +18,7 @@
       "concatDistinct": false,
       "sum2": false,
       "min": false,
-      "countDistinct": true,
+      "countDistinct": false,
       "avg": false,
       "$selected": false,
       "stddev": false,
@@ -153,11 +138,28 @@
     },
     {
       "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "last_modified_by_user",
+      "count": false,
+      "$idx": 7,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "countDistinct": true,
+      "min": false,
+      "avg": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
       "max": true,
       "firstLastNotNull": false,
       "column": "last_modified_timestamp",
       "count": false,
-      "$idx": 7,
+      "$idx": 8,
       "sum": false,
       "concat": false,
       "type": "date",
@@ -176,7 +178,7 @@
       "firstLastNotNull": false,
       "column": "is_likely_unaltered_default_code",
       "count": false,
-      "$idx": 8,
+      "$idx": 9,
       "sum": false,
       "concat": false,
       "type": "boolean",
@@ -195,7 +197,7 @@
       "firstLastNotNull": false,
       "column": "min_python_version_from_Vermin",
       "count": false,
-      "$idx": 9,
+      "$idx": 10,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -213,7 +215,7 @@
       "firstLastNotNull": false,
       "column": "est_py3_version",
       "count": false,
-      "$idx": 10,
+      "$idx": 11,
       "sum": false,
       "concat": false,
       "type": "int",
@@ -231,7 +233,7 @@
       "firstLastNotNull": false,
       "column": "radon_cc_avg",
       "count": false,
-      "$idx": 11,
+      "$idx": 12,
       "sum": true,
       "concat": false,
       "type": "double",
@@ -250,7 +252,7 @@
       "firstLastNotNull": false,
       "column": "radon_mi_score",
       "count": false,
-      "$idx": 12,
+      "$idx": 13,
       "sum": true,
       "concat": false,
       "type": "int",
@@ -269,7 +271,7 @@
       "firstLastNotNull": false,
       "column": "radon_rank",
       "count": false,
-      "$idx": 13,
+      "$idx": 14,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -286,25 +288,6 @@
       "max": false,
       "firstLastNotNull": false,
       "column": "ruff_violations",
-      "count": false,
-      "$idx": 14,
-      "sum": true,
-      "concat": false,
-      "type": "int",
-      "concatDistinct": false,
-      "sum2": false,
-      "min": false,
-      "countDistinct": false,
-      "avg": true,
-      "$selected": false,
-      "stddev": false,
-      "first": false
-    },
-    {
-      "last": false,
-      "max": false,
-      "firstLastNotNull": false,
-      "column": "pylint_issues",
       "count": false,
       "$idx": 15,
       "sum": true,
@@ -323,9 +306,28 @@
       "last": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "code_sample",
+      "column": "pylint_issues",
       "count": false,
       "$idx": 16,
+      "sum": true,
+      "concat": false,
+      "type": "int",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": true,
+      "$selected": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "code_sample",
+      "count": false,
+      "$idx": 17,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -381,15 +383,6 @@
       "schema": {
         "columns": [
           {
-            "meaning": "Text",
-            "name": "last_modified_by_user",
-            "type": "string"
-          },
-          {
-            "name": "project_key_distinct",
-            "type": "bigint"
-          },
-          {
             "name": "recipe_name_distinct",
             "type": "bigint"
           },
@@ -411,6 +404,10 @@
           },
           {
             "name": "num_lines_of_code_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "last_modified_by_user_distinct",
             "type": "bigint"
           },
           {
