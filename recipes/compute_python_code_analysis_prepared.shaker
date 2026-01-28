@@ -153,39 +153,19 @@
       "disabled": false,
       "type": "FindReplace",
       "params": {
-        "output": "radon_rank_numeric",
+        "output": "",
         "mapping": [
           {
             "from": "Error",
-            "to": "1"
+            "to": "F"
           },
           {
             "from": "N/A",
-            "to": "1"
+            "to": "F"
           },
           {
-            "from": "A",
-            "to": "6"
-          },
-          {
-            "from": "B",
-            "to": "5"
-          },
-          {
-            "from": "C",
-            "to": "4"
-          },
-          {
-            "from": "D",
-            "to": "3"
-          },
-          {
-            "from": "E",
-            "to": "2"
-          },
-          {
-            "from": "F",
-            "to": "1"
+            "from": "",
+            "to": "F"
           }
         ],
         "normalization": "EXACT",
