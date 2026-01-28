@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769628173215,
+    "lastModifiedOn": 1769628185426,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -64,6 +64,8 @@
   "schema": {
     "columns": [
       {"name":"last_modified_by_user","type":"string","meaning":"Text"},
+      {"name":"project_key_distinct","type":"bigint"},
+      {"name":"recipe_name_distinct","type":"bigint"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
