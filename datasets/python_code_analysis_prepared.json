@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769628952703,
+    "lastModifiedOn": 1769629040316,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -72,7 +72,7 @@
       {"name":"code_env_python_version","type":"double"},
       {"name":"num_lines_of_code","type":"int","meaning":"LongMeaning"},
       {"name":"last_modified_by_user","type":"string"},
-      {"name":"last_modified_timestamp","type":"bigint"},
+      {"name":"last_modified_timestamp","type":"date","meaning":"Date"},
       {"name":"is_likely_unaltered_default_code","type":"boolean","meaning":"Boolean"},
       {"name":"min_python_version_from_Vermin","type":"double"},
       {"name":"est_py3_version","type":"int","meaning":"LongMeaning"},
