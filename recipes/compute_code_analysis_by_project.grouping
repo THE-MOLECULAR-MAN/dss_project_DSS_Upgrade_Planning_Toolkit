@@ -166,7 +166,7 @@
       "type": "date",
       "concatDistinct": false,
       "sum2": false,
-      "min": true,
+      "min": false,
       "countDistinct": false,
       "avg": false,
       "$selected": false,
@@ -180,14 +180,14 @@
       "column": "is_likely_unaltered_default_code",
       "count": false,
       "$idx": 8,
-      "sum": false,
+      "sum": true,
       "concat": false,
       "type": "boolean",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": true,
+      "avg": false,
       "$selected": false,
       "stddev": false,
       "first": false
@@ -298,7 +298,7 @@
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": true,
+      "avg": false,
       "$selected": false,
       "stddev": false,
       "first": false
@@ -317,7 +317,7 @@
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": true,
+      "avg": false,
       "$selected": false,
       "stddev": false,
       "first": false
@@ -412,28 +412,16 @@
             "type": "bigint"
           },
           {
-            "name": "last_modified_timestamp_min",
-            "type": "date"
-          },
-          {
             "name": "last_modified_timestamp_max",
             "type": "date"
           },
           {
-            "name": "is_likely_unaltered_default_code_avg",
-            "type": "double"
-          },
-          {
-            "name": "ruff_violations_avg",
-            "type": "double"
+            "name": "is_likely_unaltered_default_code_sum",
+            "type": "bigint"
           },
           {
             "name": "ruff_violations_sum",
             "type": "bigint"
-          },
-          {
-            "name": "pylint_issues_avg",
-            "type": "double"
           },
           {
             "name": "pylint_issues_sum",
