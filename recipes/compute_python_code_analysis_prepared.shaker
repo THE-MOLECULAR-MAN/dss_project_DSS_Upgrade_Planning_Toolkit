@@ -1,0 +1,117 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "maxRecordsForDisplay": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "maxStoredBytes": 104857600,
+      "ascending": true,
+      "timeout": -1,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "columnUseScientificNotationByName": {},
+  "exploreUIParams": {},
+  "steps": [],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL",
+      "ascending": true
+    },
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {
+    "num_lines_of_code": {
+      "meaning": "LongMeaning"
+    },
+    "radon_mi_score": {
+      "meaning": "DoubleMeaning"
+    },
+    "project_key": {
+      "meaning": "Text"
+    },
+    "last_modified_timestamp": {
+      "meaning": "LongMeaning"
+    },
+    "radon_rank": {
+      "meaning": "Text"
+    },
+    "last_modified_by_user": {
+      "meaning": "Text"
+    },
+    "code_env_python_version": {
+      "meaning": "Text"
+    },
+    "url": {
+      "meaning": "URL"
+    },
+    "code_sample": {
+      "meaning": "FreeText"
+    },
+    "pylint_issues": {
+      "meaning": "LongMeaning"
+    },
+    "min_python_version_from_Vermin": {
+      "meaning": "Text"
+    },
+    "recipe_name": {
+      "meaning": "Text"
+    },
+    "is_likely_unaltered_default_code": {
+      "meaning": "Boolean"
+    },
+    "code_env_name": {
+      "meaning": "Text"
+    },
+    "ruff_violations": {
+      "meaning": "LongMeaning"
+    },
+    "radon_cc_avg": {
+      "meaning": "DoubleMeaning"
+    }
+  },
+  "columnWidthsByName": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}
