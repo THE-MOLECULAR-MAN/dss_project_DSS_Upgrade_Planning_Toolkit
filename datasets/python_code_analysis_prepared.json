@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769629611514,
+    "lastModifiedOn": 1769629688997,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -76,7 +76,7 @@
       {"name":"min_python_version_from_Vermin","type":"string","meaning":"Text"},
       {"name":"est_py3_version","type":"int","meaning":"LongMeaning"},
       {"name":"radon_cc_avg","type":"double","meaning":"DoubleMeaning"},
-      {"name":"radon_mi_score","type":"double","meaning":"DoubleMeaning"},
+      {"name":"radon_mi_score","type":"int","meaning":"LongMeaning"},
       {"name":"radon_rank","type":"string","meaning":"Text"},
       {"name":"ruff_violations","type":"int","meaning":"LongMeaning"},
       {"name":"pylint_issues","type":"int","meaning":"LongMeaning"},
