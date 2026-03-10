@@ -1,9 +1,10 @@
 {
-  "type": "PostgreSQL",
+  "type": "Filesystem",
   "managed": true,
   "featureGroup": false,
   "description": "The \u0027events_stacked\u0027 dataset provides a comprehensive view of various project-related events, capturing essential details such as project identifiers, timestamps, and execution states. This dataset is particularly useful for tracking the progress and outcomes of tasks within projects, as it includes start and end times, the state of job execution, and any warnings generated. It also records the user who initiated the task and the type of event, which can be crucial for auditing and performance analysis. The dataset can be used in project management to monitor task execution, identify bottlenecks, and improve efficiency by analyzing the frequency and causes of warnings. Additionally, it can aid in user activity tracking and scenario analysis, providing insights into how different scenarios are executed and their outcomes. The inclusion of timestamps allows for precise time-based analysis, making it a valuable resource for time series analysis and reporting.",
   "shortDesc": "Dataset of project events with timestamps and statuses.",
+  "formatType": "csv",
   "checklists": {
     "checklists": []
   },
@@ -25,17 +26,48 @@
       "rules": []
     }
   },
+  "formatParams": {
+    "style": "unix",
+    "charset": "utf8",
+    "separator": "\t",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "maxRowChars": 100000000,
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": "gz"
+  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1768508471839,
+    "lastModifiedOn": 1773157663276,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -50,20 +82,15 @@
     "ai_generated_description"
   ],
   "params": {
-    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
-    "connection": "postgres_local",
+    "connection": "filesystem_managed",
+    "path": "${projectKey}/events_stacked",
     "notReadyIfEmpty": false,
-    "mode": "table",
-    "partitioningType": "custom",
-    "normalizeDoubles": true,
-    "table": "${projectKey}_events_stacked",
-    "tableCreationMode": "auto",
-    "writeInsertBatchSize": 10000,
-    "writeJDBCBadDataBehavior": "DISCARD_ROW",
-    "readColsWithUnknownTzAsDates": false,
-    "readSQLDateColsAsDSSDates": true,
-    "sparkJdbcAccess": "NONE",
-    "numPartitions": -1
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
   },
   "schema": {
     "columns": [

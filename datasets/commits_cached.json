@@ -1,9 +1,10 @@
 {
-  "type": "PostgreSQL",
+  "type": "Filesystem",
   "managed": true,
   "featureGroup": false,
   "description": "The \u0027commits_cached\u0027 dataset provides detailed information about software project commits, capturing essential data for each commit made within a project. This dataset is particularly useful for software development teams, project managers, and data analysts who need to track changes, analyze development patterns, or assess the impact of specific commits. Each entry in the dataset corresponds to a unique commit, identified by a \u0027commit_id\u0027, and is associated with a specific \u0027project_key\u0027. The dataset includes information about the \u0027author\u0027 of the commit, the \u0027timestamp\u0027 indicating when the commit was made, and quantitative data on the number of files and lines added, removed, or changed. This allows for a comprehensive analysis of the development process, helping to identify trends, bottlenecks, or areas for improvement. The dataset\u0027s structure supports various use cases, such as generating reports on codebase evolution, understanding team productivity, or conducting code quality assessments. By providing a granular view of each commit, this dataset serves as a valuable resource for maintaining and improving software project workflows.",
   "shortDesc": "Software project commit data with details on changes.",
+  "formatType": "csv",
   "checklists": {
     "checklists": []
   },
@@ -25,17 +26,48 @@
       "rules": []
     }
   },
+  "formatParams": {
+    "style": "unix",
+    "charset": "utf8",
+    "separator": "\t",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "maxRowChars": 100000000,
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": "gz"
+  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769444289541,
+    "lastModifiedOn": 1773157663242,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -50,20 +82,15 @@
     "ai_generated_description"
   ],
   "params": {
-    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
-    "connection": "postgres_local",
+    "connection": "filesystem_managed",
+    "path": "${projectKey}/commits_cached",
     "notReadyIfEmpty": false,
-    "mode": "table",
-    "partitioningType": "custom",
-    "normalizeDoubles": true,
-    "table": "${projectKey}_commits_cached",
-    "tableCreationMode": "auto",
-    "writeInsertBatchSize": 10000,
-    "writeJDBCBadDataBehavior": "DISCARD_ROW",
-    "readColsWithUnknownTzAsDates": false,
-    "readSQLDateColsAsDSSDates": true,
-    "sparkJdbcAccess": "NONE",
-    "numPartitions": -1
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
   },
   "schema": {
     "columns": [
