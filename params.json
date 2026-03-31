@@ -181,6 +181,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "top_active_projects",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -384,11 +393,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 98,
+    "versionNumber": 109,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769456514533,
+    "lastModifiedOn": 1773157847638,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -400,13 +409,11 @@
     "extendedProperties": {}
   },
   "description": "**[Learn more about how to set up and use this project in the wiki](article:1)**\n\n\n## Overview\nPreparing for a major version upgrade requires a detailed inventory of your current instance. This project assists DSS Administrators by automating the discovery of objects that may require attention during an upgrade.\n\nIt utilizes the **[Datasets about Dataiku Instance plugin](https://github.com/THE-MOLECULAR-MAN/dss-plugin-xzibit)** to surface deep metadata about your instance, helping you:\n* **Prioritize Migration:** Identify which projects are most active and should be moved first.\n* **Identify Deprecations:** Locate specific objects (Recipes, Plugins, Code Environments) that may break due to version changes.\n\n\n\n[This DSS Project is maintained on GitHub](https://github.com/THE-MOLECULAR-MAN/dss_project_Data_Dictionary_and_DSS_Instance_datasets_test_project)",
-  "shortDesc": "This project is designed to assist with planning upgrades for DSS Design Nodes from v12 to v14. Only use this project on non-mission critical design nodes.",
+  "shortDesc": "v2026-01-27-08:58 - This project is designed to assist with planning upgrades for DSS Design Nodes from v12 to v14.3+. Only use this project on non-mission critical design nodes.",
   "tags": [
-    "Maintenance",
     "internals",
     "Upgrades",
-    "Admin",
-    "imported"
+    "Admin"
   ],
   "customFields": {},
   "checklists": {

@@ -1,0 +1,367 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "maxRecordsForDisplay": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "maxStoredBytes": 104857600,
+      "ascending": true,
+      "timeout": -1,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "columnUseScientificNotationByName": {},
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "concat(project_key,\".\",recipe_name)",
+        "column": "id"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "forcedCast": {},
+        "expression": "isNotNull(code_env_name)",
+        "column": "uses_custom_code_env"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": true,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "last_modified_by_user",
+          "last_modified_timestamp",
+          "code_env_name",
+          "project_key",
+          "recipe_name"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": true,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "min_python_version_from_Vermin"
+        ],
+        "values": [
+          "0.0",
+          "2.0"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "CLEAR_CELL",
+        "appliesTo": "SINGLE_COLUMN",
+        "exclude": false,
+        "processNullOrEmptyValues": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": true,
+      "type": "FindReplace",
+      "params": {
+        "output": "est_py3_version",
+        "mapping": [
+          {
+            "from": "3.",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "min_python_version_from_Vermin"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": true,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "code_env_python_version",
+          "min_python_version_from_Vermin"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "UNIXTimestampParser",
+      "params": {
+        "inCol": "last_modified_timestamp",
+        "milliseconds": true
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "Error",
+            "to": "F"
+          },
+          {
+            "from": "N/A",
+            "to": "F"
+          },
+          {
+            "from": "",
+            "to": "F"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "radon_rank"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "-1.0",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "radon_cc_avg",
+          "radon_mi_score"
+        ],
+        "appliesTo": "COLUMNS",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RoundProcessor",
+      "params": {
+        "mode": "ROUND",
+        "places": 0,
+        "columns": [
+          "radon_mi_score"
+        ],
+        "precision": 0,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "0.0",
+            "to": "2.0"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "min_python_version_from_Vermin"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "days_since_last_edit",
+        "outputUnit": "DAYS",
+        "input1": "last_modified_timestamp",
+        "compareTo": "NOW",
+        "reverse": false
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL",
+      "ascending": true
+    },
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {
+    "num_lines_of_code": {
+      "meaning": "LongMeaning"
+    },
+    "radon_mi_score": {
+      "meaning": "DoubleMeaning"
+    },
+    "project_key": {
+      "meaning": "Text"
+    },
+    "last_modified_timestamp": {
+      "meaning": "LongMeaning"
+    },
+    "radon_rank": {
+      "meaning": "Text"
+    },
+    "last_modified_by_user": {
+      "meaning": "Text"
+    },
+    "code_env_python_version": {
+      "meaning": "Text"
+    },
+    "url": {
+      "meaning": "URL"
+    },
+    "code_sample": {
+      "meaning": "FreeText"
+    },
+    "pylint_issues": {
+      "meaning": "LongMeaning"
+    },
+    "min_python_version_from_Vermin": {
+      "meaning": "Text"
+    },
+    "recipe_name": {
+      "meaning": "Text"
+    },
+    "is_likely_unaltered_default_code": {
+      "meaning": "Boolean"
+    },
+    "code_env_name": {
+      "meaning": "Text"
+    },
+    "ruff_violations": {
+      "meaning": "LongMeaning"
+    },
+    "radon_cc_avg": {
+      "meaning": "DoubleMeaning"
+    }
+  },
+  "columnWidthsByName": {
+    "num_lines_of_code": 143,
+    "radon_mi_score": 134,
+    "est_py3_version": 128,
+    "code_hashsum": 239,
+    "project_key": 183,
+    "last_modified_timestamp": 211,
+    "radon_rank": 100,
+    "last_modified_by_user": 173,
+    "code_env_python_version": 188,
+    "url": 300,
+    "code_sample": 300,
+    "days_since_last_edit": 165,
+    "months_since_last_edit": 180,
+    "pylint_issues": 113,
+    "min_python_version_from_Vermin": 240,
+    "code_env_is_default": 158,
+    "radon_rank_numeric": 150,
+    "recipe_name": 274,
+    "is_likely_unaltered_default_code": 255,
+    "code_env_name": 113,
+    "id": 300,
+    "uses_custom_code_env": 165,
+    "ruff_violations": 128,
+    "radon_cc_avg": 134
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

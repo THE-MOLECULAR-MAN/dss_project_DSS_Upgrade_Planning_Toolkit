@@ -5,7 +5,18 @@
   },
   "keys": [
     {
-      "column": "project_key"
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "project_key",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "stddev": false,
+      "first": false
     }
   ],
   "values": [
@@ -15,6 +26,7 @@
       "firstLastNotNull": false,
       "column": "plugin_id",
       "count": false,
+      "$idx": 0,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -32,6 +44,7 @@
       "firstLastNotNull": false,
       "column": "plugin_is_deprecated",
       "count": false,
+      "$idx": 1,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -49,6 +62,7 @@
       "firstLastNotNull": false,
       "column": "element_kind",
       "count": false,
+      "$idx": 2,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -66,6 +80,7 @@
       "firstLastNotNull": false,
       "column": "element_type",
       "count": false,
+      "$idx": 3,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -83,6 +98,7 @@
       "firstLastNotNull": false,
       "column": "object_id",
       "count": false,
+      "$idx": 4,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -102,6 +118,7 @@
       "firstLastNotNull": false,
       "column": "object_type",
       "count": false,
+      "$idx": 5,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -119,6 +136,7 @@
       "firstLastNotNull": false,
       "column": "DSS_v14_support",
       "count": false,
+      "$idx": 6,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -136,6 +154,7 @@
       "firstLastNotNull": false,
       "column": "plugin_name",
       "count": false,
+      "$idx": 7,
       "sum": false,
       "concat": true,
       "type": "string",
@@ -155,6 +174,7 @@
       "firstLastNotNull": false,
       "column": "description",
       "count": false,
+      "$idx": 8,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -172,6 +192,7 @@
       "firstLastNotNull": false,
       "column": "plugin_description_url",
       "count": false,
+      "$idx": 9,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -219,7 +240,6 @@
       }
     }
   },
-  "engineType": "SQL",
   "enlargeYourBits": true,
   "outputColumnNameOverrides": {
     "plugin_id_distinct": "num_distinct_deprecated_plugins_in_project",
@@ -228,6 +248,29 @@
   },
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "project_key",
+            "type": "string"
+          },
+          {
+            "name": "plugin_id_distinct",
+            "type": "bigint"
+          },
+          {
+            "name": "plugin_name_concat",
+            "type": "string"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }

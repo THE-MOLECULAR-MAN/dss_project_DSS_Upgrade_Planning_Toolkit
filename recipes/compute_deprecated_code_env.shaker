@@ -84,28 +84,10 @@
         "referenceColumn": "url",
         "columns": [
           "python_interpreter",
-          "total_instances_of_code_env",
-          "owner",
-          "projectKeys_where_code_env_used"
+          "owner"
         ],
         "reorderAction": "BEFORE_COLUMN",
         "appliesTo": "COLUMNS"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": true,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "FilterOnNumericalRange",
-      "params": {
-        "min": 1.0,
-        "booleanMode": "AND",
-        "columns": [
-          "total_instances_of_code_env"
-        ],
-        "action": "KEEP_ROW",
-        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }

@@ -1,0 +1,60 @@
+{
+  "name": "Dashboards",
+  "color": "#F9BE40",
+  "items": [
+    {
+      "objectId": "recent_jobs_dashboard",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "recent_cluster_tasks_dashboard",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "recent_commit_dashboard",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recent_jobs_summary_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_recent_cluster_tasks_dashboard",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_commits_by_project_key_details_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "recent_scenarios_dashboard",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_scenarios_by_project_key_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "top_active_projects",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "projects_with_recent_scenario_runs",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_top_active_projects",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_recent_scenarios_dashboard_distinct",
+      "objectType": "RECIPE"
+    }
+  ],
+  "shared": [],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

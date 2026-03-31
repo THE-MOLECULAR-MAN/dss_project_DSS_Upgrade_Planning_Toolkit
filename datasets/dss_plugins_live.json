@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769322898778,
+    "lastModifiedOn": 1769522101030,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -59,7 +59,6 @@
       {"name":"author","type":"string","meaning":"Text"},
       {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
       {"name":"description","type":"string","meaning":"FreeText"},
-      {"name":"plugin_used_in_projectkeys","type":"string","meaning":"JSONArrayMeaning"},
       {"name":"isDev","type":"boolean","meaning":"Boolean"},
       {"name":"is_built_in_plugin","type":"boolean","meaning":"Boolean"},
       {"name":"plugin_is_deprecated","type":"boolean","meaning":"Boolean"},

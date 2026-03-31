@@ -1,9 +1,10 @@
 {
-  "type": "PostgreSQL",
+  "type": "Filesystem",
   "managed": true,
   "featureGroup": false,
   "description": "The \u0027jobs_and_scenarios_by_project_key\u0027 dataset provides a comprehensive overview of various projects, focusing on job execution scenarios. It includes key metrics such as start times, durations, errors, and warnings, which are crucial for analyzing project performance and identifying potential issues. The dataset is particularly useful for project managers and data analysts who need to monitor and optimize project workflows. By examining the start and end times, users can assess the efficiency of job executions. The dataset also includes error and warning metrics, which help in identifying and troubleshooting problems. Additionally, the dataset tracks the number of distinct users involved in each project, providing insights into team collaboration. Overall, this dataset is a valuable resource for improving project management and ensuring successful project outcomes.",
   "shortDesc": "Dataset of project job scenarios with time and error metrics.",
+  "formatType": "csv",
   "checklists": {
     "checklists": []
   },
@@ -25,17 +26,48 @@
       "rules": []
     }
   },
+  "formatParams": {
+    "style": "unix",
+    "charset": "utf8",
+    "separator": "\t",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "maxRowChars": 100000000,
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": "gz"
+  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769444290009,
+    "lastModifiedOn": 1773157663302,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -50,20 +82,15 @@
     "ai_generated_description"
   ],
   "params": {
-    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
-    "connection": "postgres_local",
+    "connection": "filesystem_managed",
+    "path": "${projectKey}/recent_scenarios_summary_raw",
     "notReadyIfEmpty": false,
-    "mode": "table",
-    "partitioningType": "custom",
-    "normalizeDoubles": true,
-    "table": "${projectKey}_recent_scenarios_summary_raw",
-    "tableCreationMode": "auto",
-    "writeInsertBatchSize": 10000,
-    "writeJDBCBadDataBehavior": "DISCARD_ROW",
-    "readColsWithUnknownTzAsDates": false,
-    "readSQLDateColsAsDSSDates": true,
-    "sparkJdbcAccess": "NONE",
-    "numPartitions": -1
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
   },
   "schema": {
     "columns": [

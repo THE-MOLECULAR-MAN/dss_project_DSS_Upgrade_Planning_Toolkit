@@ -1,7 +1,8 @@
 {
-  "type": "PostgreSQL",
+  "type": "Filesystem",
   "managed": true,
   "featureGroup": false,
+  "formatType": "csv",
   "checklists": {
     "checklists": []
   },
@@ -23,17 +24,48 @@
       "rules": []
     }
   },
+  "formatParams": {
+    "style": "unix",
+    "charset": "utf8",
+    "separator": "\t",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "maxRowChars": 100000000,
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": "gz"
+  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 20,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769434741313,
+    "lastModifiedOn": 1773157663285,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -41,41 +73,43 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769434531949,
+    "lastModifiedOn": 1769628480428,
     "extendedProperties": {}
   },
   "tags": [],
   "params": {
-    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
-    "connection": "postgres_local",
+    "connection": "filesystem_managed",
+    "path": "${projectKey}/python_code_analysis_prepared",
     "notReadyIfEmpty": false,
-    "mode": "table",
-    "partitioningType": "custom",
-    "normalizeDoubles": true,
-    "table": "${projectKey}_recent_cluster_tasks_summary_joined",
-    "tableCreationMode": "auto",
-    "writeInsertBatchSize": 10000,
-    "writeJDBCBadDataBehavior": "DISCARD_ROW",
-    "readColsWithUnknownTzAsDates": false,
-    "readSQLDateColsAsDSSDates": true,
-    "sparkJdbcAccess": "NONE",
-    "numPartitions": -1
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
   },
   "schema": {
     "columns": [
-      {"name":"project_key","type":"string","comment":"Identifier for the project; key for project events."},
-      {"name":"cluster_tasks_longest_runtime_seconds","type":"bigint"},
-      {"name":"cluster_tasks_avg_runtime_seconds","type":"double"},
-      {"name":"cluster_tasks_total_runtime_seconds","type":"bigint"},
-      {"name":"end_time_max","type":"date"},
-      {"name":"error_sum","type":"bigint"},
-      {"name":"warnings_count_sum","type":"bigint"},
-      {"name":"total_num_cluster_tasks","type":"bigint"},
-      {"name":"project_name","type":"string","meaning":"Text"},
-      {"name":"project_owner","type":"string","meaning":"Text"},
-      {"name":"project_Status","type":"string","meaning":"Text"},
-      {"name":"project_last_modified_timestamp","type":"string","meaning":"Text"},
-      {"name":"project_url","type":"string","meaning":"URL"}
+      {"name":"project_key","type":"string","meaning":"Text"},
+      {"name":"recipe_name","type":"string","meaning":"Text"},
+      {"name":"id","type":"string","meaning":"Text"},
+      {"name":"url","type":"string","meaning":"URL"},
+      {"name":"code_env_name","type":"string","meaning":"Text"},
+      {"name":"uses_custom_code_env","type":"boolean","meaning":"Boolean"},
+      {"name":"code_env_python_version","type":"string","meaning":"Text"},
+      {"name":"num_lines_of_code","type":"int","meaning":"LongMeaning"},
+      {"name":"last_modified_by_user","type":"string","meaning":"Text"},
+      {"name":"last_modified_timestamp","type":"date","meaning":"Date"},
+      {"name":"days_since_last_edit","type":"int","meaning":"LongMeaning"},
+      {"name":"is_likely_unaltered_default_code","type":"boolean","meaning":"Boolean"},
+      {"name":"min_python_version_from_Vermin","type":"string","meaning":"Text"},
+      {"name":"radon_cc_avg","type":"double","meaning":"DoubleMeaning"},
+      {"name":"radon_mi_score","type":"int","meaning":"LongMeaning"},
+      {"name":"radon_rank","type":"string","meaning":"Text"},
+      {"name":"ruff_violations","type":"int","meaning":"LongMeaning"},
+      {"name":"pylint_issues","type":"int","meaning":"LongMeaning"},
+      {"name":"code_sample","type":"string","meaning":"FreeText"},
+      {"name":"code_hashsum","type":"string","meaning":"Text"}
     ],
     "userModified": true
   },

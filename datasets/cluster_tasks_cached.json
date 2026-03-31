@@ -1,9 +1,10 @@
 {
-  "type": "PostgreSQL",
+  "type": "Filesystem",
   "managed": true,
   "featureGroup": false,
   "description": "The \u0027cluster_tasks_cached\u0027 dataset provides a comprehensive view of tasks executed within a cluster environment, capturing essential metadata and execution details. This dataset is particularly useful for monitoring and analyzing task performance, user activity, and resource utilization in a data processing or analytics platform. Each entry in the dataset represents a task, identified by a unique connection and project key, and includes information about the task type, the user who initiated it, and the start and end times of the task. Additionally, the dataset contains a JSON object with detailed metadata about the task execution, such as job and activity identifiers. This rich set of information can be leveraged for auditing purposes, performance optimization, and troubleshooting. By analyzing the start and end times, users can calculate task durations and identify potential bottlenecks. The dataset\u0027s structure allows for easy integration with other data sources, enabling comprehensive analysis and reporting. Overall, this dataset is a valuable resource for administrators and developers looking to gain insights into the operational aspects of their cluster tasks.",
   "shortDesc": "Dataset of cached cluster tasks with metadata and timestamps.",
+  "formatType": "csv",
   "checklists": {
     "checklists": []
   },
@@ -25,17 +26,48 @@
       "rules": []
     }
   },
+  "formatParams": {
+    "style": "unix",
+    "charset": "utf8",
+    "separator": "\t",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "maxRowChars": 100000000,
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": "gz"
+  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1769444289469,
+    "lastModifiedOn": 1773157663233,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -50,20 +82,15 @@
     "ai_generated_description"
   ],
   "params": {
-    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
-    "connection": "postgres_local",
+    "connection": "filesystem_managed",
+    "path": "${projectKey}/cluster_tasks_cached",
     "notReadyIfEmpty": false,
-    "mode": "table",
-    "partitioningType": "custom",
-    "normalizeDoubles": true,
-    "table": "${projectKey}_cluster_tasks_cached",
-    "tableCreationMode": "auto",
-    "writeInsertBatchSize": 10000,
-    "writeJDBCBadDataBehavior": "DISCARD_ROW",
-    "readColsWithUnknownTzAsDates": false,
-    "readSQLDateColsAsDSSDates": true,
-    "sparkJdbcAccess": "NONE",
-    "numPartitions": -1
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
   },
   "schema": {
     "columns": [

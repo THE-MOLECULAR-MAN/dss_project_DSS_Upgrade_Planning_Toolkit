@@ -59,83 +59,7 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_dss_webapps_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "compute_dss_users_cached2",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "compute_dss_datasets_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "compute_dss_connections_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "compute_dss_clusters_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "compute_dss_apps_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_webapps_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_users_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_datasets_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_connections_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_clusters_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_apps_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_connections_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_clusters_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_apps_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_users_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_webapps_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_datasets_live",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "cluster_tasks_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "jobs_live",
       "objectType": "DATASET"
     },
     {
@@ -147,23 +71,7 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "scenario_runs",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_plugin_usages_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_plugins_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_plugins_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_plugins_cached",
       "objectType": "DATASET"
     },
     {
